@@ -39,7 +39,7 @@ if ($data = json_decode($data, true)) {
      /*
       && ( 
           strpos($script_sample, 'position:absolute;') === false
-          && substr($script_sample, 0, 4) != 'top:'
+          && strpos($script_sample, 'top:') === false
           )
       */
      
