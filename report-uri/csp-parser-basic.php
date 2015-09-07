@@ -2,7 +2,7 @@
 // Note: this script requires PHP ≥ 5.4.
 // Inspired from https://mathiasbynens.be/notes/csp-reports
 
-// 
+// Dareboost wants it? Not a problem.
 header('X-Content-Type-Options: "nosniff"');
 
 // Specify the email address to send reports to
