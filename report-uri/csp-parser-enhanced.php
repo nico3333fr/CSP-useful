@@ -26,6 +26,7 @@ if ($data = json_decode($data, true)) {
   if (
      
      // avoid false positives notifications coming from Chrome extensions (Wappalyzer, MuteTab, etc.)
+     // bug here https://code.google.com/p/chromium/issues/detail?id=524356
      strpos($source_file, 'chrome-extension://') === false 
      
      // avoid false positives notifications coming from Safari extensions (diigo, evernote, etc.)
