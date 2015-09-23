@@ -100,4 +100,5 @@ These bugs are just annoying, they are not critical. They provide false-positive
 - https://securityheaders.io/
 
 Enjoy
+
 [Nicolas Hoffmann](http://www.nicolas-hoffmann.net/) - [@Nico3333fr](https://twitter.com/Nico3333fr)
