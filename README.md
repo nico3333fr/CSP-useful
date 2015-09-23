@@ -34,13 +34,17 @@ JS/jQuery plugins should provide the CSP requirements they need to work (especia
 
 ## Scripts
 
-In folder "report-uri", you may find examples of CSP parsers you can use for report-uri.
+In [folder "report-uri"](https://github.com/nico3333fr/CSP-useful/tree/master/report-uri), you may find examples of CSP parsers you can use for report-uri.
 
 - csp-parser-basic.php 	: the most basic one, it sends an e-mail.
 - csp-parser-enhanced.php :	avoids some bugs (listed below)
 - csp-parser-with-database.php : put notifications in a database, then you can do whatever you want with all these informations! :)
 
-In folder "csp-check", you may find the source of a proof of concept: this script was a quick and dirty way to reproduce a bug in Firefox, you can see it in action here: http://csp.nicolas-hoffmann.net/
+In [folder "csp-check"](https://github.com/nico3333fr/CSP-useful/tree/master/csp-check), you may find the source of a proof of concept: this script was a quick and dirty way to reproduce a bug in Firefox, you can see it in action here: http://csp.nicolas-hoffmann.net/
+
+Basically, the page generates an unique id, notifications sent to report-uri are put in database, the page makes an AJAX call to database, and the unique id helps to find CSP errors in database.
+
+To reproduce the bug:
 
 1. Open http://csp.nicolas-hoffmann.net/ 
 2. The page is going to generate a unique id, ex http://csp.nicolas-hoffmann.net/?id=foo
