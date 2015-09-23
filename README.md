@@ -5,24 +5,30 @@ I'm testing and using CSP (Content Security Policy), and here are some thoughts,
 
 ## What CSP is really good for
 
-In development: I use CSP to clean up some bad old contents (with inline-styles for example).
+### In development
+
+I use __CSP to clean up some bad old contents__ (with inline-styles for example).
 
 1. Just activate CSP on a site with a report-uri
 2. Ask your boss/collegue to browse the website
-3. Yay, you know where you have to make some cleanup
+3. All notifications will come without doing anything (yes, I'm lazy)
+4. Yay, you know where you have to make some cleanup
 
-Moreother, if you don't have the time to clean it, setting up CSP policy will avoid bad old styles from breaking the nice new design.
+Moreother, if you don't have the time to clean it, setting up CSP policy will avoid bad old styles from breaking the nice/clean new design.
 
+### Progressive enhancement and orthogonality
 
+As far as I can see, using CSP on my jQuery plugins helped me a lot to design them without inline styles/js. See for example: http://a11y.nicolas-hoffmann.net/
+
+So it is a great help for progressive enhancement, orthogonality and clean front-end.
 
 
 ## About plugins
 
 JS/jQuery plugins should provide the CSP requirements they need to work (especially inline-styles or inline-js), so:
 
-- we will know 
+- we will know what they need instead of having to discover it
 - we would be able to choose a plugin based on its capability to respect orthogonality (see http://openweb.eu.org/articles/orthogonality-with-css)
-
 
 
 
