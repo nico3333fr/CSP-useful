@@ -5,7 +5,7 @@ This script was a quick and dirty "proof of concept" to reproduce a bug in Firef
 1. Open http://csp.nicolas-hoffmann.net/ 
 2. The page is going to generate a unique id, ex http://csp.nicolas-hoffmann.net/?id=foo
 3. Wait some seconds. The page doesn't find any notification in the database.
-4.Now inspect the page with Firefox inspector, please highlight some elements.
+4. Now inspect the page with Firefox inspector, please highlight some elements.
 5. Close the inspector
 6. Refresh the page with the id you have : http://csp.nicolas-hoffmann.net/?id=foo
 7. It is going to find a lot of CSP errors.
