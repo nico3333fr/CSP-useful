@@ -1,2 +1,93 @@
-# CSP-useful
-Collection of scripts, thoughts about CSP
+# CSP useful, a collection of scripts, thoughts about CSP
+
+I'm testing and using CSP (Content Security Policy), and here are some thoughts, resources, scripts and ideas on it.
+
+
+## What CSP is really good for
+
+In development: I use CSP to clean up some bad old contents (with inline-styles for example).
+
+1. Just activate CSP on a site with a report-uri
+2. Ask your boss/collegue to browse the website
+3. Yay, you know where you have to make some cleanup
+
+Moreother, if you don't have the time to clean it, setting up CSP policy will avoid bad old styles from breaking the nice new design.
+
+
+
+
+## About plugins
+
+JS/jQuery plugins should provide the CSP requirements they need to work (especially inline-styles or inline-js), so:
+
+- we will know 
+- we would be able to choose a plugin based on its capability to respect orthogonality (see http://openweb.eu.org/articles/orthogonality-with-css)
+
+
+
+
+## Scripts
+
+In folder "report-uri", you may find examples of CSP parsers you can use for report-uri.
+
+- csp-parser-basic.php 	: the most basic one, it sends an e-mail.
+- csp-parser-enhanced.php :	avoids some bugs (listed below)
+- csp-parser-with-database.php : put notifications in a database, then you can do whatever you want with all these informations! :)
+
+In folder "csp-check", you may find the source of a proof of concept: this script was a quick and dirty way to reproduce a bug in Firefox, you can see it in action here: http://csp.nicolas-hoffmann.net/
+
+1. Open http://csp.nicolas-hoffmann.net/ 
+2. The page is going to generate a unique id, ex http://csp.nicolas-hoffmann.net/?id=foo
+3. Wait some seconds. The page doesn't find any notification in the database.
+4. Now inspect the page with Firefox inspector, please highlight some elements.
+5. Close the inspector
+6. Refresh the page with the id you have : http://csp.nicolas-hoffmann.net/?id=foo
+7. It is going to find a lot of CSP errors.
+
+At the beginning, I've made it to prove that some Chrome extensions are sending notifications to report-uri (while they should not), and it helped to find/prove a bug in Firefox Inspector.
+
+Here is the reported bug : https://bugzilla.mozilla.org/show_bug.cgi?id=1195302
+
+It should be solved with Firefox 43 https://bugzilla.mozilla.org/show_bug.cgi?id=1185351 :)
+
+
+
+
+## Bugs I've found
+
+- Firefox : https://bugzilla.mozilla.org/show_bug.cgi?id=1195302 (inspector)
+- Chrome/Blink : https://code.google.com/p/chromium/issues/detail?id=524356 (extensions)
+- Safari/Webkit : https://bugs.webkit.org/show_bug.cgi?id=149000 (extensions)
+
+These bugs are just annoying, they are not critical. They provide false-positives notifications on report-uri.
+
+
+## Resources
+
+### Resources
+
+- http://content-security-policy.com/
+- http://www.w3.org/TR/CSP/
+- http://www.html5rocks.com/en/tutorials/security/content-security-policy/
+- http://websec.io/2012/10/02/Intro-to-Content-Security-Policy.html
+- http://content-security-policy.com/presentations/
+
+
+### Interesting post on how to deploy CSP
+ 
+- https://blog.twitter.com/2011/improving-browser-security-csp
+- https://github.com/blog/1477-content-security-policy
+
+
+### Other
+
+- https://github.com/nico3333fr/CSP-useful (yes you are here)
+
+
+### Tools that test CSP
+
+- https://www.dareboost.com/
+- https://securityheaders.io/
+
+Enjoy
+[Nicolas Hoffmann](http://www.nicolas-hoffmann.net/) - [@Nico3333fr](https://twitter.com/Nico3333fr)
