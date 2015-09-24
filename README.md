@@ -23,6 +23,14 @@ As far as I can see, using CSP on my jQuery plugins helped me a lot to design th
 So it is a great help for progressive enhancement, orthogonality and clean front-end.
 
 
+## How to see easily CSP directives on a website
+
+For Firefox: make Maj+F2 and type "security csp". It will show you directives and advices.
+
+If you have webdevelopper toolbar, go into infos - HTTP headers.
+
+
+
 ## About plugins
 
 JS/jQuery plugins should provide the CSP requirements they need to work (especially inline-styles or inline-js), so:
