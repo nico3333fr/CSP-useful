@@ -10,11 +10,11 @@ I'm testing and using CSP (Content Security Policy), and here are some thoughts,
 I use __CSP to clean up some bad old contents__ (with inline-styles for example).
 
 1. Just activate CSP on a site with a report-uri
-2. Ask your boss/collegue to browse the website
-3. All notifications will come without doing anything (yes, I'm lazy)
+2. Ask your boss/collegues/grandma to browse the website
+3. All notifications will come without doing anything (yes, I’m lazy)
 4. Yay, you know where you have to make some cleanup
 
-Moreother, if you don't have the time to clean it, setting up CSP policy will avoid bad old styles from breaking the nice/clean new design.
+Moreother, if you don't have the time to clean it, setting up CSP policy will avoid bad old styles from breaking the nice/clean new design. Or it will tell you when contributors are doing shit on the website.
 
 ### Progressive enhancement and orthogonality
 
@@ -73,7 +73,7 @@ It should be solved with Firefox 43 https://bugzilla.mozilla.org/show_bug.cgi?id
 
 ## Bugs I've found
 
-- Firefox : https://bugzilla.mozilla.org/show_bug.cgi?id=1195302 (inspector)
+- Firefox : https://bugzilla.mozilla.org/show_bug.cgi?id=1195302 (inspector, extensions?)
 - Chrome/Blink : https://code.google.com/p/chromium/issues/detail?id=524356 (extensions)
 - Safari/Webkit : https://bugs.webkit.org/show_bug.cgi?id=149000 (extensions)
 
@@ -91,7 +91,12 @@ These bugs are just annoying, they are not critical. They provide false-positive
 - http://content-security-policy.com/presentations/
 
 
-### Interesting post on how to deploy CSP
+### Why you should use CSP
+
+- https://www.aaron-gustafson.com/notebook/more-proof-we-dont-control-our-web-pages/
+
+
+### Interesting posts on how to deploy CSP
  
 - https://blog.twitter.com/2011/improving-browser-security-csp
 - https://github.com/blog/1477-content-security-policy
@@ -102,11 +107,11 @@ These bugs are just annoying, they are not critical. They provide false-positive
 - https://github.com/nico3333fr/CSP-useful (yes you are here)
 
 
-### Tools that test CSP
+### Online tools that test CSP
 
 - https://www.dareboost.com/
 - https://securityheaders.io/
 
-Enjoy
+Enjoy!
 
 [Nicolas Hoffmann](http://www.nicolas-hoffmann.net/) - [@Nico3333fr](https://twitter.com/Nico3333fr)
