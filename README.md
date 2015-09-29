@@ -42,11 +42,15 @@ JS/jQuery plugins should provide the CSP requirements they need to work (especia
 
 ## Scripts
 
+### Report-URI folder
+
 In [folder "report-uri"](https://github.com/nico3333fr/CSP-useful/tree/master/report-uri), you may find examples of CSP parsers you can use for report-uri.
 
 - csp-parser-basic.php 	: the most basic one, it sends an e-mail.
 - csp-parser-enhanced.php :	avoids some bugs (listed below)
 - csp-parser-with-database.php : put notifications in a database, then you can do whatever you want with all these informations! :)
+
+### CSP Check folder
 
 In [folder "csp-check"](https://github.com/nico3333fr/CSP-useful/tree/master/csp-check), you may find the source of a proof of concept: this script was a quick and dirty way to reproduce a bug in Firefox, you can see it in action here: http://csp.nicolas-hoffmann.net/
 
@@ -64,7 +68,7 @@ To reproduce the bug:
 
 At the beginning, I've made it to prove that some Chrome extensions are sending notifications to report-uri (while they should not), and it helped to find/prove a bug in Firefox Inspector.
 
-Here is the reported bug : https://bugzilla.mozilla.org/show_bug.cgi?id=1195302
+Here is the reported bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1195302
 
 It should be solved with Firefox 43 https://bugzilla.mozilla.org/show_bug.cgi?id=1185351 :)
 
