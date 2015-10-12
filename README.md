@@ -80,6 +80,7 @@ It should be solved with Firefox 43 https://bugzilla.mozilla.org/show_bug.cgi?id
 - Firefox : https://bugzilla.mozilla.org/show_bug.cgi?id=1195302 (inspector, extensions?)
 - Chrome/Blink : https://code.google.com/p/chromium/issues/detail?id=524356 (extensions)
 - Safari/Webkit : https://bugs.webkit.org/show_bug.cgi?id=149000 (extensions)
+- Edge (no URL tracker yet, same workaround than for Firefox)
 
 These bugs are just annoying, they are not critical. They provide false-positives notifications on report-uri.
 
