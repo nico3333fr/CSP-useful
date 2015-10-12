@@ -48,14 +48,7 @@ $data = file_get_contents('php://input');
 
 // Only continue if it’s valid JSON that is not just `null`, `0`, `false` or an
 // empty string, i.e. if it could be a CSP violation report.
-if ($data = json_decode($data, true)) {
-
-    // Prettify the JSON-formatted data
-    $data = json_encode(
-                $data,
-                JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES
-                );
-      
+if ($data = json_decode($data, true)) {      
 
   $query_insert = " INSERT INTO csp_reports SET ";
 	$query_insert.= " document_uri       = '".mysqli_real_escape_string( $lk , $data['csp-report']['document-uri'] )."', ";
