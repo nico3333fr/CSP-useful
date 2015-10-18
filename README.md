@@ -50,6 +50,16 @@ In [folder "report-uri"](https://github.com/nico3333fr/CSP-useful/tree/master/re
 - csp-parser-enhanced.php :	avoids some bugs (listed below)
 - csp-parser-with-database.php : put notifications in a database, then you can do whatever you want with all these informations! :)
 
+
+
+
+### CSP directives for third-party services
+
+In [folder "CSP for third party services"](https://github.com/nico3333fr/CSP-useful/tree/master/csp-for-third-party-services), you may find examples of directives you need to use for some services.
+
+
+
+
 ### CSP Check folder
 
 In [folder "csp-check"](https://github.com/nico3333fr/CSP-useful/tree/master/csp-check), you may find the source of a proof of concept: this script was a quick and dirty way to reproduce a bug in Firefox, you can see it in action here: http://csp.nicolas-hoffmann.net/
