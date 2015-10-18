@@ -56,6 +56,8 @@ In [folder "csp-check"](https://github.com/nico3333fr/CSP-useful/tree/master/csp
 
 Basically, the page generates an unique id, notifications sent to report-uri are put in database, the page makes an AJAX call to database, and the unique id helps to find CSP errors in database.
 
+This is useful to prove bugs, not only for Firefox. ^^
+
 To reproduce the bug:
 
 1. Open http://csp.nicolas-hoffmann.net/ 
@@ -77,8 +79,10 @@ It should be solved with Firefox 43 https://bugzilla.mozilla.org/show_bug.cgi?id
 
 ## Bugs I've found
 
-- Firefox : https://bugzilla.mozilla.org/show_bug.cgi?id=1195302 (inspector, extensions?)
+- Firefox: https://bugzilla.mozilla.org/show_bug.cgi?id=1195302 (inspector, extensions?)
+- Firefox: https://bugzilla.mozilla.org/show_bug.cgi?id=1215108 (bookmarklets)
 - Chrome/Blink : https://code.google.com/p/chromium/issues/detail?id=524356 (extensions)
+- Chrome (bookmarklets too, testing)
 - Safari/Webkit : https://bugs.webkit.org/show_bug.cgi?id=149000 (extensions)
 - Edge (no URL tracker yet, same workaround than for Firefox)
 
