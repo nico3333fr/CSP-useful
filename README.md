@@ -82,7 +82,7 @@ At the beginning, I've made it to prove that some Chrome extensions are sending 
 
 Here is the reported bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1195302
 
-It should be solved with Firefox 43 https://bugzilla.mozilla.org/show_bug.cgi?id=1185351 :)
+It should be solved with Firefox 42 https://bugzilla.mozilla.org/show_bug.cgi?id=1185351 :)
 
 
 
@@ -108,6 +108,7 @@ These bugs are just annoying, they are not critical. They provide false-positive
 - http://www.html5rocks.com/en/tutorials/security/content-security-policy/
 - http://websec.io/2012/10/02/Intro-to-Content-Security-Policy.html
 - http://content-security-policy.com/presentations/
+- http://www.nicolas-hoffmann.net/content-security-policy-parisweb-2015 (slides of my talk in Paris Web 2015, in french)
 
 
 ### Why you should use CSP
