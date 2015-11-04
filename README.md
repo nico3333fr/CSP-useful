@@ -82,7 +82,7 @@ At the beginning, I've made it to prove that some Chrome extensions are sending 
 
 Here is the reported bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1195302
 
-It <del>should be</del> is solved with Firefox 42 https://bugzilla.mozilla.org/show_bug.cgi?id=1185351 :)
+It <del>should be</del> is fixed with Firefox 42 https://bugzilla.mozilla.org/show_bug.cgi?id=1185351 :)
 
 
 
