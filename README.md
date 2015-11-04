@@ -82,14 +82,14 @@ At the beginning, I've made it to prove that some Chrome extensions are sending 
 
 Here is the reported bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1195302
 
-It should be solved with Firefox 42 https://bugzilla.mozilla.org/show_bug.cgi?id=1185351 :)
+It <del>should be</del> is solved with Firefox 42 https://bugzilla.mozilla.org/show_bug.cgi?id=1185351 :)
 
 
 
 
 ## Bugs I've found
 
-- Firefox: https://bugzilla.mozilla.org/show_bug.cgi?id=1195302 (inspector, extensions?)
+- <del> Firefox: https://bugzilla.mozilla.org/show_bug.cgi?id=1195302 (inspector, extensions?) </del> (fixed in Firefox 42)
 - Firefox: https://bugzilla.mozilla.org/show_bug.cgi?id=1215108 (bookmarklets)
 - Chrome/Blink : https://code.google.com/p/chromium/issues/detail?id=524356 (extensions)
 - Chrome (bookmarklets too, testing)
