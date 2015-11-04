@@ -14,4 +14,4 @@ At the beginning, I've made it to prove that some Chrome extensions are sending 
 
 Here is the reported bug : https://bugzilla.mozilla.org/show_bug.cgi?id=1195302
 
-It should be solved with Firefox 43 https://bugzilla.mozilla.org/show_bug.cgi?id=1185351 :)
+It <del>should be</del> has been fixed in Firefox 42 https://bugzilla.mozilla.org/show_bug.cgi?id=1185351 :)
