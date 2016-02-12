@@ -25,4 +25,16 @@ img-src www.google-analytics.com stats.g.doubleclick.net https://stats.g.doublec
 Note: stats.g.doubleclick.net seems to be used for demographics stats in GA. (to confirm?)
 
 
+## Vimeo player (iframe)
+
+```
+default-src *.vimeo.com ;
+script-src *.vimeo.com *.vimeocdn.com *.newrelic.com *.nr-data.net ;
+style-src *.vimeocdn.com ; 
+child-src 'self' *.vimeo.com *.vimeocdn.com ; 
+```
+
+(to test further, these values seem to be ok)
+
+
 Feel free to participate. :)
