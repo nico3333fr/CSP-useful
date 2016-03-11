@@ -37,4 +37,13 @@ child-src 'self' *.vimeo.com *.vimeocdn.com ;
 (to test further, these values seem to be ok)
 
 
+## Color box
+```
+style-src 'unsafe-inline'; 
+```
+(with the script src needed for the JS code, same for CSS)
+
+
+
+
 Feel free to participate. :)
