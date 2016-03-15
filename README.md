@@ -94,7 +94,7 @@ It <del>should be</del> is fixed with Firefox 42 https://bugzilla.mozilla.org/sh
 - <del>Chrome/Blink : https://code.google.com/p/chromium/issues/detail?id=524356 (extensions)</del> (fixed in last versions of Chrome)
 - Chrome: https://bugs.chromium.org/p/chromium/issues/detail?id=595004 (bookmarklets too, see too https://bugs.chromium.org/p/chromium/issues/detail?id=233903)
 - Safari/Webkit : https://bugs.webkit.org/show_bug.cgi?id=149000 (extensions)
-- Edge (no URL tracker yet, same workaround than for Firefox)
+- <del>Edge (no URL tracker yet, same workaround than for Firefox)</del> (seems to be fixed on Edge)
 
 These bugs are just annoying, they are not critical. They provide false-positives notifications on report-uri.
 
