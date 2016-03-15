@@ -44,6 +44,13 @@ style-src 'unsafe-inline';
 (with the script src needed for the JS code, same for CSS)
 
 
+## Twitter widgets
+
+"An Embedded Tweet or Embedded Timeline may display with restricted capabilities when a Content Security Policy restricts inline loading of Twitter. Set csp=on to disable functionality which could display Content Security Policy warnings on your site."
+
+```<meta name="twitter:widgets:csp" content="on" />```
+
+See: https://dev.twitter.com/web/overview/widgets-webpage-properties#csp
 
 
 Feel free to participate. :)
