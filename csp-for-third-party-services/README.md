@@ -52,5 +52,10 @@ style-src 'unsafe-inline';
 
 See: https://dev.twitter.com/web/overview/widgets-webpage-properties#csp
 
+## Disqus
+
+```
+script-src http://your_disqus_subdomain.disqus.com http://a.disquscdn.com ;
+```
 
 Feel free to participate. :)
