@@ -70,7 +70,7 @@ This is useful to prove bugs, not only for Firefox. ^^
 
 To reproduce the bug:
 
-1. Open http://csp.nicolas-hoffmann.net/ 
+1. Open http://csp.nicolas-hoffmann.net/
 2. The page is going to generate a unique id, ex http://csp.nicolas-hoffmann.net/?id=foo
 3. Wait some seconds. The page doesn't find any notification in the database.
 4. Now inspect the page with Firefox inspector, please highlight some elements.
@@ -108,6 +108,9 @@ These bugs are just annoying, they are not critical. They provide false-positive
 - http://www.html5rocks.com/en/tutorials/security/content-security-policy/
 - http://websec.io/2012/10/02/Intro-to-Content-Security-Policy.html
 - http://content-security-policy.com/presentations/
+- https://developer.mozilla.org/en-US/docs/Web/Security/CSP
+- https://developer.chrome.com/extensions/contentSecurityPolicy
+- http://www.sitepoint.com/improving-web-security-with-the-content-security-policy/
 - http://www.nicolas-hoffmann.net/content-security-policy-parisweb-2015 (slides of my talk in Paris Web 2015, in french)
 
 
@@ -117,7 +120,7 @@ These bugs are just annoying, they are not critical. They provide false-positive
 
 
 ### Interesting posts on how to deploy CSP
- 
+
 - https://blog.twitter.com/2011/improving-browser-security-csp
 - https://github.com/blog/1477-content-security-policy
 
@@ -131,6 +134,9 @@ These bugs are just annoying, they are not critical. They provide false-positive
 
 - https://www.dareboost.com/
 - https://securityheaders.io/
+
+### Add-ons Navigator
+-https://addons.mozilla.org/en-us/firefox/addon/newusercspdesign/
 
 Enjoy!
 
