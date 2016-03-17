@@ -136,7 +136,7 @@ These bugs are just annoying, they are not critical. They provide false-positive
 - https://securityheaders.io/
 
 ### Add-ons Navigator
--https://addons.mozilla.org/en-us/firefox/addon/newusercspdesign/
+- https://addons.mozilla.org/en-us/firefox/addon/newusercspdesign/
 
 Enjoy!
 
