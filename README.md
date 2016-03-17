@@ -104,8 +104,8 @@ These bugs are just annoying, they are not critical. They provide false-positive
 ### Resources
 
 - http://content-security-policy.com/
-- http://www.cspplayground.com/home
 - http://cspisawesome.com/
+- http://www.cspplayground.com/home
 - http://www.w3.org/TR/CSP/
 - http://www.html5rocks.com/en/tutorials/security/content-security-policy/
 - http://websec.io/2012/10/02/Intro-to-Content-Security-Policy.html
