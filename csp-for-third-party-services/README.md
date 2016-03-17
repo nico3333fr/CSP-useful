@@ -13,12 +13,29 @@ img-src www.google-analytics.com stats.g.doubleclick.net https://stats.g.doublec
 
 (or generate a hash for inline script to avoid ```unsafe-inline```)
 
+You may use a internal js script on your domain and use the call of GA script in the head tag
+Example :
+```
+   javascript
+    <script type="text/javascript" src="https://ssl.google-analytics.com/analytics.js"></script>
+    <script type="text/javascript" src="/js/front/analytics.js></script>
+```    
+Where the file named analytics.js host on your domain contains your GA id UA :
+```
+    javascript
+    ga('create', 'UA-XXXXXXX-X', 'auto');
+    ga('send', 'pageview');
+```
+You can now use the script-src with ```self```
+
 2) If you make the call of GA script in an external JS file (better imho)
+
 
 ```
 script-src 'self' www.google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net
 img-src www.google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net
 ```
+
 
 (```self``` is here only if the call is make on the same domain name, you have to adapt if it is different for your case)
 
@@ -30,8 +47,8 @@ Note: stats.g.doubleclick.net seems to be used for demographics stats in GA. (to
 ```
 default-src *.vimeo.com ;
 script-src *.vimeo.com *.vimeocdn.com *.newrelic.com *.nr-data.net ;
-style-src *.vimeocdn.com ; 
-child-src 'self' *.vimeo.com *.vimeocdn.com ; 
+style-src *.vimeocdn.com ;
+child-src 'self' *.vimeo.com *.vimeocdn.com ;
 ```
 
 (to test further, these values seem to be ok)
@@ -39,7 +56,7 @@ child-src 'self' *.vimeo.com *.vimeocdn.com ;
 
 ## Color box
 ```
-style-src 'unsafe-inline'; 
+style-src 'unsafe-inline';
 ```
 (with the script src needed for the JS code, same for CSS)
 
