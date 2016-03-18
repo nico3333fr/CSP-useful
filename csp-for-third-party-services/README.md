@@ -13,14 +13,13 @@ img-src www.google-analytics.com stats.g.doubleclick.net https://stats.g.doublec
 
 (or generate a hash for inline script to avoid ```unsafe-inline```)
 
-You may use a internal js script on your domain and use the call of GA script in the head tag
+You may use an internal file js script on your domain and use the call of GA script in the head tag
 Example :
 ```
-   javascript
     <script type="text/javascript" src="https://ssl.google-analytics.com/analytics.js"></script>
-    <script type="text/javascript" src="/js/front/analytics.js></script>
+    <script type="text/javascript" src="/js/front/analytics.js"></script>
 ```    
-Where the file named analytics.js host on your domain contains your GA id UA :
+Where the file named analytics.js host on your domain contains your GA id UA:
 ```
     javascript
     ga('create', 'UA-XXXXXXX-X', 'auto');
