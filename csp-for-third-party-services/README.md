@@ -75,4 +75,11 @@ script-src your_disqus_subdomain.disqus.com a.disquscdn.com ;
 connect-src https://links.services.disqus.com wss://realtime.services.disqus.com ;
 ```
 
+## Algolia
+
+```
+connect-src *.algolia.net ;
+```
+
+
 Feel free to participate. :)
