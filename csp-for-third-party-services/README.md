@@ -71,7 +71,8 @@ See: https://dev.twitter.com/web/overview/widgets-webpage-properties#csp
 ## Disqus
 
 ```
-script-src your_disqus_subdomain.disqus.com a.disquscdn.com ; connect-src https://links.services.disqus.com wss://realtime.services.disqus.com ;
+script-src your_disqus_subdomain.disqus.com a.disquscdn.com ;
+connect-src https://links.services.disqus.com wss://realtime.services.disqus.com ;
 ```
 
 Feel free to participate. :)
