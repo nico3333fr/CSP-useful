@@ -81,5 +81,11 @@ connect-src https://links.services.disqus.com wss://realtime.services.disqus.com
 connect-src *.algolia.net ;
 ```
 
+## Flickr
+
+```
+script-src embedr.flickr.com widgets.flickr.com ;
+connect-src embedr.flickr.com geo.query.yahoo.com ;
+```
 
 Feel free to participate. :)
