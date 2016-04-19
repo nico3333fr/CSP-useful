@@ -134,6 +134,7 @@ These bugs are just annoying, they are not critical. They provide false-positive
 
 ### Online tools that test CSP
 
+- https://cspvalidator.org/
 - https://www.dareboost.com/
 - https://securityheaders.io/
 
