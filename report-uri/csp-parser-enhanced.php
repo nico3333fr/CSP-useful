@@ -32,17 +32,9 @@ if ($data = json_decode($data, true)) {
      // avoid false positives notifications coming from Safari extensions (diigo, evernote, etc.)
      && strpos($source_file, 'safari-extension://') === false
      
-     // avoid Firefox inline styles false positives notifications coming from inspector
-     // bug will be be fixed in next versions, see https://bugzilla.mozilla.org/show_bug.cgi?id=1195302
-     // & https://bugzilla.mozilla.org/show_bug.cgi?id=1185351
-     // activate it only if a lot of people are inspecting your pages => avoid a LOT of notifications
-     // use this at your own risk: with great power comes great responsibilities
-     /*
-      && ( 
-          strpos($script_sample, 'position:absolute;') === false
-          && strpos($script_sample, 'top:') === false
-          )
-      */
+     // search engine extensions ?
+     && strpos($source_file, 'se-extension://') === false
+     
      
      ) {
 
