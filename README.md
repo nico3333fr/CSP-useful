@@ -116,6 +116,12 @@ These bugs are just annoying, they are not critical. They provide false-positive
 - http://www.nicolas-hoffmann.net/content-security-policy-parisweb-2015 (slides of my talk in Paris Web 2015, in french)
 
 
+### About filtering report
+
+- https://blogs.dropbox.com/tech/2015/09/on-csp-reporting-and-filtering/
+- https://oreoshake.github.io/csp/twitter/2014/07/25/twitters-csp-report-collector-design.html
+
+
 ### Why you should use CSP
 
 - https://www.aaron-gustafson.com/notebook/more-proof-we-dont-control-our-web-pages/
