@@ -20,6 +20,7 @@ if ($data = json_decode($data, true)) {
 
   // get source-file to perform some tests
   $source_file   = $data['csp-report']['source-file'];
+  $blocked_uri   = $data['csp-report']['blocked-uri'];
   $script_sample = $data['csp-report']['script-sample'];
   
 
@@ -34,6 +35,11 @@ if ($data = json_decode($data, true)) {
      
      // search engine extensions ?
      && strpos($source_file, 'se-extension://') === false
+     
+     // added by browsers in webviews
+     && strpos($blocked_uri, 'webviewprogressproxy://') === false
+     
+
      
      
      ) {
