@@ -4,14 +4,17 @@ Here is a small collection of CSP directives you should use for some third-party
 
 ## Google Analytics
 
-1) If you make the call of GA script in the ```head``` tag
+### 1) If you make the call of GA script in the ```head``` tag
 
 ```
 script-src 'unsafe-inline' www.google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net
 img-src www.google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net
+# you may specify also "http://www.google-analytics.com https://www.google-analytics.com" (I had some bugs sometimes)
 ```
 
 (or generate a hash for inline script to avoid ```unsafe-inline```)
+
+Other method:
 
 You may use an internal file js script on your domain and use the call of GA script in the head tag
 Example :
@@ -27,12 +30,19 @@ Where the file named analytics.js host on your domain contains your GA id UA:
 ```
 You can now use the script-src with ```self```
 
-2) If you make the call of GA script in an external JS file (better imho)
+### If you make the call of GA script in an external JS file - __better imho__ -
 
+Put all the analytics code into an JS external file:
+```
+    <script type="text/javascript" src="/js/front/analytics.js"></script>
+```  
+
+So no need to have ```unsafe-inline``` in CSP :
 
 ```
 script-src 'self' www.google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net
 img-src www.google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net
+# you may specify also "http://www.google-analytics.com https://www.google-analytics.com" (I had some bugs sometimes)
 ```
 
 
