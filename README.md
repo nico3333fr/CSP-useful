@@ -85,6 +85,28 @@ Here is the reported bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1195302
 It <del>should be</del> is fixed with Firefox 42 https://bugzilla.mozilla.org/show_bug.cgi?id=1185351 :)
 
 
+## Small tips and tricks
+
+### Multiple domains
+
+Be careful if you have multiple domain names (foo.com, foo.net) pointing to a single website while using ```'self' ``` as value. Example: if a user is using a full url for an image, let's say ```http://foo.com/image.jpg```, using ```'self' ``` won't be enough if the user is on foo.net. Be sure to allow all necessary domains.
+
+### Generate a hash
+
+If you really have to use some inline scripts/css, for example:
+
+```
+<script>alert('Hello, world.');</script>
+```
+
+You might add <code>'sha256-qznLcsROx4GACP2dm0UCKCzCG-HiZ1guq6ZZDob_Tng='</code> as valid source in your <code>script-src</code> directives. The hash generated is the result of:
+
+<pre><code>
+base64_encode(hash('sha256', "alert('Hello, world.');", true))
+</code></pre> 
+
+in PHP for example.
+
 
 
 ## Bugs I've found
