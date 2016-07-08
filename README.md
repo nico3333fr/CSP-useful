@@ -85,6 +85,13 @@ Here is the reported bug: https://bugzilla.mozilla.org/show_bug.cgi?id=1195302
 It <del>should be</del> is fixed with Firefox 42 https://bugzilla.mozilla.org/show_bug.cgi?id=1185351 :)
 
 
+### CSP WTF???
+
+In [folder "CSP WTF"](https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/README.md), you may find examples of strange notifications you may receive. Feel free to add/explain some.
+
+
+
+
 ## Small tips and tricks
 
 ### Multiple domains
