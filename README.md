@@ -159,6 +159,9 @@ These bugs are just annoying, they are not critical. They provide false-positive
 
 - https://github.com/nico3333fr/CSP-useful (yes you are here)
 
+### Future of CSP
+
+- https://speakerdeck.com/mikispag/making-csp-great-again-michele-spagnuolo-and-lukas-weichselbaum
 
 ### Online tools that test CSP
 
