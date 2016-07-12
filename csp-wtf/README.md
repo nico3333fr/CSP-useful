@@ -4,6 +4,30 @@ Sometimes, CSP notifications are really difficult to understand. Here is a colle
 
 ---------------------------------------
 
+## Kaspersky ?
+
+```
+{
+    "csp-report": {
+        "document-uri": "Anonymized",
+        "referrer": "https://www.google.ch/",
+        "violated-directive": "script-src 'self' https://www.google-analytics.com http://www.google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net http://gc.kis.scr.kaspersky-labs.com",
+        "effective-directive": "script-src",
+        "original-policy": "default-src 'self'; connect-src 'self' http://gc.kis.scr.kaspersky-labs.com; script-src 'self' https://www.google-analytics.com http://www.google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net http://gc.kis.scr.kaspersky-labs.com; img-src 'self' https://www.google-analytics.com http://www.google-analytics.com Anonymized stats.g.doubleclick.net https://stats.g.doubleclick.net data: http://gc.kis.scr.kaspersky-labs.com; style-src 'self' data: 'nonce-1B74BD89-2A22-4B93-B451-1C9E1052A0EC'; child-src 'self' ; report-uri /csp-parser.php",
+        "blocked-uri": "http://www.tabcontent.net",
+        "source-file": "http://apps-analytics.net",
+        "line-number": 1,
+        "column-number": 299,
+        "status-code": 200
+    }
+}
+```
+__WTF:___ ```http://gc.kis.scr.kaspersky-labs.com```, ```http://gc.kis.scr.kaspersky-labs.com```, ```nonce-1B74BD89-2A22-4B93-B451-1C9E1052A0EC``` are not in the CSP policy header sent (????), how these can be reported?
+
+__Answer:__ Any idea?????
+
+---------------------------------------
+
 ## GSA
 
 ```
