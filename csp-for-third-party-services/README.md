@@ -88,7 +88,7 @@ connect-src https://links.services.disqus.com wss://realtime.services.disqus.com
 ## Algolia
 
 ```
-connect-src *.algolia.net ;
+connect-src *.algolia.net *.algolianet.com ;
 ```
 
 ## Flickr
