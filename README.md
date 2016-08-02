@@ -143,6 +143,9 @@ These bugs are just annoying, they are not critical. They provide false-positive
 - https://developer.chrome.com/extensions/contentSecurityPolicy
 - http://www.sitepoint.com/improving-web-security-with-the-content-security-policy/
 - http://www.nicolas-hoffmann.net/content-security-policy-parisweb-2015 (slides of my talk in Paris Web 2015, in french)
+- https://chloe.re/tag/web/
+- [dotSecurity 2016 - Scott Helme - Content Security Policy: The application security Swiss Army Knife (video) ](https://www.youtube.com/watch?v=d0D3d0ZM-rI)
+- [Paris Web 2015 - Nicolas Hoffmann - Content Security Policy (video in french-speaking)](http://www.paris-web.fr/2015/conferences/csp-content-security-policy.php)
 
 
 ### About filtering report
