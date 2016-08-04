@@ -78,6 +78,12 @@ style-src 'unsafe-inline';
 
 See: https://dev.twitter.com/web/overview/widgets-webpage-properties#csp
 
+This is not enough after all. Add this to the CSP:
+
+```
+script-src platform.twitter.com syndication.twitter.com cdn.syndication.twimg.com
+```
+
 ## Disqus
 
 ```
