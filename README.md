@@ -135,6 +135,7 @@ These bugs are just annoying, they are not critical. They provide false-positive
 - http://content-security-policy.com/
 - http://cspisawesome.com/
 - http://www.cspplayground.com/home
+- https://scotthelme.co.uk/csp-cheat-sheet/
 - http://www.w3.org/TR/CSP/
 - http://www.html5rocks.com/en/tutorials/security/content-security-policy/
 - http://websec.io/2012/10/02/Intro-to-Content-Security-Policy.html
@@ -145,11 +146,13 @@ These bugs are just annoying, they are not critical. They provide false-positive
 - http://www.nicolas-hoffmann.net/content-security-policy-parisweb-2015 (slides of my talk in Paris Web 2015, in french)
 - https://chloe.re/tag/web/
 - [dotSecurity 2016 - Scott Helme - Content Security Policy: The application security Swiss Army Knife (video) ](https://www.youtube.com/watch?v=d0D3d0ZM-rI)
+- [InfoShare 2016 - Scott Helme - Content Security Policy: The application security Swiss Army Knife (video)](https://www.youtube.com/watch?v=d6Clpj_KfFo)
 - [Paris Web 2015 - Nicolas Hoffmann - Content Security Policy (video in french-speaking)](http://www.paris-web.fr/2015/conferences/csp-content-security-policy.php)
 
 
-### About filtering report
+### About collecting and filtering reports
 
+- https://report-uri.io/
 - https://blogs.dropbox.com/tech/2015/09/on-csp-reporting-and-filtering/
 - https://oreoshake.github.io/csp/twitter/2014/07/25/twitters-csp-report-collector-design.html
 
@@ -163,7 +166,12 @@ These bugs are just annoying, they are not critical. They provide false-positive
 
 - https://blog.twitter.com/2011/improving-browser-security-csp
 - https://github.com/blog/1477-content-security-policy
-
+- https://blogs.dropbox.com/tech/2015/09/unsafe-inline-and-nonce-deployment/ 
+- https://blogs.dropbox.com/tech/2015/09/csp-the-unexpected-eval/ 
+- https://blogs.dropbox.com/tech/2015/09/csp-third-party-integrations-and-privilege-separation/
+- http://githubengineering.com/githubs-csp-journey/
+- https://www.wired.com/2016/05/wired-first-big-https-rollout-snag/
+- https://corner.squareup.com/2016/05/content-security-policy-single-page-app.html
 
 ### Other
 
@@ -171,6 +179,7 @@ These bugs are just annoying, they are not critical. They provide false-positive
 
 ### Future of CSP
 
+- https://www.w3.org/TR/CSP3/
 - https://speakerdeck.com/mikispag/making-csp-great-again-michele-spagnuolo-and-lukas-weichselbaum
 
 ### Online tools that test CSP
@@ -178,6 +187,7 @@ These bugs are just annoying, they are not critical. They provide false-positive
 - https://cspvalidator.org/
 - https://www.dareboost.com/
 - https://securityheaders.io/
+- https://report-uri.io/home/tools
 
 ### Add-ons Navigator
 - https://addons.mozilla.org/en-us/firefox/addon/newusercspdesign/
