@@ -3,6 +3,21 @@
 Sometimes, CSP notifications are really difficult to understand. Here is a collection of some CSP WTF.
 
 ---------------------------------------
+## "Reader" in MacOS Safari ?
+{
+    "csp-report": {
+        "document-uri": "Anonymized",
+        "referrer": "Anonymized",
+        "violated-directive": "default-src 'self'",
+        "original-policy": "default-src 'self';  script-src 'self' https://www.google-analytics.com http://www.google-analytics.com  stats.g.doubleclick.net https://stats.g.doubleclick.net ; style-src 'self' data: ; img-src 'self' https://www.google-analytics.com http://www.google-analytics.com Anonymized stats.g.doubleclick.net https://stats.g.doubleclick.net data: ;  child-src 'self' ; report-uri /csp-parser.php ;",
+        "blocked-uri": "mx://res/reader-mode/reader.html"
+    }
+}
+
+__WTF:___ ```mx://res/reader-mode/reader.html```
+
+__Answer:__ Might be related to "Reader" in MacOS Safari. (to confirm)
+
 
 ## Kaspersky ?
 
