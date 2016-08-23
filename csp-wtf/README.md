@@ -4,6 +4,7 @@ Sometimes, CSP notifications are really difficult to understand. Here is a colle
 
 ---------------------------------------
 ## "Reader" in MacOS Safari ?
+```
 {
     "csp-report": {
         "document-uri": "Anonymized",
@@ -13,6 +14,7 @@ Sometimes, CSP notifications are really difficult to understand. Here is a colle
         "blocked-uri": "mx://res/reader-mode/reader.html"
     }
 }
+```
 
 __WTF:___ ```mx://res/reader-mode/reader.html```
 
