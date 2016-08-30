@@ -60,7 +60,7 @@ __Answer:__ Any idea?????
 ```
 __WTF:___ ```gsa://onpageload```
 
-__Answer:__ Might be related to Google Search Appliance. (to confirm?)
+__Answer:__ Appears related to Google Search App on iOS.
 
 ---------------------------------------
 
