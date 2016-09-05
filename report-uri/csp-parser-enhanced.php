@@ -32,6 +32,7 @@ if ($data = json_decode($data, true)) {
      
      // avoid false positives notifications coming from Safari extensions (diigo, evernote, etc.)
      && strpos($source_file, 'safari-extension://') === false
+     && strpos($blocked_uri, 'safari-extension://') === false
      
      // search engine extensions ?
      && strpos($source_file, 'se-extension://') === false
