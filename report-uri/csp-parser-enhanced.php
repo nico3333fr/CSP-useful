@@ -39,7 +39,8 @@ if ($data = json_decode($data, true)) {
      // added by browsers in webviews
      && strpos($blocked_uri, 'webviewprogressproxy://') === false
      
-
+     // Google Search App see for details https://github.com/nico3333fr/CSP-useful/commit/ecc8f9b0b379ae643bc754d2db33c8b47e185fd1
+     && strpos($blocked_uri, 'gsa://onpageload') === false
      
      
      ) {
