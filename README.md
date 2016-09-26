@@ -136,6 +136,7 @@ These bugs are just annoying, they are not critical. They provide false-positive
 - https://www.smashingmagazine.com/2016/09/content-security-policy-your-future-best-friend/
 - http://cspisawesome.com/
 - http://www.cspplayground.com/home
+- https://csp-evaluator.withgoogle.com/
 - https://scotthelme.co.uk/csp-cheat-sheet/
 - http://www.w3.org/TR/CSP/
 - http://www.html5rocks.com/en/tutorials/security/content-security-policy/
