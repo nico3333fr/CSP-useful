@@ -121,4 +121,33 @@ Confirmed CSP reports received contain the user agent:
 Does not seem to affect Safari, Firefox or Micorsoft browsers.
 
 ---------------------------------------
+
+# Browser Malware
+
+```
+{
+"csp-report": {
+            "document-uri": anonymised,
+            "referrer": "https://www.google.fr/",
+            "violated-directive": "script-src 'self' ssl.google-analytics.com www.google-analytics.com",
+            "effective-directive": "script-src",
+            "original-policy": "default-src 'self'; style-src 'self'; connect-src www.google-analytics.com; font-src 'none'; object-src 'none'; frame-src https://www.youtube-nocookie.com; child-src https://www.youtube-nocookie.com; script-src 'self' ssl.google-analytics.com www.google-analytics.com; img-src 'self' ssl.google-analytics.com www.google-analytics.com; report-uri /csp-report.php",
+            "blocked-uri": "https://m12.dnsqa.me/QualityCheck/ga.js",
+            "line-number": 45,
+            "column-number": 285,
+            "source-file": "https://www.google-analytics.com/analytics.js",
+            "status-code" => 0
+        }
+}
+```
+
+__WTF:__ ```https://m12.dnsqa.me/QualityCheck/ga.js``` originating from ```https://www.google-analytics.com/analytics.js```
+
+__Answer:__ A reply from security@google.com, relating to this and similar reports:
+
+> I talked this report over with some of my colleagues on the security team, and at first I had thought that you might have had a user with a compromised corporate MITM proxy somewhere.  However, I think that the most likely situation is that these log entries are coming from a client who has been compromised and is running in-browser malware.  This in-browser malware is modifying the Analytics script to redirect users to the malicious domain, and I think this explains the discrepancy in line length between the analytics.js file you see and what shows up in the CSP violation report.
+
+> I can mention that the Chrome team has a lot of people who are working on defending against in-browser malware, but I'm afraid that this isn't something that we can fix on the server side.
+
+---------------------------------------
 If you have some examples to share (even if you don't know what the fuck it is coming from), feel free to share them. Anonymize the URL/policy if needed.
