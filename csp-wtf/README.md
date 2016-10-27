@@ -21,7 +21,7 @@ __WTF:___ ```mx://res/reader-mode/reader.html```
 __Answer:__ Might be related to "Reader" in MacOS Safari. (to confirm)
 
 
-## Kaspersky ?
+## Kaspersky
 
 ```
 {
@@ -153,6 +153,30 @@ __Answer:__ A reply from security@google.com, relating to this and similar repor
 > I talked this report over with some of my colleagues on the security team, and at first I had thought that you might have had a user with a compromised corporate MITM proxy somewhere.  However, I think that the most likely situation is that these log entries are coming from a client who has been compromised and is running in-browser malware.  This in-browser malware is modifying the Analytics script to redirect users to the malicious domain, and I think this explains the discrepancy in line length between the analytics.js file you see and what shows up in the CSP violation report.
 
 > I can mention that the Chrome team has a lot of people who are working on defending against in-browser malware, but I'm afraid that this isn't something that we can fix on the server side.
+
+
+---------------------------------------
+
+# about:blank ????
+
+```
+
+{
+    "csp-report": {
+        "document-uri": "about:blank",
+        "referrer": "",
+        "violated-directive": "font-src 'self'",
+        "effective-directive": "font-src",
+        "original-policy": "default-src 'none';  script-src 'self' google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net; style-src 'self' ; img-src 'self' google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net ssl.google-analytics.com  data: ;  connect-src 'self';  font-src 'self'; media-src 'self'; object-src 'self' www.youtube.com ;  child-src 'self' ;  frame-ancestors 'none' ; report-uri /csp-parser.php ;",
+        "blocked-uri": "https://github.com/google/fonts/blob/master/apache/opensans/OpenSans-Semibold.ttf?raw=true",
+        "status-code": 0
+    }
+}
+```
+
+__WTF:__ ```"document-uri": "about:blank",``` on my personal website www.nicolas-hoffmann.net with a font???
+
+__Answer:__ Any idea?
 
 ---------------------------------------
 If you have some examples to share (even if you don't know what the fuck it is coming from), feel free to share them. Anonymize the URL/policy if needed.
