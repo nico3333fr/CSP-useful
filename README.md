@@ -136,7 +136,6 @@ These bugs are just annoying, they are not critical. They provide false-positive
 - https://www.smashingmagazine.com/2016/09/content-security-policy-your-future-best-friend/
 - http://cspisawesome.com/
 - http://www.cspplayground.com/home
-- https://csp-evaluator.withgoogle.com/
 - https://scotthelme.co.uk/csp-cheat-sheet/
 - http://www.w3.org/TR/CSP/
 - http://www.html5rocks.com/en/tutorials/security/content-security-policy/
@@ -150,6 +149,14 @@ These bugs are just annoying, they are not critical. They provide false-positive
 - [dotSecurity 2016 - Scott Helme - Content Security Policy: The application security Swiss Army Knife (video) ](https://www.youtube.com/watch?v=d0D3d0ZM-rI)
 - [InfoShare 2016 - Scott Helme - Content Security Policy: The application security Swiss Army Knife (video)](https://www.youtube.com/watch?v=d6Clpj_KfFo)
 - [Paris Web 2015 - Nicolas Hoffmann - Content Security Policy (video in french-speaking)](http://www.paris-web.fr/2015/conferences/csp-content-security-policy.php)
+
+### CSP with Google
+
+- https://csp.withgoogle.com
+- https://csp.withgoogle.com/docs/strict-csp.html
+- https://csp-evaluator.withgoogle.com
+- https://www.google.com/about/appsecurity/patch-rewards/
+
 
 
 ### About collecting and filtering reports
