@@ -16,6 +16,10 @@ I use __CSP to clean up some bad old contents__ (with inline-styles for example)
 
 Moreother, if you don't have the time to clean it, setting up CSP policy will avoid bad old styles from breaking the nice/clean new design. Or it will tell you when contributors are doing shit on the website.
 
+### To migrate a website to HTTPS
+
+You might read how the Guardian moved to HTTPS using CSP: https://www.theguardian.com/info/developer-blog/2016/nov/29/the-guardian-has-moved-to-https
+
 ### Progressive enhancement and orthogonality
 
 As far as I can see, using CSP on my jQuery plugins helped me a lot to design them without inline styles/js. See for example: http://a11y.nicolas-hoffmann.net/
