@@ -179,4 +179,25 @@ __WTF:__ ```"document-uri": "about:blank",``` on my personal website www.nicolas
 __Answer:__ Any idea?
 
 ---------------------------------------
+# Google Translate ?
+
+```
+{
+    "csp-report": {
+        "document-uri": "Anonymized",
+        "referrer": "Anonymized",
+        "violated-directive": "img-src 'self' *.google-analytics.com stats.g.doubleclick.net data: ",
+        "effective-directive": "img-src",
+        "original-policy": "default-src 'self';  script-src 'self' *.google-analytics.com stats.g.doubleclick.net ; style-src 'self' data: ; img-src 'self' *.google-analytics.com stats.g.doubleclick.net data: ;  child-src 'self' ; report-uri /csp-parser.php ;",
+        "blocked-uri": "https://www.gstatic.com/images/branding/product/2x/translate_24dp.png",
+        "status-code": 200
+    }
+}
+```
+
+__WTF:__ The image is not on the website, at any place.
+
+__Answer:__ Might be related to Google Translate. (to confirm how, and check how it can happen)
+
+---------------------------------------
 If you have some examples to share (even if you don't know what the fuck it is coming from), feel free to share them. Anonymize the URL/policy if needed.
