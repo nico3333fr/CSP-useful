@@ -55,6 +55,17 @@ Note: stats.g.doubleclick.net seems to be used for demographics stats in GA. (to
 If you need for example to add this line on your site:
 
 ```
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zmtasab_9z4" frameborder="0" allowfullscreen></iframe>
+```
+CSP directives needed will be:
+```
+child-src www.youtube.com ;
+```
+(to test further, this value seems to be ok)
+
+## Youtube embedded video
+
+```
 <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet"> 
 ```
 CSP directives needed will be:
@@ -62,8 +73,6 @@ CSP directives needed will be:
 style-src fonts.googleapis.com ;
 font-src fonts.gstatic.com ;
 ```
-(to test further, these values seem to be ok)
-
 
 ## Vimeo player (iframe)
 
