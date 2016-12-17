@@ -50,7 +50,7 @@ img-src www.google-analytics.com stats.g.doubleclick.net https://stats.g.doublec
 
 Note: stats.g.doubleclick.net seems to be used for demographics stats in GA. (to confirm?)
 
-## Google fonts
+## Youtube embedded video
 
 If you need for example to add this line on your site:
 
@@ -63,7 +63,9 @@ child-src www.youtube.com ;
 ```
 (to test further, this value seems to be ok)
 
-## Youtube embedded video
+## Google fonts
+
+If you need for example to add this line on your site:
 
 ```
 <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet"> 
