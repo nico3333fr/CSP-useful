@@ -118,6 +118,9 @@ base64_encode(hash('sha256', "alert('Hello, world.');", true))
 
 in PHP for example.
 
+### Chrome PDF viewer blocking
+
+According to [Philippe De Ryck](https://twitter.com/PhilippeDeRyck/status/811448160975552512), setting CSP's ```object-src``` to ```'none'``` blocks Chrome's PDF viewer. As [he says](https://twitter.com/PhilippeDeRyck/status/811448782328131584), "unless you're hosting vulnerable flash files yourself, go with 'self', and ignore the warning on the CSP Evaluator".
 
 
 ## Bugs I've found
