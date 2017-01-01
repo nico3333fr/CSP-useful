@@ -22,7 +22,7 @@ You might read how the Guardian moved to HTTPS using CSP: https://www.theguardia
 
 ### Progressive enhancement and orthogonality
 
-As far as I can see, using CSP on my jQuery plugins helped me a lot to design them without inline styles/js. See for example: http://a11y.nicolas-hoffmann.net/
+As far as I can see, using CSP on my jQuery plugins helped me a lot to design them without inline styles/js. See for example: https://a11y.nicolas-hoffmann.net/
 
 So it is a great help for progressive enhancement, orthogonality and clean front-end.
 
@@ -66,7 +66,7 @@ In [folder "CSP for third party services"](https://github.com/nico3333fr/CSP-use
 
 ### CSP Check folder
 
-In [folder "csp-check"](https://github.com/nico3333fr/CSP-useful/tree/master/csp-check), you may find the source of a proof of concept: this script was a quick and dirty way to reproduce a bug in Firefox, you can see it in action here: http://csp.nicolas-hoffmann.net/
+In [folder "csp-check"](https://github.com/nico3333fr/CSP-useful/tree/master/csp-check), you may find the source of a proof of concept: this script was a quick and dirty way to reproduce a bug in Firefox, you can see it in action here: https://csp.nicolas-hoffmann.net/
 
 Basically, the page generates an unique id, notifications sent to report-uri are put in database, the page makes an AJAX call to database, and the unique id helps to find CSP errors in database.
 
@@ -74,12 +74,12 @@ This is useful to prove bugs, not only for Firefox. ^^
 
 To reproduce the bug:
 
-1. Open http://csp.nicolas-hoffmann.net/
-2. The page is going to generate a unique id, ex http://csp.nicolas-hoffmann.net/?id=foo
+1. Open https://csp.nicolas-hoffmann.net/
+2. The page is going to generate a unique id, ex https://csp.nicolas-hoffmann.net/?id=foo
 3. Wait some seconds. The page doesn't find any notification in the database.
 4. Now inspect the page with Firefox inspector, please highlight some elements.
 5. Close the inspector
-6. Refresh the page with the id you have : http://csp.nicolas-hoffmann.net/?id=foo
+6. Refresh the page with the id you have : https://csp.nicolas-hoffmann.net/?id=foo
 7. It is going to find a lot of CSP errors.
 
 At the beginning, I've made it to prove that some Chrome extensions are sending notifications to report-uri (while they should not), and it helped to find/prove a bug in Firefox Inspector.
