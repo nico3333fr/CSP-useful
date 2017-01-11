@@ -3,7 +3,53 @@
 Sometimes, CSP notifications are really difficult to understand. Here is a collection of some CSP WTF.
 
 ---------------------------------------
-## "Reader" in MacOS Safari ?
+
+# Facebook
+
+```
+{
+    "csp-report": {
+        "document-uri": "https://van11y.net/fr/news",
+        "referrer": "http://l.facebook.com/lsr.php?u=https%3A%2F%2Fvan11y.net%2Ffr%2Fnews&ext=1484049768&hash=Acnqg-XK_DjHw5pz1PFrhONBex15J-PaH_UELLYmOrB5qA",
+        "violated-directive": "script-src 'self'",
+        "effective-directive": "script-src",
+        "original-policy": "default-src 'none' ;  script-src 'self'; style-src 'self' ; img-src 'self'; font-src 'self';  connect-src 'self'; child-src 'self' ; frame-ancestors 'none' ; manifest-src 'self' ; report-uri /csp-parser.php ;",
+        "blocked-uri": "eval",
+        "line-number": 1,
+        "column-number": 33772,
+        "status-code": 0
+    }
+}
+```
+
+__WTF:__ WTF is this? (no Facebook on website)
+
+__Answer:__ This notification happens when you share a page on Facebook.
+
+---------------------------------------
+
+# Encrypted Google???
+
+```
+{
+    "csp-report": {
+        "blocked-uri": "data",
+        "document-uri": "https://www.nicolas-hoffmann.net/source/cv-developpeur-web-integrateur-xhtml-css.php",
+        "original-policy": "default-src 'none'; script-src https://www.nicolas-hoffmann.net https://google-analytics.com https://stats.g.doubleclick.net https://stats.g.doubleclick.net; style-src https://www.nicolas-hoffmann.net; img-src https://www.nicolas-hoffmann.net https://google-analytics.com https://stats.g.doubleclick.net https://stats.g.doubleclick.net https://ssl.google-analytics.com data:; connect-src https://www.nicolas-hoffmann.net; font-src https://www.nicolas-hoffmann.net; media-src https://www.nicolas-hoffmann.net; object-src https://www.nicolas-hoffmann.net https://www.youtube.com; child-src https://www.nicolas-hoffmann.net; frame-ancestors 'none'; manifest-src https://www.nicolas-hoffmann.net; form-action https://www.nicolas-hoffmann.net; report-uri https://www.nicolas-hoffmann.net/csp-parser.php",
+        "referrer": "https://encrypted.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=15&ved=0ahUKEwj7rZm71LXRAhUJd1AKHU_WDKsQFghTMA4&url=https%3A%2F%2Fwww.nicolas-hoffmann.net%2Fsource%2Fcv-developpeur-web-integrateur-xhtml-css.php&usg=AFQjCNFrcAgKXpkNZwoeMmWoHRh1nXGDng&sig2=6hsRHorN3KYBDYg_qI3RRg",
+        "violated-directive": "script-src https://www.nicolas-hoffmann.net https://google-analytics.com https://stats.g.doubleclick.net https://stats.g.doubleclick.net"
+    }
+}
+```
+
+__WTF:__ WTF is this?
+
+__Answer:__ No idea how this could happen. Any idea?
+
+
+---------------------------------------
+
+## "Reader" in MacOS Safari?
 ```
 {
     "csp-report": {
@@ -20,6 +66,7 @@ __WTF:___ ```mx://res/reader-mode/reader.html```
 
 __Answer:__ Might be related to "Reader" in MacOS Safari. (to confirm)
 
+---------------------------------------
 
 ## Kaspersky
 
@@ -157,7 +204,7 @@ __Answer:__ A reply from security@google.com, relating to this and similar repor
 
 ---------------------------------------
 
-# about:blank ????
+# about:blank????
 
 ```
 
@@ -179,7 +226,8 @@ __WTF:__ ```"document-uri": "about:blank",``` on my personal website www.nicolas
 __Answer:__ Any idea?
 
 ---------------------------------------
-# Google Translate ?
+
+# Google Translate?
 
 ```
 {
@@ -198,28 +246,6 @@ __Answer:__ Any idea?
 __WTF:__ The image is not on the website, at any place.
 
 __Answer:__ Might be related to Google Translate. (to confirm how, and check how it can happen)
-
----------------------------------------
-# Encrypted Google ???
-
-```
-{
-    "csp-report": {
-        "blocked-uri": "data",
-        "document-uri": "https://www.nicolas-hoffmann.net/source/cv-developpeur-web-integrateur-xhtml-css.php",
-        "original-policy": "default-src 'none'; script-src https://www.nicolas-hoffmann.net https://google-analytics.com https://stats.g.doubleclick.net https://stats.g.doubleclick.net; style-src https://www.nicolas-hoffmann.net; img-src https://www.nicolas-hoffmann.net https://google-analytics.com https://stats.g.doubleclick.net https://stats.g.doubleclick.net https://ssl.google-analytics.com data:; connect-src https://www.nicolas-hoffmann.net; font-src https://www.nicolas-hoffmann.net; media-src https://www.nicolas-hoffmann.net; object-src https://www.nicolas-hoffmann.net https://www.youtube.com; child-src https://www.nicolas-hoffmann.net; frame-ancestors 'none'; manifest-src https://www.nicolas-hoffmann.net; form-action https://www.nicolas-hoffmann.net; report-uri https://www.nicolas-hoffmann.net/csp-parser.php",
-        "referrer": "https://encrypted.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=15&ved=0ahUKEwj7rZm71LXRAhUJd1AKHU_WDKsQFghTMA4&url=https%3A%2F%2Fwww.nicolas-hoffmann.net%2Fsource%2Fcv-developpeur-web-integrateur-xhtml-css.php&usg=AFQjCNFrcAgKXpkNZwoeMmWoHRh1nXGDng&sig2=6hsRHorN3KYBDYg_qI3RRg",
-        "violated-directive": "script-src https://www.nicolas-hoffmann.net https://google-analytics.com https://stats.g.doubleclick.net https://stats.g.doubleclick.net"
-    }
-}
-```
-
-__WTF:__ WTF is this ?
-
-__Answer:__ No idea how this could happen.
-
-
-
 
 
 ---------------------------------------
