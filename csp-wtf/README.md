@@ -132,6 +132,10 @@ __Answer:__ Appears to be related to Google Search App on iOS.
     }
 }
 ```
+or
+```
+        "script-sample": "@media print {#ghostery-purple-box {disp...",
+```
 
 __WTF:__ Ghostery???
 
