@@ -3,7 +3,7 @@
 Sometimes, CSP notifications are really difficult to understand. Here is a collection of some CSP WTF.
 
 ---------------------------------------
-# var FuckAdBlock = function ?????
+# var FuckAdBlock/BlockAdBlock = function ?????
 
 ```
 {
@@ -14,6 +14,8 @@ Sometimes, CSP notifications are really difficult to understand. Here is a colle
         "original-policy": "default-src 'none'; script-src https://www.estcequonmetenprodaujourdhui.info https://www.google-analytics.com https://stats.g.doubleclick.net https://stats.g.doubleclick.net; style-src https://www.estcequonmetenprodaujourdhui.info 'unsafe-inline'; img-src https://www.estcequonmetenprodaujourdhui.info https://www.google-analytics.com https://stats.g.doubleclick.net https://stats.g.doubleclick.net data:; font-src https://www.estcequonmetenprodaujourdhui.info; child-src https://www.estcequonmetenprodaujourdhui.info; frame-ancestors 'none'; manifest-src https://www.estcequonmetenprodaujourdhui.info; report-uri https://www.estcequonmetenprodaujourdhui.info/csp-parser.php",
         "referrer": "",
         "script-sample": "var FuckAdBlock = function () {\n        ...",
+        OR
+        "script-sample": "var BlockAdBlock = function () 
 
         "source-file": "https://www.estcequonmetenprodaujourdhui.info/",
         "violated-directive": "script-src https://www.estcequonmetenprodaujourdhui.info https://www.google-analytics.com https://stats.g.doubleclick.net https://stats.g.doubleclick.net"
