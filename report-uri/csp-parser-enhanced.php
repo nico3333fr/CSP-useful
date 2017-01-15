@@ -16,13 +16,19 @@ $data = file_get_contents('php://input');
 
 // Only continue if it’s valid JSON that is not just `null`, `0`, `false` or an
 // empty string, i.e. if it could be a CSP violation report.
+// Get the raw POST data
+$data = file_get_contents('php://input');
+
+
+// Only continue if it’s valid JSON that is not just `null`, `0`, `false` or an
+// empty string, i.e. if it could be a CSP violation report.
 if ($data = json_decode($data, true)) {
 
   // get source-file to perform some tests
   $source_file   = $data['csp-report']['source-file'];
   $blocked_uri   = $data['csp-report']['blocked-uri'];
   $script_sample = $data['csp-report']['script-sample'];
-  
+  $referrer      = $data['csp-report']['referrer'];
 
   if (
      
@@ -42,6 +48,24 @@ if ($data = json_decode($data, true)) {
      
      // Google Search App see for details https://github.com/nico3333fr/CSP-useful/commit/ecc8f9b0b379ae643bc754d2db33c8b47e185fd1
      && strpos($blocked_uri, 'gsa://onpageload') === false
+     
+     // ;(function installGlobalHook(window) => https://github.com/nico3333fr/CSP-useful/tree/master/csp-wtf#function-installglobalhookwindow
+     && strpos($script_sample, ';(function installGlobalHook(window)') === false
+     
+     // Facebook share https://github.com/nico3333fr/CSP-useful/tree/master/csp-wtf#facebook 
+     && strpos($referrer, 'http://l.facebook.com/') === false 
+     && strpos($referrer, 'https://l.facebook.com/') === false
+     
+     // BlockAdBlock etc. https://github.com/nico3333fr/CSP-useful/tree/master/csp-wtf#var-fuckadblockblockadblock--function-
+     && strpos($script_sample, 'var FuckAdBlock = function') === false 
+     && strpos($script_sample, 'var BlockAdBlock = function') === false
+     
+     // "Reader" in MacOS Safari? https://github.com/nico3333fr/CSP-useful/tree/master/csp-wtf#reader-in-macos-safari
+     && strpos($blocked_uri, 'mx://res/reader-mode/reader.html') === false
+     
+     // Ghostery inline styles https://github.com/nico3333fr/CSP-useful/tree/master/csp-wtf#ghostery
+     && strpos($script_sample, '@media print {#UNIQUE_ID-ghostery') === false 
+     && strpos($script_sample, '@media print {#ghostery-purple-box') === false 
      
      
      ) {
