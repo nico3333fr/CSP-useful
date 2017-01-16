@@ -3,6 +3,31 @@
 Sometimes, CSP notifications are really difficult to understand. Here is a collection of some CSP WTF.
 
 ---------------------------------------
+# pstatic.davebestdeals.com
+
+```
+{
+    "csp-report": {
+        "document-uri": "[anonymised]",
+        "referrer": "https://www.google.pl/",
+        "violated-directive": "script-src 'self' *.google-analytics.com stats.g.doubleclick.net ",
+        "effective-directive": "script-src",
+        "original-policy": "default-src 'self';  script-src 'self' *.google-analytics.com stats.g.doubleclick.net ; style-src 'self' data: ; img-src 'self' *.google-analytics.com stats.g.doubleclick.net data: ;  child-src 'self' ; report-uri /csp-parser.php ;",
+        "blocked-uri": "http://pstatic.davebestdeals.com/nwp/v0_0_1143/release/Shared/App/SharedApp.js?t=3",
+
+        "line-number": 2,
+        "column-number": 1381,
+        "source-file": "http://istatic.davebestdeals.com/fo/ec/ade.js?subid=test5",
+        "status-code": 200
+    }
+}
+```
+
+__WTF:__ WTF is this? (no source like this in the website)
+
+__Answer:__ Might be a malware on client machine: http://urlquery.net/report.php?id=1482137618866 (to confirm)
+
+---------------------------------------
 # var FuckAdBlock/BlockAdBlock = function ?????
 
 ```
