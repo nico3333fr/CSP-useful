@@ -3,6 +3,30 @@
 Sometimes, CSP notifications are really difficult to understand. Here is a collection of some CSP WTF.
 
 ---------------------------------------
+# onsubmit/onchange attribute on DIV element
+
+```
+{
+    "csp-report": {
+        "blocked-uri": "self",
+        "document-uri": "https://van11y.net/accessible-accordion/",
+        "original-policy": "default-src 'none'; script-src https://van11y.net; style-src https://van11y.net; img-src https://van11y.net; font-src https://van11y.net; connect-src https://van11y.net; child-src https://van11y.net; frame-ancestors 'none'; manifest-src https://van11y.net; report-uri https://van11y.net/csp-parser.php",
+        "referrer": "https://www.google.com.au/",
+        "script-sample": "onsubmit attribute on DIV element",
+        OR
+        "script-sample": "onchange attribute on DIV element",
+
+        "source-file": "https://van11y.net/accessible-accordion/",
+        "violated-directive": "script-src https://van11y.net"
+    }
+}
+```
+
+__WTF:__ WTF is this? (no event like this on this website)
+
+__Answer:__ Any idea?
+
+---------------------------------------
 # function (a,x,m,I){var c={safeWindow: ?????
 
 ```
