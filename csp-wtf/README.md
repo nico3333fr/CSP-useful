@@ -3,7 +3,7 @@
 Sometimes, CSP notifications are really difficult to understand. Here is a collection of some CSP WTF.
 
 ---------------------------------------
-# onsubmit/onchange attribute on DIV element
+# onsubmit/onchange/onfocusin/etc. attribute on DIV element
 
 ```
 {
@@ -15,6 +15,8 @@ Sometimes, CSP notifications are really difficult to understand. Here is a colle
         "script-sample": "onsubmit attribute on DIV element",
         OR
         "script-sample": "onchange attribute on DIV element",
+        OR 
+        "script-sample": "onfocusin attribute on DIV element",
 
         "source-file": "https://van11y.net/accessible-accordion/",
         "violated-directive": "script-src https://van11y.net"
