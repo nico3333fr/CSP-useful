@@ -3,6 +3,28 @@
 Sometimes, CSP notifications are really difficult to understand. Here is a collection of some CSP WTF.
 
 ---------------------------------------
+# embed[height=\"175\"][width=\"175\"] ????
+
+```
+{
+    "csp-report": {
+        "blocked-uri": "self",
+        "document-uri": "https://van11y.net/accessible-tab-panel/",
+        "line-number": 1,
+        "original-policy": "default-src 'none'; script-src https://van11y.net; style-src https://van11y.net; img-src https://van11y.net; font-src https://van11y.net; connect-src https://van11y.net; child-src https://van11y.net; frame-ancestors 'none'; manifest-src https://van11y.net; report-uri https://van11y.net/csp-parser.php",
+        "referrer": "https://www.google.de/",
+        "script-sample": "embed[height=\"175\"][width=\"175\"], embed[...",
+        "source-file": "https://van11y.net/accessible-tab-panel/",
+        "violated-directive": "style-src https://van11y.net"
+    }
+}
+```
+
+__WTF:__ WTF is this? (no embed on this website)
+
+__Answer:__ Any idea?
+
+---------------------------------------
 # onsubmit/onchange/onfocusin/etc. attribute on DIV element
 
 ```
