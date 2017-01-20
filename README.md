@@ -189,6 +189,7 @@ These bugs are just annoying, they are not critical. They provide false-positive
 - http://githubengineering.com/githubs-csp-journey/
 - https://www.wired.com/2016/05/wired-first-big-https-rollout-snag/
 - https://corner.squareup.com/2016/05/content-security-policy-single-page-app.html
+- https://githubengineering.com/githubs-post-csp-journey/
 
 ### Other
 
