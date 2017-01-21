@@ -2,6 +2,26 @@
 
 Sometimes, CSP notifications are really difficult to understand. Here is a collection of some CSP WTF.
 
+---------------------------------------
+# Google translate
+
+```
+{
+    "csp-report": {
+        "document-uri": "[anonymised]",
+        "referrer": "[anonymised]",
+        "violated-directive": "img-src 'self' *.google-analytics.com stats.g.doubleclick.net data: ",
+        "effective-directive": "img-src",
+        "original-policy": "default-src 'self';  script-src 'self' *.google-analytics.com stats.g.doubleclick.net ; style-src 'self' data: ; img-src 'self' *.google-analytics.com stats.g.doubleclick.net data: ;  child-src 'self' ; report-uri /csp-parser.php ;",
+        "blocked-uri": "https://www.gstatic.com/images/branding/product/2x/translate_24dp.png",
+        "status-code": 200
+    }
+}
+```
+
+__WTF:__ no code like this on this website.
+
+__Answer:__ related to Google Translate, however, to confirm in which exact case it happens.
 
 ---------------------------------------
 # "try {\r\nwindow.AG_onLoad = function ????
