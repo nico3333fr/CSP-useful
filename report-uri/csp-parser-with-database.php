@@ -1,6 +1,6 @@
 <?php
 
-// Note: this script requires PHP = 5.4.
+// Note: this script requires PHP ≥ 5.4.
 // Inspired from https://mathiasbynens.be/notes/csp-reports
 
 // Dareboost wants it? Not a problem.
@@ -52,7 +52,7 @@ if ($data = json_decode($data, true)) {
                 JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES
                 );
 
-    $query_insert = ' INSERT INTO csp_reports SET ';
+    $query_insert  = ' INSERT INTO csp_reports SET ';
     $query_insert .= " document_uri       = '".mysqli_real_escape_string($lk, $data['csp-report']['document-uri'])."', ";
     $query_insert .= " full_report        = '".mysqli_real_escape_string($lk, $data_flat)."', ";
     $query_insert .= " referrer           = '".mysqli_real_escape_string($lk, $data['csp-report']['referrer'])."', ";
