@@ -10,8 +10,6 @@ define('EMAIL', 'your@email.com');
 // Specify the desired email subject for violation reports
 define('SUBJECT', 'CSP violation');
 
-// Only continue if it’s valid JSON that is not just `null`, `0`, `false` or an
-// empty string, i.e. if it could be a CSP violation report.
 // Get the raw POST data
 $data = file_get_contents('php://input');
 
