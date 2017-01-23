@@ -13,55 +13,165 @@ define('SUBJECT', 'CSP violation');
 // Get the raw POST data
 $data = file_get_contents('php://input');
 
+// array for filtering
+$tab_filter = array (
+    /*
+    'MANDATORY: string_to_search' => array (
+         'filter_on' => 'MANDATORY: field to search on, see later for filtering', // source_file/blocked_uri/script_sample/referrer/doc_uri
+         'case_description' => '', // Optional: URL for description 
+         'comment' => '' // Optional: a… comment! */
+    )
+    */
+    'chrome-extension://' => array (
+         'filter_on' => 'source_file',
+         'case_description' => 'https://code.google.com/p/chromium/issues/detail?id=524356',
+         'comment' => 'avoid false positives notifications coming from Chrome extensions (Wappalyzer, MuteTab, etc.)'
+    ),
+    'safari-extension://' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => '',
+         'comment' => 'avoid false positives notifications coming from Safari extensions (diigo, evernote, etc.)'
+    ),
+    'safari-extension://' => array (
+         'filter_on' => 'source_file',
+         'case_description' => '',
+         'comment' => 'avoid false positives notifications coming from Safari extensions (diigo, evernote, etc.)'
+    ),
+    'se-extension://' => array (
+         'filter_on' => 'source_file',
+         'case_description' => '',
+         'comment' => 'search engine extensions ?'
+    ),
+    'webviewprogressproxy://' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => '',
+         'comment' => 'added by browsers in webviews'
+    ),
+    'gsa://onpageload' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/commit/ecc8f9b0b379ae643bc754d2db33c8b47e185fd1',
+         'comment' => 'Google Search App'
+    ), 
+    ';(function installGlobalHook(window)' => array (
+         'filter_on' => 'script_sample',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/tree/master/csp-wtf#function-installglobalhookwindow',
+         'comment' => ';(function installGlobalHook(window)'
+    ),
+    'http://l.facebook.com' => array (
+         'filter_on' => 'referrer',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/tree/master/csp-wtf#facebook ',
+         'comment' => 'Facebook share'
+    ),
+    'https://l.facebook.com' => array (
+         'filter_on' => 'referrer',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/tree/master/csp-wtf#facebook ',
+         'comment' => 'Facebook share'
+    ),
+    'var FuckAdBlock = function' => array (
+         'filter_on' => 'script_sample',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/tree/master/csp-wtf#var-fuckadblockblockadblock--function-',
+         'comment' => 'BlockAdBlock etc.'
+    ),
+    'var BlockAdBlock = function' => array (
+         'filter_on' => 'script_sample',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/tree/master/csp-wtf#var-fuckadblockblockadblock--function-',
+         'comment' => 'BlockAdBlock etc.'
+    ),
+    'mx://res/reader-mode/reader.html' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/tree/master/csp-wtf#reader-in-macos-safari',
+         'comment' => '"Reader" in MacOS Safari? '
+    ),
+    '@media print {#UNIQUE_ID-ghostery' => array (
+         'filter_on' => 'script_sample',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/tree/master/csp-wtf#ghostery',
+         'comment' => 'Ghostery inline styles'
+    ),
+    '@media print {#ghostery-purple-box' => array (
+         'filter_on' => 'script_sample',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/tree/master/csp-wtf#ghostery',
+         'comment' => 'Ghostery inline styles'
+    ),
+    '(function (a,x,m,I){var c={safeWindow:{' => array (
+         'filter_on' => 'script_sample',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/tree/master/csp-wtf#function-axmivar-csafewindow-',
+         'comment' => 'WTF ?'
+    ),
+    'onsubmit attribute on DIV element' => array (
+         'filter_on' => 'script_sample',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/tree/master/csp-wtf#onsubmitonchangeonfocusinetc-attribute-on-div-element',
+         'comment' => 'WTF ?'
+    ),
+    'onchange attribute on DIV element' => array (
+         'filter_on' => 'script_sample',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/tree/master/csp-wtf#onsubmitonchangeonfocusinetc-attribute-on-div-element',
+         'comment' => 'WTF ?'
+    ),
+    'onfocusin attribute on DIV element' => array (
+         'filter_on' => 'script_sample',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/tree/master/csp-wtf#onsubmitonchangeonfocusinetc-attribute-on-div-element',
+         'comment' => 'WTF ?'
+    ),
+    'embed[height=\"175\"][width=\"175\"]' => array (
+         'filter_on' => 'script_sample',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/tree/master/csp-wtf#embedheight175width175-',
+         'comment' => 'WTF ?'
+    ),
+    'try {\r\nwindow.AG_onLoad = function' => array (
+         'filter_on' => 'script_sample',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/tree/master/csp-wtf#try-rnwindowag_onload--function-',
+         'comment' => 'WTF ?'
+    ),
+    'https://www.gstatic.com/images/branding/product/2x/translate_24dp.png' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/tree/master/csp-wtf#google-translate',
+         'comment' => 'Google Translate'
+    )/*,
+    '' => array (
+         'filter_on' => 'source_file',
+         'case_description' => '',
+         'comment' => ''
+    )*/
+);
+     
+
+
 // Only continue if it’s valid JSON that is not just `null`, `0`, `false` or an
 // empty string, i.e. if it could be a CSP violation report.
 if ($data = json_decode($data, true)) {
+  
+  $report_issue  = true;
+  $filter_on     = '';
 
-  // get source-file to perform some tests
-  $source_file   = $data['csp-report']['source-file'];
-  $blocked_uri   = $data['csp-report']['blocked-uri'];
-  $script_sample = $data['csp-report']['script-sample'];
-  $referrer      = $data['csp-report']['referrer'];
+  // now perform checks on all element in array => filtering CSP noise
+  foreach ( $tab_filter as $filter_check => $options ) {
+    
+      switch ($options['filter_on']) {
+        case 'source_file':
+            $filter_on = $data['csp-report']['source-file'];
+            break;
+        case 'blocked_uri':
+            $filter_on = $data['csp-report']['blocked-uri'];
+            break;
+        case 'script_sample':
+            $filter_on = $data['csp-report']['script-sample'];
+            break;
+        case 'referrer':
+            $filter_on = $data['csp-report']['referrer'];
+            break;
+        case 'doc_uri':
+            $filter_on = $data['csp-report']['document-uri'];
+            break;
+      }
+      
+      if ( strpos($filter_on, $filter_check) !== false ){
+         $report_issue = false;
+         break;
+         }
+    
+    }
 
-  if (
-     
-     // avoid false positives notifications coming from Chrome extensions (Wappalyzer, MuteTab, etc.)
-     // bug here https://code.google.com/p/chromium/issues/detail?id=524356
-     strpos($source_file, 'chrome-extension://') === false 
-     
-     // avoid false positives notifications coming from Safari extensions (diigo, evernote, etc.)
-     && strpos($source_file, 'safari-extension://') === false
-     && strpos($blocked_uri, 'safari-extension://') === false
-     
-     // search engine extensions ?
-     && strpos($source_file, 'se-extension://') === false
-     
-     // added by browsers in webviews
-     && strpos($blocked_uri, 'webviewprogressproxy://') === false
-     
-     // Google Search App see for details https://github.com/nico3333fr/CSP-useful/commit/ecc8f9b0b379ae643bc754d2db33c8b47e185fd1
-     && strpos($blocked_uri, 'gsa://onpageload') === false
-     
-     // ;(function installGlobalHook(window) => https://github.com/nico3333fr/CSP-useful/tree/master/csp-wtf#function-installglobalhookwindow
-     && strpos($script_sample, ';(function installGlobalHook(window)') === false
-     
-     // Facebook share https://github.com/nico3333fr/CSP-useful/tree/master/csp-wtf#facebook 
-     && strpos($referrer, 'http://l.facebook.com/') === false 
-     && strpos($referrer, 'https://l.facebook.com/') === false
-     
-     // BlockAdBlock etc. https://github.com/nico3333fr/CSP-useful/tree/master/csp-wtf#var-fuckadblockblockadblock--function-
-     && strpos($script_sample, 'var FuckAdBlock = function') === false 
-     && strpos($script_sample, 'var BlockAdBlock = function') === false
-     
-     // "Reader" in MacOS Safari? https://github.com/nico3333fr/CSP-useful/tree/master/csp-wtf#reader-in-macos-safari
-     && strpos($blocked_uri, 'mx://res/reader-mode/reader.html') === false
-     
-     // Ghostery inline styles https://github.com/nico3333fr/CSP-useful/tree/master/csp-wtf#ghostery
-     && strpos($script_sample, '@media print {#UNIQUE_ID-ghostery') === false 
-     && strpos($script_sample, '@media print {#ghostery-purple-box') === false 
-     
-     
-     ) {
+  if ( $report_issue === true  ) {
 
           // Prettify the JSON-formatted data
           $data = json_encode(
