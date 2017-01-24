@@ -1,6 +1,31 @@
 # CSP, WTF?
 
 Sometimes, CSP notifications are really difficult to understand. Here is a collection of some CSP WTF.
+If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
+
+
+---------------------------------------
+# root .mod > ._jH + .rscontainer???
+
+```
+{
+    "csp-report": {
+        "blocked-uri": "self",
+        "document-uri": "https://rocssti.net/realisations-css-rocssti",
+        "line-number": 1,
+        "original-policy": "default-src 'none'; script-src https://rocssti.net https://www.google-analytics.com https://stats.g.doubleclick.net https://stats.g.doubleclick.net; style-src https://rocssti.net; img-src https://rocssti.net https://www.google-analytics.com https://stats.g.doubleclick.net https://stats.g.doubleclick.net data:; font-src https://rocssti.net; connect-src https://rocssti.net; child-src https://rocssti.net; frame-ancestors 'none'; manifest-src https://rocssti.net; form-action https://rocssti.net; report-uri https://rocssti.net/csp-parser.php",
+        "referrer": "https://rocssti.net/guideline-rocssti-css",
+        "script-sample": "\n:root .mod > ._jH + .rscontainer\n{ disp...",
+        "source-file": "https://rocssti.net/realisations-css-rocssti",
+        "violated-directive": "style-src https://rocssti.net"
+    }
+}
+```
+
+__WTF:__ no code like this on this website.
+
+__Answer:__ Any idea?
+
 
 ---------------------------------------
 # Google translate
