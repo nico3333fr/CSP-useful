@@ -1,7 +1,28 @@
 # CSP, WTF?
 
-Sometimes, CSP notifications are really difficult to understand. Here is a collection of some CSP WTF.
+Sometimes, CSP notifications are __really difficult to understand__. Here is a collection of some CSP WTF.
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
+
+---------------------------------------
+# ISP updates/adds files on mobiles
+
+```
+{
+    "csp-report": {
+        "document-uri": "[anonymised]",
+        "referrer": "http://www.google.fr/",
+        "violated-directive": "img-src 'self' *.google-analytics.com stats.g.doubleclick.net data: ",
+        "effective-directive": "img-src",
+        "original-policy": "default-src 'self';  script-src 'self' *.google-analytics.com stats.g.doubleclick.net ; style-src 'self' data: ; img-src 'self' *.google-analytics.com stats.g.doubleclick.net data: ;  child-src 'self' ; report-uri /csp-parser.php ;",
+        "blocked-uri": "http://91.68.209.8/bmi/[anonymised]/layout/images/…",
+        "status-code": 200
+    }
+}
+```
+
+__WTF:__ no code like this 91.68.209.8/bmi/ on the website.
+
+__Answer:__ might be related to some ISPs that are inserting scripts on your website, probably with proxies (see http://security.stackexchange.com/questions/9368/mobile-carrier-javascript-injection or https://reflets.info/sfr-modifie-le-source-html-des-pages-que-vous-visitez-en-3g/ in french).
 
 
 ---------------------------------------
