@@ -24,7 +24,7 @@ If you have an idea (even if the idea is WTF) for some of these, do not hesitate
 
 __WTF:__ ms-browser-extension ? 
 
-__Answer:__ browser extension on Edge/IE ? (to confirm)
+__Answer:__ browser extension on Edge/IE ? (to confirm, I don't know how to reproduce)
 
 
 
