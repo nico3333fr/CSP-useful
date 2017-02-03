@@ -3,6 +3,31 @@
 Sometimes, CSP notifications are __really difficult to understand__. Here is a collection of some CSP WTF.
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
+
+---------------------------------------
+# ms-browser-extension
+
+```
+{
+    "csp-report": {
+        "document-uri": "http://www.visionclinique.ch/fr/la-clinique",
+        "referrer": "http://www.visionclinique.ch/fr/",
+        "violated-directive": "img-src 'self' http://www.google-analytics.com https://www.google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net data: ",
+        "effective-directive": "img-src",
+        "original-policy": "default-src 'self';  script-src 'self' http://www.google-analytics.com https://www.google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net 'unsafe-eval' ; style-src 'self'  data: 'unsafe-inline' ; img-src 'self' http://www.google-analytics.com https://www.google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net data: ;  child-src 'self' ; report-uri /csp-parser.php ;",
+        "blocked-uri": "ms-browser-extension",
+        "status-code": 200
+
+    }
+}
+```
+
+__WTF:__ ms-browser-extension ? 
+
+__Answer:__ browser extension on Edge/IE ? (to confirm)
+
+
+
 ---------------------------------------
 # ISP updates/adds files on mobiles
 
