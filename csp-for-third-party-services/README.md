@@ -129,4 +129,10 @@ script-src embedr.flickr.com widgets.flickr.com ;
 connect-src embedr.flickr.com geo.query.yahoo.com ;
 ```
 
+## CodePen
+
+```
+script-src assets.codepen.io production-assets.codepen.io ;
+```
+
 Feel free to participate. :)
