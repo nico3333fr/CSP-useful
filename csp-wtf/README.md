@@ -1,7 +1,45 @@
 # CSP, WTF?
 
-Sometimes, CSP notifications are __really difficult to understand__. Here is a collection of some CSP WTF.
+Sometimes, CSP notifications are __really difficult to understand or very strange__. Here is a collection of some CSP WTF.
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
+
+
+---------------------------------------
+# Opera mini double WTF
+
+```
+{
+    "csp-report": {
+        "document-uri": "[Anonymised]",
+        "referrer": "https://www.google.ch/",
+        "violated-directive": "style-src 'self' data: ",
+        "effective-directive": "style-src",
+        "original-policy": "default-src 'self';  script-src 'self' https://www.google-analytics.com http://www.google-analytics.com  stats.g.doubleclick.net https://stats.g.doubleclick.net ; style-src 'self' data: ; img-src 'self' https://www.google-analytics.com http://www.google-analytics.com *.aprotec.ch stats.g.doubleclick.net https://stats.g.doubleclick.net data: ;  child-src 'self' ; report-uri /csp-parser.php ;",
+        "blocked-uri": "http://adblockers.opera-mini.net",
+        "status-code": 200
+
+    }
+}
+```
+and
+```
+{
+    "csp-report": {
+        "document-uri": "[Anonymised]",
+        "referrer": "https://www.google.ch/",
+        "violated-directive": "script-src 'self' https://www.google-analytics.com http://www.google-analytics.com  stats.g.doubleclick.net https://stats.g.doubleclick.net ",
+        "effective-directive": "script-src",
+        "original-policy": "default-src 'self';  script-src 'self' https://www.google-analytics.com http://www.google-analytics.com  stats.g.doubleclick.net https://stats.g.doubleclick.net ; style-src 'self' data: ; img-src 'self' https://www.google-analytics.com http://www.google-analytics.com *.aprotec.ch stats.g.doubleclick.net https://stats.g.doubleclick.net data: ;  child-src 'self' ; report-uri /csp-parser.php ;",
+        "blocked-uri": "opera://js-inject",
+
+        "status-code": 200
+    }
+}
+```
+
+__WTF:__ adblockers.opera-mini.net and opera://js-inject ???
+
+__Answer:__ related to Opera Mini (these 2 notification came at the same time on the same page). If you have more details on how Opera mini works (I’m not expert in Opera mini), do not hesitate to complete.
 
 
 ---------------------------------------
