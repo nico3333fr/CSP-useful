@@ -106,6 +106,9 @@ __Answer:__ related to Google Translate, however, to confirm in which exact case
         "original-policy": "default-src 'none'; script-src https://www.estcequonmetenprodaujourdhui.info https://www.google-analytics.com https://stats.g.doubleclick.net https://stats.g.doubleclick.net; style-src https://www.estcequonmetenprodaujourdhui.info 'unsafe-inline'; img-src https://www.estcequonmetenprodaujourdhui.info https://www.google-analytics.com https://stats.g.doubleclick.net https://stats.g.doubleclick.net data:; font-src https://www.estcequonmetenprodaujourdhui.info; child-src https://www.estcequonmetenprodaujourdhui.info; frame-ancestors 'none'; manifest-src https://www.estcequonmetenprodaujourdhui.info; report-uri https://www.estcequonmetenprodaujourdhui.info/csp-parser.php",
         "referrer": "",
         "script-sample": "try {\r\nwindow.AG_onLoad = function(func)...",
+        OR
+        "script-sample": "try {\r\nvar AG_onLoad=function(func){if(d...",
+        OR 
 
         "source-file": "https://www.estcequonmetenprodaujourdhui.info/",
         "violated-directive": "script-src https://www.estcequonmetenprodaujourdhui.info https://www.google-analytics.com https://stats.g.doubleclick.net https://stats.g.doubleclick.net"
