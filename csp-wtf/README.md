@@ -375,7 +375,7 @@ __Answer:__ Any idea?
 
 __WTF:__ WTF is this?
 
-__Answer:__ Any idea?
+__Answer:__ related to React Devtools Chrome extension https://github.com/facebook/react-devtools/blob/master/backend/installGlobalHook.js (thanks @julienbrument)
 
 
 ---------------------------------------
