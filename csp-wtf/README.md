@@ -5,6 +5,80 @@ If you have an idea (even if the idea is WTF) for some of these, do not hesitate
 
 
 ---------------------------------------
+# CSP What The Font number two
+
+```
+{
+    "csp-report": {
+        "document-uri": "https://van11y.net/fr/infobulles-tooltips-accessibles/",
+        "referrer": "https://t.co/TgcBdtHiqn",
+        "violated-directive": "font-src",
+        "effective-directive": "font-src",
+        "original-policy": "default-src 'none' ;  script-src 'self'; style-src 'self' ; img-src 'self'; font-src 'self';  connect-src 'self'; child-src 'self' ; frame-ancestors 'none' ; manifest-src 'self' ; report-uri /csp-parser.php ;",
+        "disposition": "enforce",
+        "blocked-uri": "http://themes.googleusercontent.com/static/fonts/inconsolata/v5/BjAYBlHtW3CJxDcjzrnZCIbN6UDyHWBl620a-IRfuBk.woff",
+        "status-code": 0
+    }
+}
+```
+and
+```
+
+{
+    "csp-report": {
+        "document-uri": "https://van11y.net/fr/infobulles-tooltips-accessibles/",
+        "referrer": "https://t.co/TgcBdtHiqn",
+        "violated-directive": "font-src",
+        "effective-directive": "font-src",
+        "original-policy": "default-src 'none' ;  script-src 'self'; style-src 'self' ; img-src 'self'; font-src 'self';  connect-src 'self'; child-src 'self' ; frame-ancestors 'none' ; manifest-src 'self' ; report-uri /csp-parser.php ;",
+        "disposition": "enforce",
+        "blocked-uri": "http://themes.googleusercontent.com/static/fonts/rosarivo/v1/OGdIq-p0tOtBN2VMVvO9W_esZW2xOQ-xsNqO47m55DA.woff",
+        "status-code": 0
+    }
+}
+```
+
+__WTF:__ Inconsolata et Rosarivo are not used on this site, neither any reference to CSS from google font. (?)
+
+__Answer:__ What The Font ???? (any idea ?)
+
+---------------------------------------
+# CSP What The Font number one
+
+```
+{
+    "csp-report": {
+        "document-uri": "about:blank",
+        "referrer": "",
+        "violated-directive": "font-src 'self'",
+        "effective-directive": "font-src",
+        "original-policy": "default-src 'none';  script-src 'self' google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net; style-src 'self' data:  ; img-src 'self' google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net ssl.google-analytics.com data: ;  connect-src 'self';  font-src 'self'; media-src 'self'; object-src 'self' www.youtube.com ;  child-src 'self' ;  frame-ancestors 'none' ; manifest-src 'self' ; form-action 'self' ; report-uri /csp-parser.php ;",
+        "blocked-uri": "https://github.com/google/fonts/blob/master/apache/opensans/OpenSans-Light.ttf?raw=true",
+        "status-code": 0
+    }
+}
+```
+and
+```
+{
+    "csp-report": {
+        "document-uri": "about:blank",
+        "referrer": "",
+        "violated-directive": "font-src 'self'",
+        "effective-directive": "font-src",
+        "original-policy": "default-src 'none';  script-src 'self' google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net; style-src 'self' data:  ; img-src 'self' google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net ssl.google-analytics.com data: ;  connect-src 'self';  font-src 'self'; media-src 'self'; object-src 'self' www.youtube.com ;  child-src 'self' ;  frame-ancestors 'none' ; manifest-src 'self' ; form-action 'self' ; report-uri /csp-parser.php ;",
+        "blocked-uri": "https://fonts.gstatic.com/s/opensans/v13/PRmiXeptR36kaC0GEAetxko2lTMeWA_kmIyWrkNCwPc.woff2",
+        "status-code": 0
+
+    }
+}
+```
+
+__WTF:__ Open Sans is suggested on the website https://www.estcequonmetenprodaujourdhui.info/ but not from Github or Google, and not even loaded from a webfont.
+
+__Answer:__ is there a browser mechanism/extension that takes this font from somewhere? Please help!
+
+---------------------------------------
 # Opera mini double WTF
 
 ```
