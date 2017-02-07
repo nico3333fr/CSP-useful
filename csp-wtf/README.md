@@ -23,22 +23,22 @@ If you have an idea (even if the idea is WTF) for some of these, do not hesitate
 ```
 and
 ```
-
 {
     "csp-report": {
-        "document-uri": "https://van11y.net/fr/infobulles-tooltips-accessibles/",
-        "referrer": "https://t.co/TgcBdtHiqn",
+        "document-uri": "https://rocssti.net/realisations-css-rocssti",
+        "referrer": "https://t.co/JFev84Iili",
         "violated-directive": "font-src",
         "effective-directive": "font-src",
-        "original-policy": "default-src 'none' ;  script-src 'self'; style-src 'self' ; img-src 'self'; font-src 'self';  connect-src 'self'; child-src 'self' ; frame-ancestors 'none' ; manifest-src 'self' ; report-uri /csp-parser.php ;",
+        "original-policy": "default-src 'none';  script-src 'self' www.google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net; style-src 'self' ; img-src 'self' www.google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net data: ;  font-src 'self'; connect-src 'self'; child-src 'self' ;  frame-ancestors 'none' ; manifest-src 'self' ; form-action 'self' ; report-uri /csp-parser.php ;",
         "disposition": "enforce",
         "blocked-uri": "http://themes.googleusercontent.com/static/fonts/rosarivo/v1/OGdIq-p0tOtBN2VMVvO9W_esZW2xOQ-xsNqO47m55DA.woff",
         "status-code": 0
+
     }
 }
 ```
 
-__WTF:__ Inconsolata et Rosarivo are not used on this site, neither any reference to CSS from google font. (?)
+__WTF:__ Inconsolata et Rosarivo are not used on these sites, neither any reference to CSS from google font. (?)
 
 __Answer:__ What The Font ???? (any idea ?)
 
