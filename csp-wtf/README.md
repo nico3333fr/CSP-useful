@@ -40,7 +40,7 @@ and
 
 __WTF:__ Inconsolata et Rosarivo are not used on these sites, neither any reference to CSS from google font. (?)
 
-__Answer:__ What The Font ???? (any idea ?)
+__Answer:__ Related to extension that allow to personnalize fonts, like https://chrome.google.com/webstore/detail/font-changer-with-google/jgjhhoglgjdklldfgoffdiaceffijeke/related
 
 ---------------------------------------
 # CSP What The Font number one
@@ -76,7 +76,7 @@ and
 
 __WTF:__ Open Sans is suggested on the website https://www.estcequonmetenprodaujourdhui.info/ but not from Github or Google, and not even loaded from a webfont.
 
-__Answer:__ is there a browser mechanism/extension that takes this font from somewhere? Please help!
+__Answer:__ Might be related to extension that allow to personnalize fonts, like https://chrome.google.com/webstore/detail/font-changer-with-google/jgjhhoglgjdklldfgoffdiaceffijeke/related
 
 ---------------------------------------
 # Opera mini double WTF
