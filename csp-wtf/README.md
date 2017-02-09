@@ -4,7 +4,7 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 ---------------------------------------
-# Digg ?
+# Digg
 
 ```
 {
@@ -22,7 +22,7 @@ If you have an idea (even if the idea is WTF) for some of these, do not hesitate
 }
 ```
 
-__WTF:__ dummyRuleForDigg ?
+__WTF:__ dummyRuleForDigg{} ?
 
 __Answer:__ caused by Digg, but don't have any details on how it happens (extension, other ?).
 
