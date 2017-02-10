@@ -315,6 +315,8 @@ __Answer:__ Any idea?
         "script-sample": "onchange attribute on DIV element",
         OR 
         "script-sample": "onfocusin attribute on DIV element",
+        OR
+        "script-sample": "onselectstart attribute on DIV element", 
 
         "source-file": "https://van11y.net/accessible-accordion/",
         "violated-directive": "script-src https://van11y.net"
