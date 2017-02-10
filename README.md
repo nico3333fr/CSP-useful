@@ -51,7 +51,7 @@ JS/jQuery plugins should provide the CSP requirements they need to work (especia
 In [folder "report-uri"](https://github.com/nico3333fr/CSP-useful/tree/master/report-uri), you may find examples of CSP parsers you can use for report-uri.
 
 - csp-parser-basic.php 	: the most basic one, it sends an e-mail.
-- csp-parser-enhanced.php :	avoids some bugs (listed below)
+- csp-parser-enhanced.php :	avoids some bugs (listed below as CSP WTF), with a LOT of filters
 - csp-parser-with-database.php : put notifications in a database, then you can do whatever you want with all these informations! :)
 
 
@@ -141,6 +141,7 @@ These bugs are just annoying, they are not critical. They provide false-positive
 
 - http://content-security-policy.com/
 - https://www.smashingmagazine.com/2016/09/content-security-policy-your-future-best-friend/
+- https://openweb.eu.org/articles/content-security-policy (in french)
 - http://cspisawesome.com/
 - http://www.cspplayground.com/home
 - https://scotthelme.co.uk/csp-cheat-sheet/
@@ -157,6 +158,8 @@ These bugs are just annoying, they are not critical. They provide false-positive
 - [dotSecurity 2016 - Scott Helme - Content Security Policy: The application security Swiss Army Knife (video) ](https://www.youtube.com/watch?v=d0D3d0ZM-rI)
 - [InfoShare 2016 - Scott Helme - Content Security Policy: The application security Swiss Army Knife (video)](https://www.youtube.com/watch?v=d6Clpj_KfFo)
 - [Paris Web 2015 - Nicolas Hoffmann - Content Security Policy (video in french-speaking)](http://www.paris-web.fr/2015/conferences/csp-content-security-policy.php)
+- [Codeurs en Seine 2016 - Nicolas Hoffmann - Content Security Policy (video in french-speaking)](https://www.infoq.com/fr/presentations/codeurs-en-seine-nicolas-hoffmann-content-security-policy)
+
 
 ### CSP with Google
 
