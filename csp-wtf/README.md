@@ -4,6 +4,28 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 ---------------------------------------
+# Website frames itself ??
+
+```
+{
+    "csp-report": {
+        "document-uri": "https://www.estcequonmetenprodaujourdhui.info/",
+        "referrer": "",
+        "violated-directive": "frame-ancestors",
+        "effective-directive": "frame-ancestors",
+        "original-policy": "default-src 'none';  script-src 'self' ; style-src 'self' 'unsafe-inline' ; img-src 'self'  data: ;  font-src 'self'; child-src 'self' ;  frame-ancestors 'none' ; manifest-src 'self' ; report-uri /csp-parser.php ;",
+        "disposition": "enforce",
+        "blocked-uri": "https://www.estcequonmetenprodaujourdhui.info/",
+        "status-code": 0
+    }
+}
+```
+
+__WTF:__ ???
+
+__Answer:__ attempt of framing this website without sending a referrer? (any better idea?)
+
+---------------------------------------
 # Digg
 
 ```
