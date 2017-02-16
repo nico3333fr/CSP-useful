@@ -24,7 +24,7 @@ If you have an idea (even if the idea is WTF) for some of these, do not hesitate
 
 __WTF:__ window.devToolsOptions
 
-__Answer:__ might be related to Redux DevTools extension (to confirm).  
+__Answer:__ might be related to [Redux DevTools extension](http://extension.remotedev.io/) (to confirm).  
 
 ---------------------------------------
 # Website frames itself ??
