@@ -24,7 +24,7 @@ If you have an idea (even if the idea is WTF) for some of these, do not hesitate
 
 __WTF:__ window.devToolsOptions
 
-__Answer:__ Which devtools? Any idea?
+__Answer:__ might be related to Redux DevTools extension (to confirm).  
 
 ---------------------------------------
 # Website frames itself ??
