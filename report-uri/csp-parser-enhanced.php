@@ -14,7 +14,7 @@ define('SUBJECT', 'CSP violation');
 $data = file_get_contents('php://input');
 
 // array for filtering
-$tab_filter = array (
+$tab_filter = array(
     /*
     'MANDATORY: string_to_search' => array (
          'filter_on' => 'MANDATORY: field to search on, see later for filtering', // source_file/blocked_uri/script_sample/referrer/doc_uri
@@ -22,6 +22,76 @@ $tab_filter = array (
          'comment' => '' // Optional: a… comment! */
     )
     */
+    'chromenull://' => array (
+         'filter_on' => 'source_file',
+         'case_description' => 'https://report-uri.io/',
+         'comment' => 'Coming from report_uri tool'
+    ),
+    'resource://' => array (
+         'filter_on' => 'source_file',
+         'case_description' => 'https://report-uri.io/',
+         'comment' => 'Coming from report_uri tool'
+    ),
+    'mxjscall://' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://report-uri.io/',
+         'comment' => 'Coming from report_uri tool'
+    ),
+    'res://' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://report-uri.io/',
+         'comment' => 'Coming from report_uri tool'
+    ),
+    'safari-resource://' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://report-uri.io/',
+         'comment' => 'Coming from report_uri tool'
+    ),
+    'chromenull://' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://report-uri.io/',
+         'comment' => 'Coming from report_uri tool'
+    ),
+    'chromeinvoke://' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://report-uri.io/',
+         'comment' => 'Coming from report_uri tool'
+    ),
+    'chromeinvokeimmediate://' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://report-uri.io/',
+         'comment' => 'Coming from report_uri tool'
+    ),
+    'crwebnull://' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://report-uri.io/',
+         'comment' => 'Coming from report_uri tool'
+    ),
+    'crwebinvoke://' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://report-uri.io/',
+         'comment' => 'Coming from report_uri tool'
+    ),
+    'crwebimmediate://' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://report-uri.io/',
+         'comment' => 'Coming from report_uri tool'
+    ),
+    'mbinit://' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://report-uri.io/',
+         'comment' => 'Coming from report_uri tool'
+    ),
+    'opera://' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://report-uri.io/',
+         'comment' => 'Coming from report_uri tool'
+    ),
+    'none://' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://report-uri.io/',
+         'comment' => 'Coming from report_uri tool'
+    ),
     'chrome-extension://' => array (
          'filter_on' => 'source_file',
          'case_description' => 'https://code.google.com/p/chromium/issues/detail?id=524356',
@@ -77,7 +147,7 @@ $tab_filter = array (
          'case_description' => 'https://github.com/nico3333fr/CSP-useful/tree/master/csp-wtf#var-fuckadblockblockadblock--function-',
          'comment' => 'BlockAdBlock etc.'
     ),
-    'mx://res/reader-mode/reader.html' => array (
+    'mx://' => array (
          'filter_on' => 'blocked_uri',
          'case_description' => 'https://github.com/nico3333fr/CSP-useful/tree/master/csp-wtf#reader-in-macos-safari',
          'comment' => '"Reader" in MacOS Safari? '
@@ -112,6 +182,11 @@ $tab_filter = array (
          'case_description' => 'https://github.com/nico3333fr/CSP-useful/tree/master/csp-wtf#onsubmitonchangeonfocusinetc-attribute-on-div-element',
          'comment' => 'WTF ?'
     ),
+    'onselectstart attribute on DIV element' => array (
+         'filter_on' => 'script_sample',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/tree/master/csp-wtf#onsubmitonchangeonfocusinetc-attribute-on-div-element',
+         'comment' => 'WTF ?'
+    ), 
     'embed[height=\"175\"][width=\"175\"]' => array (
          'filter_on' => 'script_sample',
          'case_description' => 'https://github.com/nico3333fr/CSP-useful/tree/master/csp-wtf#embedheight175width175-',
@@ -122,13 +197,80 @@ $tab_filter = array (
          'case_description' => 'https://github.com/nico3333fr/CSP-useful/tree/master/csp-wtf#try-rnwindowag_onload--function-',
          'comment' => 'WTF ?'
     ),
+    'AG_onLoad=function(func)' => array (
+         'filter_on' => 'script_sample',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/tree/master/csp-wtf#try-rnwindowag_onload--function-',
+         'comment' => 'WTF ?'
+    ),
     'https://www.gstatic.com/images/branding/product/2x/translate_24dp.png' => array (
          'filter_on' => 'blocked_uri',
          'case_description' => 'https://github.com/nico3333fr/CSP-useful/tree/master/csp-wtf#google-translate',
          'comment' => 'Google Translate'
+    ),
+    'root .mod > ._jH + .rscontainer' => array (
+         'filter_on' => 'script_sample',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/README.md#root-mod--_jh--rscontainer',
+         'comment' => 'WTF ?'
+    ),
+    'window.oldSetTimeout=window.setTimeout' => array (
+         'filter_on' => 'script_sample',
+         'case_description' => '',
+         'comment' => 'WTF ?'
+    ),
+    'android-webview' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/README.md#android-webview',
+         'comment' => ''
+    ),
+    'window.devToolsOptions = Object.' => array (
+         'filter_on' => 'script_sample',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/README.md#devtools-',
+         'comment' => ''
+    ),
+    'dummyRuleForDigg{}' => array (
+         'filter_on' => 'script_sample',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/README.md#digg',
+         'comment' => ''
+    ),
+    'Copyright 2014 Evernote' => array (
+         'filter_on' => 'script_sample',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/README.md#evernote',
+         'comment' => ''
+    ),
+    'http://adblockers.opera-mini.net' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/README.md#opera-mini-double-wtf',
+         'comment' => ''
+    ),
+    'ms-browser-extension' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/README.md#ms-browser-extension',
+         'comment' => ''
+    ),
+    'http://91.68.209.' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/README.md#isp-updatesadds-files-on-mobiles',
+         'comment' => ''
     )/*,
     '' => array (
          'filter_on' => 'source_file',
+         'case_description' => '',
+         'comment' => ''
+    ),
+    // if you are not using these services, uncomment these lines to enable other filters
+    ,
+    'https://github.com/google/fonts/blob/master/apache' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => '',
+         'comment' => ''
+    ),
+    'https://fonts.gstatic.com/s/' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => '',
+         'comment' => ''
+    ),
+    'https://fonts.googleapis.com/css' => array (
+         'filter_on' => 'blocked_uri',
          'case_description' => '',
          'comment' => ''
     )*/
