@@ -19,7 +19,7 @@ $tab_filter = array(
     'MANDATORY: string_to_search' => array (
          'filter_on' => 'MANDATORY: field to search on, see later for filtering', // source_file/blocked_uri/script_sample/referrer/doc_uri
          'case_description' => '', // Optional: URL for description 
-         'comment' => '' // Optional: a… comment! */
+         'comment' => '' // Optional: a… comment!
     )
     */
     'chromenull://' => array (
