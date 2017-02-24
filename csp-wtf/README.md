@@ -5,6 +5,28 @@ If you have an idea (even if the idea is WTF) for some of these, do not hesitate
 
 
 ---------------------------------------
+# uBlock and Faceporn (yes!)
+
+```
+{
+    "csp-report": {
+        "blocked-uri": "self",
+        "document-uri": "https://www.estcequonmetenprodaujourdhui.info/",
+        "line-number": 1,
+        "original-policy": "default-src 'none'; script-src https://www.estcequonmetenprodaujourdhui.info; style-src https://www.estcequonmetenprodaujourdhui.info 'nonce-IfAzvGfLDZPy2xJ5ew818hNfNFX8X8IDJleC1bw0+4laSFwurX1LT76CTFga'; img-src https://www.estcequonmetenprodaujourdhui.info data:; font-src https://www.estcequonmetenprodaujourdhui.info; child-src https://www.estcequonmetenprodaujourdhui.info; frame-ancestors 'none'; manifest-src https://www.estcequonmetenprodaujourdhui.info; report-uri https://www.estcequonmetenprodaujourdhui.info/csp-parser.php",
+        "referrer": "",
+        "script-sample": "[href^=\"http://www.faceporn.net/free?\"]\n...",
+        "source-file": "https://www.estcequonmetenprodaujourdhui.info/",
+        "violated-directive": "style-src https://www.estcequonmetenprodaujourdhui.info 'nonce-IfAzvGfLDZPy2xJ5ew818hNfNFX8X8IDJleC1bw0+4laSFwurX1LT76CTFga'"
+    }
+}
+```
+
+__WTF:__ faceporn.net ?????????????????????????????????????????????????????????? (nothing like this on this website)
+
+__Answer:__ Might be related to an issue in extensions like uBlock https://github.com/chrisaljoudi/uBlock/issues/161 that are inserting inline-styles to hide links pointing out to this.
+
+---------------------------------------
 # Android webview
 
 ```
