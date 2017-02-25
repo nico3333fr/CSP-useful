@@ -650,6 +650,10 @@ or
 ```
         "script-sample": "@media print {#ghostery-purple-box {disp...",
 ```
+or
+```
+        "script-sample": "#ghostery-button{z-index: 2147483646 !im...",
+```
 
 __WTF:__ Ghostery???
 
