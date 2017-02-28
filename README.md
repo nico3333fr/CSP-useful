@@ -142,6 +142,7 @@ These bugs are just annoying, they are not critical. They provide false-positive
 - http://content-security-policy.com/
 - https://www.smashingmagazine.com/2016/09/content-security-policy-your-future-best-friend/
 - https://openweb.eu.org/articles/content-security-policy (in french)
+- https://www.alsacreations.com/article/lire/1723-tour-horizon-https-et-en-tetes-de-securite.html (in french, a part in it is dedicated to CSP)
 - http://cspisawesome.com/
 - http://www.cspplayground.com/home
 - https://scotthelme.co.uk/csp-cheat-sheet/
@@ -209,9 +210,11 @@ These bugs are just annoying, they are not critical. They provide false-positive
 - https://www.dareboost.com/
 - https://securityheaders.io/
 - https://report-uri.io/home/tools
+- https://observatory.mozilla.org/
 
 ### Add-ons Navigator
 - https://addons.mozilla.org/en-us/firefox/addon/newusercspdesign/
+- https://addons.mozilla.org/en-US/firefox/addon/laboratory-by-mozilla/
 
 Enjoy!
 
