@@ -3,6 +3,30 @@
 Sometimes, CSP notifications are __really difficult to understand or very strange__. Here is a collection of some CSP WTF.
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
+---------------------------------------
+# var Cacaoweb
+
+```
+{
+    "csp-report": {
+        "blocked-uri": "self",
+        "document-uri": "[anonymised]",
+        "line-number": 1,
+        "original-policy": "default-src [anonymised]; script-src [anonymised] http://www.google-analytics.com https://www.google-analytics.com http://stats.g.doubleclick.net https://stats.g.doubleclick.net 'unsafe-eval'; style-src [anonymised] data: 'unsafe-inline'; img-src [anonymised] http://www.google-analytics.com https://www.google-analytics.com http://stats.g.doubleclick.net https://stats.g.doubleclick.net data:; child-src [anonymised]; report-uri [anonymised]/csp-parser.php",
+        "referrer": "https://www.google.fr/",
+        "script-sample": "var Cacaoweb = { callbackIsRunning: func...",
+        "source-file": "[anonymised]/fr/",
+        "violated-directive": "script-src [anonymised] http://www.google-analytics.com https://www.google-analytics.com http://stats.g.doubleclick.net https://stats.g.doubleclick.net 'unsafe-eval'"
+    }
+}
+```
+
+__WTF:__ var Cacaoweb = { callbackIsRunning… (nothing like this on this website)
+
+__Answer:__ Might be related to an extension named Cacaoweb https://github.com/PinoDeiPalazzi/cacaowebinterface/blob/master/chrome%20addon/cacaoweb.js
+
+
+
 
 ---------------------------------------
 # uBlock and Faceporn (yes!)
