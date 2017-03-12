@@ -657,6 +657,31 @@ this useful blog post expands more on how to practically apply it. I too have se
 
 ---------------------------------------
 
+## Kaspersky crap
+
+```
+{
+    "csp-report": {
+        "blocked-uri": "self",
+        "document-uri": "https://www.nicolas-hoffmann.net/source/1447-Background-image-couleurs-CSS-accessibilite.html",
+        "original-policy": "default-src 'none'; connect-src https://www.nicolas-hoffmann.net https://ff.kis.v2.scr.kaspersky-labs.com wss://ff.kis.v2.scr.kaspersky-labs.com; script-src https://www.nicolas-hoffmann.net https://google-analytics.com https://stats.g.doubleclick.net https://stats.g.doubleclick.net https://ff.kis.v2.scr.kaspersky-labs.com wss://ff.kis.v2.scr.kaspersky-labs.com; img-src https://www.nicolas-hoffmann.net https://google-analytics.com https://stats.g.doubleclick.net https://stats.g.doubleclick.net https://ssl.google-analytics.com data: https://ff.kis.v2.scr.kaspersky-labs.com wss://ff.kis.v2.scr.kaspersky-labs.com; style-src https://www.nicolas-hoffmann.net data: 'nonce-CE685168D546AE408DFC9824262D6189' https://ff.kis.v2.scr.kaspersky-labs.com wss://ff.kis.v2.scr.kaspersky-labs.com; font-src https://www.nicolas-hoffmann.net; media-src https://www.nicolas-hoffmann.net; object-src https://www.nicolas-hoffmann.net https://www.youtube.com; child-src https:!
+ //www.nicolas-hoffmann.net; frame-ancestors https://www.nicolas-hoffmann.net; manifest-src https://www.nicolas-hoffmann.net; form-action https://www.nicolas-hoffmann.net; report-uri https://www.nicolas-hoffmann.net/csp-parser.php",
+        "referrer": "https://www.google.fr/",
+        "script-sample": "transform:translate(NaNpx, NaNpx);",
+
+        "source-file": "https://www.nicolas-hoffmann.net/source/1447-Background-image-couleurs-CSS-accessibilite.html",
+        "violated-directive": "style-src https://www.nicolas-hoffmann.net data: 'nonce-CE685168D546AE408DFC9824262D6189' https://ff.kis.v2.scr.kaspersky-labs.com wss://ff.kis.v2.scr.kaspersky-labs.com"
+    }
+}
+```
+
+__WTF:___ ```"script-sample": "transform:translate(NaNpx, NaNpx);",``` seriously.
+
+__Answer:__ still Kaspersky doign some crap.
+
+
+---------------------------------------
+
 ## GSA
 
 ```
