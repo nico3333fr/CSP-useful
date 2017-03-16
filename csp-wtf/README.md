@@ -3,6 +3,27 @@
 Sometimes, CSP notifications are __really difficult to understand or very strange__. Here is a collection of some CSP WTF.
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
+---------------------------------------
+# getpingu
+
+```
+{
+    "csp-report": {
+        "document-uri": "https://www.estcequonmetenprodaujourdhui.info/",
+        "referrer": "",
+        "violated-directive": "font-src",
+        "effective-directive": "font-src",
+        "original-policy": "default-src 'none';  script-src 'self' ; style-src 'self' 'nonce-5a294a67d2b3dbad928c8c7f3c9a9e8863c64676f6f5a3cd3297f933bc668f4fb18a672b7a0bbba10556c08664c8828a1cca6b652430dc7061919d4e95082192' ; img-src 'self'  data: ;  font-src 'self'; child-src 'self' ;  frame-ancestors 'none' ; manifest-src 'self' ; report-uri /csp-parser.php ;",
+        "disposition": "enforce",
+        "blocked-uri": "https://getpingu.com/assets/fonts/icomoon/icomoon.ttf",
+        "status-code": 0
+    }
+}
+```
+
+__WTF:__ no asset like this on the website ```https://getpingu.com/assets/fonts/icomoon/icomoon.ttf```.
+
+__Answer:__ probably related to a Chrome extension of https://getpingu.com/.
 
 ---------------------------------------
 # if (window.google && (window.google.sn
