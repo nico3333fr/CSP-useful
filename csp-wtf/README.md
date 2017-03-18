@@ -4,6 +4,29 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 ---------------------------------------
+# Anti adblock killer
+
+```
+{
+    "csp-report": {
+        "document-uri": "https://www.estcequonmetenprodaujourdhui.info/",
+        "referrer": "",
+        "violated-directive": "script-src 'unsafe-eval' 'self' www.google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net",
+        "effective-directive": "script-src",
+        "original-policy": "default-src 'none';script-src 'unsafe-eval' 'self' www.google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net;style-src 'self' 'unsafe-inline';img-src 'self' www.google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net data:;font-src 'self';child-src 'self';frame-ancestors 'none';manifest-src 'self';report-uri /csp-parser.php;",
+        "blocked-uri": "https://reek.github.io/anti-adblock-killer/k2Uw7isHrMm5JXP1Vwdxc567ZKc1aZ4I.js",
+        "line-number": 787,
+        "column-number": 18,
+        "status-code": 0
+    }
+}
+```
+
+__WTF:__ no script like this on the website ```anti-adblock-killer```.
+
+__Answer:__ related to https://github.com/reek/anti-adblock-killer use.
+
+---------------------------------------
 # Webpack_require
 
 ```
