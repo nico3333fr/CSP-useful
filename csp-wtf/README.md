@@ -11,7 +11,7 @@ If you have an idea (even if the idea is WTF) for some of these, do not hesitate
     "csp-report": {
         "document-uri": "https://www.estcequonmetenprodaujourdhui.info/",
         "referrer": "",
-        "violated-directive": "script-src 'unsafe-eval' 'self' www.google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net",
+        "violated-directive": "script-src 'unsafe-eval' 'self' www.3-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net",
         "effective-directive": "script-src",
         "original-policy": "default-src 'none';script-src 'unsafe-eval' 'self' www.google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net;style-src 'self' 'unsafe-inline';img-src 'self' www.google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net data:;font-src 'self';child-src 'self';frame-ancestors 'none';manifest-src 'self';report-uri /csp-parser.php;",
         "blocked-uri": "https://reek.github.io/anti-adblock-killer/k2Uw7isHrMm5JXP1Vwdxc567ZKc1aZ4I.js",
@@ -502,7 +502,7 @@ __Answer:__ Any idea?
 
 __WTF:__ no code like this on this website.
 
-__Answer:__ related to Google Translate, however, to confirm in which exact case it happens.
+__Answer:__ related to Google Translate <del>however, to confirm in which exact case it happens</del>, Pavel B. confirmed: happens when a user translates the page using Google Translate inside Google Chrome (at least on Android, did not happen in Chrome for desktop).
 
 ---------------------------------------
 # "try {\r\nwindow.AG_onLoad = function ????
