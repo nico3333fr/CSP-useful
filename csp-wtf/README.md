@@ -578,7 +578,7 @@ __Answer:__ Any idea?
 
 __WTF:__ WTF is this? (no event like this on this website)
 
-__Answer:__ Any idea?
+__Answer:__ This seems to be related to a check in Jquery 1.x. See https://bugzilla.mozilla.org/show_bug.cgi?id=1336076 for details
 
 ---------------------------------------
 # function (a,x,m,I){var c={safeWindow: ?????
