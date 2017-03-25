@@ -4,6 +4,33 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 ---------------------------------------
+# twitbridge.com
+
+```
+{
+    "csp-report": {
+        "document-uri": "https://www.nicolas-hoffmann.net/source/",
+        "referrer": "https://www.google.fr/",
+        "violated-directive": "script-src",
+        "effective-directive": "script-src",
+        "original-policy": "default-src 'none';  script-src 'self' google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net; style-src 'self' data:  ; img-src 'self' google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net ssl.google-analytics.com data: ;  connect-src 'self';  font-src 'self'; media-src 'self'; object-src 'self' www.youtube.com ;  child-src 'self' ;  frame-ancestors 'self' ; manifest-src 'self' ; form-action 'self' ; report-uri /csp-parser.php ;",
+        "disposition": "enforce",
+        "blocked-uri": "https://www.google-analytics.com/analytics.js",
+        "line-number": 20,
+        "column-number": 84,
+        "source-file": "https://twitbridge.com/ads/include.js?app=proxynetflix",
+        "status-code": 0
+
+    }
+}
+```
+
+__WTF:__ nothing like this on the website ```https://twitbridge.com/ads/include.js?app=proxynetflix```.
+
+__Answer:__ Any idea?
+
+
+---------------------------------------
 # savingsslider-a.akamaihd.net
 
 ```
