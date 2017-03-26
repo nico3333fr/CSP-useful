@@ -251,6 +251,56 @@ $tab_filter = array(
          'filter_on' => 'blocked_uri',
          'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/README.md#isp-updatesadds-files-on-mobiles',
          'comment' => ''
+    ),
+    'http://www.faceporn.net/' => array (
+         'filter_on' => 'script_sample',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/tree/master/csp-wtf#ublock-and-faceporn-yes',
+         'comment' => ''
+    ),
+    'Cacaoweb = { callbackIsRunning' => array (
+         'filter_on' => 'script_sample',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/tree/master/csp-wtf#var-cacaoweb',
+         'comment' => ''
+    ),
+    'chrome://kango-' => array (
+         'filter_on' => 'source_file',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/tree/master/csp-wtf#chromekango',
+         'comment' => ''
+    ),
+    'netdefender/hui/ndhui.js' => array (
+         'filter_on' => 'source_file',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/tree/master/csp-wtf#bitdefender-js-injection',
+         'comment' => ''
+    ),
+    'if (window.google && (window.google.sn' => array (
+         'filter_on' => 'script_sample',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/tree/master/csp-wtf#getpingu',
+         'comment' => ''
+    ),
+    'getpingu.com/assets' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/tree/master/csp-wtf#getpingu',
+         'comment' => ''
+    ),
+    '__webpack_require' => array (
+         'filter_on' => 'script_sample',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/tree/master/csp-wtf#webpack_require',
+         'comment' => ''
+    ),
+    'reek.github.io/anti-adblock-killer' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/tree/master/csp-wtf#anti-adblock-killer',
+         'comment' => ''
+    ),
+    'savingsslider-a.akamaihd.net' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/tree/master/csp-wtf#savingsslider-aakamaihdnet',
+         'comment' => ''
+    ),
+    'twitbridge.com/ads' => array (
+         'filter_on' => 'source_file',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/tree/master/csp-wtf#twitbridgecom',
+         'comment' => ''
     )/*,
     '' => array (
          'filter_on' => 'source_file',
