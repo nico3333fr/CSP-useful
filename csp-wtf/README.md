@@ -3,6 +3,29 @@
 Sometimes, CSP notifications are __really difficult to understand or very strange__. Here is a collection of some CSP WTF.
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
+
+---------------------------------------
+# app.abtasty.com
+
+```
+{
+    "csp-report": {
+        "document-uri": "https://www.estcequonmetenprodaujourdhui.info/",
+        "referrer": "",
+        "violated-directive": "default-src 'none'",
+        "effective-directive": "connect-src",
+        "original-policy": "default-src 'none';  script-src 'self' www.google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net; style-src 'self' 'unsafe-inline' ; img-src 'self' www.google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net data: ;  font-src 'self'; child-src 'self' ;  frame-ancestors 'none' ; manifest-src 'self' ; report-uri /csp-parser.php ;",
+        "blocked-uri": "https://app.abtasty.com",
+        "status-code": 0
+    }
+}
+```
+
+__WTF:__ nothing like this on the website ```https://app.abtasty.com```.
+
+__Answer:__ Any idea?
+
+
 ---------------------------------------
 # twitbridge.com
 
