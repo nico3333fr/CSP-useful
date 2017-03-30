@@ -3,6 +3,30 @@
 Sometimes, CSP notifications are __really difficult to understand or very strange__. Here is a collection of some CSP WTF.
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
+---------------------------------------
+# dataloading.net
+
+```
+{
+    "csp-report": {
+        "document-uri": "https://www.nicolas-hoffmann.net/source/1447-Background-image-couleurs-CSS-accessibilite.html",
+        "referrer": "https://www.google.sn/",
+        "violated-directive": "script-src",
+        "effective-directive": "script-src",
+        "original-policy": "default-src 'none';  script-src 'self' google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net; style-src 'self' data:  ; img-src 'self' google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net ssl.google-analytics.com data: ;  connect-src 'self';  font-src 'self'; media-src 'self'; object-src 'self' www.youtube.com ;  child-src 'self' ;  frame-ancestors 'self' ; manifest-src 'self' ; form-action 'self' ; report-uri /csp-parser.php ;",
+        "disposition": "enforce",
+        "blocked-uri": "https://dataloading.net/j/ijs?id=3FDC5C45-BCC8-53E4-AE57-010C7DAACD7B&d=23536a95-1dc4-496f-9964-b85788f42bd1&cl=upd",
+
+        "line-number": 1,
+        "column-number": 263,
+        "status-code": 0
+    }
+}
+```
+
+__WTF:__ nothing like this on the website ```dataloading.net```.
+
+__Answer:__ Any idea?
 
 ---------------------------------------
 # app.abtasty.com
