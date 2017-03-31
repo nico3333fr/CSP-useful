@@ -203,6 +203,7 @@ These bugs are just annoying, they are not critical. They provide false-positive
 
 - https://www.w3.org/TR/CSP3/
 - https://speakerdeck.com/mikispag/making-csp-great-again-michele-spagnuolo-and-lukas-weichselbaum
+- https://groups.google.com/a/chromium.org/forum/#!msg/blink-dev/t2ai4lsHhWI/MndrZyEWCwAJ
 
 ### Online tools that test CSP
 
