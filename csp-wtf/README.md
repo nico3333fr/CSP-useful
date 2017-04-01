@@ -3,6 +3,30 @@
 Sometimes, CSP notifications are __really difficult to understand or very strange__. Here is a collection of some CSP WTF.
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
+
+---------------------------------------
+# e={Vue:null
+
+```
+{
+    "csp-report": {
+        "blocked-uri": "self",
+        "document-uri": "http://www.visionclinique.ch/en/contact-us",
+        "line-number": 1,
+        "original-policy": "default-src http://www.visionclinique.ch; script-src http://www.visionclinique.ch http://www.google-analytics.com https://www.google-analytics.com http://stats.g.doubleclick.net https://stats.g.doubleclick.net 'unsafe-eval'; style-src http://www.visionclinique.ch data: 'unsafe-inline'; img-src http://www.visionclinique.ch http://www.google-analytics.com https://www.google-analytics.com http://stats.g.doubleclick.net https://stats.g.doubleclick.net data:; child-src http://www.visionclinique.ch; report-uri http://www.visionclinique.ch/csp-parser.php",
+        "referrer": "",
+        "script-sample": ";(function r(n){var t={},e={Vue:null,on:...",
+        "source-file": "http://www.visionclinique.ch/en/contact-us",
+        "violated-directive": "script-src http://www.visionclinique.ch http://www.google-analytics.com https://www.google-analytics.com http://stats.g.doubleclick.net https://stats.g.doubleclick.net 'unsafe-eval'"
+
+    }
+}
+```
+
+__WTF:__ nothing like this on the website ```e={Vue:null```.
+
+__Answer:__ Any idea?
+
 ---------------------------------------
 # dataloading.net
 
