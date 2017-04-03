@@ -4,6 +4,30 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 ---------------------------------------
+# _PostRPC
+
+```
+{
+    "csp-report": {
+        "blocked-uri": "self",
+        "document-uri": "https://rocssti.net/",
+        "line-number": 1,
+        "original-policy": "default-src 'none'; script-src https://rocssti.net https://www.google-analytics.com https://stats.g.doubleclick.net https://stats.g.doubleclick.net; style-src https://rocssti.net; img-src https://rocssti.net https://www.google-analytics.com https://stats.g.doubleclick.net https://stats.g.doubleclick.net data:; font-src https://rocssti.net; connect-src https://rocssti.net; child-src https://rocssti.net; frame-ancestors 'none'; manifest-src https://rocssti.net; form-action https://rocssti.net; report-uri https://rocssti.net/csp-parser.php",
+        "referrer": "",
+        "script-sample": "(function(){function _PostRPC() {\t\t// in...",
+        "source-file": "https://rocssti.net/",
+
+        "violated-directive": "script-src https://rocssti.net https://www.google-analytics.com https://stats.g.doubleclick.net https://stats.g.doubleclick.net"
+    }
+}
+```
+
+__WTF:__ nothing like this on the website ```_PostRPC```.
+
+__Answer:__ any idea?
+
+
+---------------------------------------
 # fireads.men
 
 ```
