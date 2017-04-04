@@ -4,6 +4,31 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 ---------------------------------------
+# rdc.apicit.net/tags.clickintext.net
+
+```
+{
+    "csp-report": {
+        "document-uri": "https://www.estcequonmetenprodaujourdhui.info/",
+        "referrer": "",
+        "violated-directive": "script-src",
+        "effective-directive": "script-src",
+        "original-policy": "default-src 'none';  script-src 'self' ; style-src 'self' 'nonce-a1c74e229ddba899e0755f048c03cbef27f7b82c91246ed161cb7eb96e92f2de170082a9a64d133e3aec9e5a339a0627ee6d860a016ad7397c40ca0dc9781131' ; img-src 'self'  data: ;  font-src 'self'; child-src 'self' ;  frame-ancestors 'none' ; manifest-src 'self' ; report-uri /csp-parser.php ;",
+        "disposition": "enforce",
+        "blocked-uri": "https://rdc.apicit.net/addtrack/index.fr.r1s147942.jquery.js?_=1491288121",
+        "line-number": 12,
+        "column-number": 31,
+        "source-file": "https://tags.clickintext.net/fNTzhFiADKTTZ",
+        "status-code": 0
+    }
+}
+```
+
+__WTF:__ nothing like this on the website.
+
+__Answer:__ probable malware/ads on client. (to confirm)
+
+---------------------------------------
 # _PostRPC
 
 ```
