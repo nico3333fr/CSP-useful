@@ -3,6 +3,33 @@
 Sometimes, CSP notifications are __really difficult to understand or very strange__. Here is a collection of some CSP WTF.
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
+
+---------------------------------------
+# data1.itineraire.info ?
+
+```
+{
+    "csp-report": {
+        "document-uri": "[anonymised]",
+        "referrer": "https://www.google.fr/",
+        "violated-directive": "script-src",
+        "effective-directive": "script-src",
+        "original-policy": "default-src 'self' *.vimeo.com *.akamaihd.net ;  script-src  'self' www.google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net *.vimeo.com *.vimeocdn.com *.newrelic.com *.nr-data.net ; style-src 'self' data: *.vimeocdn.com ; img-src 'self' www.google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net data: ;  child-src 'self' *.vimeo.com *.vimeocdn.com *.akamaihd.net ; frame-ancestors 'none' ; report-uri /csp-parser.php ;",
+        "disposition": "enforce",
+        "blocked-uri": "https://data1.itineraire.info/assets/get-octapid.php?callback=fdz_octapid_cb&plugin_key=s2nwnMfCRqD15%3A6LL%241adQ&app_code=itineraire&browser=ch",
+        "line-number": 15,
+        "column-number": 101260,
+
+        "source-file": "https://data1.itineraire.info/assets/js/jquery.js?app=itineraire&plugin_key=s2nwnMfCRqD15:6LL$1adQ&host=[anonymised]&201737",
+        "status-code": 0
+    }
+}
+```
+
+__WTF:__ nothing like this on the website.
+
+__Answer:__ any idea?
+
 ---------------------------------------
 # rdc.apicit.net/tags.clickintext.net
 
