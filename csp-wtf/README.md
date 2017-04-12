@@ -23,7 +23,7 @@ If you have an idea (even if the idea is WTF) for some of these, do not hesitate
 
 __WTF:__ nothing like this on the website.
 
-__Answer:__ might be related to this extension: https://github.com/niutech/comic-sans-replacer
+__Answer:__ might be related to this extension: https://github.com/niutech/comic-sans-replacer (see http://comicneue.com/)
 
 ---------------------------------------
 # data1.itineraire.info ?
