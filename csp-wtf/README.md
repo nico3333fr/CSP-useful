@@ -3,6 +3,27 @@
 Sometimes, CSP notifications are __really difficult to understand or very strange__. Here is a collection of some CSP WTF.
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
+---------------------------------------
+# comic-sans-replacer
+
+```
+{
+    "csp-report": {
+        "document-uri": "https://www.estcequonmetenprodaujourdhui.info/",
+        "referrer": "",
+        "violated-directive": "font-src",
+        "effective-directive": "font-src",
+        "original-policy": "default-src 'none';  script-src 'self' ; style-src 'self' 'nonce-76972fbfb86f1f6b41a0174d3c05b814d0d47e4aaa20d33b1da9e93d66bb8183fd39cc383d7d6bfc382dc3d08cd42eb78337aaec644abd4892e7cd1afa73830d' ; img-src 'self'  data: ;  font-src 'self'; child-src 'self' ;  frame-ancestors 'none' ; manifest-src 'self' ; report-uri /csp-parser.php ;",
+        "disposition": "enforce",
+        "blocked-uri": "https://cdn.jsdelivr.net/comic-sans-replacer/1.1/fonts/ComicNeue-Regular.ttf",
+        "status-code": 0
+    }
+}
+```
+
+__WTF:__ nothing like this on the website.
+
+__Answer:__ might be related to this extension: https://github.com/niutech/comic-sans-replacer
 
 ---------------------------------------
 # data1.itineraire.info ?
