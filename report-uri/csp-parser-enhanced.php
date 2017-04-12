@@ -16,13 +16,14 @@ $data = file_get_contents('php://input');
 // array for filtering
 $tab_filter = array(
     /*
+    // avoid having the same entry
     'MANDATORY: string_to_search' => array (
          'filter_on' => 'MANDATORY: field to search on, see later for filtering', // source_file/blocked_uri/script_sample/referrer/doc_uri
          'case_description' => '', // Optional: URL for description 
          'comment' => '' // Optional: a… comment!
     )
     */
-    'chromenull://' => array (
+    'chromenull:/' => array (
          'filter_on' => 'source_file',
          'case_description' => 'https://report-uri.io/',
          'comment' => 'Coming from report_uri tool'
@@ -97,7 +98,7 @@ $tab_filter = array(
          'case_description' => 'https://code.google.com/p/chromium/issues/detail?id=524356',
          'comment' => 'avoid false positives notifications coming from Chrome extensions (Wappalyzer, MuteTab, etc.)'
     ),
-    'safari-extension://' => array (
+    'safari-extension:/' => array (
          'filter_on' => 'blocked_uri',
          'case_description' => '',
          'comment' => 'avoid false positives notifications coming from Safari extensions (diigo, evernote, etc.)'
