@@ -3,6 +3,33 @@
 Sometimes, CSP notifications are __really difficult to understand or very strange__. Here is a collection of some CSP WTF.
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
+
+---------------------------------------
+# pstatic.davebestdeals.com
+
+```
+
+{
+    "csp-report": {
+        "document-uri": "https://www.nicolas-hoffmann.net/source/1209-Clim-City-enfin-reussi.html",
+        "referrer": "https://www.google.fr/",
+        "violated-directive": "script-src",
+        "effective-directive": "script-src",
+        "original-policy": "default-src 'none';  script-src 'self' google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net; style-src 'self' data:  ; img-src 'self' google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net ssl.google-analytics.com data: ;  connect-src 'self';  font-src 'self'; media-src 'self'; object-src 'self' www.youtube.com ;  child-src 'self' ;  frame-ancestors 'self' ; manifest-src 'self' ; form-action 'self' ; report-uri /csp-parser.php ;",
+        "disposition": "enforce",
+        "blocked-uri": "https://pstatic.davebestdeals.com/nwp/v0_0_1148/release/Shared/App/SharedApp.js?t=1",
+        "line-number": 2,
+        "column-number": 1381,
+        "source-file": "https://istatic.davebestdeals.com/fo/ec/ade.js?subid=common1",
+        "status-code": 0
+    }
+}
+```
+
+__WTF:__ nothing like this on the website.
+
+__Answer:__ probably malware on client side. (to confirm)
+
 ---------------------------------------
 # comic-sans-replacer
 
