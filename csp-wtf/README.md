@@ -25,6 +25,25 @@ If you have an idea (even if the idea is WTF) for some of these, do not hesitate
     }
 }
 ```
+or 
+```
+{
+    "csp-report": {
+        "document-uri": "https://www.nicolas-hoffmann.net/source/1209-Clim-City-enfin-reussi.html",
+        "referrer": "https://www.google.fr/",
+        "violated-directive": "script-src",
+        "effective-directive": "script-src",
+        "original-policy": "default-src 'none';  script-src 'self' google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net; style-src 'self' data:  ; img-src 'self' google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net ssl.google-analytics.com data: ;  connect-src 'self';  font-src 'self'; media-src 'self'; object-src 'self' www.youtube.com ;  child-src 'self' ;  frame-ancestors 'self' ; manifest-src 'self' ; form-action 'self' ; report-uri /csp-parser.php ;",
+        "disposition": "enforce",
+        "blocked-uri": "https://static.donation-tools.org/widgets/gtn/widget.js?_irh_subid=common1&_irh_exid=ade",
+        "line-number": 2,
+        "column-number": 13158,
+
+        "source-file": "https://istatic.davebestdeals.com/fo/ec/ade.js?subid=common1",
+        "status-code": 0
+    }
+}
+```
 
 __WTF:__ nothing like this on the website.
 
