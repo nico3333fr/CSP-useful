@@ -3,6 +3,27 @@
 Sometimes, CSP notifications are __really difficult to understand or very strange__. Here is a collection of some CSP WTF.
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
+---------------------------------------
+# zscaler.net
+
+```
+{
+    "csp-report": {
+        "blocked-uri": "self",
+        "document-uri": "https://www.estcequonmetenprodaujourdhui.info/",
+        "line-number": 33,
+        "original-policy": "default-src 'none'; script-src https://*.zscaler.net https://www.estcequonmetenprodaujourdhui.info; style-src https://*.zscaler.net https://www.estcequonmetenprodaujourdhui.info 'nonce-4515373d1f1bbf1fb067e0413eb950978109202566edfe05826f0654dfb581b133a5b9e824faad5d2a46ffe5c3068cdfe576568f48e3ae604a9c1ce597ccb59a'; img-src https://*.zscaler.net https://www.estcequonmetenprodaujourdhui.info data:; font-src https://*.zscaler.net https://www.estcequonmetenprodaujourdhui.info; frame-ancestors 'none'; report-uri https://www.estcequonmetenprodaujourdhui.info/csp-parser.php",
+        "referrer": "https://www.google.fr/search?q=est-ce+qu%27on+met+en+prod+aujourd%27hui&ie=utf-8&oe=utf-8&safe=active&gws_rd=cr&ei=dpPwWKS5NoObU-yrvrAJ",
+        "script-sample": "\n\nbody {\n  background: #fff;\n  color: #0...",
+        "source-file": "https://www.estcequonmetenprodaujourdhui.info/",
+        "violated-directive": "style-src https://*.zscaler.net https://www.estcequonmetenprodaujourdhui.info 'nonce-4515373d1f1bbf1fb067e0413eb950978109202566edfe05826f0654dfb581b133a5b9e824faad5d2a46ffe5c3068cdfe576568f48e3ae604a9c1ce597ccb59a'"
+    }
+}
+```
+
+__WTF:__ nothing like this on the website (no zscaler.net in this website CSP policy).
+
+__Answer:__ zscaler is a cloud web security solution, any idea how it changes CSP settings for a website?
 
 ---------------------------------------
 # pstatic.davebestdeals.com
