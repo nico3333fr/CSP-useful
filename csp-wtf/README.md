@@ -4,29 +4,6 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 
----------------------------------------
-# *.davebestdeals.com
-
-```
-{
-    "csp-report": {
-        "document-uri": "https://www.nicolas-hoffmann.net/source/cv-developpeur-web-integrateur-xhtml-css.php",
-        "referrer": "https://www.google.dz/",
-        "violated-directive": "script-src 'self' google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net",
-        "effective-directive": "script-src",
-        "original-policy": "default-src 'none';  script-src 'self' google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net; style-src 'self' data:  ; img-src 'self' google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net ssl.google-analytics.com data: ;  connect-src 'self';  font-src 'self'; media-src 'self'; object-src 'self' www.youtube.com ;  child-src 'self' ;  frame-ancestors 'self' ; manifest-src 'self' ; form-action 'self' ; report-uri /csp-parser.php ;",
-        "blocked-uri": "https://pstatic.davebestdeals.com",
-        "source-file": "https://istatic.davebestdeals.com",
-        "line-number": 2,
-        "column-number": 1381,
-        "status-code": 0
-    }
-}
-```
-
-__WTF:__ nothing like this on the website (not in sources, neither in script).
-
-__Answer:__ I don’t know where it comes from (malware?), but I see it REALLY often in CSP reports.
 
 ---------------------------------------
 # zscaler.net
@@ -51,7 +28,7 @@ __WTF:__ nothing like this on the website (no zscaler.net in this website CSP po
 __Answer:__ zscaler is a cloud web security solution, any idea how it changes CSP settings for a website?
 
 ---------------------------------------
-# pstatic.davebestdeals.com
+# *.davebestdeals.com
 
 ```
 
@@ -90,10 +67,28 @@ or
     }
 }
 ```
+or
 
-__WTF:__ nothing like this on the website.
+```
+{
+    "csp-report": {
+        "document-uri": "https://www.nicolas-hoffmann.net/source/cv-developpeur-web-integrateur-xhtml-css.php",
+        "referrer": "https://www.google.dz/",
+        "violated-directive": "script-src 'self' google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net",
+        "effective-directive": "script-src",
+        "original-policy": "default-src 'none';  script-src 'self' google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net; style-src 'self' data:  ; img-src 'self' google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net ssl.google-analytics.com data: ;  connect-src 'self';  font-src 'self'; media-src 'self'; object-src 'self' www.youtube.com ;  child-src 'self' ;  frame-ancestors 'self' ; manifest-src 'self' ; form-action 'self' ; report-uri /csp-parser.php ;",
+        "blocked-uri": "https://pstatic.davebestdeals.com",
+        "source-file": "https://istatic.davebestdeals.com",
+        "line-number": 2,
+        "column-number": 1381,
+        "status-code": 0
+    }
+}
+```
 
-__Answer:__ probably malware on client side. (to confirm)
+__WTF:__ nothing like this on the website (not in sources, neither in scripts).
+
+__Answer:__ I don’t know where it comes from (malware?), but I see it REALLY often in CSP reports.
 
 ---------------------------------------
 # comic-sans-replacer
