@@ -98,6 +98,11 @@ $tab_filter = array(
          'case_description' => 'https://code.google.com/p/chromium/issues/detail?id=524356',
          'comment' => 'avoid false positives notifications coming from Chrome extensions (Wappalyzer, MuteTab, etc.)'
     ),
+    'chrome-extension:/' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://code.google.com/p/chromium/issues/detail?id=524356',
+         'comment' => 'avoid false positives notifications coming from Chrome extensions (Wappalyzer, MuteTab, etc.)'
+    ),
     'safari-extension:/' => array (
          'filter_on' => 'blocked_uri',
          'case_description' => '',
