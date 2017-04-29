@@ -4,6 +4,28 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 ---------------------------------------
+# GeckoScriptBridge.js
+
+```
+{
+    "csp-report": {
+        "blocked-uri": "self",
+        "document-uri": "https://www.estcequonmetenprodaujourdhui.info/",
+        "line-number": 48,
+        "original-policy": "default-src 'none'; script-src https://www.estcequonmetenprodaujourdhui.info; style-src https://www.estcequonmetenprodaujourdhui.info 'nonce-dd3204dc997ae03878f3be16ed08edd4b56f28feb5f91d78c828174b83475f5d0c89f80e537f9e71dc805a5cecbfe9c54189040bc027e10120fa81630fbb2094'; img-src https://www.estcequonmetenprodaujourdhui.info data:; font-src https://www.estcequonmetenprodaujourdhui.info; child-src https://www.estcequonmetenprodaujourdhui.info; frame-ancestors 'none'; manifest-src https://www.estcequonmetenprodaujourdhui.info; report-uri https://www.estcequonmetenprodaujourdhui.info/csp-parser.php",
+        "referrer": "",
+        "script-sample": "call to eval() or related function blocked by CSP",
+        "source-file": "jar:file:///C:/Program%20Files%20(x86)/ZennoLab/RU/ZennoPoster%20Pro/5.10.7.0/Progs/XulFx.xpi!/components/GeckoScriptBridge.js",
+        "violated-directive": "script-src https://www.estcequonmetenprodaujourdhui.info"
+    }
+}
+```
+
+__WTF:__ nothing like this on the website.
+
+__Answer:__ probably an extension on Firefox (related to http://zennolab.com/en/products/zennoposter/ ?).
+
+---------------------------------------
 # loadingdata.site
 
 ```
