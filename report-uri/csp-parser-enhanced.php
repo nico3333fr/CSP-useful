@@ -18,7 +18,7 @@ $tab_filter = array(
     /*
     // avoid having the same entry
     'MANDATORY: string_to_search' => array (
-         'filter_on' => 'MANDATORY: field to search on, see later for filtering', // source_file/blocked_uri/script_sample/referrer/doc_uri
+         'filter_on' => 'MANDATORY: field to search on, see later for filtering', // source_file/blocked_uri/script_sample/referrer/doc_uri/original_policy
          'case_description' => '', // Optional: URL for description 
          'comment' => '' // Optional: a… comment!
     )
@@ -377,6 +377,31 @@ $tab_filter = array(
          'filter_on' => 'blocked_uri',
          'case_description' => 'https://github.com/nico3333fr/CSP-useful/tree/master/csp-wtf#pstaticdavebestdealscom',
          'comment' => ''
+    ),
+    '.password-toggler-button-parent' => array (
+         'filter_on' => 'script_sample',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/README.md#password-toggler',
+         'comment' => ''
+    ),
+    'allowAdblock()' => array (
+         'filter_on' => 'script_sample',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/README.md#allowadblock',
+         'comment' => ''
+    ),
+    'loadingdata.site' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/README.md#loadingdatasite',
+         'comment' => ''
+    ),
+    'ZennoPoster' => array (
+         'filter_on' => 'source_file',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/README.md#geckoscriptbridgejs',
+         'comment' => ''
+    ),
+    'jar:file' => array (
+         'filter_on' => 'source_file',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/README.md#geckoscriptbridgejs',
+         'comment' => 'extensions'
     )/*,
     '' => array (
          'filter_on' => 'source_file',
@@ -398,6 +423,11 @@ $tab_filter = array(
     'https://fonts.googleapis.com/css' => array (
          'filter_on' => 'blocked_uri',
          'case_description' => '',
+         'comment' => ''
+    ),
+    'zscaler.net' => array (
+         'filter_on' => 'original_policy',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/README.md#zscalernet',
          'comment' => ''
     )*/
 );
@@ -429,6 +459,9 @@ if ($data = json_decode($data, true)) {
             break;
         case 'doc_uri':
             $filter_on = $data['csp-report']['document-uri'];
+            break;
+        case 'original_policy':
+            $filter_on = $data['csp-report']['original-policy'];
             break;
       }
       
