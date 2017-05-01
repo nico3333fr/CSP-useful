@@ -135,4 +135,11 @@ connect-src embedr.flickr.com geo.query.yahoo.com ;
 script-src assets.codepen.io production-assets.codepen.io ;
 ```
 
+## Cloudflare AMP service
+
+    style-src: https://amp.cloudflare.com 
+    script-src: https://amp.cloudflare.com 
+    connect-src: https://discovery.amp.cloudflare.com/v1/ampUrls:batchGet
+
+
 Feel free to participate. :)
