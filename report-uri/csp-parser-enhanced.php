@@ -198,12 +198,12 @@ $tab_filter = array(
          'case_description' => 'https://github.com/nico3333fr/CSP-useful/tree/master/csp-wtf#onsubmitonchangeonfocusinetc-attribute-on-div-element',
          'comment' => 'WTF ?'
     ), 
-    'embed[height=\"175\"][width=\"175\"]' => array (
+    'embed[height="175"][width="175"]' => array (
          'filter_on' => 'script_sample',
          'case_description' => 'https://github.com/nico3333fr/CSP-useful/tree/master/csp-wtf#embedheight175width175-',
          'comment' => 'WTF ?'
     ),
-    'try {\r\nwindow.AG_onLoad = function' => array (
+    'window.AG_onLoad = function' => array (
          'filter_on' => 'script_sample',
          'case_description' => 'https://github.com/nico3333fr/CSP-useful/tree/master/csp-wtf#try-rnwindowag_onload--function-',
          'comment' => 'WTF ?'
