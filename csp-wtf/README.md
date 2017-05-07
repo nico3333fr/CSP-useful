@@ -4,6 +4,30 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 ---------------------------------------
+# wrcx
+
+```
+{
+    "csp-report": {
+        "blocked-uri": "self",
+        "document-uri": "http://www.aprotec.ch/fr/bonus/fonds-ecran-economiseur-ecran",
+        "line-number": 1,
+        "original-policy": "default-src http://www.aprotec.ch; script-src http://www.aprotec.ch https://www.google-analytics.com http://www.google-analytics.com http://stats.g.doubleclick.net https://stats.g.doubleclick.net; style-src http://www.aprotec.ch data:; img-src http://www.aprotec.ch https://www.google-analytics.com http://www.google-analytics.com http://*.aprotec.ch http://stats.g.doubleclick.net https://stats.g.doubleclick.net data:; child-src http://www.aprotec.ch; report-uri http://www.aprotec.ch/csp-parser.php",
+        "referrer": "https://www.google.fr/",
+        "script-sample": ".wrcx {display:none} .r .wrcx,  .fc .wrc...",
+        "source-file": "http://www.aprotec.ch/fr/bonus/fonds-ecran-economiseur-ecran",
+
+        "violated-directive": "style-src http://www.aprotec.ch data:"
+    }
+}
+```
+
+__WTF:__ nothing like this on the website.
+
+__Answer:__ any idea??????????????????????
+
+
+---------------------------------------
 # akamaihd.net
 
 ```
