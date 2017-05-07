@@ -420,7 +420,7 @@ $tab_filter = array(
          'case_description' => '',
          'comment' => ''
     ),
-    'https://fonts.googleapis.com/css' => array (
+    'fonts.googleapis.com' => array (
          'filter_on' => 'blocked_uri',
          'case_description' => '',
          'comment' => ''
