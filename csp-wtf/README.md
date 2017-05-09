@@ -4,6 +4,31 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 ---------------------------------------
+# jsl.infostatsvc.com
+
+
+```
+{
+    "csp-report": {
+        "document-uri": "https://www.nicolas-hoffmann.net/source/1302-Balise-video-de-HTML5-comment-l-inserer.html",
+        "referrer": "https://www.google.tn/",
+        "violated-directive": "img-src",
+        "effective-directive": "img-src",
+        "original-policy": "default-src 'none';  script-src 'self' google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net; style-src 'self' data:  ; img-src 'self' google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net ssl.google-analytics.com data: ;  connect-src 'self';  font-src 'self'; media-src 'self'; object-src 'self' www.youtube.com ;  child-src 'self' ;  frame-ancestors 'self' ; manifest-src 'self' ; form-action 'self' ; report-uri /csp-parser.php ;",
+        "disposition": "enforce",
+        "blocked-uri": "https://jsl.infostatsvc.com/?InitException_3=1163|,|EvalError%3A%20Refused%20to%20evaluate%20a%20string%20as%20JavaScript%20because%20%27unsafe-eval%27%20is%20not%20an%20allowed%20source%20of%20script%20in%20the%20following%20Content%20Security%20Policy%20directive%3A%20%22script-src%20%27self%27%20google-analytics.com%20stats.g.doubleclick.net%20https%3A%2F%2Fstats.g.doubleclick.net%22.%0A|,|7b4157d9-ecfb-4481-8e94-9f8f55a3e7f3|,|0|,|1000R|,|Chrome|,|Browser",
+        "status-code": 0
+    }
+}
+
+```
+
+__WTF:__ nothing like this on the website.
+
+__Answer:__ it seems to be an adware on client side: https://malwaretips.com/blogs/remove-jsl-infostatsvc-com-virus/
+
+
+---------------------------------------
 # rw_sendSocketMessage
 
 ```
