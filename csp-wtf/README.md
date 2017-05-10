@@ -4,6 +4,29 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 ---------------------------------------
+# volcanicpixels.com
+
+
+```
+{
+    "csp-report": {
+        "document-uri": "https://www.estcequonmetenprodaujourdhui.info/",
+        "referrer": "",
+        "violated-directive": "font-src",
+        "effective-directive": "font-src",
+        "original-policy": "default-src 'none';  script-src 'self' ; style-src 'self' 'nonce-18be64c7f0c944fcb4616aaa4bedf3b3b68f137d288bdbe5431f83db2659ccc084dfb1772f70aeeb6990db7c731d7052ea3fa87ad1853cf47f6a92c96478266f' ; img-src 'self'  data: ;  font-src 'self'; child-src 'self' ;  frame-ancestors 'none' ; manifest-src 'self' ; report-uri /csp-parser.php ;",
+        "disposition": "enforce",
+        "blocked-uri": "https://commondatastorage.googleapis.com/assets.volcanicpixels.com/webfonts/blokk/BLOKKRegular.woff",
+        "status-code": 0
+    }
+}
+```
+
+__WTF:__ nothing like this on the website.
+
+__Answer:__ probably related to https://www.volcanicpixels.com/
+
+---------------------------------------
 # jsl.infostatsvc.com
 
 
