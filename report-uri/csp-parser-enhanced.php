@@ -402,6 +402,46 @@ $tab_filter = array(
          'filter_on' => 'source_file',
          'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/README.md#geckoscriptbridgejs',
          'comment' => 'extensions'
+    ),
+    '.topbanneradvertise' => array (
+         'filter_on' => 'script_sample',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/README.md#topbanneradvertise',
+         'comment' => ''
+    ),
+    'ashishmishra.in/gridify' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/README.md#gridify',
+         'comment' => ''
+    ),
+    'akamaihd.net' => array (
+         'filter_on' => 'source_file',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/README.md#akamaihdnet',
+         'comment' => ''
+    ),
+    '.wrcx {display:none}' => array (
+         'filter_on' => 'script_sample',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/README.md#wrcx',
+         'comment' => ''
+    ),
+    'rw_sendSocketMessage(aData)' => array (
+         'filter_on' => 'script_sample',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/README.md#rw_sendsocketmessage',
+         'comment' => ''
+    ),
+    'jsl.infostatsvc.com' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/README.md#jslinfostatsvccom',
+         'comment' => ''
+    ),
+    'assets.volcanicpixels.com' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/README.md#volcanicpixelscom',
+         'comment' => ''
+    ),
+    'loadingpages.me' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/README.md#loadingpagesme',
+         'comment' => ''
     )/*,
     '' => array (
          'filter_on' => 'source_file',
