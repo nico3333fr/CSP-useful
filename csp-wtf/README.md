@@ -4,6 +4,32 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 ---------------------------------------
+# yellowads.men
+
+
+```
+{
+    "csp-report": {
+        "document-uri": "https://www.nicolas-hoffmann.net/source/cv-developpeur-web-integrateur-xhtml-css.php",
+        "referrer": "https://www.google.com/",
+        "violated-directive": "script-src",
+        "effective-directive": "script-src",
+        "original-policy": "default-src 'none';  script-src 'self' google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net; style-src 'self' data:  ; img-src 'self' google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net ssl.google-analytics.com data: ;  connect-src 'self';  font-src 'self'; media-src 'self'; object-src 'self' www.youtube.com ;  child-src 'self' ;  frame-ancestors 'self' ; manifest-src 'self' ; form-action 'self' ; report-uri /csp-parser.php ;",
+        "disposition": "enforce",
+        "blocked-uri": "https://yellowads.men/code/pid/812933_BNX.js?rev=479",
+        "line-number": 1,
+        "column-number": 894,
+        "source-file": "https://yellowads.men/code/?pid=812933&r=8076680",
+        "status-code": 0
+    }
+}
+```
+
+__WTF:__ nothing like this on the website.
+
+__Answer:__ probably malware on client side (see https://www.supprimervirus.net/supprimer-b-yellowads-men/ in french)
+
+---------------------------------------
 # loadingpages.me
 
 
