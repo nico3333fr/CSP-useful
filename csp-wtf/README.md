@@ -4,6 +4,33 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 ---------------------------------------
+# 7a2rnuey1tw9ar.ru
+
+
+```
+{
+    "csp-report": {
+        "document-uri": "http://www.visionclinique.ch/en/",
+        "referrer": "http://www.alexstangos.com/",
+        "violated-directive": "script-src",
+        "effective-directive": "script-src",
+        "original-policy": "default-src 'self';  script-src 'self' http://www.google-analytics.com https://www.google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net 'unsafe-eval' ; style-src 'self'  data: 'unsafe-inline' ; img-src 'self' http://www.google-analytics.com https://www.google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net data: ;  child-src 'self' ; report-uri /csp-parser.php ;",
+        "disposition": "enforce",
+        "blocked-uri": "http://7a2rnuey1tw9ar.ru/ajs/28722/c/766973696f6e636c696e697175652e6368_0.js",
+        "line-number": 1,
+        "column-number": 1216,
+        "source-file": "http://ze406soi.ru/pjs/28722.js",
+        "status-code": 200
+    }
+}
+```
+
+__WTF:__ nothing like this on the website.
+
+__Answer:__ any idea? Malware, other?
+
+
+---------------------------------------
 # yellowads.men
 
 
