@@ -4,6 +4,33 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 ---------------------------------------
+# cr-input.mxpnl.net
+
+
+```
+{
+    "csp-report": {
+        "document-uri": "https://van11y.net/?utm_source=forwebdev_tlgrm&utm_medium=announcement&utm_campaign=van11y--kollektsiya-gotovyh-k-ispolzovani",
+        "referrer": "",
+        "violated-directive": "connect-src",
+        "effective-directive": "connect-src",
+        "original-policy": "default-src 'none';script-src 'unsafe-eval' 'self';style-src 'self';img-src 'self';font-src 'self';connect-src 'self';child-src 'self';frame-ancestors 'none';manifest-src 'self';report-uri /csp-parser.php;",
+        "disposition": "enforce",
+        "blocked-uri": "https://cr-input.mxpnl.net/data?_channel_id=&_partner_id=39571&_sub_id=0000&_app_version=1.0.23&_app=cs-dca",
+        "line-number": 34166,
+        "column-number": 15,
+        "status-code": 0
+    }
+}
+```
+
+__WTF:__ nothing like this on the website (not in sources, neither in scripts).
+
+__Answer:__ I don’t know where it comes from, but I see it REALLY often in CSP reports.
+
+
+
+---------------------------------------
 # 7a2rnuey1tw9ar.ru
 
 
