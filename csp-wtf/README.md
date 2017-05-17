@@ -4,6 +4,30 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 ---------------------------------------
+# audiocdn.lingualeo.com
+
+
+```
+{
+    "csp-report": {
+        "document-uri": "https://van11y.net/accessible-tab-panel/",
+        "referrer": "https://habrahabr.ru/company/zfort/blog/328636/",
+        "violated-directive": "media-src",
+        "effective-directive": "media-src",
+        "original-policy": "default-src 'none' ;  script-src 'self'; style-src 'self' ; img-src 'self'; font-src 'self';  connect-src 'self'; child-src 'self' ; frame-ancestors 'none' ; manifest-src 'self' ; report-uri /csp-parser.php ;",
+        "disposition": "enforce",
+        "blocked-uri": "https://audiocdn.lingualeo.com/v2/1/1771-631152008.mp3",
+        "status-code": 0
+    }
+}
+```
+
+__WTF:__ nothing like this on the website (not in sources, neither in scripts). (a mp3 that says ARIA!)
+
+__Answer:__ seems like http://lingualeo.com/ is a tool to learn languages.
+
+
+---------------------------------------
 # cr-input.mxpnl.net
 
 
