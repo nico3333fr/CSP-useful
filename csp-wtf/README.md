@@ -4,6 +4,33 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 ---------------------------------------
+# adsstrike.pro
+
+
+```
+{
+    "csp-report": {
+        "document-uri": "https://van11y.net/accessible-tab-panel/",
+        "referrer": "https://habrahabr.ru/company/zfort/blog/328636/",
+        "violated-directive": "script-src",
+        "effective-directive": "script-src",
+        "original-policy": "default-src 'none' ;  script-src 'self'; style-src 'self' ; img-src 'self'; font-src 'self';  connect-src 'self'; child-src 'self' ; frame-ancestors 'none' ; manifest-src 'self' ; report-uri /csp-parser.php ;",
+        "disposition": "enforce",
+        "blocked-uri": "https://adsstrike.pro/code/pid/965578_BNX.js?rev=3657",
+
+        "line-number": 1,
+        "column-number": 897,
+        "source-file": "https://adsstrike.pro/code/?pid=965578&r=0.9275899753455017",
+        "status-code": 0
+    }
+}
+```
+
+__WTF:__ nothing like this on the website.
+
+__Answer:__ Probably malware, any idea?
+
+---------------------------------------
 # audiocdn.lingualeo.com
 
 
