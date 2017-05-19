@@ -1147,6 +1147,24 @@ __Answer:__ Might be related to extension that allow to personnalize fonts, like
     }
 }
 ```
+or
+```
+{
+    "csp-report": {
+        "document-uri": "https://www.estcequonmetenprodaujourdhui.info/",
+        "referrer": "",
+        "violated-directive": "style-src",
+        "effective-directive": "style-src",
+        "original-policy": "default-src 'none';  script-src 'self' ; style-src 'self' 'nonce-1e06551000a8d8186c9e4fa4b3a3d42536156246d4f94be747dea5b2b3513850dbfd186ffd8bf437b33ead6c16f9bdb4b349156b75e91a1f8df880471cf69bb3' ; img-src 'self'  data: ;  font-src 'self'; child-src 'self' ;  frame-ancestors 'none' ; manifest-src 'self' ; report-uri /csp-parser.php ;",
+        "disposition": "enforce",
+        "blocked-uri": "https://adblockers.opera-mini.net/css_block/page_0_24e0kl4y70wbt1yl6ubo6mmu4iikj9axe517otg3vbutjnpeiy.css",
+        "line-number": 143,
+        "source-file": "https://www.estcequonmetenprodaujourdhui.info/",
+
+        "status-code": 0
+    }
+}
+```
 and
 ```
 {
