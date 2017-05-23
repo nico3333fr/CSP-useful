@@ -568,7 +568,7 @@ __WTF:__ nothing like this on the website.
 __Answer:__ might be related to this extension: https://github.com/niutech/comic-sans-replacer (see http://comicneue.com/)
 
 ---------------------------------------
-# data1.itineraire.info ?
+# data1.itineraire.info and its friends data1.*
 
 ```
 {
@@ -601,10 +601,28 @@ or
     }
 }
 ```
+or 
+```
+{
+    "csp-report": {
+        "document-uri": "[anonymised]",
+        "referrer": "https://www.google.fr/",
+        "violated-directive": "script-src",
+        "effective-directive": "script-src",
+        "original-policy": "default-src 'self';  script-src 'self' https://www.google-analytics.com http://www.google-analytics.com  stats.g.doubleclick.net https://stats.g.doubleclick.net ; style-src 'self' data: ; img-src 'self' https://www.google-analytics.com http://www.google-analytics.com *.[anonymised] stats.g.doubleclick.net https://stats.g.doubleclick.net data: ;  child-src 'self' ; report-uri /csp-parser.php ;",
+        "disposition": "enforce",
+        "blocked-uri": "https://data1.recettes.net/assets/get-octapid.php?callback=fdz_octapid_cb&plugin_key=MblYKwZwCG1nfLq%24Q9k4Pw&app_code=recettes&browser=ch",
+        "line-number": 15,
+        "column-number": 101260,
+        "source-file": "https://data1.recettes.net/assets/js/jquery.js?app=recettes&plugin_key=MblYKwZwCG1nfLq$Q9k4Pw&host=[anonymised]&2017423",
+        "status-code": 200
+    }
+}
+```
 
 __WTF:__ nothing like this on the website.
 
-__Answer:__ any idea?
+__Answer:__ any idea? (it seems to be confirmed by other RUM sources)
 
 ---------------------------------------
 # rdc.apicit.net/tags.clickintext.net
