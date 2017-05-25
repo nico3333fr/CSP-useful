@@ -93,6 +93,8 @@ It <del>should be</del> is fixed with Firefox 42 https://bugzilla.mozilla.org/sh
 
 In [folder "CSP WTF"](https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/README.md), you may find examples of strange notifications you may receive. Feel free to add/explain some.
 
+Now the list is splitted in two, explained or not yet explained notifications.
+
 
 
 
