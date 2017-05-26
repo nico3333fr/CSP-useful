@@ -182,6 +182,21 @@ __Answer:__ might be related to this extension: https://github.com/pckltr/passwo
     }
 }
 ```
+or 
+```
+{
+    "csp-report": {
+        "blocked-uri": "self",
+        "document-uri": "https://www.estcequonmetenprodaujourdhui.info/",
+        "line-number": 33,
+        "original-policy": "default-src 'none'; script-src https://www.estcequonmetenprodaujourdhui.info; style-src https://www.estcequonmetenprodaujourdhui.info 'nonce-34341fafadab0a7272c62cddbde2fc8eaca52160cdf3977ae2775ec4e460d5416d5e1104371cb1f5633c7e2615bd8d778949e6cc704751f3e88241d243a4c9e8'; img-src https://www.estcequonmetenprodaujourdhui.info data:; font-src https://www.estcequonmetenprodaujourdhui.info; frame-ancestors 'none'; report-uri https://www.estcequonmetenprodaujourdhui.info/csp-parser.php",
+        "referrer": "https://login.zscalertwo.net/sfc_upq?origurl=https%3A%2F%2Fwww%2eestcequonmetenprodaujourdhui%2einfo%2f&_ordtok=RN43WVqnbHJrHTVMqVqkWnSDpR&smup_ca=ifVFH1s2wK3jKL7Q&smup_ci=4b2WWVhRN3F2s&smupcat=akpEMmY3bjU1RkZnTg",
+        "script-sample": "\n\nbody {\n  background: #fff;\n  color: #0...",
+        "source-file": "https://www.estcequonmetenprodaujourdhui.info/",
+        "violated-directive": "style-src https://www.estcequonmetenprodaujourdhui.info 'nonce-34341fafadab0a7272c62cddbde2fc8eaca52160cdf3977ae2775ec4e460d5416d5e1104371cb1f5633c7e2615bd8d778949e6cc704751f3e88241d243a4c9e8'"
+    }
+}
+```
 
 __WTF:__ nothing like this on the website (no zscaler.net in this website CSP policy).
 
