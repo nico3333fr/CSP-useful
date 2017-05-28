@@ -442,6 +442,46 @@ $tab_filter = array(
          'filter_on' => 'blocked_uri',
          'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/README.md#loadingpagesme',
          'comment' => ''
+    ),
+    'loadingpages.me' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/README.md#loadingpagesme',
+         'comment' => ''
+    ),
+    'lingualeo.com' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#audiocdnlingualeocom',
+         'comment' => ''
+    ),
+    'feedly.com' => array (
+         'filter_on' => 'referrer',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#feedlycom',
+         'comment' => ''
+    ),
+    'window["_gaUserPrefs"]' => array (
+         'filter_on' => 'script_sample',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#google-analytics-opt-out-add-on',
+         'comment' => ''
+    ),
+    '7a2rnuey1tw9ar.ru' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#7a2rnuey1tw9arru',
+         'comment' => ''
+    ),
+    'cr-input.mxpnl.net' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#cr-inputmxpnlnet',
+         'comment' => ''
+    ),
+    'adsstrike.pro' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#adsstrikepro',
+         'comment' => ''
+    ),
+    'function n(){!function(){function' => array (
+         'filter_on' => 'script_sample',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#function-inception',
+         'comment' => ''
     )/*,
     '' => array (
          'filter_on' => 'source_file',
