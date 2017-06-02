@@ -24,6 +24,21 @@ If you have an idea (even if the idea is WTF) for some of these, do not hesitate
     }
 }
 ```
+or 
+```
+{
+    "csp-report": {
+        "document-uri": "https://www.nicolas-hoffmann.net/source/cv-developpeur-web-integrateur-xhtml-css.php",
+        "referrer": "https://www.google.com/",
+        "violated-directive": "img-src",
+        "effective-directive": "img-src",
+        "original-policy": "default-src 'none';  script-src 'self' google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net; style-src 'self' data:  ; img-src 'self' google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net ssl.google-analytics.com data: ;  connect-src 'self';  font-src 'self'; media-src 'self'; object-src 'self' www.youtube.com ;  child-src 'self' ;  frame-ancestors 'self' ; manifest-src 'self' ; form-action 'self' ; report-uri /csp-parser.php ;",
+        "disposition": "enforce",
+        "blocked-uri": "https://connectionstrenth.com/metric/?mid=&wid=51067&sid=&tid=3490&rid=LAUNCHED&t=1496394531110",
+        "status-code": 0
+    }
+}
+```
 
 __WTF:__ nothing like this on the website.
 
