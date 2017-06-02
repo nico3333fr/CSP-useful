@@ -4,6 +4,32 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 ---------------------------------------
+# connectionstrenth.com
+
+```
+{
+    "csp-report": {
+        "document-uri": "https://www.nicolas-hoffmann.net/source/cv-developpeur-web-integrateur-xhtml-css.php",
+        "referrer": "https://www.google.com/",
+        "violated-directive": "script-src",
+        "effective-directive": "script-src",
+        "original-policy": "default-src 'none';  script-src 'self' google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net; style-src 'self' data:  ; img-src 'self' google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net ssl.google-analytics.com data: ;  connect-src 'self';  font-src 'self'; media-src 'self'; object-src 'self' www.youtube.com ;  child-src 'self' ;  frame-ancestors 'self' ; manifest-src 'self' ; form-action 'self' ; report-uri /csp-parser.php ;",
+        "disposition": "enforce",
+        "blocked-uri": "https://connectionstrenth.com/optout/get?jsonp=__twb_cb_56941106&key=da2e092ff7bc4ea89e&t=1496394531140",
+        "line-number": 1,
+        "column-number": 5387,
+
+        "source-file": "https://s3.amazonaws.com/cashe-js/da2e092ff7bc4ea89e.js",
+        "status-code": 0
+    }
+}
+```
+
+__WTF:__ nothing like this on the website.
+
+__Answer:__ appears to be related to ad server used by some Chrome extensions: https://www.reddit.com/r/technology/comments/4lltgu/psa_imgur_uploader_is_injecting_ads_on_google_and/
+
+---------------------------------------
 # Google Analytics Opt-out Add-on
 
 ```
@@ -23,7 +49,7 @@ If you have an idea (even if the idea is WTF) for some of these, do not hesitate
 
 __WTF:__ nothing like this on the website.
 
-__Answer:__ light be related to Google Analytics Opt-out Add-on: https://github.com/sj26/mailcatcher/issues/205
+__Answer:__ might be related to Google Analytics Opt-out Add-on: https://github.com/sj26/mailcatcher/issues/205
 
 ---------------------------------------
 # feedly.com
