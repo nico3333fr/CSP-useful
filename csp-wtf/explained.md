@@ -3,6 +3,128 @@
 Sometimes, CSP notifications are __really difficult to understand or very strange__. Here is a collection of some CSP WTF.
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
+
+---------------------------------------
+# int.search.myway.com
+
+
+```
+{
+    "csp-report": {
+        "blocked-uri": "self",
+        "document-uri": "https://www.nicolas-hoffmann.net/source/cascade_rouget.php",
+        "line-number": 1,
+        "original-policy": "default-src 'none'; script-src https://www.nicolas-hoffmann.net https://google-analytics.com https://stats.g.doubleclick.net https://stats.g.doubleclick.net; style-src https://www.nicolas-hoffmann.net data:; img-src https://www.nicolas-hoffmann.net https://google-analytics.com https://stats.g.doubleclick.net https://stats.g.doubleclick.net https://ssl.google-analytics.com data:; connect-src https://www.nicolas-hoffmann.net; font-src https://www.nicolas-hoffmann.net; media-src https://www.nicolas-hoffmann.net; object-src https://www.nicolas-hoffmann.net https://www.youtube.com; child-src https://www.nicolas-hoffmann.net; frame-ancestors https://www.nicolas-hoffmann.net; manifest-src https://www.nicolas-hoffmann.net; form-action https://www.nicolas-hoffmann.net; report-uri https://www.nicolas-hoffmann.net/csp-parser.php",
+        "referrer": "http://int.search.myway.com/search/GGmain.jhtml?p2=%5EBYC%5Exdm024%5ELMFRFR%5Efr&ptb=97120439-8D7B-41CC-84DD-7E9B53B40901&n=78399c5d&ind=&cn=fr&ln=fr&si=&tpr=hpsb&trs=wtt&brwsid=1afe115d-7025-46e5-9a3d-42b6374704b5&searchfor=Photos%20de%20la%20cascade%20du%20rouget&st=tab",
+        "script-sample": "//\r\n//alert('videodownload2 begin');\r\n;(...",
+        "source-file": "https://www.nicolas-hoffmann.net/source/cascade_rouget.php",
+        "violated-directive": "script-src https://www.nicolas-hoffmann.net https://google-analytics.com https://stats.g.doubleclick.net https://stats.g.doubleclick.net"
+    }
+}
+```
+or
+```
+{
+    "csp-report": {
+        "blocked-uri": "self",
+        "document-uri": "https://www.nicolas-hoffmann.net/source/cascade_rouget.php",
+        "line-number": 1,
+        "original-policy": "default-src 'none'; script-src https://www.nicolas-hoffmann.net https://google-analytics.com https://stats.g.doubleclick.net https://stats.g.doubleclick.net; style-src https://www.nicolas-hoffmann.net data:; img-src https://www.nicolas-hoffmann.net https://google-analytics.com https://stats.g.doubleclick.net https://stats.g.doubleclick.net https://ssl.google-analytics.com data:; connect-src https://www.nicolas-hoffmann.net; font-src https://www.nicolas-hoffmann.net; media-src https://www.nicolas-hoffmann.net; object-src https://www.nicolas-hoffmann.net https://www.youtube.com; child-src https://www.nicolas-hoffmann.net; frame-ancestors https://www.nicolas-hoffmann.net; manifest-src https://www.nicolas-hoffmann.net; form-action https://www.nicolas-hoffmann.net; report-uri https://www.nicolas-hoffmann.net/csp-parser.php",
+        "referrer": "http://int.search.myway.com/search/GGmain.jhtml?p2=%5EBYC%5Exdm024%5ELMFRFR%5Efr&ptb=97120439-8D7B-41CC-84DD-7E9B53B40901&n=78399c5d&ind=&cn=fr&ln=fr&si=&tpr=hpsb&trs=wtt&brwsid=1afe115d-7025-46e5-9a3d-42b6374704b5&searchfor=Photos%20de%20la%20cascade%20du%20rouget&st=tab",
+        "script-sample": "/*!\r\n * jQuery JavaScript Library v1.4.2...",
+
+        "source-file": "https://www.nicolas-hoffmann.net/source/cascade_rouget.php",
+        "violated-directive": "script-src https://www.nicolas-hoffmann.net https://google-analytics.com https://stats.g.doubleclick.net https://stats.g.doubleclick.net"
+    }
+}
+```
+or
+```
+{
+    "csp-report": {
+        "blocked-uri": "self",
+        "document-uri": "https://www.nicolas-hoffmann.net/source/cascade_rouget.php",
+        "line-number": 1,
+        "original-policy": "default-src 'none'; script-src https://www.nicolas-hoffmann.net https://google-analytics.com https://stats.g.doubleclick.net https://stats.g.doubleclick.net; style-src https://www.nicolas-hoffmann.net data:; img-src https://www.nicolas-hoffmann.net https://google-analytics.com https://stats.g.doubleclick.net https://stats.g.doubleclick.net https://ssl.google-analytics.com data:; connect-src https://www.nicolas-hoffmann.net; font-src https://www.nicolas-hoffmann.net; media-src https://www.nicolas-hoffmann.net; object-src https://www.nicolas-hoffmann.net https://www.youtube.com; child-src https://www.nicolas-hoffmann.net; frame-ancestors https://www.nicolas-hoffmann.net; manifest-src https://www.nicolas-hoffmann.net; form-action https://www.nicolas-hoffmann.net; report-uri https://www.nicolas-hoffmann.net/csp-parser.php",
+        "referrer": "http://int.search.myway.com/search/GGmain.jhtml?p2=%5EBYC%5Exdm024%5ELMFRFR%5Efr&ptb=97120439-8D7B-41CC-84DD-7E9B53B40901&n=78399c5d&ind=&cn=fr&ln=fr&si=&tpr=hpsb&trs=wtt&brwsid=1afe115d-7025-46e5-9a3d-42b6374704b5&searchfor=Photos%20de%20la%20cascade%20du%20rouget&st=tab",
+        "script-sample": ";(function($){\r\n\tvar Plugin = $.Wondersh...",
+
+        "source-file": "https://www.nicolas-hoffmann.net/source/cascade_rouget.php",
+        "violated-directive": "script-src https://www.nicolas-hoffmann.net https://google-analytics.com https://stats.g.doubleclick.net https://stats.g.doubleclick.net"
+    }
+}
+```
+or
+```
+{
+    "csp-report": {
+        "blocked-uri": "self",
+        "document-uri": "https://www.nicolas-hoffmann.net/source/cascade_rouget.php",
+        "line-number": 1,
+        "original-policy": "default-src 'none'; script-src https://www.nicolas-hoffmann.net https://google-analytics.com https://stats.g.doubleclick.net https://stats.g.doubleclick.net; style-src https://www.nicolas-hoffmann.net data:; img-src https://www.nicolas-hoffmann.net https://google-analytics.com https://stats.g.doubleclick.net https://stats.g.doubleclick.net https://ssl.google-analytics.com data:; connect-src https://www.nicolas-hoffmann.net; font-src https://www.nicolas-hoffmann.net; media-src https://www.nicolas-hoffmann.net; object-src https://www.nicolas-hoffmann.net https://www.youtube.com; child-src https://www.nicolas-hoffmann.net; frame-ancestors https://www.nicolas-hoffmann.net; manifest-src https://www.nicolas-hoffmann.net; form-action https://www.nicolas-hoffmann.net; report-uri https://www.nicolas-hoffmann.net/csp-parser.php",
+        "referrer": "http://int.search.myway.com/search/GGmain.jhtml?p2=%5EBYC%5Exdm024%5ELMFRFR%5Efr&ptb=97120439-8D7B-41CC-84DD-7E9B53B40901&n=78399c5d&ind=&cn=fr&ln=fr&si=&tpr=hpsb&trs=wtt&brwsid=1afe115d-7025-46e5-9a3d-42b6374704b5&searchfor=Photos%20de%20la%20cascade%20du%20rouget&st=tab",
+        "script-sample": "//alert('jQuery.Wondershare_WSVCU_Plugin...",
+
+        "source-file": "https://www.nicolas-hoffmann.net/source/cascade_rouget.php",
+        "violated-directive": "script-src https://www.nicolas-hoffmann.net https://google-analytics.com https://stats.g.doubleclick.net https://stats.g.doubleclick.net"
+    }
+}
+```
+or
+```
+{
+    "csp-report": {
+        "blocked-uri": "self",
+        "document-uri": "https://www.nicolas-hoffmann.net/source/cascade_rouget.php",
+        "line-number": 1,
+        "original-policy": "default-src 'none'; script-src https://www.nicolas-hoffmann.net https://google-analytics.com https://stats.g.doubleclick.net https://stats.g.doubleclick.net; style-src https://www.nicolas-hoffmann.net data:; img-src https://www.nicolas-hoffmann.net https://google-analytics.com https://stats.g.doubleclick.net https://stats.g.doubleclick.net https://ssl.google-analytics.com data:; connect-src https://www.nicolas-hoffmann.net; font-src https://www.nicolas-hoffmann.net; media-src https://www.nicolas-hoffmann.net; object-src https://www.nicolas-hoffmann.net https://www.youtube.com; child-src https://www.nicolas-hoffmann.net; frame-ancestors https://www.nicolas-hoffmann.net; manifest-src https://www.nicolas-hoffmann.net; form-action https://www.nicolas-hoffmann.net; report-uri https://www.nicolas-hoffmann.net/csp-parser.php",
+        "referrer": "http://int.search.myway.com/search/GGmain.jhtml?p2=%5EBYC%5Exdm024%5ELMFRFR%5Efr&ptb=97120439-8D7B-41CC-84DD-7E9B53B40901&n=78399c5d&ind=&cn=fr&ln=fr&si=&tpr=hpsb&trs=wtt&brwsid=1afe115d-7025-46e5-9a3d-42b6374704b5&searchfor=Photos%20de%20la%20cascade%20du%20rouget&st=tab",
+        "script-sample": "/*!\n * jquery.base64.js 0.1 - https://gi...",
+
+        "source-file": "https://www.nicolas-hoffmann.net/source/cascade_rouget.php",
+        "violated-directive": "script-src https://www.nicolas-hoffmann.net https://google-analytics.com https://stats.g.doubleclick.net https://stats.g.doubleclick.net"
+    }
+}
+```
+or
+```
+{
+    "csp-report": {
+        "blocked-uri": "self",
+        "document-uri": "https://www.nicolas-hoffmann.net/source/cascade_rouget.php",
+        "line-number": 1,
+        "original-policy": "default-src 'none'; script-src https://www.nicolas-hoffmann.net https://google-analytics.com https://stats.g.doubleclick.net https://stats.g.doubleclick.net; style-src https://www.nicolas-hoffmann.net data:; img-src https://www.nicolas-hoffmann.net https://google-analytics.com https://stats.g.doubleclick.net https://stats.g.doubleclick.net https://ssl.google-analytics.com data:; connect-src https://www.nicolas-hoffmann.net; font-src https://www.nicolas-hoffmann.net; media-src https://www.nicolas-hoffmann.net; object-src https://www.nicolas-hoffmann.net https://www.youtube.com; child-src https://www.nicolas-hoffmann.net; frame-ancestors https://www.nicolas-hoffmann.net; manifest-src https://www.nicolas-hoffmann.net; form-action https://www.nicolas-hoffmann.net; report-uri https://www.nicolas-hoffmann.net/csp-parser.php",
+        "referrer": "http://int.search.myway.com/search/GGmain.jhtml?p2=%5EBYC%5Exdm024%5ELMFRFR%5Efr&ptb=97120439-8D7B-41CC-84DD-7E9B53B40901&n=78399c5d&ind=&cn=fr&ln=fr&si=&tpr=hpsb&trs=wtt&brwsid=1afe115d-7025-46e5-9a3d-42b6374704b5&searchfor=Photos%20de%20la%20cascade%20du%20rouget&st=tab",
+        "script-sample": "//WS\u00e8\u00a7\u0086\u00e9\u00a2\u0091\u00e4\u00b8\u008b\u00e8\u00bd\u00bd\u00e6\u008f\u0092\u00e4\u00bb\u00b6\u00e8\u00be\u0085\u00e5\u008a\u00a9\u00e5\u00ae\u009e\u00e7\u008e\u00b0\u00e5\u008d\u0095\u00e5\u0085\u0083...",
+        "source-file": "https://www.nicolas-hoffmann.net/source/cascade_rouget.php",
+        "violated-directive": "script-src https://www.nicolas-hoffmann.net https://google-analytics.com https://stats.g.doubleclick.net https://stats.g.doubleclick.net"
+    }
+}
+```
+or
+```
+{
+    "csp-report": {
+        "blocked-uri": "self",
+        "document-uri": "https://www.nicolas-hoffmann.net/source/cascade_rouget.php",
+        "line-number": 1,
+        "original-policy": "default-src 'none'; script-src https://www.nicolas-hoffmann.net https://google-analytics.com https://stats.g.doubleclick.net https://stats.g.doubleclick.net; style-src https://www.nicolas-hoffmann.net data:; img-src https://www.nicolas-hoffmann.net https://google-analytics.com https://stats.g.doubleclick.net https://stats.g.doubleclick.net https://ssl.google-analytics.com data:; connect-src https://www.nicolas-hoffmann.net; font-src https://www.nicolas-hoffmann.net; media-src https://www.nicolas-hoffmann.net; object-src https://www.nicolas-hoffmann.net https://www.youtube.com; child-src https://www.nicolas-hoffmann.net; frame-ancestors https://www.nicolas-hoffmann.net; manifest-src https://www.nicolas-hoffmann.net; form-action https://www.nicolas-hoffmann.net; report-uri https://www.nicolas-hoffmann.net/csp-parser.php",
+        "referrer": "http://int.search.myway.com/search/GGmain.jhtml?p2=%5EBYC%5Exdm024%5ELMFRFR%5Efr&ptb=97120439-8D7B-41CC-84DD-7E9B53B40901&n=78399c5d&ind=&cn=fr&ln=fr&si=&tpr=hpsb&trs=wtt&brwsid=1afe115d-7025-46e5-9a3d-42b6374704b5&searchfor=Photos%20de%20la%20cascade%20du%20rouget&st=tab",
+        "script-sample": "\r\n;(function($){\r\n\tjq_relocation = $.rel...",
+
+        "source-file": "https://www.nicolas-hoffmann.net/source/cascade_rouget.php",
+        "violated-directive": "script-src https://www.nicolas-hoffmann.net https://google-analytics.com https://stats.g.doubleclick.net https://stats.g.doubleclick.net"
+    }
+}
+```
+Etc.
+
+
+
+__WTF:__ ???
+
+__Answer:__ all related to int.search.myway.com, however, I was not able to reproduce.
+
 ---------------------------------------
 # connectionstrenth.com
 
