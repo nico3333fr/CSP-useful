@@ -3,6 +3,29 @@
 Sometimes, CSP notifications are __really difficult to understand or very strange__. Here is a collection of some CSP WTF.
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
+---------------------------------------
+# ahrefs.*
+
+
+```
+{
+    "csp-report": {
+        "blocked-uri": "self",
+        "document-uri": "https://www.estcequonmetenprodaujourdhui.info/",
+        "original-policy": "default-src https://ahrefs.com http://ahrefs.com https://*.ahrefs.me http://*.ahrefs.me https://ahrefs.com http://ahrefs.com https://*.ahrefs.me http://*.ahrefs.me; script-src https://ahrefs.com http://ahrefs.com https://*.ahrefs.me http://*.ahrefs.me https://ahrefs.com http://ahrefs.com https://*.ahrefs.me http://*.ahrefs.me https://www.estcequonmetenprodaujourdhui.info https://www.google-analytics.com https://stats.g.doubleclick.net https://stats.g.doubleclick.net; style-src https://www.estcequonmetenprodaujourdhui.info 'unsafe-inline'; img-src https://www.estcequonmetenprodaujourdhui.info https://www.google-analytics.com https://stats.g.doubleclick.net https://stats.g.doubleclick.net data:; font-src https://www.estcequonmetenprodaujourdhui.info; child-src https://www.estcequonmetenprodaujourdhui.info; frame-ancestors 'none'; manifest-src https://www.estcequonmetenprodaujourdhui.info; report-uri https://www.estcequonmetenprodaujourdhui.info/csp-!
+ parser.php",
+        "referrer": "",
+        "script-sample": "onsubmit attribute on DIV element",
+
+        "source-file": "https://www.estcequonmetenprodaujourdhui.info/",
+        "violated-directive": "script-src https://ahrefs.com http://ahrefs.com https://*.ahrefs.me http://*.ahrefs.me https://ahrefs.com http://ahrefs.com https://*.ahrefs.me http://*.ahrefs.me https://www.estcequonmetenprodaujourdhui.info https://www.google-analytics.com https://stats.g.doubleclick.net https://stats.g.doubleclick.net"
+    }
+}
+```
+
+__WTF:__ ???
+
+__Answer:__ related to https://ahrefs.com/ tool, however, I was not able to reproduce. 
 
 ---------------------------------------
 # int.search.myway.com
