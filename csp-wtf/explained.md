@@ -2,6 +2,7 @@
 
 Sometimes, CSP notifications are __really difficult to understand or very strange__. Here is a collection of some CSP WTF.
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
+
 ---------------------------------------
 # ng:cloak
 
