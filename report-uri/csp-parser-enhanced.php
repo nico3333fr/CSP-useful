@@ -248,7 +248,7 @@ $tab_filter = array(
          'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/README.md#evernote',
          'comment' => ''
     ),
-    'http://adblockers.opera-mini.net' => array (
+    'adblockers.opera-mini.net' => array (
          'filter_on' => 'blocked_uri',
          'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/README.md#opera-mini-double-wtf',
          'comment' => ''
