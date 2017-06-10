@@ -482,6 +482,41 @@ $tab_filter = array(
          'filter_on' => 'script_sample',
          'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#function-inception',
          'comment' => ''
+    ),
+    'null' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#null',
+         'comment' => ''
+    ),
+    'mxaddon-pkg' => array (
+         'filter_on' => 'source_file',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#mxaddon-pkg',
+         'comment' => ''
+    ),
+    'rsc.cdn77.org' => array (
+         'filter_on' => 'source_file',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#rsccdn77org',
+         'comment' => ''
+    ),
+    'data1.' => array (
+         'filter_on' => 'source_file',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#data1itineraireinfo-and-its-friends-data1',
+         'comment' => ''
+    ),
+    'connectionstrenth.com' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#connectionstrenthcom',
+         'comment' => ''
+    ),
+    'int.search.myway.com' => array (
+         'filter_on' => 'referrer',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#intsearchmywaycom',
+         'comment' => ''
+    ),
+    'ng:cloak' => array (
+         'filter_on' => 'script_sample',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#ngcloak',
+         'comment' => ''
     )/*,
     '' => array (
          'filter_on' => 'source_file',
