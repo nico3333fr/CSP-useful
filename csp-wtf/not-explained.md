@@ -4,6 +4,32 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 ---------------------------------------
+# secure.optibuymac.com
+
+
+```
+{
+    "csp-report": {
+        "document-uri": "https://www.estcequonmetenprodaujourdhui.info/",
+        "referrer": "",
+        "violated-directive": "script-src",
+        "effective-directive": "script-src",
+        "original-policy": "default-src 'none';  script-src 'self' ; style-src 'self' 'nonce-fc85f9cce142a7f611d456f9ab4feab4bda03d6ee41a3b8191663dcc323c4fe78836d7aa09e7f78bcbcd875af0bec995739e3c8e799569933d4cf92d54742475' ; img-src 'self'  data: ;  font-src 'self'; child-src 'self' ;  frame-ancestors 'none' ; manifest-src 'self' ; report-uri /csp-parser.php ;",
+        "disposition": "enforce",
+        "blocked-uri": "https://secure.optibuymac.com/servicejs/components/?source=upd-1720&version=2.0&isn=800",
+        "line-number": 1,
+        "column-number": 794,
+
+        "status-code": 0
+    }
+}
+```
+
+__WTF:__ nothing like this on the website.
+
+__Answer:__ Any idea???
+
+---------------------------------------
 # rsc.cdn77.org
 
 
