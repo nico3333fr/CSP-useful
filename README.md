@@ -200,6 +200,7 @@ These bugs are just annoying, they are not critical. They provide false-positive
 ### Other
 
 - https://github.com/nico3333fr/CSP-useful (yes you are here)
+- https://pokeinthe.io/2017/06/13/state-of-security-alexa-top-one-million-2017-06/
 
 ### Future of CSP
 
