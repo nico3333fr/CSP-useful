@@ -4,6 +4,30 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 ---------------------------------------
+# stackoverflow favicon
+
+
+```
+{
+    "csp-report": {
+        "document-uri": "https://www.estcequonmetenprodaujourdhui.info/",
+        "referrer": "",
+        "violated-directive": "img-src",
+        "effective-directive": "img-src",
+        "original-policy": "default-src 'none';  script-src 'self' ; style-src 'self' 'nonce-e6dc47cac8fc1827bf73eb502fd62153ced82007fb06112468b7e44b726857a17e4daca1a5e1fe14535f75dcef5957fc1541f4d80f2d45c5f55498b6caa4dfaf' ; img-src 'self'  data: ;  font-src 'self'; child-src 'self' ;  frame-ancestors 'none' ; manifest-src 'self' ; report-uri /csp-parser.php ;",
+        "disposition": "enforce",
+        "blocked-uri": "http://www.stackoverflow.com/favicon.ico",
+        "status-code": 0
+
+    }
+}
+```
+
+__WTF:__ nothing like this on the website.
+
+__Answer:__ I don’t know how it happened, but it happened! #achievementUnlocked
+
+---------------------------------------
 # secure.optibuymac.com
 
 
