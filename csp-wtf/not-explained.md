@@ -4,6 +4,33 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 ---------------------------------------
+# bindo.js
+
+
+```
+{
+    "csp-report": {
+        "document-uri": "https://www.estcequonmetenprodaujourdhui.info/",
+        "referrer": "",
+        "violated-directive": "script-src",
+        "effective-directive": "script-src",
+        "original-policy": "default-src 'none';  script-src 'self' ; style-src 'self' 'nonce-8c58b64eb15e9f517f26e499365d17ba0b6efac064e05e5a067c3d0774edc530742ae4f7929618ca1b7647dece6f8580ddecf44763af9a1eb070f32df4c98da6' ; img-src 'self'  data: ;  font-src 'self'; child-src 'self' ;  frame-ancestors 'none' ; manifest-src 'self' ; report-uri /csp-parser.php ;",
+        "disposition": "enforce",
+        "blocked-uri": "https://asrvvv-a.akamaihd.net/get?addonname=[Enter%20Product%20Name]&clientuid=[Enter%20Client%20UID]&subID=&affid=9658&subaffid=1007&href=https%3A%2F%2Fwww.estcequonmetenprodaujourdhui.info%2F",
+        "line-number": 1,
+        "column-number": 108967,
+        "source-file": "https://cdn.ext335.com/vdsuper/bindo.js?f=22",
+        "status-code": 0
+
+    }
+}
+```
+
+__WTF:__ nothing like this on the website.
+
+__Answer:__ any idea?
+
+---------------------------------------
 # webPageNotificationsController
 
 
