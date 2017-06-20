@@ -3,9 +3,29 @@
 Sometimes, CSP notifications are __really difficult to understand or very strange__. Here is a collection of some CSP WTF.
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
+---------------------------------------
+# cloudfront.net
+
+```
+{
+    "csp-report": {
+        "blocked-uri": "https://d3ijcis4e2ziok.cloudfront.net",
+        "document-uri": "https://www.estcequonmetenprodaujourdhui.info/",
+        "original-policy": "default-src 'none'; script-src https://www.estcequonmetenprodaujourdhui.info; style-src https://www.estcequonmetenprodaujourdhui.info 'nonce-079629c8fd8e205b456b5d3d4102e097e62c897b430b06f8ece5b186229113d8b472b07ae7ee113417d36f512379a1c55cc4b19238c010ce96c0941e5393f7f2'; img-src https://www.estcequonmetenprodaujourdhui.info data:; font-src https://www.estcequonmetenprodaujourdhui.info; child-src https://www.estcequonmetenprodaujourdhui.info; frame-ancestors 'none'; manifest-src https://www.estcequonmetenprodaujourdhui.info; report-uri https://www.estcequonmetenprodaujourdhui.info/csp-parser.php",
+        "referrer": "",
+        "violated-directive": "child-src https://www.estcequonmetenprodaujourdhui.info"
+
+    }
+}
+```
+
+__WTF:__ nothing like this on the website.
+
+__Answer:__ any idea?
+
 
 ---------------------------------------
-var delay = null; currDisplay = null;
+# var delay = null; currDisplay = null;
 
 ```
 {
