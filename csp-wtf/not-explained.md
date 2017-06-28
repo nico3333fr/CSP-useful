@@ -433,7 +433,7 @@ __Answer:__ any idea? Malware, other?
 
 
 ---------------------------------------
-# loadingpages.me
+# loadingpages.me/loadingpage.info
 
 
 ```
@@ -448,6 +448,23 @@ __Answer:__ any idea? Malware, other?
         "blocked-uri": "http://loadingpages.me/jo/is?id=F701A4D7-A60A-58B0-AD9F-E41CAE3E15B2&d=5a01fca9-d552-45e9-a47c-f34d2a14e626&cl=upd",
         "line-number": 1,
         "column-number": 262,
+        "status-code": 0
+    }
+}
+```
+or 
+```
+{
+    "csp-report": {
+        "document-uri": "https://www.nicolas-hoffmann.net/source/cv-developpeur-web-integrateur-xhtml-css.php",
+        "referrer": "https://www.google.com/",
+        "violated-directive": "script-src",
+        "effective-directive": "script-src",
+        "original-policy": "default-src 'none';  script-src 'self' google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net; style-src 'self' data:  ; img-src 'self' google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net ssl.google-analytics.com data: ;  connect-src 'self';  font-src 'self'; media-src 'self'; object-src 'self' www.youtube.com ;  child-src 'self' ;  frame-ancestors 'self' ; manifest-src 'self' ; form-action 'self' ; report-uri /csp-parser.php ;",
+        "disposition": "enforce",
+        "blocked-uri": "http://www.loadingpage.info/jo/is?id=ABAB9665-4319-5B30-8BA5-E65A0FA34045&d=0000a645-d7f1-414d-9748-0a6a64cd0553&cl=pcpc",
+        "line-number": 1,
+        "column-number": 268,
         "status-code": 0
     }
 }
