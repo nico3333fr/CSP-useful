@@ -4,6 +4,32 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 ---------------------------------------
+# dl.metabar.ru
+
+```
+{
+    "csp-report": {
+        "document-uri": "https://van11y.net/accessible-tab-panel/",
+        "referrer": "https://van11y.net/?utm_source=forwebdev_tlgrm&utm_medium=announcement&utm_campaign=van11y--kollektsiya-gotovyh-k-ispolzovani",
+        "violated-directive": "script-src",
+        "effective-directive": "script-src",
+        "original-policy": "default-src 'none' ;  script-src 'self'; style-src 'self' ; img-src 'self'; font-src 'self';  connect-src 'self'; child-src 'self' ; frame-ancestors 'none' ; manifest-src 'self' ; report-uri /csp-parser.php ;",
+        "disposition": "enforce",
+        "blocked-uri": "https://dl.metabar.ru/static/js/sovetnik.min.js?mbr=true&settings=%7B%22affId%22%3A1020%2C%22clid%22%3A2210496%2C%22applicationName%22%3A%22SaveFrom%22%2C%22aviaEnabled%22%3Atrue%2C%22offerEnabled%22%3Atrue%7D",
+        "line-number": 24688,
+
+        "column-number": 27,
+        "status-code": 0,
+        "script-sample": ""
+    }
+}
+```
+
+__WTF:__ nothing like this on the website.
+
+__Answer:__ any idea?
+
+---------------------------------------
 # ISAnalysterLoader
 
 ```
