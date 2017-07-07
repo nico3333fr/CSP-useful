@@ -27,7 +27,7 @@ __WTF:__ nothing like this on the website.
 __Answer:__ might be related to Adguard Ad Blocking Filters https://adguard.com/
 
 ---------------------------------------
-# ng:cloak
+# ng:cloak/ngInspect_clickedEl
 
 ```
 {
@@ -44,10 +44,25 @@ __Answer:__ might be related to Adguard Ad Blocking Filters https://adguard.com/
     }
 }
 ```
+or
+```
+{
+    "csp-report": {
+        "blocked-uri": "self",
+        "document-uri": "https://www.estcequonmetenprodaujourdhui.info/",
+        "line-number": 1,
+        "original-policy": "default-src 'none'; script-src https://www.estcequonmetenprodaujourdhui.info; style-src https://www.estcequonmetenprodaujourdhui.info 'nonce-2905cfa57de27d0311c5a7926fff9ba90e2f29934fe3fe100691ae4688d46410819413d239d2338287978476be84634a7ade18863c03f8d64f20236c3dc07c5e'; img-src https://www.estcequonmetenprodaujourdhui.info data:; font-src https://www.estcequonmetenprodaujourdhui.info; child-src https://www.estcequonmetenprodaujourdhui.info; frame-ancestors 'none'; manifest-src https://www.estcequonmetenprodaujourdhui.info; report-uri https://www.estcequonmetenprodaujourdhui.info/csp-parser.php",
+        "referrer": "",
+        "script-sample": "window._ngInspect_clickedEl = null;docum...",
+        "source-file": "https://www.estcequonmetenprodaujourdhui.info/",
+        "violated-directive": "script-src https://www.estcequonmetenprodaujourdhui.info"
+    }
+}
+```
 
 __WTF:__ This is not on this website. :)
 
-__Answer:__ related to angular directive https://docs.angularjs.org/api/ng/directive/ngCloak (however, don't know how it came to this website, maybe debug tool?)
+__Answer:__ related to angular directive https://docs.angularjs.org/api/ng/directive/ngCloak (however, don't know how it came to this website, maybe debug tool? Might be related to https://addons.mozilla.org/fr/firefox/addon/ng-inspect/)
 
 
 ---------------------------------------
