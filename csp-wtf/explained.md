@@ -4,6 +4,29 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 ---------------------------------------
+# Google Search for Android
+
+
+```
+{
+    "csp-report": {
+        "document-uri": "[anonymised]",
+        "referrer": "android-app://com.google.android.googlequicksearchbox",
+        "violated-directive": "img-src",
+        "effective-directive": "img-src",
+        "original-policy": "default-src 'self';  script-src 'self' https://www.google-analytics.com http://www.google-analytics.com  stats.g.doubleclick.net https://stats.g.doubleclick.net ; style-src 'self' data: ; img-src 'self' https://www.google-analytics.com http://www.google-analytics.com *.[anonymised] stats.g.doubleclick.net https://stats.g.doubleclick.net data: ;  child-src 'self' ; report-uri /csp-parser.php ;",
+        "disposition": "enforce",
+        "blocked-uri": "http://1.1.1.1/bmi/[anonymised]/layout/images/swiss-label.png",
+        "status-code": 200
+    }
+}
+```
+
+__WTF:__ nothing like this on the website.
+
+__Answer:__ related to google search app on android.
+
+---------------------------------------
 # Adguard Ad Blocking Filters
 
 
