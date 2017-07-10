@@ -4,6 +4,32 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 ---------------------------------------
+# Google tag manager
+
+
+```
+{
+    "csp-report": {
+        "document-uri": "https://www.nicolas-hoffmann.net/source/cv-anciennes-experiences.php",
+        "referrer": "https://www.google.fr/",
+        "violated-directive": "script-src",
+        "effective-directive": "script-src",
+        "original-policy": "default-src 'none';  script-src 'self' google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net; style-src 'self' data:  ; img-src 'self' google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net ssl.google-analytics.com data: ;  connect-src 'self';  font-src 'self'; media-src 'self'; object-src 'self' www.youtube.com ;  child-src 'self' ;  frame-ancestors 'self' ; manifest-src 'self' ; form-action 'self' ; report-uri /csp-parser.php ;",
+        "disposition": "enforce",
+        "blocked-uri": "https://www.googletagmanager.com/gtm.js?id=GTM-TMLW42T",
+        "line-number": 2,
+        "column-number": 299,
+        "status-code": 0,
+        "script-sample": ""
+    }
+}
+```
+
+__WTF:__ nothing like this on the website.
+
+__Answer:__ related to Google tag manager (extension, other ?)
+
+---------------------------------------
 # Google Search for Android
 
 
