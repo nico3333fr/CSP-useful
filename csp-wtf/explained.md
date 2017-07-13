@@ -4,6 +4,30 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 ---------------------------------------
+# Skype web
+
+
+```
+
+{
+    "csp-report": {
+        "blocked-uri": "self",
+        "document-uri": "https://www.estcequonmetenprodaujourdhui.info/",
+        "line-number": 1,
+        "original-policy": "default-src 'none'; script-src https://www.estcequonmetenprodaujourdhui.info; style-src https://www.estcequonmetenprodaujourdhui.info 'nonce-6e06851a1ca7ed29068ff9594b4b973f43b8841f724613df1c95136c3a59eeec71de4ceeac729c5280f688c6b808878c0c77c1dce5acc9b2ba927ca0fc4c2298'; img-src https://www.estcequonmetenprodaujourdhui.info data:; font-src https://www.estcequonmetenprodaujourdhui.info; child-src https://www.estcequonmetenprodaujourdhui.info; frame-ancestors 'none'; manifest-src https://www.estcequonmetenprodaujourdhui.info; report-uri https://www.estcequonmetenprodaujourdhui.info/csp-parser.php",
+        "referrer": "https://web.skype.com/fr/",
+        "script-sample": "[href^=\"https://plus.google.com/share?ur...",
+        "source-file": "https://www.estcequonmetenprodaujourdhui.info/",
+        "violated-directive": "style-src https://www.estcequonmetenprodaujourdhui.info 'nonce-6e06851a1ca7ed29068ff9594b4b973f43b8841f724613df1c95136c3a59eeec71de4ceeac729c5280f688c6b808878c0c77c1dce5acc9b2ba927ca0fc4c2298'"
+    }
+}
+```
+
+__WTF:__ nothing like this on the website.
+
+__Answer:__ related to Skype, didn't find how to reproduce.
+
+---------------------------------------
 # Google tag manager
 
 
