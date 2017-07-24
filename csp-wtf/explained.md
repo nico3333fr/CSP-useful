@@ -4,6 +4,28 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 ---------------------------------------
+# function injectPageScriptAPI
+
+```
+{
+    "csp-report": {
+        "blocked-uri": "self",
+        "document-uri": "[anonymised]",
+        "line-number": 1,
+        "original-policy": "default-src http://[anonymised]; script-src http://[anonymised] https://www.google-analytics.com http://www.google-analytics.com http://stats.g.doubleclick.net https://stats.g.doubleclick.net; style-src http://[anonymised] data:; img-src http://[anonymised] https://www.google-analytics.com http://www.google-analytics.com http://*.[anonymised] http://stats.g.doubleclick.net https://stats.g.doubleclick.net data:; child-src http://[anonymised]; report-uri http://[anonymised]/csp-parser.php",
+        "referrer": "https://www.google.be/",
+        "script-sample": "try {\r\n(function injectPageScriptAPI(scr...",
+        "source-file": "[anonymised]",
+        "violated-directive": "script-src http://[anonymised] https://www.google-analytics.com http://www.google-analytics.com http://stats.g.doubleclick.net https://stats.g.doubleclick.net"
+    }
+}
+```
+ ?
+__WTF:__ nothing like this on the website.
+
+__Answer:__ might be related to Adguard browser extension ? https://github.com/AdguardTeam/AdguardBrowserExtension/pull/694
+
+---------------------------------------
 # Skype web
 
 
