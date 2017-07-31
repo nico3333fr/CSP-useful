@@ -1343,7 +1343,7 @@ __Answer:__ No idea how this could happen. Any idea?
 
 __WTF:__ ```"document-uri": "about:blank",``` on my personal website www.nicolas-hoffmann.net with a font???
 
-__Answer:__ Any idea?
+__Answer:__ Might be related to browser extension blocking the request. https://stackoverflow.com/questions/32336860/why-would-i-get-a-csp-violation-for-the-blocked-uri-about
 
 
 ---------------------------------------
