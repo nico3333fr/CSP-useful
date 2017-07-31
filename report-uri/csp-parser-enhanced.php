@@ -443,7 +443,7 @@ $tab_filter = array(
          'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/README.md#loadingpagesme',
          'comment' => ''
     ),
-    'loadingpages.me' => array (
+    'loadingpages.info' => array (
          'filter_on' => 'blocked_uri',
          'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/README.md#loadingpagesme',
          'comment' => ''
