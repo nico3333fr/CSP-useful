@@ -348,26 +348,6 @@ $tab_filter = array(
          'case_description' => 'https://github.com/nico3333fr/CSP-useful/tree/master/csp-wtf#rdcapicitnettagsclickintextnet',
          'comment' => ''
     ),
-    'data1.itineraire.info' => array (
-         'filter_on' => 'blocked_uri',
-         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#data1itineraireinfo-and-its-friends-data1',
-         'comment' => ''
-    ),
-    'data1.iti-maps.fr' => array (
-         'filter_on' => 'blocked_uri',
-         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#data1itineraireinfo-and-its-friends-data1',
-         'comment' => ''
-    ),
-    'data1.recettes.net' => array (
-         'filter_on' => 'source_file',
-         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#data1itineraireinfo-and-its-friends-data1',
-         'comment' => ''
-    ),    
-    'data1.allo-pages.fr' => array (
-         'filter_on' => 'source_file',
-         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#data1itineraireinfo-and-its-friends-data1',
-         'comment' => ''
-    ),   
     'comic-sans-replacer' => array (
          'filter_on' => 'blocked_uri',
          'case_description' => 'https://github.com/nico3333fr/CSP-useful/tree/master/csp-wtf#comic-sans-replacer',
