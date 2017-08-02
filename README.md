@@ -116,7 +116,7 @@ You might add <code>'sha256-qznLcsROx4GACP2dm0UCKCzCG-HiZ1guq6ZZDob_Tng='</code>
 
 <pre><code>
 base64_encode(hash('sha256', "alert('Hello, world.');", true))
-</code></pre> 
+</code></pre>
 
 in PHP for example.
 
@@ -190,13 +190,14 @@ These bugs are just annoying, they are not critical. They provide false-positive
 
 - https://blog.twitter.com/2011/improving-browser-security-csp
 - https://github.com/blog/1477-content-security-policy
-- https://blogs.dropbox.com/tech/2015/09/unsafe-inline-and-nonce-deployment/ 
-- https://blogs.dropbox.com/tech/2015/09/csp-the-unexpected-eval/ 
+- https://blogs.dropbox.com/tech/2015/09/unsafe-inline-and-nonce-deployment/
+- https://blogs.dropbox.com/tech/2015/09/csp-the-unexpected-eval/
 - https://blogs.dropbox.com/tech/2015/09/csp-third-party-integrations-and-privilege-separation/
 - http://githubengineering.com/githubs-csp-journey/
 - https://www.wired.com/2016/05/wired-first-big-https-rollout-snag/
 - https://corner.squareup.com/2016/05/content-security-policy-single-page-app.html
 - https://githubengineering.com/githubs-post-csp-journey/
+- https://www.sourceclear.com/blog/Adopting-and-Reducing-Challenges-of-Content-Security-Policy-CSP-with-Sentry/
 
 ### Other
 
