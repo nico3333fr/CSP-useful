@@ -500,7 +500,12 @@ $tab_filter = array(
     ),
     'ng:cloak' => array (
          'filter_on' => 'script_sample',
-         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#ngcloak',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#ngcloaknginspect_clickedel',
+         'comment' => ''
+    ),
+    'window._ngInspect_clickedEl' => array (
+         'filter_on' => 'script_sample',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#ngcloaknginspect_clickedel',
          'comment' => ''
     ),
     '.werbung, .text_werbung' => array (
