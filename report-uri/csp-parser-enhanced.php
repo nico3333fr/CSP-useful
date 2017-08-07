@@ -12,7 +12,6 @@ define('SUBJECT', 'CSP violation');
 
 // Get the raw POST data
 $data = file_get_contents('php://input');
-
 // array for filtering
 $tab_filter = array(
     /*
@@ -130,97 +129,97 @@ $tab_filter = array(
     ), 
     ';(function installGlobalHook(window)' => array (
          'filter_on' => 'script_sample',
-         'case_description' => 'https://github.com/nico3333fr/CSP-useful/tree/master/csp-wtf#function-installglobalhookwindow',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#function-installglobalhookwindow',
          'comment' => ';(function installGlobalHook(window)'
     ),
     'http://l.facebook.com' => array (
          'filter_on' => 'referrer',
-         'case_description' => 'https://github.com/nico3333fr/CSP-useful/tree/master/csp-wtf#facebook ',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#facebook',
          'comment' => 'Facebook share'
     ),
     'https://l.facebook.com' => array (
          'filter_on' => 'referrer',
-         'case_description' => 'https://github.com/nico3333fr/CSP-useful/tree/master/csp-wtf#facebook ',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#facebook',
          'comment' => 'Facebook share'
     ),
     'var FuckAdBlock = function' => array (
          'filter_on' => 'script_sample',
-         'case_description' => 'https://github.com/nico3333fr/CSP-useful/tree/master/csp-wtf#var-fuckadblockblockadblock--function-',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#var-fuckadblockblockadblock--function-',
          'comment' => 'BlockAdBlock etc.'
     ),
     'var BlockAdBlock = function' => array (
          'filter_on' => 'script_sample',
-         'case_description' => 'https://github.com/nico3333fr/CSP-useful/tree/master/csp-wtf#var-fuckadblockblockadblock--function-',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#var-fuckadblockblockadblock--function-',
          'comment' => 'BlockAdBlock etc.'
     ),
     'mx://' => array (
          'filter_on' => 'blocked_uri',
-         'case_description' => 'https://github.com/nico3333fr/CSP-useful/tree/master/csp-wtf#reader-in-macos-safari',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#reader-in-macos-safari',
          'comment' => '"Reader" in MacOS Safari? '
     ),
     '@media print {#UNIQUE_ID-ghostery' => array (
          'filter_on' => 'script_sample',
-         'case_description' => 'https://github.com/nico3333fr/CSP-useful/tree/master/csp-wtf#ghostery',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#ghostery',
          'comment' => 'Ghostery inline styles'
     ),
     '@media print {#ghostery-purple-box' => array (
          'filter_on' => 'script_sample',
-         'case_description' => 'https://github.com/nico3333fr/CSP-useful/tree/master/csp-wtf#ghostery',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#ghosteryy',
          'comment' => 'Ghostery inline styles'
     ),
     '@media print {#ghostery-button' => array (
          'filter_on' => 'script_sample',
-         'case_description' => 'https://github.com/nico3333fr/CSP-useful/tree/master/csp-wtf#ghostery',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#ghostery',
          'comment' => 'Ghostery inline styles'
     ),
     '{safeWindow:{' => array (
          'filter_on' => 'script_sample',
-         'case_description' => 'https://github.com/nico3333fr/CSP-useful/tree/master/csp-wtf#function-axmivar-csafewindow-',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#function-axmivar-csafewindow-',
          'comment' => 'WTF ?'
     ),
     'onsubmit attribute on DIV element' => array (
          'filter_on' => 'script_sample',
-         'case_description' => 'https://github.com/nico3333fr/CSP-useful/tree/master/csp-wtf#onsubmitonchangeonfocusinetc-attribute-on-div-element',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#onsubmitonchangeonfocusinetc-attribute-on-div-element',
          'comment' => 'WTF ?'
     ),
     'onchange attribute on DIV element' => array (
          'filter_on' => 'script_sample',
-         'case_description' => 'https://github.com/nico3333fr/CSP-useful/tree/master/csp-wtf#onsubmitonchangeonfocusinetc-attribute-on-div-element',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#onsubmitonchangeonfocusinetc-attribute-on-div-element',
          'comment' => 'WTF ?'
     ),
     'onfocusin attribute on DIV element' => array (
          'filter_on' => 'script_sample',
-         'case_description' => 'https://github.com/nico3333fr/CSP-useful/tree/master/csp-wtf#onsubmitonchangeonfocusinetc-attribute-on-div-element',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#onsubmitonchangeonfocusinetc-attribute-on-div-element',
          'comment' => 'WTF ?'
     ),
     'onselectstart attribute on DIV element' => array (
          'filter_on' => 'script_sample',
-         'case_description' => 'https://github.com/nico3333fr/CSP-useful/tree/master/csp-wtf#onsubmitonchangeonfocusinetc-attribute-on-div-element',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#onsubmitonchangeonfocusinetc-attribute-on-div-element',
          'comment' => 'WTF ?'
     ), 
-    'embed[height="175"][width="175"]' => array (
+    'embed[height=' => array (
          'filter_on' => 'script_sample',
-         'case_description' => 'https://github.com/nico3333fr/CSP-useful/tree/master/csp-wtf#embedheight175width175-',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#embedheight175width175-',
          'comment' => 'WTF ?'
     ),
     'window.AG_onLoad = function' => array (
          'filter_on' => 'script_sample',
-         'case_description' => 'https://github.com/nico3333fr/CSP-useful/tree/master/csp-wtf#try-rnwindowag_onload--function-',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#try-rnwindowag_onload--function-',
          'comment' => 'WTF ?'
     ),
     'AG_onLoad=function(func)' => array (
          'filter_on' => 'script_sample',
-         'case_description' => 'https://github.com/nico3333fr/CSP-useful/tree/master/csp-wtf#try-rnwindowag_onload--function-',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#try-rnwindowag_onload--function-',
          'comment' => 'WTF ?'
     ),
     'https://www.gstatic.com/images/branding/product/2x/translate_24dp.png' => array (
          'filter_on' => 'blocked_uri',
-         'case_description' => 'https://github.com/nico3333fr/CSP-useful/tree/master/csp-wtf#google-translate',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#google-translate-1',
          'comment' => 'Google Translate'
     ),
     'root .mod > ._jH + .rscontainer' => array (
          'filter_on' => 'script_sample',
-         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/README.md#root-mod--_jh--rscontainer',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#root-mod--_jh--rscontainer',
          'comment' => 'WTF ?'
     ),
     'window.oldSetTimeout=window.setTimeout' => array (
@@ -230,137 +229,137 @@ $tab_filter = array(
     ),
     'android-webview' => array (
          'filter_on' => 'blocked_uri',
-         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/README.md#android-webview',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#android-webview',
          'comment' => ''
     ),
     'window.devToolsOptions = Object.' => array (
          'filter_on' => 'script_sample',
-         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/README.md#devtools-',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#devtools-',
          'comment' => ''
     ),
     'dummyRuleForDigg{}' => array (
          'filter_on' => 'script_sample',
-         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/README.md#digg',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#digg',
          'comment' => ''
     ),
     'Copyright 2014 Evernote' => array (
          'filter_on' => 'script_sample',
-         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/README.md#evernote',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#evernote',
          'comment' => ''
     ),
     'http://adblockers.opera-mini.net' => array (
          'filter_on' => 'blocked_uri',
-         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/README.md#opera-mini-double-wtf',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#opera-mini-double-wtf',
          'comment' => ''
     ),
     'ms-browser-extension' => array (
          'filter_on' => 'blocked_uri',
-         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/README.md#ms-browser-extension',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#opera-mini-double-wtf',
          'comment' => ''
     ),
     'http://91.68.209.' => array (
          'filter_on' => 'blocked_uri',
-         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/README.md#isp-updatesadds-files-on-mobiles',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#isp-updatesadds-files-on-mobiles',
          'comment' => ''
     ),
     'http://www.faceporn.net/' => array (
          'filter_on' => 'script_sample',
-         'case_description' => 'https://github.com/nico3333fr/CSP-useful/tree/master/csp-wtf#ublock-and-faceporn-yes',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#ublock-and-faceporn-yes',
          'comment' => ''
     ),
     'Cacaoweb = { callbackIsRunning' => array (
          'filter_on' => 'script_sample',
-         'case_description' => 'https://github.com/nico3333fr/CSP-useful/tree/master/csp-wtf#var-cacaoweb',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#var-cacaoweb',
          'comment' => ''
     ),
     'chrome://kango-' => array (
          'filter_on' => 'source_file',
-         'case_description' => 'https://github.com/nico3333fr/CSP-useful/tree/master/csp-wtf#chromekango',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#chromekango',
          'comment' => ''
     ),
     'netdefender/hui/ndhui.js' => array (
          'filter_on' => 'source_file',
-         'case_description' => 'https://github.com/nico3333fr/CSP-useful/tree/master/csp-wtf#bitdefender-js-injection',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#bitdefender-js-injection',
          'comment' => ''
     ),
     'if (window.google && (window.google.sn' => array (
          'filter_on' => 'script_sample',
-         'case_description' => 'https://github.com/nico3333fr/CSP-useful/tree/master/csp-wtf#getpingu',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#if-windowgoogle--windowgooglesn',
          'comment' => ''
     ),
     'getpingu.com/assets' => array (
          'filter_on' => 'blocked_uri',
-         'case_description' => 'https://github.com/nico3333fr/CSP-useful/tree/master/csp-wtf#getpingu',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#getpingu',
          'comment' => ''
     ),
     '__webpack_require' => array (
          'filter_on' => 'script_sample',
-         'case_description' => 'https://github.com/nico3333fr/CSP-useful/tree/master/csp-wtf#webpack_require',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#webpack_require',
          'comment' => ''
     ),
     'reek.github.io/anti-adblock-killer' => array (
          'filter_on' => 'blocked_uri',
-         'case_description' => 'https://github.com/nico3333fr/CSP-useful/tree/master/csp-wtf#anti-adblock-killer',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#anti-adblock-killer',
          'comment' => ''
     ),
     'savingsslider-a.akamaihd.net' => array (
          'filter_on' => 'blocked_uri',
-         'case_description' => 'https://github.com/nico3333fr/CSP-useful/tree/master/csp-wtf#savingsslider-aakamaihdnet',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#savingsslider-aakamaihdnet',
          'comment' => ''
     ),
     'twitbridge.com/ads' => array (
          'filter_on' => 'source_file',
-         'case_description' => 'https://github.com/nico3333fr/CSP-useful/tree/master/csp-wtf#twitbridgecom',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#twitbridgecom',
          'comment' => ''
     ),
     'app.abtasty.com' => array (
          'filter_on' => 'blocked_uri',
-         'case_description' => 'https://github.com/nico3333fr/CSP-useful/tree/master/csp-wtf#appabtastycom',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#appabtastycom',
          'comment' => ''
     ),
     'dataloading.net' => array (
          'filter_on' => 'blocked_uri',
-         'case_description' => 'https://github.com/nico3333fr/CSP-useful/tree/master/csp-wtf#dataloadingnet',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#dataloadingnet',
          'comment' => ''
     ),
     'e={Vue:null' => array (
          'filter_on' => 'script_sample',
-         'case_description' => 'https://github.com/nico3333fr/CSP-useful/tree/master/csp-wtf#evuenull',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#evuenull',
          'comment' => ''
     ),
     'fireads.men' => array (
          'filter_on' => 'blocked_uri',
-         'case_description' => 'https://github.com/nico3333fr/CSP-useful/tree/master/csp-wtf#fireadsmen',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#fireadsmen',
          'comment' => ''
     ),
     '_PostRPC()' => array (
          'filter_on' => 'script_sample',
-         'case_description' => 'https://github.com/nico3333fr/CSP-useful/tree/master/csp-wtf#_postrpc',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#_postrpc',
          'comment' => ''
     ),
     'rdc.apicit.net' => array (
          'filter_on' => 'blocked_uri',
-         'case_description' => 'https://github.com/nico3333fr/CSP-useful/tree/master/csp-wtf#rdcapicitnettagsclickintextnet',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#rdcapicitnettagsclickintextnet',
          'comment' => ''
     ),
     'tags.clickintext.net' => array (
          'filter_on' => 'source_file',
-         'case_description' => 'https://github.com/nico3333fr/CSP-useful/tree/master/csp-wtf#rdcapicitnettagsclickintextnet',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#rdcapicitnettagsclickintextnet',
          'comment' => ''
     ),
     'comic-sans-replacer' => array (
          'filter_on' => 'blocked_uri',
-         'case_description' => 'https://github.com/nico3333fr/CSP-useful/tree/master/csp-wtf#comic-sans-replacer',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#comic-sans-replacer',
          'comment' => ''
     ),
     'davebestdeals.com' => array (
          'filter_on' => 'source_file',
-         'case_description' => 'https://github.com/nico3333fr/CSP-useful/tree/master/csp-wtf#pstaticdavebestdealscom',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#davebestdealscom',
          'comment' => ''
     ),
     '.davebestdeals.com' => array (
          'filter_on' => 'blocked_uri',
-         'case_description' => 'https://github.com/nico3333fr/CSP-useful/tree/master/csp-wtf#pstaticdavebestdealscom',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#davebestdealscom',
          'comment' => ''
     ),
     '.password-toggler-button-parent' => array (
@@ -370,67 +369,72 @@ $tab_filter = array(
     ),
     'allowAdblock()' => array (
          'filter_on' => 'script_sample',
-         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/README.md#allowadblock',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#allowadblock',
          'comment' => ''
     ),
     'loadingdata.site' => array (
          'filter_on' => 'blocked_uri',
-         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/README.md#loadingdatasite',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#loadingdatasite',
          'comment' => ''
     ),
     'ZennoPoster' => array (
          'filter_on' => 'source_file',
-         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/README.md#geckoscriptbridgejs',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#geckoscriptbridgejs',
          'comment' => ''
     ),
     'jar:file' => array (
          'filter_on' => 'source_file',
-         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/README.md#geckoscriptbridgejs',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#geckoscriptbridgejs',
          'comment' => 'extensions'
     ),
     '.topbanneradvertise' => array (
          'filter_on' => 'script_sample',
-         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/README.md#topbanneradvertise',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#topbanneradvertise',
          'comment' => ''
     ),
     'ashishmishra.in/gridify' => array (
          'filter_on' => 'blocked_uri',
-         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/README.md#gridify',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#gridify',
          'comment' => ''
     ),
     'akamaihd.net' => array (
          'filter_on' => 'source_file',
-         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/README.md#akamaihdnet',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#akamaihdnet',
          'comment' => ''
     ),
     '.wrcx {display:none}' => array (
          'filter_on' => 'script_sample',
-         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/README.md#wrcx',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#wrcx',
          'comment' => ''
     ),
     'rw_sendSocketMessage(aData)' => array (
          'filter_on' => 'script_sample',
-         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/README.md#rw_sendsocketmessage',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#rw_sendsocketmessage',
          'comment' => ''
     ),
     'jsl.infostatsvc.com' => array (
          'filter_on' => 'blocked_uri',
-         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/README.md#jslinfostatsvccom',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#jslinfostatsvccom',
          'comment' => ''
     ),
     'assets.volcanicpixels.com' => array (
          'filter_on' => 'blocked_uri',
-         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/README.md#volcanicpixelscom',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#volcanicpixelscom',
          'comment' => ''
     ),
     'loadingpages.me' => array (
          'filter_on' => 'blocked_uri',
-         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/README.md#loadingpagesme',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#loadingpagesmeloadingpageinfo',
          'comment' => ''
     ),
     'loadingpages.info' => array (
          'filter_on' => 'blocked_uri',
-         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/README.md#loadingpagesme',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#loadingpagesmeloadingpageinfo',
+         'comment' => ''
+    ),
+    'ze406soi.ru' => array (
+         'filter_on' => 'source_file',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#7a2rnuey1tw9arru',
          'comment' => ''
     ),
     'lingualeo.com' => array (
@@ -446,11 +450,6 @@ $tab_filter = array(
     'window["_gaUserPrefs"]' => array (
          'filter_on' => 'script_sample',
          'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#google-analytics-opt-out-add-on',
-         'comment' => ''
-    ),
-    '7a2rnuey1tw9ar.ru' => array (
-         'filter_on' => 'blocked_uri',
-         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#7a2rnuey1tw9arru',
          'comment' => ''
     ),
     'cr-input.mxpnl.net' => array (
@@ -485,6 +484,11 @@ $tab_filter = array(
     ),
     'data1.' => array (
          'filter_on' => 'source_file',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#data1itineraireinfo-and-its-friends-data1',
+         'comment' => ''
+    ),
+    '/data1.' => array (
+         'filter_on' => 'blocked_uri',
          'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#data1itineraireinfo-and-its-friends-data1',
          'comment' => ''
     ),
@@ -602,7 +606,7 @@ $tab_filter = array(
     ),
     'zscaler.net' => array (
          'filter_on' => 'original_policy',
-         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/README.md#zscalernet',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#zscalernet',
          'comment' => ''
     )*/
 );
