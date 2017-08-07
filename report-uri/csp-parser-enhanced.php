@@ -581,6 +581,46 @@ $tab_filter = array(
          'filter_on' => 'script_sample',
          'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#this-is-not-a-zero-length-file',
          'comment' => ''
+    ),
+    'var api = {};' => array (
+         'filter_on' => 'script_sample',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#var-api--',
+         'comment' => ''
+    ),
+    'sxt.cdn.skype.com' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#skype-assets',
+         'comment' => ''
+    ),
+    'cloudflare-app[app-id=' => array (
+         'filter_on' => 'script_sample',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#cloudflare',
+         'comment' => ''
+    ),
+    '.adbmodal-cloudflare-open' => array (
+         'filter_on' => 'script_sample',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#cloudflare',
+         'comment' => ''
+    ),
+    '1.1.1.1/bmi' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#google-search-for-android',
+         'comment' => ''
+    ),
+    'www.googletagmanager.com' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#google-tag-manager',
+         'comment' => ''
+    ),
+    'web.skype.com' => array (
+         'filter_on' => 'referrer',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#skype-web',
+         'comment' => ''
+    ),
+    'function injectPageScriptAPI' => array (
+         'filter_on' => 'script_sample',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#function-injectpagescriptapi',
+         'comment' => ''
     )/*,
     '' => array (
          'filter_on' => 'source_file',
