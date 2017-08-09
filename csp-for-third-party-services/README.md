@@ -141,5 +141,11 @@ script-src assets.codepen.io production-assets.codepen.io ;
     script-src: https://amp.cloudflare.com 
     connect-src: https://discovery.amp.cloudflare.com/v1/ampUrls:batchGet
 
+## Webmention.io
+
+```
+script-src https://webmention.io
+connect-src ws://webmention.io:8080
+```
 
 Feel free to participate. :)
