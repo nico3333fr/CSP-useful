@@ -4,6 +4,31 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 ---------------------------------------
+# undroider
+
+```
+{
+    "csp-report": {
+        "document-uri": "[anonymised]",
+        "referrer": "https://www.google.com/",
+        "violated-directive": "frame-src",
+        "effective-directive": "frame-src",
+        "original-policy": "default-src 'self';  script-src 'self' https://www.google-analytics.com http://www.google-analytics.com  stats.g.doubleclick.net https://stats.g.doubleclick.net ; style-src 'self' data: ; img-src 'self' https://www.google-analytics.com http://www.google-analytics.com *.[anonymised] stats.g.doubleclick.net https://stats.g.doubleclick.net data: ;  child-src 'self' ; report-uri /csp-parser.php ;",
+        "disposition": "enforce",
+        "blocked-uri": "http://undroider.com",
+        "line-number": 1,
+        "column-number": 299,
+        "status-code": 200,
+        "script-sample": ""
+    }
+}
+```
+
+__WTF:__ ?????
+
+__Answer:__ What is that? any idea?
+
+---------------------------------------
 # wd7bdb20e4d622f6569f3e8503138c859d.win / partner-net.men
 
 ```
@@ -712,14 +737,14 @@ __Answer:__ any idea?
 {
     "csp-report": {
         "blocked-uri": "self",
-        "document-uri": "http://www.aprotec.ch/fr/bonus/fonds-ecran-economiseur-ecran",
+        "document-uri": "[anonymised]",
         "line-number": 1,
-        "original-policy": "default-src http://www.aprotec.ch; script-src http://www.aprotec.ch https://www.google-analytics.com http://www.google-analytics.com http://stats.g.doubleclick.net https://stats.g.doubleclick.net; style-src http://www.aprotec.ch data:; img-src http://www.aprotec.ch https://www.google-analytics.com http://www.google-analytics.com http://*.aprotec.ch http://stats.g.doubleclick.net https://stats.g.doubleclick.net data:; child-src http://www.aprotec.ch; report-uri http://www.aprotec.ch/csp-parser.php",
+        "original-policy": "default-src [anonymised]; script-src [anonymised] https://www.google-analytics.com http://www.google-analytics.com http://stats.g.doubleclick.net https://stats.g.doubleclick.net; style-src [anonymised] data:; img-src [anonymised] https://www.google-analytics.com http://www.google-analytics.com http://*.[anonymised] http://stats.g.doubleclick.net https://stats.g.doubleclick.net data:; child-src [anonymised]; report-uri [anonymised]/csp-parser.php",
         "referrer": "https://www.google.fr/",
         "script-sample": ".wrcx {display:none} .r .wrcx,  .fc .wrc...",
-        "source-file": "http://www.aprotec.ch/fr/bonus/fonds-ecran-economiseur-ecran",
+        "source-file": "[anonymised]",
 
-        "violated-directive": "style-src http://www.aprotec.ch data:"
+        "violated-directive": "style-src [anonymised] data:"
     }
 }
 ```
