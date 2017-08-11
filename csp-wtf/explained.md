@@ -4,6 +4,68 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 ---------------------------------------
+# wd7bdb20e4d622f6569f3e8503138c859d.win / partner-net.men
+
+```
+{
+    "csp-report": {
+        "document-uri": "https://van11y.net/accessible-simple-tooltip/",
+        "referrer": "https://github.com/atalan/a11y-resources/blob/master/list-of-a11y-resources.md",
+        "violated-directive": "script-src",
+        "effective-directive": "script-src",
+        "original-policy": "default-src 'none' ;  script-src 'self'; style-src 'self' ; img-src 'self'; font-src 'self';  connect-src 'self'; child-src 'self' ; frame-ancestors 'none' ; manifest-src 'self' ; report-uri /csp-parser.php ;",
+        "disposition": "enforce",
+        "blocked-uri": "https://www.google-analytics.com/analytics.js",
+        "line-number": 3,
+        "column-number": 65,
+        "source-file": "https://wd7bdb20e4d622f6569f3e8503138c859d.win/ga.js",
+        "status-code": 0,
+        "script-sample": ""
+    }
+}
+```
+or
+```
+{
+    "csp-report": {
+        "document-uri": "https://van11y.net/",
+        "referrer": "https://van11y.net/downloads/simple-tooltip/demo/index.html",
+        "violated-directive": "script-src",
+        "effective-directive": "script-src",
+        "original-policy": "default-src 'none' ;  script-src 'self'; style-src 'self' ; img-src 'self'; font-src 'self';  connect-src 'self'; child-src 'self' ; frame-ancestors 'none' ; manifest-src 'self' ; report-uri /csp-parser.php ;",
+        "disposition": "enforce",
+        "blocked-uri": "https://wd7bdb20e4d622f6569f3e8503138c859d.win",
+        "status-code": 0,
+        "script-sample": ""
+    }
+}
+```
+or
+```
+{
+    "csp-report": {
+        "document-uri": "https://www.estcequonmetenprodaujourdhui.info/",
+        "referrer": "",
+        "violated-directive": "script-src",
+        "effective-directive": "script-src",
+        "original-policy": "default-src 'none';  script-src 'self' ; style-src 'self' 'nonce-0cbeb2b91bdf97330b8f1f4eb10ed61b66703479440655fb8d1bdaad3855d3cddf46aa191b979406204a6b4583ecde645a50f99d7611e3c636822bda56d72f0a' ; img-src 'self'  data: ;  font-src 'self'; child-src 'self' ;  frame-ancestors 'none' ; manifest-src 'self' ; report-uri /csp-parser.php ;",
+        "disposition": "enforce",
+        "blocked-uri": "https://partner-net.men/code/?pid=973820&r=8279006",
+        "line-number": 215,
+        "column-number": 257,
+
+        "source-file": "https://wd7bdb20e4d622f6569f3e8503138c859d.win/ga.js",
+        "status-code": 0,
+        "script-sample": ""
+    }
+}
+```
+
+__WTF:__ wd7bdb20e4d622f6569f3e8503138c859d.win
+
+__Answer:__ related to web developer extension compromission, see https://gist.github.com/piedpiperRichard/076516da60f45842f1a6e6ae35a9a240 && https://gist.github.com/amlwwalker/c56b717e0b5236e98da7239fdb493dea
+
+---------------------------------------
 # function injectPageScriptAPI
 
 ```
