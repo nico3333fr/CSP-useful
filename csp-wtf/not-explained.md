@@ -4,6 +4,29 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 ---------------------------------------
+# btUp.png
+
+```
+{
+    "csp-report": {
+        "document-uri": "https://www.estcequonmetenprodaujourdhui.info/",
+        "referrer": "",
+        "violated-directive": "img-src",
+        "effective-directive": "img-src",
+        "original-policy": "default-src 'none';  script-src 'self' ; style-src 'self' 'nonce-d140329620098a37c6d5b66e543e24f54f016ff1250e322bd6b0d8367cfe61083bfdfe4849bbdf3c5eb6e115ac612e3ecc5a60173f7929e7b95fa0cf93bda509' ; img-src 'self'  data: ;  font-src 'self'; child-src 'self' ;  frame-ancestors 'none' ; manifest-src 'self' ; report-uri /csp-parser.php ;",
+        "disposition": "enforce",
+        "blocked-uri": "http://i2.cdscdn.com/imagesok/mco/btUp.png",
+        "status-code": 0,
+        "script-sample": ""
+    }
+}
+```
+
+__WTF:__ ?????
+
+__Answer:__ Any idea?
+
+---------------------------------------
 # #Ad2, #AdText, #Ad_Top ...
 
 ```
