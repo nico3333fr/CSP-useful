@@ -4,6 +4,28 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 ---------------------------------------
+# A9AdsMiddleBoxTop, A9AdsOutOfStockWidge
+
+```
+{
+    "csp-report": {
+        "blocked-uri": "self",
+        "document-uri": "[anonymised]",
+        "line-number": 1,
+        "original-policy": "default-src [anonymised] https://*.vimeo.com https://*.akamaihd.net; script-src [anonymised] https://www.google-analytics.com https://stats.g.doubleclick.net https://stats.g.doubleclick.net https://*.vimeo.com https://*.vimeocdn.com https://*.newrelic.com https://*.nr-data.net; style-src [anonymised] data: https://*.vimeocdn.com; img-src [anonymised] https://www.google-analytics.com https://stats.g.doubleclick.net https://stats.g.doubleclick.net data:; child-src [anonymised] https://*.vimeo.com https://*.vimeocdn.com https://*.akamaihd.net; frame-ancestors 'none'; report-uri [anonymised]/csp-parser.php",
+        "referrer": "https://www.google.com/",
+        "script-sample": "#A9AdsMiddleBoxTop,#A9AdsOutOfStockWidge...",
+        "source-file": "[anonymised]",
+        "violated-directive": "style-src [anonymised] data: https://*.vimeocdn.com"
+    }
+}
+```
+
+__WTF:__ ?????
+
+__Answer:__ Any idea?
+
+---------------------------------------
 # adnotbad.com
 
 ```
