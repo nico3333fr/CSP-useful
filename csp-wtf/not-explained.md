@@ -3,6 +3,29 @@
 Sometimes, CSP notifications are __really difficult to understand or very strange__. Here is a collection of some CSP WTF.
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
+
+---------------------------------------
+# background-image: url(resource://jid1-dg…
+
+```
+{
+    "csp-report": {
+        "blocked-uri": "self",
+        "document-uri": "[anonymised]",
+        "original-policy": "default-src [anonymised]; script-src [anonymised] https://www.google-analytics.com http://www.google-analytics.com http://stats.g.doubleclick.net https://stats.g.doubleclick.net; style-src [anonymised] data:; img-src [anonymised] https://www.google-analytics.com http://www.google-analytics.com http://*.[anonymised] http://stats.g.doubleclick.net https://stats.g.doubleclick.net data:; child-src [anonymised]; report-uri http://www.aprotec.ch/csp-parser.php",
+        "referrer": "",
+        "script-sample": "background-image: url(resource://jid1-dg...",
+        "source-file": "[anonymised]",
+        "violated-directive": "style-src [anonymised] data:"
+
+    }
+}
+```
+
+__WTF:__ ????? (very often seen in my CSP reports, others do https://webcompat.com/issues/4907 )
+
+__Answer:__ Any idea?
+
 ---------------------------------------
 # A9AdsMiddleBoxTop, A9AdsOutOfStockWidge
 
