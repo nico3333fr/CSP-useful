@@ -3,6 +3,31 @@
 Sometimes, CSP notifications are __really difficult to understand or very strange__. Here is a collection of some CSP WTF.
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
+---------------------------------------
+# simple-finder.com
+
+```
+{
+    "csp-report": {
+        "document-uri": "https://rocssti.net/",
+        "referrer": "https://github.com/",
+        "violated-directive": "script-src",
+        "effective-directive": "script-src",
+        "original-policy": "default-src 'none';  script-src 'self' www.google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net; style-src 'self' ; img-src 'self' www.google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net data: ;  font-src 'self'; connect-src 'self'; child-src 'self' ;  frame-ancestors 'none' ; manifest-src 'self' ; form-action 'self' ; report-uri /csp-parser.php ;",
+        "disposition": "enforce",
+        "blocked-uri": "eval",
+        "line-number": 1,
+        "column-number": 186,
+        "source-file": "https://simple-finder.com",
+        "status-code": 0,
+        "script-sample": ""
+    }
+}
+```
+
+__WTF:__ ????? 
+
+__Answer:__ Any idea of what is simple-finder.com ? (website is empty)
 
 ---------------------------------------
 # background-image: url(resource://jid1-dg…
