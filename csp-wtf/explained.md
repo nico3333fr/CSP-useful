@@ -4,6 +4,25 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 ---------------------------------------
+# material.io/resizer
+
+```
+{
+    "csp-report": {
+        "blocked-uri": "",
+        "document-uri": "https://van11y.net/",
+        "original-policy": "default-src 'none'; script-src https://van11y.net; style-src https://van11y.net; img-src https://van11y.net; font-src https://van11y.net; connect-src https://van11y.net; child-src https://van11y.net; frame-ancestors 'none'; manifest-src https://van11y.net; report-uri https://van11y.net/csp-parser.php",
+        "referrer": "https://material.io/resizer/",
+        "violated-directive": "frame-ancestors 'none'"
+    }
+}
+```
+
+__WTF:__ ?
+
+__Answer:__ material.io/resizer tries to embed your website to test how it is displayed... and embeds it in iframes, so it can't be displayed if you don't allow it in CSP directives.
+
+---------------------------------------
 # wd7bdb20e4d622f6569f3e8503138c859d.win / partner-net.men
 
 ```
