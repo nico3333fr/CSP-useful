@@ -268,7 +268,7 @@ or
 
 __WTF:__ ?????
 
-__Answer:__ related to Skype assets, however, did not find how to reproduce this CSP notification.
+__Answer:__ related to Skype assets, however, did not find how to reproduce this CSP notification. EDIT: could be related to Skype extension for Chrome: https://github.com/nico3333fr/CSP-useful/issues/27 (have to test and confirm)
 
 ---------------------------------------
 # var api = {};
