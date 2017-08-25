@@ -247,7 +247,7 @@ $tab_filter = array(
          'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#evernote',
          'comment' => ''
     ),
-    'http://adblockers.opera-mini.net' => array (
+    'adblockers.opera-mini.net' => array (
          'filter_on' => 'blocked_uri',
          'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#opera-mini-double-wtf',
          'comment' => ''
@@ -428,6 +428,11 @@ $tab_filter = array(
          'comment' => ''
     ),
     'loadingpages.info' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#loadingpagesmeloadingpageinfo',
+         'comment' => ''
+    ),
+    'loadingpage.info' => array (
          'filter_on' => 'blocked_uri',
          'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#loadingpagesmeloadingpageinfo',
          'comment' => ''
