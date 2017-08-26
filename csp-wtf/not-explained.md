@@ -232,45 +232,6 @@ __WTF:__ ?????
 __Answer:__ related to Cloudflare, however, did not find how to reproduce these CSP notifications.
 
 ---------------------------------------
-# Skype Assets
-
-```
-{
-    "csp-report": {
-        "document-uri": "https://www.estcequonmetenprodaujourdhui.info/",
-        "referrer": "",
-        "violated-directive": "font-src",
-        "effective-directive": "font-src",
-        "original-policy": "default-src 'none';  script-src 'self' ; style-src 'self' 'nonce-6cac35e090bfc98deede0c665c6337b24b8d934be416c8e117373fdeb04aaa3765ff89a5e78c3884cd34c1c68e63d9457a4a0ceee8c9221d07da60a32bce6a0a' ; img-src 'self'  data: ;  font-src 'self'; child-src 'self' ;  frame-ancestors 'none' ; manifest-src 'self' ; report-uri /csp-parser.php ;",
-        "disposition": "enforce",
-        "blocked-uri": "https://sxt.cdn.skype.com/assets/fonts/SkypeAssets-Light.ttf",
-        "status-code": 0,
-        "script-sample": ""
-    }
-}
-```
-or
-```
-{
-    "csp-report": {
-        "document-uri": "https://www.estcequonmetenprodaujourdhui.info/",
-        "referrer": "",
-        "violated-directive": "font-src",
-        "effective-directive": "font-src",
-        "original-policy": "default-src 'none';  script-src 'self' ; style-src 'self' 'nonce-6cac35e090bfc98deede0c665c6337b24b8d934be416c8e117373fdeb04aaa3765ff89a5e78c3884cd34c1c68e63d9457a4a0ceee8c9221d07da60a32bce6a0a' ; img-src 'self'  data: ;  font-src 'self'; child-src 'self' ;  frame-ancestors 'none' ; manifest-src 'self' ; report-uri /csp-parser.php ;",
-        "disposition": "enforce",
-        "blocked-uri": "https://sxt.cdn.skype.com/assets/fonts/SkypeAssets-Regular.ttf",
-        "status-code": 0,
-        "script-sample": ""
-    }
-}
-```
-
-__WTF:__ ?????
-
-__Answer:__ related to Skype assets, however, did not find how to reproduce this CSP notification. EDIT: could be related to Skype extension for Chrome: https://github.com/nico3333fr/CSP-useful/issues/27 (have to test and confirm)
-
----------------------------------------
 # var api = {};
 
 ```
