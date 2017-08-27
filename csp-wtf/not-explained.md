@@ -4,6 +4,25 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 ---------------------------------------
+# QualityCheck/ga.js
+
+```
+{
+    "csp-report": {
+        "blocked-uri": "http://m59.prod2016.com/QualityCheck/ga.js",
+        "document-uri": "[anonymised]",
+        "original-policy": "default-src [anonymised]; script-src [anonymised] https://www.google-analytics.com http://www.google-analytics.com http://stats.g.doubleclick.net https://stats.g.doubleclick.net; style-src [anonymised] data:; img-src [anonymised] https://www.google-analytics.com http://www.google-analytics.com http://*.[anonymised] http://stats.g.doubleclick.net https://stats.g.doubleclick.net data:; report-uri [anonymised]csp-parser.php",
+        "referrer": "",
+        "violated-directive": "script-src [anonymised] https://www.google-analytics.com http://www.google-analytics.com http://stats.g.doubleclick.net https://stats.g.doubleclick.net"
+    }
+}
+```
+
+__WTF:__ ????? 
+
+__Answer:__ probable intrusive ads (https://meta.stackexchange.com/questions/267846/dnsunlocker-intrusive-ads), to confirm.
+
+---------------------------------------
 # simple-finder.com
 
 ```
