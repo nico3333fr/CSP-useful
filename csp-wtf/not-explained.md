@@ -4,6 +4,28 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 ---------------------------------------
+# forecastfox
+
+```
+{
+    "csp-report": {
+        "blocked-uri": "self",
+        "document-uri": "https://www.estcequonmetenprodaujourdhui.info/",
+        "line-number": 1,
+        "original-policy": "default-src 'none'; script-src https://www.estcequonmetenprodaujourdhui.info; style-src https://www.estcequonmetenprodaujourdhui.info 'nonce-87f37adff12051ed64d95171cf07f92d6933f59edc01c008bfa82182be5eb73e691fe631c5c873d24b1dc30834c83749f7d8ec3ccac88e8b60d173157d272789'; img-src https://www.estcequonmetenprodaujourdhui.info data:; font-src https://www.estcequonmetenprodaujourdhui.info; child-src https://www.estcequonmetenprodaujourdhui.info; frame-ancestors 'none'; manifest-src https://www.estcequonmetenprodaujourdhui.info; report-uri https://www.estcequonmetenprodaujourdhui.info/csp-parser.php",
+        "referrer": "",
+        "script-sample": "#forecastfox-boljdehmejbffnfiiicckjhafab...",
+        "source-file": "https://www.estcequonmetenprodaujourdhui.info/",
+        "violated-directive": "style-src https://www.estcequonmetenprodaujourdhui.info 'nonce-87f37adff12051ed64d95171cf07f92d6933f59edc01c008bfa82182be5eb73e691fe631c5c873d24b1dc30834c83749f7d8ec3ccac88e8b60d173157d272789'"
+    }
+}
+```
+
+__WTF:__ ????? 
+
+__Answer:__ related to forecastfox extension, did not find how to reproduce.
+
+---------------------------------------
 # QualityCheck/ga.js
 
 ```
