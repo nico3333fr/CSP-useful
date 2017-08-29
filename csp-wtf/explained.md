@@ -4,6 +4,28 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 ---------------------------------------
+# root .mod > ._jH + .rscontainer
+
+```
+{
+    "csp-report": {
+        "blocked-uri": "self",
+        "document-uri": "https://rocssti.net/realisations-css-rocssti",
+        "line-number": 1,
+        "original-policy": "default-src 'none'; script-src https://rocssti.net https://www.google-analytics.com https://stats.g.doubleclick.net https://stats.g.doubleclick.net; style-src https://rocssti.net; img-src https://rocssti.net https://www.google-analytics.com https://stats.g.doubleclick.net https://stats.g.doubleclick.net data:; font-src https://rocssti.net; connect-src https://rocssti.net; child-src https://rocssti.net; frame-ancestors 'none'; manifest-src https://rocssti.net; form-action https://rocssti.net; report-uri https://rocssti.net/csp-parser.php",
+        "referrer": "https://rocssti.net/guideline-rocssti-css",
+        "script-sample": "\n:root .mod > ._jH + .rscontainer\n{ disp...",
+        "source-file": "https://rocssti.net/realisations-css-rocssti",
+        "violated-directive": "style-src https://rocssti.net"
+    }
+}
+```
+
+__WTF:__ no code like this on this website.
+
+__Answer:__ Comes from https://easylist-downloads.adblockplus.org/easylist.txt (```.mod > ._jH + .rscontainer``` in the middle) and some ad blocking extensions like [uBlock Origin](https://github.com/gorhill/uBlock/issues/327) add the CSS in a <style> tag on the web page. Explanation kindly brought by [3ventic here](https://github.com/nico3333fr/CSP-useful/issues/29).
+
+---------------------------------------
 # Skype Assets
 
 ```
