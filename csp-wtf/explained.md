@@ -4,6 +4,31 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 ---------------------------------------
+# butstrap
+
+```
+{
+    "csp-report": {
+        "document-uri": "https://van11y.net/?utm_source=forwebdev_vk&utm_medium=announcement&utm_campaign=van11y--kollektsiya-gotovyh-k-ispolzovani",
+        "referrer": "",
+        "violated-directive": "img-src",
+        "effective-directive": "img-src",
+        "original-policy": "default-src 'none' ;  script-src 'self'; style-src 'self' ; img-src 'self'; font-src 'self';  connect-src 'self'; child-src 'self' ; frame-ancestors 'none' ; manifest-src 'self' ; report-uri /csp-parser.php ;",
+        "disposition": "enforce",
+        "blocked-uri": "https://butstrap.space/metric/?mid=&wid=49377&sid=&tid=590&rid=LOADED&custom1=van11y.net&t=1502215731726",
+        "status-code": 0,
+        "script-sample": ""
+    }
+}
+
+```
+
+__WTF:__ ?????
+
+__Answer:__ from some browser extensions, ex [vk downloader](https://addons.mozilla.org/fr/firefox/addon/vkontakteru-downloader/). Explanation kindly brought [here by linksilver](https://github.com/nico3333fr/CSP-useful/issues/28).
+
+
+---------------------------------------
 # root .mod > ._jH + .rscontainer
 
 ```
