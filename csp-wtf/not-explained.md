@@ -4,6 +4,28 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 ---------------------------------------
+# minvid__overlay__container
+
+```
+{
+    "csp-report": {
+        "blocked-uri": "self",
+        "document-uri": "https://www.estcequonmetenprodaujourdhui.info/",
+        "line-number": 1,
+        "original-policy": "default-src 'none'; script-src https://www.estcequonmetenprodaujourdhui.info; style-src https://www.estcequonmetenprodaujourdhui.info 'nonce-e025a70e91cf7811cfc2ce6e3feaa107a9d26baeb2e4e921525f1fa85fedd3c8b6a3af002af37dc05a3cc4681f89a9feb21888f20d931fd4307037f2c20db035'; img-src https://www.estcequonmetenprodaujourdhui.info data:; font-src https://www.estcequonmetenprodaujourdhui.info; child-src https://www.estcequonmetenprodaujourdhui.info; frame-ancestors 'none'; manifest-src https://www.estcequonmetenprodaujourdhui.info; report-uri https://www.estcequonmetenprodaujourdhui.info/csp-parser.php",
+        "referrer": "",
+        "script-sample": "\n.minvid__overlay__container {\n    align...",
+        "source-file": "https://www.estcequonmetenprodaujourdhui.info/",
+        "violated-directive": "style-src https://www.estcequonmetenprodaujourdhui.info 'nonce-e025a70e91cf7811cfc2ce6e3feaa107a9d26baeb2e4e921525f1fa85fedd3c8b6a3af002af37dc05a3cc4681f89a9feb21888f20d931fd4307037f2c20db035'"
+    }
+}
+```
+
+__WTF:__ ????? 
+
+__Answer:__ Any idea?
+
+---------------------------------------
 # forecastfox
 
 ```
