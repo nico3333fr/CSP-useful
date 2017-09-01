@@ -4,6 +4,28 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 ---------------------------------------
+# password-toggler-button-parent
+
+```
+{
+    "csp-report": {
+        "blocked-uri": "self",
+        "document-uri": "https://rocssti.net/en/builder-css",
+        "line-number": 1,
+        "original-policy": "default-src 'none'; script-src https://rocssti.net https://www.google-analytics.com https://stats.g.doubleclick.net https://stats.g.doubleclick.net; style-src https://rocssti.net; img-src https://rocssti.net https://www.google-analytics.com https://stats.g.doubleclick.net https://stats.g.doubleclick.net data:; font-src https://rocssti.net; connect-src https://rocssti.net; child-src https://rocssti.net; frame-ancestors 'none'; manifest-src https://rocssti.net; form-action https://rocssti.net; report-uri https://rocssti.net/csp-parser.php",
+        "referrer": "https://github.com/nico3333fr/ROCSSTI",
+        "script-sample": ".password-toggler-button-parent {positio...",
+        "source-file": "https://rocssti.net/en/builder-css",
+        "violated-directive": "style-src https://rocssti.net"
+    }
+}
+```
+
+__WTF:__ ????? 
+
+__Answer:__ Any idea?
+
+---------------------------------------
 # minvid__overlay__container
 
 ```
