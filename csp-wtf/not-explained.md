@@ -3,6 +3,30 @@
 Sometimes, CSP notifications are __really difficult to understand or very strange__. Here is a collection of some CSP WTF.
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
+
+---------------------------------------
+# toggleGifsOverlay
+
+```
+{
+    "csp-report": {
+        "blocked-uri": "self",
+        "document-uri": "https://www.estcequonmetenprodaujourdhui.info/",
+        "line-number": 1,
+        "original-policy": "default-src 'none'; script-src https://www.estcequonmetenprodaujourdhui.info; style-src https://www.estcequonmetenprodaujourdhui.info 'nonce-1ee886179a6d0ad4fe881e43de988c1be686f51032edcca2c224d16776e92b1472af0f86416002f10f06e4b8bcc181d6e1eadb7eea101bbf5585f115d16763f4'; img-src https://www.estcequonmetenprodaujourdhui.info data:; font-src https://www.estcequonmetenprodaujourdhui.info; child-src https://www.estcequonmetenprodaujourdhui.info; frame-ancestors 'none'; manifest-src https://www.estcequonmetenprodaujourdhui.info; report-uri https://www.estcequonmetenprodaujourdhui.info/csp-parser.php",
+        "referrer": "",
+        "script-sample": "#toggleGifsOverlay, #toggleGifsOverlay *...",
+        "source-file": "https://www.estcequonmetenprodaujourdhui.info/",
+        "violated-directive": "style-src https://www.estcequonmetenprodaujourdhui.info 'nonce-1ee886179a6d0ad4fe881e43de988c1be686f51032edcca2c224d16776e92b1472af0f86416002f10f06e4b8bcc181d6e1eadb7eea101bbf5585f115d16763f4'"
+
+    }
+}
+```
+
+__WTF:__ ????? 
+
+__Answer:__ Any idea?
+
 ---------------------------------------
 # password-toggler-button-parent
 
