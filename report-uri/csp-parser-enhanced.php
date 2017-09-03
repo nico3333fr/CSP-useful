@@ -12,6 +12,7 @@ define('SUBJECT', 'CSP violation');
 
 // Get the raw POST data
 $data = file_get_contents('php://input');
+
 // array for filtering
 $tab_filter = array(
     /*
@@ -219,7 +220,7 @@ $tab_filter = array(
     ),
     'root .mod > ._jH + .rscontainer' => array (
          'filter_on' => 'script_sample',
-         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#root-mod--_jh--rscontainer',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#root-mod--_jh--rscontainer',
          'comment' => 'WTF ?'
     ),
     'window.oldSetTimeout=window.setTimeout' => array (
@@ -364,7 +365,7 @@ $tab_filter = array(
     ),
     '.password-toggler-button-parent' => array (
          'filter_on' => 'script_sample',
-         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/README.md#password-toggler',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#password-toggler-button-parent',
          'comment' => ''
     ),
     'allowAdblock()' => array (
@@ -594,7 +595,7 @@ $tab_filter = array(
     ),
     'sxt.cdn.skype.com' => array (
          'filter_on' => 'blocked_uri',
-         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#skype-assets',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#skype-assets',
          'comment' => ''
     ),
     'cloudflare-app[app-id=' => array (
@@ -625,6 +626,86 @@ $tab_filter = array(
     'function injectPageScriptAPI' => array (
          'filter_on' => 'script_sample',
          'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#function-injectpagescriptapi',
+         'comment' => ''
+    ),
+    'wd7bdb20e4d622f6569f3e8503138c859d.win' => array (
+         'filter_on' => 'source_file',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#wd7bdb20e4d622f6569f3e8503138c859dwin--partner-netmen',
+         'comment' => ''
+    ),
+    'wd7bdb20e4d622f6569f3e8503138c859d.win' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#wd7bdb20e4d622f6569f3e8503138c859dwin--partner-netmen',
+         'comment' => ''
+    ),
+    'partner-net.men' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#wd7bdb20e4d622f6569f3e8503138c859dwin--partner-netmen',
+         'comment' => ''
+    ),
+    'material.io' => array (
+         'filter_on' => 'referrer',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#materialioresizer',
+         'comment' => ''
+    ),
+    'undroider.com' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#undroider',
+         'comment' => ''
+    ),
+    '#Ad2, #AdText, #Ad_Top' => array (
+         'filter_on' => 'script_sample',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#ad2-adtext-ad_top-',
+         'comment' => ''
+    ),
+    'i2.cdscdn.com/imagesok/mco/btUp.png' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#btuppng',
+         'comment' => ''
+    ),
+    'adnotbad.com' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#adnotbadcom',
+         'comment' => ''
+    ),
+    '#A9AdsMiddleBoxTop' => array (
+         'filter_on' => 'script_sample',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#a9adsmiddleboxtop-a9adsoutofstockwidge',
+         'comment' => ''
+    ),
+    'background-image: url(resource://jid1' => array (
+         'filter_on' => 'script_sample',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#background-image-urlresourcejid1-dg',
+         'comment' => ''
+    ),
+    'simple-finder.com' => array (
+         'filter_on' => 'source_file',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#simple-findercom',
+         'comment' => ''
+    ),
+    'QualityCheck/ga.js' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#qualitycheckgajs',
+         'comment' => ''
+    ),
+    '#forecastfox' => array (
+         'filter_on' => 'script_sample',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#forecastfox',
+         'comment' => ''
+    ),
+    '.minvid__overlay__container' => array (
+         'filter_on' => 'script_sample',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#minvid__overlay__container',
+         'comment' => ''
+    ),
+    '.password-toggler-button-parent' => array (
+         'filter_on' => 'script_sample',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#password-toggler-button-parent',
+         'comment' => ''
+    ),
+    '#toggleGifsOverlay' => array (
+         'filter_on' => 'script_sample',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#togglegifsoverlay',
          'comment' => ''
     )/*,
     '' => array (
