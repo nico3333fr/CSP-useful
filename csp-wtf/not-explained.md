@@ -4,6 +4,30 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 ---------------------------------------
+# Google audio pronunciation files
+
+```
+{
+    "csp-report": {
+        "document-uri": "https://van11y.net/",
+        "referrer": "https://van11y.net/downloads/tab-panel/demo/index.html",
+        "violated-directive": "media-src",
+        "effective-directive": "media-src",
+        "original-policy": "default-src 'none' ;  script-src 'self'; style-src 'self' ; img-src 'self'; font-src 'self';  connect-src 'self'; child-src 'self' ; frame-ancestors 'none' ; manifest-src 'self' ; report-uri /csp-parser.php ;",
+        "disposition": "enforce",
+        "blocked-uri": "https://ssl.gstatic.com/dictionary/static/sounds/oxford/feature--_us_1.mp3",
+        "status-code": 0,
+        "script-sample": ""
+    }
+}
+```
+
+__WTF:__ Nothing like this on the website.
+
+__Answer:__  audio pronunciation files of English dictionary words from Google (https://www.labnol.org/internet/download-audio-pronunciation-words/21064/), however, don't have any idea on how it happened.
+
+
+---------------------------------------
 # function s(t,n,e,r){t.initialize(
 
 ```
