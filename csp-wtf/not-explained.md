@@ -4,6 +4,28 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 ---------------------------------------
+# fileice()
+
+```
+{
+    "csp-report": {
+        "blocked-uri": "self",
+        "document-uri": "https://www.estcequonmetenprodaujourdhui.info/",
+        "line-number": 1,
+        "original-policy": "default-src 'none'; script-src https://www.estcequonmetenprodaujourdhui.info; style-src https://www.estcequonmetenprodaujourdhui.info 'nonce-1f90226a3e842f36d22456deae329e028e298251686c3b13fb814baae38e30d2aebb76c238f8e9c34f524a8348d33dd35e67ca0dc17c1b7fb3bd2b630a1481ae'; img-src https://www.estcequonmetenprodaujourdhui.info data:; font-src https://www.estcequonmetenprodaujourdhui.info; child-src https://www.estcequonmetenprodaujourdhui.info; frame-ancestors 'none'; manifest-src https://www.estcequonmetenprodaujourdhui.info; report-uri https://www.estcequonmetenprodaujourdhui.info/csp-parser.php",
+        "referrer": "",
+        "script-sample": "[onclick=\"fileice();\"],\n[onclick=\"$(this...",
+        "source-file": "https://www.estcequonmetenprodaujourdhui.info/",
+        "violated-directive": "style-src https://www.estcequonmetenprodaujourdhui.info 'nonce-1f90226a3e842f36d22456deae329e028e298251686c3b13fb814baae38e30d2aebb76c238f8e9c34f524a8348d33dd35e67ca0dc17c1b7fb3bd2b630a1481ae'"
+    }
+}
+```
+
+__WTF:__ ????? 
+
+__Answer:__ Any idea?
+
+---------------------------------------
 # Google audio pronunciation files
 
 ```
