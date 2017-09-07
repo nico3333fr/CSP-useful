@@ -4,6 +4,29 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 ---------------------------------------
+# s3.amazonaws.com
+
+```
+{
+    "csp-report": {
+        "document-uri": "https://van11y.net/accessible-tab-panel/",
+        "referrer": "https://van11y.net/?utm_source=forwebdev_tlgrm&utm_medium=announcement&utm_campaign=van11y--kollektsiya-gotovyh-k-ispolzovani",
+        "violated-directive": "script-src",
+        "effective-directive": "script-src",
+        "original-policy": "default-src 'none' ;  script-src 'self'; style-src 'self' ; img-src 'self'; font-src 'self';  connect-src 'self'; child-src 'self' ; frame-ancestors 'none' ; manifest-src 'self' ; report-uri /csp-parser.php ;",
+        "disposition": "enforce",
+        "blocked-uri": "https://s3.amazonaws.com",
+        "status-code": 0,
+        "script-sample": ""
+    }
+}
+```
+
+__WTF:__ ????? Nothing like this on the website.
+
+__Answer:__ Any idea?
+
+---------------------------------------
 # fileice()
 
 ```
