@@ -4,6 +4,28 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 ---------------------------------------
+# pubblicita
+
+```
+{
+    "csp-report": {
+        "blocked-uri": "self",
+        "document-uri": "[anonymised]/fr/en-savoir-plus",
+        "line-number": 1,
+        "original-policy": "default-src [anonymised]; script-src [anonymised] http://*.google-analytics.com https://www.google-analytics.com http://stats.g.doubleclick.net; style-src [anonymised] data:; img-src [anonymised] http://*.google-analytics.com https://www.google-analytics.com http://stats.g.doubleclick.net data:; child-src [anonymised]; report-uri [anonymised]/csp-parser.php",
+        "referrer": "[anonymised]/fr/",
+        "script-sample": ".pubblicita, .adv_esterno, .topbanneradv...",
+        "source-file": "[anonymised]/fr/en-savoir-plus",
+        "violated-directive": "style-src [anonymised] data:"
+    }
+}
+```
+
+__WTF:__ ????? Nothing like this on the website.
+
+__Answer:__ Any idea?
+
+---------------------------------------
 # s3.amazonaws.com
 
 ```
