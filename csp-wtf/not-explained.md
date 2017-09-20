@@ -968,7 +968,7 @@ __Answer:__ any idea? Malware, other?
 
 
 ---------------------------------------
-# loadingpages.me/loadingpage.info
+# loadingpages.me/loadingpage.info/loadingpaqes.info
 
 
 ```
@@ -1001,6 +1001,24 @@ or
         "line-number": 1,
         "column-number": 268,
         "status-code": 0
+    }
+}
+```
+or
+```
+{
+    "csp-report": {
+        "document-uri": "https://van11y.net/fr/modale-accessible/",
+        "referrer": "https://t.co/Jg07AwKRhR",
+        "violated-directive": "script-src",
+        "effective-directive": "script-src",
+        "original-policy": "default-src 'none' ;  script-src 'self'; style-src 'self' ; img-src 'self'; font-src 'self';  connect-src 'self'; child-src 'self' ; frame-ancestors 'none' ; manifest-src 'self' ; report-uri /csp-parser.php ;",
+        "disposition": "enforce",
+        "blocked-uri": "http://loadingpaqes.info/jo/is?id=85A70030-25F8-5A51-8140-4CA4FFB108E4&d=3168a8ab-1bcf-41ba-a65d-762b1336fdca&cl=upd",
+        "line-number": 1,
+        "column-number": 264,
+        "status-code": 0,
+        "script-sample": ""
     }
 }
 ```
