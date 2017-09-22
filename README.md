@@ -210,6 +210,7 @@ These bugs are just annoying, they are not critical. They provide false-positive
 - https://speakerdeck.com/mikispag/making-csp-great-again-michele-spagnuolo-and-lukas-weichselbaum
 - https://speakerdeck.com/mikispag/so-we-broke-all-csps-dot-dot-dot-you-wont-guess-what-happened-next-michele-spagnuolo-and-lukas-weichselbaum
 - https://groups.google.com/a/chromium.org/forum/#!msg/blink-dev/t2ai4lsHhWI/MndrZyEWCwAJ
+- https://chloe.re/2017/04/12/csp-hash-on-scripts-sri-and-require-sri-for-no-more-self/
 
 ### Online tools that test CSP
 
