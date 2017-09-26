@@ -4,6 +4,32 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 ---------------------------------------
+# app.trackduck.com
+
+```
+{
+    "csp-report": {
+        "document-uri": "https://van11y.net/accessible-accordion/",
+        "referrer": "https://www.google.com/",
+        "violated-directive": "connect-src",
+        "effective-directive": "connect-src",
+        "original-policy": "default-src 'none' ;  script-src 'self'; style-src 'self' ; img-src 'self'; font-src 'self';  connect-src 'self'; child-src 'self' ; frame-ancestors 'none' ; manifest-src 'self' ; report-uri /csp-parser.php ;",
+        "disposition": "enforce",
+        "blocked-uri": "https://app.trackduck.com/api/v1/project/toolbar?url=https%3A%2F%2Fvan11y.net%2Faccessible-accordion%2F&extension=chrome",
+        "line-number": 1,
+        "column-number": 761,
+        "status-code": 0,
+        "script-sample": ""
+
+    }
+}
+```
+
+__WTF:__ ????? Nothing like this on the website.
+
+__Answer:__ Probably caused by embedding page in https://trackduck.com/ (feedback tool)
+
+---------------------------------------
 # netvibes
 
 ```
