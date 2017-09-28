@@ -4,6 +4,30 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 ---------------------------------------
+# alecyueee.us
+
+```
+{
+    "csp-report": {
+        "document-uri": "https://van11y.net/accessible-hide-show/",
+        "referrer": "https://van11y.net/downloads/hide-show/demo/index.html",
+        "violated-directive": "script-src",
+        "effective-directive": "script-src",
+        "original-policy": "default-src 'none' ;  script-src 'self'; style-src 'self' ; img-src 'self'; font-src 'self';  connect-src 'self' ; child-src 'self' ; frame-ancestors 'self'  ; manifest-src 'self' ; worker-src 'self' ;  report-uri /csp-parser.php ;",
+        "disposition": "enforce",
+        "blocked-uri": "https://alecyueee.us",
+        "status-code": 0,
+        "script-sample": ""
+    }
+}
+```
+
+__WTF:__ ????? Nothing like this on the website.
+
+__Answer:__ Seems to be related to malicious chrome extensions ("Fabulous for Facebook", "Photozoom for Facebook", etc.)  https://superuser.com/questions/643926/some-chrome-extension-redirects-me-to-malicious-sites-when-amazon-com-is-accesse
+
+
+---------------------------------------
 # app.trackduck.com
 
 ```
