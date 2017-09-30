@@ -425,17 +425,17 @@ $tab_filter = array(
     ),
     'loadingpages.me' => array (
          'filter_on' => 'blocked_uri',
-         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#loadingpagesmeloadingpageinfo',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#loadingpagesmeloadingpageinfoloadingpaqesinfo',
          'comment' => ''
     ),
     'loadingpages.info' => array (
          'filter_on' => 'blocked_uri',
-         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#loadingpagesmeloadingpageinfo',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#loadingpagesmeloadingpageinfoloadingpaqesinfo',
          'comment' => ''
     ),
     'loadingpage.info' => array (
          'filter_on' => 'blocked_uri',
-         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#loadingpagesmeloadingpageinfo',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#loadingpagesmeloadingpageinfoloadingpaqesinfo',
          'comment' => ''
     ),
     'ze406soi.ru' => array (
@@ -707,12 +707,62 @@ $tab_filter = array(
          'filter_on' => 'script_sample',
          'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#togglegifsoverlay',
          'comment' => ''
+    ),
+    'function s(t,n,e,r){t' => array (
+         'filter_on' => 'script_sample',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#function-stnertinitialize',
+         'comment' => ''
+    ),
+    'ssl.gstatic.com/dictionary' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#google-audio-pronunciation-files',
+         'comment' => ''
+    ),
+    'onclick="fileice()' => array (
+         'filter_on' => 'script_sample',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#fileice',
+         'comment' => ''
+    ),
+    '.pubblicita, .adv_esterno' => array (
+         'filter_on' => 'script_sample',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#pubblicita',
+         'comment' => ''
+    ),
+    'img[src="https://www.paypalobjects.com' => array (
+         'filter_on' => 'script_sample',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#paypalobjectscom',
+         'comment' => ''
+    ),
+    'function installHook (window)' => array (
+         'filter_on' => 'script_sample',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#installhook',
+         'comment' => ''
+    ),
+    'loadingpaqes.info' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#loadingpagesmeloadingpageinfoloadingpaqesinfo',
+         'comment' => ''
+    ),
+    'www.netvibes.com' => array (
+         'filter_on' => 'referrer',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#netvibes',
+         'comment' => ''
+    ),
+    'app.trackduck.com' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#apptrackduckcom',
+         'comment' => ''
+    ),
+    'alecyueee.us' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#alecyueeeus',
+         'comment' => ''
     )/*,
     '' => array (
          'filter_on' => 'source_file',
          'case_description' => '',
          'comment' => ''
-    ),
+    )
     // if you are not using these services, uncomment these lines to enable other filters
     ,
     'https://github.com/google/fonts/blob/master/apache' => array (
@@ -733,6 +783,11 @@ $tab_filter = array(
     'zscaler.net' => array (
          'filter_on' => 'original_policy',
          'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#zscalernet',
+         'comment' => ''
+    ),
+    's3.amazonaws.com' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#s3amazonawscom',
          'comment' => ''
     )*/
 );
