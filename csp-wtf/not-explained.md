@@ -4,6 +4,31 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 ---------------------------------------
+# pllaff-up.ru
+
+```
+{
+    "csp-report": {
+        "document-uri": "http://www.visionclinique.ch/en/",
+        "referrer": "https://yandex.kz/clck/jsredir?from=yandex.kz%3Bsearch%2F%3Bweb%3B%3B&text=&etext=1559.24wb2jgH6MmMboHfi0H6Bk7D2_NMDHQGBGDQv0k-G7VGDyVCW8RZA40ODuO7uL17.774d9db85048e11dc10c8bb3d6770db9716374d3&uuid=&state=PEtFfuTeVD5kpHnK9lio9dFa2ePbDzX7fH_cbK-eu2V8J4cbFpzDXVHZJKQvpytSeUWqKrUImfJn8iwEFqatOg,,&&cst=AiuY0DBWFJ5Hyx_fyvalFBAG7tbgwmI_-lAb_5NHsbdOFiNzRUyp1i0F6YIyTUZ4MqaoDQQNX3FuUuTTfPev4MIkPypdbvON2O_mRgdnybvC6-e4lz3yA52PEE8tqWN3TG1h4-BGHjDo4iJtbA5pdGNT1iMSvmnYwBleO0kbUP4cR7TuzMsNYD_U682C0Hb-2zROzDqLXZMGCsEeW87qVX0OFm2CPdexqXqkqJvXKKvl3bg_LtcWv78jeadoYw_teKKQikFg4RYoO0DobhTiJ8-ChyufZzjq&data=UlNrNmk5WktYejR0eWJFYk1LdmtxbEwzM21mU1JlN2FQMElINGd2emlVOHlJWXVLdV9KVkVaQkJEZFNWUFZwVmJzSGVGT0c0eG9od1czeFRGZ3Vhakx5ZGNXbkEtbWRxcGZNclJvV1ZldVZ2ekRSTXZXZXlQQSws&sign=6b225c21dc54fb0295eaecdb33be3d79&keyno=0&b64e=2&ref=orjY4mGPRjkm1GYumWD8VpzF_kJ2sVs57K9Nmt84FMoVEqgBDx7ov6x1cZnOPS8KSvtuidR99U3HGJXMAVG420lzZb4o9zKT&l10n=ru&cts=1506680153592&mc=3.169925001442312&bu=uniq150667776385335
+ 5184",
+        "violated-directive": "script-src",
+        "effective-directive": "script-src",
+        "original-policy": "default-src 'self';  script-src 'self' http://www.google-analytics.com https://www.google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net 'unsafe-eval' ; style-src 'self'  data: 'unsafe-inline' ; img-src 'self' http://www.google-analytics.com https://www.google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net data: ;  child-src 'self' ; report-uri /csp-parser.php ;",
+        "disposition": "enforce",
+        "blocked-uri": "https://pllaff-up.ru",
+        "status-code": 200,
+        "script-sample": ""
+    }
+}
+```
+
+__WTF:__ ????? Nothing like this on the website.
+
+__Answer:__ Any idea?
+
+
+---------------------------------------
 # installHook
 
 ```
