@@ -14,7 +14,7 @@ I use __CSP to clean up some bad old contents__ (with inline-styles for example)
 3. All notifications will come without doing anything (yes, I’m lazy)
 4. Yay, you know where you have to make some cleanup
 
-Moreother, if you don’t have the time to clean it, setting up CSP policy will avoid bad old styles from breaking the nice/clean new design. Or it will tell you when contributors are doing shit on the website.
+Moreother, if you don't have the time to clean it, setting up CSP policy will avoid bad old styles from breaking the nice/clean new design. Or it will tell you when contributors are doing shit on the website.
 
 ### To migrate a website to HTTPS
 
