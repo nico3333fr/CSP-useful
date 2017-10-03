@@ -4,6 +4,30 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 ---------------------------------------
+# body#dummybodyid .diigolet
+
+```
+{
+    "csp-report": {
+        "blocked-uri": "self",
+        "document-uri": "https://van11y.net/accessible-hide-show/",
+        "line-number": 1,
+        "original-policy": "default-src 'none'; script-src https://van11y.net; style-src https://van11y.net; img-src https://van11y.net; font-src https://van11y.net; connect-src https://van11y.net; child-src https://van11y.net; frame-ancestors https://van11y.net; manifest-src https://van11y.net; report-uri https://van11y.net/csp-parser.php",
+        "referrer": "https://www.qwant.com/",
+        "script-sample": "body#dummybodyid .diigolet,body#dummybod...",
+
+        "source-file": "https://van11y.net/accessible-hide-show/",
+        "violated-directive": "style-src https://van11y.net"
+    }
+}
+```
+
+__WTF:__ ????? Nothing like this on the website.
+
+__Answer:__ Any idea how to reproduce?
+
+
+---------------------------------------
 # pllaff-up.ru
 
 ```
