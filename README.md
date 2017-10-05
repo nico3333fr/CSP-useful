@@ -218,7 +218,7 @@ These bugs are just annoying, they are not critical. They provide false-positive
 - https://www.dareboost.com/
 - https://securityheaders.io/
 - https://report-uri.io/home/tools
-- https://observatory.mozilla.org/
+- https://observatory.mozilla.org/ (with CSP Analyzer to help you understand your policy)
 
 ### Add-ons Navigator
 - https://addons.mozilla.org/en-us/firefox/addon/newusercspdesign/
