@@ -162,6 +162,7 @@ These bugs are just annoying, they are not critical. They provide false-positive
 - [InfoShare 2016 - Scott Helme - Content Security Policy: The application security Swiss Army Knife (video)](https://www.youtube.com/watch?v=d6Clpj_KfFo)
 - [Paris Web 2015 - Nicolas Hoffmann - Content Security Policy (video in french-speaking)](http://www.paris-web.fr/2015/conferences/csp-content-security-policy.php)
 - [Codeurs en Seine 2016 - Nicolas Hoffmann - Content Security Policy (video in french-speaking)](https://www.infoq.com/fr/presentations/codeurs-en-seine-nicolas-hoffmann-content-security-policy)
+- [Paris Web 2017 - slides of a workshop in french](https://www.nicolas-hoffmann.net/CSP-PW2017)
 
 
 ### CSP with Google
