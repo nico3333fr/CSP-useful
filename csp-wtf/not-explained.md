@@ -4,6 +4,56 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 ---------------------------------------
+
+# mickey-hand.png
+
+```
+{
+    "csp-report": {
+        "document-uri": "<anonymized>",
+        "referrer": "https://www.google.de/",
+        "violated-directive": "img-src",
+        "effective-directive": "img-src",
+        "original-policy": "<anonymized>",
+        "disposition": "report",
+        "blocked-uri": "http://www.snazzyspace.com/cursorsfolder/mickey-hand.png",
+        "status-code": 0,
+        "script-sample": ""
+    }
+}
+```
+
+__WTF:__`"blocked-uri": "http://www.snazzyspace.com/cursorsfolder/mickey-hand.png",` 
+
+__Answer:__ Maybe some sort of extensions that manipulate the courser image but why do they load that using the browser?
+
+---------------------------------------
+
+# local IP?
+
+```
+{
+    "csp-report": {
+        "document-uri": "<anonymized>",
+        "referrer": "",
+        "violated-directive": "<anonymized>",
+        "effective-directive": "connect-src",
+        "original-policy": "<anonymized>",
+        "blocked-uri": "https://192.168.1.81:3443",
+        "status-code": 0,
+        "source-file": "<anonymized>",
+        "line-number": 591,
+        "column-number": 11
+    }
+}
+
+```
+
+__WTF:__ `"blocked-uri": "https://192.168.1.81:3443"`
+
+__Answer:__ Somebody doing local dev.
+
+---------------------------------------
 # body#dummybodyid .diigolet
 
 ```
@@ -1818,30 +1868,6 @@ __Answer:__ No idea how this could happen. Any idea?
 __WTF:__ ```"document-uri": "about:blank",``` on my personal website www.nicolas-hoffmann.net with a font???
 
 __Answer:__ Might be related to browser extension blocking the request. https://stackoverflow.com/questions/32336860/why-would-i-get-a-csp-violation-for-the-blocked-uri-about
-
----------------------------------------
-
-# mickey-hand.png
-
-```
-{
-    "csp-report": {
-        "document-uri": "<anonymized>",
-        "referrer": "https://www.google.de/",
-        "violated-directive": "img-src",
-        "effective-directive": "img-src",
-        "original-policy": "<anonymized>",
-        "disposition": "report",
-        "blocked-uri": "http://www.snazzyspace.com/cursorsfolder/mickey-hand.png",
-        "status-code": 0,
-        "script-sample": ""
-    }
-}
-```
-
-__WTF:__`"blocked-uri": "http://www.snazzyspace.com/cursorsfolder/mickey-hand.png",` 
-
-__Answer:__ Maybe some sort of extensions that manipulate the courser image but why do they load that using the browser?
 
 
 ---------------------------------------
