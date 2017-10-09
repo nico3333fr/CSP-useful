@@ -1819,6 +1819,29 @@ __WTF:__ ```"document-uri": "about:blank",``` on my personal website www.nicolas
 
 __Answer:__ Might be related to browser extension blocking the request. https://stackoverflow.com/questions/32336860/why-would-i-get-a-csp-violation-for-the-blocked-uri-about
 
+---------------------------------------
+
+# local IP?
+
+```
+{
+    "csp-report": {
+        "document-uri": "<anonymized>",
+        "referrer": "",
+        "violated-directive": "<anonymized>",
+        "effective-directive": "connect-src",
+        "original-policy": "<anonymized>",
+        "blocked-uri": "https://192.168.1.81:3443",
+        "status-code": 0,
+        "source-file": "<anonymized>",
+        "line-number": 591,
+        "column-number": 11
+    }
+}
+
+```
+
+__WTF:__ `"blocked-uri": "https://192.168.1.81:3443"`
 
 ---------------------------------------
 If you have some examples to share (even if you don't know what the fuck it is coming from), feel free to share them. Anonymize the URL/policy if needed.
