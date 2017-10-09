@@ -1819,6 +1819,30 @@ __WTF:__ ```"document-uri": "about:blank",``` on my personal website www.nicolas
 
 __Answer:__ Might be related to browser extension blocking the request. https://stackoverflow.com/questions/32336860/why-would-i-get-a-csp-violation-for-the-blocked-uri-about
 
+---------------------------------------
+
+# mickey-hand.png
+
+```
+{
+    "csp-report": {
+        "document-uri": "<anonymized>",
+        "referrer": "https://www.google.de/",
+        "violated-directive": "img-src",
+        "effective-directive": "img-src",
+        "original-policy": "<anonymized>",
+        "disposition": "report",
+        "blocked-uri": "http://www.snazzyspace.com/cursorsfolder/mickey-hand.png",
+        "status-code": 0,
+        "script-sample": ""
+    }
+}
+```
+
+__WTF:__`"blocked-uri": "http://www.snazzyspace.com/cursorsfolder/mickey-hand.png",` 
+
+__Answer:__ Maybe some sort of extensions that manipulate the courser image but why do they load that using the browser?
+
 
 ---------------------------------------
 If you have some examples to share (even if you don't know what the fuck it is coming from), feel free to share them. Anonymize the URL/policy if needed.
