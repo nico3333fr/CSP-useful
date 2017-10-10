@@ -4,7 +4,28 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 ---------------------------------------
+# chrome.tab
 
+```
+{
+    "csp-report": {
+        "blocked-uri": "self",
+        "document-uri": "https://www.nicolas-hoffmann.net/source/1697-Obtenir-une-bonne-note-sur-Mozilla-Observatory-HTTPS-CSP-SRI-CORS-HSTS-HPKP-etc.html",
+        "line-number": 1,
+        "original-policy": "default-src 'none'; script-src https://www.nicolas-hoffmann.net https://google-analytics.com https://stats.g.doubleclick.net https://stats.g.doubleclick.net; style-src https://www.nicolas-hoffmann.net data:; img-src https://www.nicolas-hoffmann.net https://google-analytics.com https://stats.g.doubleclick.net https://stats.g.doubleclick.net https://ssl.google-analytics.com data:; connect-src https://www.nicolas-hoffmann.net; font-src https://www.nicolas-hoffmann.net; media-src https://www.nicolas-hoffmann.net; object-src https://www.nicolas-hoffmann.net https://www.youtube.com; child-src https://www.nicolas-hoffmann.net; frame-ancestors https://www.nicolas-hoffmann.net; manifest-src https://www.nicolas-hoffmann.net; form-action https://www.nicolas-hoffmann.net; report-uri https://www.nicolas-hoffmann.net/csp-parser.php",
+        "referrer": "",
+        "script-sample": "window.klTabId_kis = 'chrome.tab.50:16';",
+        "source-file": "https://www.nicolas-hoffmann.net/source/1697-Obtenir-une-bonne-note-sur-Mozilla-Observatory-HTTPS-CSP-SRI-CORS-HSTS-HPKP-etc.html",
+        "violated-directive": "script-src https://www.nicolas-hoffmann.net https://google-analytics.com https://stats.g.doubleclick.net https://stats.g.doubleclick.net"
+    }
+}
+```
+
+__WTF:__ `window.klTabId_kis = 'chrome.tab.50:16` and `"blocked-uri": "self",`
+
+__Answer:__ Any idea?
+
+---------------------------------------
 # mickey-hand.png
 
 ```
@@ -23,12 +44,11 @@ If you have an idea (even if the idea is WTF) for some of these, do not hesitate
 }
 ```
 
-__WTF:__`"blocked-uri": "http://www.snazzyspace.com/cursorsfolder/mickey-hand.png",` 
+__WTF:__ `"blocked-uri": "http://www.snazzyspace.com/cursorsfolder/mickey-hand.png",` 
 
 __Answer:__ Maybe some sort of extensions that manipulate the courser image but why do they load that using the browser?
 
 ---------------------------------------
-
 # local IP?
 
 ```
