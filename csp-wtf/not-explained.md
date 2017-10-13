@@ -4,6 +4,31 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 ---------------------------------------
+# l.messenger.com
+
+```
+{
+    "csp-report": {
+        "document-uri": "https://www.estcequonmetenprodaujourdhui.info/",
+        "referrer": "https://l.messenger.com/",
+        "violated-directive": "script-src",
+        "effective-directive": "script-src",
+        "original-policy": "default-src 'none';  script-src 'self' ; style-src 'self' 'nonce-e76913749ae391cd6fe3471a4b4b054b377ff0d5a64c744d75b5fcae574f96ce3dd2bc3ee0c63953f5103381ae1766b49e1462d93d1bf500507b55bbca497bb8' ; img-src 'self'  data: ;  font-src 'self'; child-src 'self' ;  frame-ancestors 'none' ; manifest-src 'self' ; report-uri /csp-parser.php ;",
+        "disposition": "enforce",
+        "blocked-uri": "eval",
+        "line-number": 10,
+        "column-number": 461,
+        "status-code": 0,
+        "script-sample": ""
+    }
+}
+```
+
+__WTF:__ `"referrer": "https://l.messenger.com/",`
+
+__Answer:__ Messenger in web version?
+
+---------------------------------------
 # addEventListener('mousedown'
 
 ```
