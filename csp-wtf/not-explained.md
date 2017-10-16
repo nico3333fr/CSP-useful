@@ -4,6 +4,29 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 ---------------------------------------
+# trc_related_container
+
+```
+{
+    "csp-report": {
+        "blocked-uri": "self",
+        "document-uri": "<anonymized>",
+        "line-number": 1,
+        "original-policy": "default-src <anonymized>; script-src <anonymized> https://www.google-analytics.com http://www.google-analytics.com http://stats.g.doubleclick.net https://stats.g.doubleclick.net; style-src <anonymized> data:; img-src <anonymized> https://www.google-analytics.com http://www.google-analytics.com <anonymized> http://stats.g.doubleclick.net https://stats.g.doubleclick.net data:; child-src <anonymized>; report-uri <anonymized>/csp-parser.php",
+        "referrer": "",
+        "script-sample": ".trc_related_container div[data-item-syn...",
+        "source-file": "<anonymized>",
+        "violated-directive": "style-src <anonymized> data:"
+
+    }
+}
+```
+
+__WTF:__ `"script-sample": ".trc_related_container div[data-item-syn...",`
+
+__Answer:__ Any idea?
+
+---------------------------------------
 # l.messenger.com
 
 ```
