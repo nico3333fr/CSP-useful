@@ -4,6 +4,28 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 ---------------------------------------
+# @media screen {@font-face{font-family:'O
+
+```
+{
+    "csp-report": {
+        "blocked-uri": "self",
+        "document-uri": "https://www.estcequonmetenprodaujourdhui.info/",
+        "line-number": 1,
+        "original-policy": "default-src 'none'; script-src https://www.estcequonmetenprodaujourdhui.info; style-src https://www.estcequonmetenprodaujourdhui.info 'nonce-9fc5176bcc9d274f4da65642769e4b2b63527cb81454d11090b1fdefdf5fe192f444f421bd8b4cafa4b81177e1c75f71e33f827d6124f535c468697f7eba1976'; img-src https://www.estcequonmetenprodaujourdhui.info data:; font-src https://www.estcequonmetenprodaujourdhui.info; child-src https://www.estcequonmetenprodaujourdhui.info; frame-ancestors 'none'; manifest-src https://www.estcequonmetenprodaujourdhui.info; report-uri https://www.estcequonmetenprodaujourdhui.info/csp-parser.php",
+        "referrer": "",
+        "script-sample": "@media screen {@font-face{font-family:'O...",
+        "source-file": "https://www.estcequonmetenprodaujourdhui.info/",
+        "violated-directive": "style-src https://www.estcequonmetenprodaujourdhui.info 'nonce-9fc5176bcc9d274f4da65642769e4b2b63527cb81454d11090b1fdefdf5fe192f444f421bd8b4cafa4b81177e1c75f71e33f827d6124f535c468697f7eba1976'"
+    }
+}
+```
+
+__WTF:__ `"script-sample": "@media screen {@font-face{font-family:'O...",`
+
+__Answer:__ Any idea? (saw it a lot in reports recently)
+
+---------------------------------------
 # trc_related_container
 
 ```
