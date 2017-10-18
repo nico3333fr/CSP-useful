@@ -1798,7 +1798,7 @@ __Answer:__ anybody, an idea?
 
 __WTF:__ chrome://kango-edb6a15c-5f8c-4531-92fa-98e988cf233c/content/lib/jquery-1.8.1.min.js (nothing like this on this website)
 
-__Answer:__ Any idea? (firefox extension, other?)
+__Answer:__ Based on https://github.com/nico3333fr/CSP-useful/issues/32 a firefox extension using a framework called Kango. 
 
 ---------------------------------------
 # Website frames itself ??
