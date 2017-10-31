@@ -4,6 +4,29 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 ---------------------------------------
+# moz-extension://
+
+```
+{
+    "csp-report": {
+        "blocked-uri": "self",
+        "document-uri": "https://www.nicolas-hoffmann.net/source/1313-Meta-tag-imagetoolbar-indesirable-en-HTML5.html",
+        "original-policy": "default-src 'none'; script-src https://www.nicolas-hoffmann.net https://google-analytics.com https://stats.g.doubleclick.net https://stats.g.doubleclick.net; style-src https://www.nicolas-hoffmann.net data:; img-src https://www.nicolas-hoffmann.net https://google-analytics.com https://stats.g.doubleclick.net https://stats.g.doubleclick.net https://ssl.google-analytics.com data:; connect-src https://www.nicolas-hoffmann.net; font-src https://www.nicolas-hoffmann.net; media-src https://www.nicolas-hoffmann.net; object-src https://www.nicolas-hoffmann.net https://www.youtube.com; child-src https://www.nicolas-hoffmann.net; frame-ancestors https://www.nicolas-hoffmann.net; manifest-src https://www.nicolas-hoffmann.net; form-action https://www.nicolas-hoffmann.net; base-uri 'none'; report-uri https://www.nicolas-hoffmann.net/csp-parser.php",
+        "referrer": "https://www.google.fr/",
+        "script-sample": "background-image: url(moz-extension://9c...",
+
+        "source-file": "https://www.nicolas-hoffmann.net/source/1313-Meta-tag-imagetoolbar-indesirable-en-HTML5.html",
+        "violated-directive": "style-src https://www.nicolas-hoffmann.net data:"
+    }
+}
+```
+
+__WTF:__ `"script-sample": "background-image: url(moz-extension://9c...",
+`
+
+__Answer:__ Mozilla extension ?
+
+---------------------------------------
 # :root audio[data-po76pdm]
 
 ```
