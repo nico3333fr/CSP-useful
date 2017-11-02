@@ -4,6 +4,30 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 ---------------------------------------
+# a[rel~='nofollow']
+
+```
+{
+    "csp-report": {
+        "blocked-uri": "self",
+        "document-uri": "https://www.estcequonmetenprodaujourdhui.info/",
+        "line-number": 1,
+        "original-policy": "default-src 'none'; script-src https://www.estcequonmetenprodaujourdhui.info; style-src https://www.estcequonmetenprodaujourdhui.info 'nonce-55771bc06394e3735ebf35c1f0d06ab1d6d8b5d7dfc19e0a9b91b098fe85e7257ed8ff5efba98364c721c7bed796522146e75a3a9d0564b56d1d862b1e0e5d82'; img-src https://www.estcequonmetenprodaujourdhui.info data:; font-src https://www.estcequonmetenprodaujourdhui.info; child-src https://www.estcequonmetenprodaujourdhui.info; frame-ancestors 'none'; manifest-src https://www.estcequonmetenprodaujourdhui.info; base-uri 'none'; report-uri https://www.estcequonmetenprodaujourdhui.info/csp-parser.php",
+        "referrer": "",
+        "script-sample": "a[rel~='nofollow']{outline:.14em dotted ...",
+        "source-file": "https://www.estcequonmetenprodaujourdhui.info/",
+        "violated-directive": "style-src https://www.estcequonmetenprodaujourdhui.info 'nonce-55771bc06394e3735ebf35c1f0d06ab1d6d8b5d7dfc19e0a9b91b098fe85e7257ed8ff5efba98364c721c7bed796522146e75a3a9d0564b56d1d862b1e0e5d82'"
+
+    }
+}
+```
+
+__WTF:__ `"script-sample": "a[rel~='nofollow']{outline:.14em dotted ...",`
+
+__Answer:__ any idea?
+
+
+---------------------------------------
 # moz-extension://
 
 ```
@@ -21,8 +45,7 @@ If you have an idea (even if the idea is WTF) for some of these, do not hesitate
 }
 ```
 
-__WTF:__ `"script-sample": "background-image: url(moz-extension://9c...",
-`
+__WTF:__ `"script-sample": "background-image: url(moz-extension://9c...",`
 
 __Answer:__ Mozilla extension ?
 
