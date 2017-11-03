@@ -4,6 +4,31 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 ---------------------------------------
+# mstat.acestream.net
+
+```
+{
+    "csp-report": {
+        "document-uri": "https://www.estcequonmetenprodaujourdhui.info/",
+        "referrer": "",
+        "violated-directive": "script-src",
+        "effective-directive": "script-src",
+        "original-policy": "default-src 'none';script-src 'unsafe-eval' 'self';style-src 'self' 'nonce-21bc187dd5669b028fa558f96694a81d4670daca21999dc750ba070ca64244ddc6a6438d34860c3fcc0a3991dd2f6cb1b204058d4693fac957817b06f90e5370';img-src 'self'  data:;font-src 'self';child-src 'self';frame-ancestors 'none';manifest-src 'self';base-uri 'none';report-uri /csp-parser.php;",
+        "disposition": "enforce",
+        "blocked-uri": "https://mstat.acestream.net/p2p-search/metrika.js?loc=www.estcequonmetenprodaujourdhui.info&_r=0.9360435255632686",
+        "line-number": 18900,
+        "column-number": 16,
+        "status-code": 0,
+        "script-sample": ""
+    }
+}
+```
+
+__WTF:__ `"blocked-uri": "https://mstat.acestream.net/p2p-search/metrika.js?loc=www.estcequonmetenprodaujourdhui.info&_r=0.9360435255632686",`
+
+__Answer:__ probable ad network (according to https://github.com/rtanglao/rt-csp), to confirm.
+
+---------------------------------------
 # a[rel~='nofollow']
 
 ```
