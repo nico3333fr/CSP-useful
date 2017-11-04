@@ -180,6 +180,7 @@ These bugs are just annoying, they are not critical. They provide false-positive
 - https://blogs.dropbox.com/tech/2015/09/on-csp-reporting-and-filtering/
 - https://oreoshake.github.io/csp/twitter/2014/07/25/twitters-csp-report-collector-design.html
 - https://blog.sqreen.io/content-security-policy/
+- https://github.com/rtanglao/rt-csp
 
 
 ### Why you should use CSP
