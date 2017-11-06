@@ -4,6 +4,26 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 ---------------------------------------
+# Mastodon
+
+```
+{
+    "csp-report": {
+        "blocked-uri": "self",
+        "document-uri": "https://van11y.net/fr/2017/10/30/Version-2.0-du-script-onglets-accessibles-et-simplification",
+        "original-policy": "default-src 'none'; script-src https://van11y.net; style-src https://van11y.net; img-src https://van11y.net; font-src https://van11y.net; connect-src https://van11y.net; child-src https://van11y.net; frame-ancestors https://van11y.net; manifest-src https://van11y.net; base-uri 'none'; report-uri https://van11y.net/csp-parser.php",
+        "referrer": "https://mamot.fr/web/timelines/tag/inkscape",
+        "source-file": "https://van11y.net/fr/2017/10/30/Version-2.0-du-script-onglets-accessibles-et-simplification",
+        "violated-directive": "style-src https://van11y.net"
+    }
+}
+```
+
+__WTF:__ `"referrer": "https://mamot.fr/web/timelines/tag/inkscape",`
+
+__Answer:__ related to Mastodon.
+
+---------------------------------------
 # alecyueee.us
 
 ```
