@@ -156,7 +156,7 @@ __Answer:__ Any idea?
 
 __WTF:__ `"script-sample": "(function injected(eventName, injectedIn...",`
 
-__Answer:__ Any idea? 
+__Answer:__ Error disappears after disabling Adblock Plus 3.0?! https://issues.adblockplus.org/ticket/5953
 
 ---------------------------------------
 # window.klTabId_kis
