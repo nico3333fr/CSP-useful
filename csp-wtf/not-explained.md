@@ -4,6 +4,32 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 ---------------------------------------
+# takethatad.com
+
+```
+{
+    "csp-report": {
+        "document-uri": "https://www.nicolas-hoffmann.net/source/1556-Bug-Internet-Explorer-attributs-width-height-vides-img.html",
+        "referrer": "https://www.google.fr/",
+        "violated-directive": "script-src",
+        "effective-directive": "script-src",
+        "original-policy": "default-src 'none';  script-src 'self' google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net; style-src 'self' data:  ; img-src 'self' google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net ssl.google-analytics.com data: ;  connect-src 'self';  font-src 'self'; media-src 'self'; object-src 'self' www.youtube.com ;  child-src 'self' ;  frame-ancestors 'self' ; manifest-src 'self' ; form-action 'self' ; base-uri 'none'; report-uri /csp-parser.php ;",
+        "disposition": "enforce",
+        "blocked-uri": "https://takethatad.com/optout/get?jsonp=__twb_cb_478053953&key=b24534b96fde8c01af&t=1510064009178",
+        "line-number": 1,
+        "column-number": 5373,
+        "source-file": "https://s3.amazonaws.com/cashe-js/b24534b96fde8c01af.js",
+        "status-code": 0,
+        "script-sample": ""
+    }
+}
+```
+
+__WTF:__ `"blocked-uri": "https://takethatad.com/optout/get?jsonp=__twb_cb_478053953&key=b24534b96fde8c01af&t=1510064009178",`
+
+__Answer:__ probable ad network (according to https://github.com/rtanglao/rt-csp), to confirm.
+
+---------------------------------------
 # mstat.acestream.net
 
 ```
