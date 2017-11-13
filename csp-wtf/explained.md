@@ -4,6 +4,31 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 ---------------------------------------
+# Google+
+
+```
+{
+    "csp-report": {
+        "document-uri": "https://www.estcequonmetenprodaujourdhui.info/",
+        "referrer": "https://plus.url.google.com/url?sa=j&url=https%3A%2F%2Fwww.estcequonmetenprodaujourdhui.info%2F&uct=1508493467&usg=3cm13-wUguzJdcieYZL76V1sp4A.",
+        "violated-directive": "script-src",
+        "effective-directive": "script-src",
+        "original-policy": "default-src 'none';  script-src 'unsafe-eval' 'self' ; style-src 'self' 'nonce-30463e7d71893e961698f5b656903f2633966ff39be5469742ebbfb32f9fe8b5b946bf6905a9d50fbf50ee11eb4a8568905b4e0425ea3e8c40cea891b36ace89' ; img-src 'self'  data: ;  font-src 'self'; child-src 'self' ;  frame-ancestors 'none' ; manifest-src 'self' ; base-uri 'none';  report-uri /csp-parser.php ;",
+        "disposition": "enforce",
+        "blocked-uri": "inline",
+        "line-number": 674,
+        "column-number": 23,
+        "status-code": 0,
+        "script-sample": ""
+    }
+}
+```
+
+__WTF:__ `"blocked-uri": "inline",`
+
+__Answer:__ redirection on Google+
+
+---------------------------------------
 # Mastodon
 
 ```
