@@ -879,7 +879,13 @@ $tab_filter = array(
          'filter_on' => 'blocked_uri',
          'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#s3amazonawscom',
          'comment' => ''
-    )*/
+    ),
+    'css.zohostatic.com' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#csszohostaticcom',
+         'comment' => ''
+    )
+    */
 );
      
 
