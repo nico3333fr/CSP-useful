@@ -847,6 +847,16 @@ $tab_filter = array(
          'filter_on' => 'script_sample',
          'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#documentcurrentscriptsetattribute',
          'comment' => ''
+    ),
+    'cdnsure.com' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#cdnsurecom',
+         'comment' => ''
+    ),
+    'plus.url.google.com' => array (
+         'filter_on' => 'referrer',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#google',
+         'comment' => ''
     )/*,
     '' => array (
          'filter_on' => 'source_file',
