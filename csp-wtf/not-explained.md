@@ -4,6 +4,30 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 ---------------------------------------
+# Many CSS class names in this file
+
+```
+{
+    "csp-report": {
+        "blocked-uri": "self",
+        "document-uri": "https://www.estcequonmetenprodaujourdhui.info/",
+        "line-number": 1,
+        "original-policy": "default-src 'none'; script-src https://www.estcequonmetenprodaujourdhui.info; style-src https://www.estcequonmetenprodaujourdhui.info 'nonce-6d7c01d7f06a094cec57dfffe62ed5ff85e7c82486b547a8248610581e9164a30b517b18c3cceb4db0a32b263cc0d8aa3d93a3e8bf8c8cd39e3769003de111b1'; img-src https://www.estcequonmetenprodaujourdhui.info data:; font-src https://www.estcequonmetenprodaujourdhui.info; child-src https://www.estcequonmetenprodaujourdhui.info; frame-ancestors 'none'; manifest-src https://www.estcequonmetenprodaujourdhui.info; base-uri 'none'; report-uri https://www.estcequonmetenprodaujourdhui.info/csp-parser.php",
+        "referrer": "",
+        "script-sample": "/*\n * Many CSS class names in this file ...",
+
+        "source-file": "https://www.estcequonmetenprodaujourdhui.info/",
+        "violated-directive": "style-src https://www.estcequonmetenprodaujourdhui.info 'nonce-6d7c01d7f06a094cec57dfffe62ed5ff85e7c82486b547a8248610581e9164a30b517b18c3cceb4db0a32b263cc0d8aa3d93a3e8bf8c8cd39e3769003de111b1'"
+
+    }
+}
+```
+
+__WTF:__ `"script-sample": "/*\n * Many CSS class names in this file ...",` (not present on this site)
+
+__Answer:__ any idea?
+
+---------------------------------------
 # cdnsure.com
 
 ```
