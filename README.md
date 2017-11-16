@@ -200,6 +200,7 @@ These bugs are just annoying, they are not critical. They provide false-positive
 - https://corner.squareup.com/2016/05/content-security-policy-single-page-app.html
 - https://githubengineering.com/githubs-post-csp-journey/
 - https://www.sourceclear.com/blog/Adopting-and-Reducing-Challenges-of-Content-Security-Policy-CSP-with-Sentry/
+- https://www.troyhunt.com/locking-down-your-website-scripts-with-csp-hashes-nonces-and-report-uri/
 
 ### Other
 
