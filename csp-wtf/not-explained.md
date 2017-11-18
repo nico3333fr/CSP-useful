@@ -4,6 +4,29 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 ---------------------------------------
+# mc.yandex.ru
+
+```
+{
+    "csp-report": {
+        "document-uri": "https://www.estcequonmetenprodaujourdhui.info/",
+        "referrer": "",
+        "violated-directive": "img-src",
+        "effective-directive": "img-src",
+        "original-policy": "default-src 'none';script-src 'unsafe-eval' 'self';style-src 'self' 'nonce-894c96c24fab0b71baa217e8c4c799ac29c71bbabfd8fa43e1ce8f327557025ed17416e8aa93eab0b795367a1782ec84eebbdc6610d5706f70d41af2410fb526';img-src 'self'  data:;font-src 'self';child-src 'self';frame-ancestors 'none';manifest-src 'self';base-uri 'none';report-uri /csp-parser.php;",
+        "disposition": "enforce",
+        "blocked-uri": "https://mc.yandex.ru/watch/44443582",
+        "status-code": 0,
+        "script-sample": ""
+    }
+}
+```
+
+__WTF:__ `"blocked-uri": "https://mc.yandex.ru/watch/44443582",` 
+
+__Answer:__ this website does not use this. Might be ISP in russia inserting Yandex watch.js ? https://aboutdfir.com/yandex-ru-and-intrusion-investigations/
+
+---------------------------------------
 # Google Analytics connect-src violation
 
 ```
