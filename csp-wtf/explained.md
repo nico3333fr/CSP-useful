@@ -4,6 +4,26 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 ---------------------------------------
+# Facebook
+
+```
+{
+    "csp-report": {
+        "document-uri": "https://www.estcequonmetenprodaujourdhui.info/",
+        "referrer": "http://m.facebook.com/",
+        "violated-directive": "style-src 'self' 'nonce-14584c3305109c96f431263b495bff18527afe86cd21ca00f4eac2766e086efff98527a5e9e53507589f8e81b9777ce7aaa1ee15927a32b879947a8de403d161' ",
+        "original-policy": "default-src 'none';  script-src 'self' ; style-src 'self' 'nonce-14584c3305109c96f431263b495bff18527afe86cd21ca00f4eac2766e086efff98527a5e9e53507589f8e81b9777ce7aaa1ee15927a32b879947a8de403d161' ; img-src 'self'  data: ;  font-src 'self'; child-src 'self' ;  frame-ancestors 'none' ; manifest-src 'self' ; base-uri 'none';  report-uri /csp-parser.php ;",
+        "blocked-uri": "",
+        "status-code": 0
+    }
+}
+```
+
+__WTF:__ `"blocked-uri": "",`
+
+__Answer:__ Page shared on facebook mobile version
+
+---------------------------------------
 # Google+
 
 ```
