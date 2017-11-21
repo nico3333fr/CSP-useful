@@ -1449,7 +1449,8 @@ __Answer:__ This notification happens when you share a page on Facebook.
 
 ---------------------------------------
 
-## "Reader" in MacOS Safari?
+## "Reader" in Maxthon browser
+
 ```
 {
     "csp-report": {
@@ -1464,7 +1465,7 @@ __Answer:__ This notification happens when you share a page on Facebook.
 
 __WTF:___ ```mx://res/reader-mode/reader.html```
 
-__Answer:__ Might be related to "Reader" in MacOS Safari. (to confirm)
+__Answer:__ according to https://github.com/nico3333fr/CSP-useful/issues/36 it is related to reader mode with Maxthon (thanks to @ngyikp for the tip)
 
 ---------------------------------------
 
