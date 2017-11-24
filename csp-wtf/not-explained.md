@@ -4,6 +4,28 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 ---------------------------------------
+# vimvixen-console-frame
+
+```
+{
+    "csp-report": {
+        "blocked-uri": "self",
+        "document-uri": "https://www.estcequonmetenprodaujourdhui.info/",
+        "line-number": 1,
+        "original-policy": "default-src 'none'; script-src https://www.estcequonmetenprodaujourdhui.info; style-src https://www.estcequonmetenprodaujourdhui.info 'nonce-b18622dc4ea86707289c2f632c2cb6e8490496edebfaa34b58b271562a39b383dcf8d9e702c7f923e0b3ffc373c4e122d7a6626c9376cd19e94ba7423ab4d88e'; img-src https://www.estcequonmetenprodaujourdhui.info data:; font-src https://www.estcequonmetenprodaujourdhui.info; child-src https://www.estcequonmetenprodaujourdhui.info; frame-ancestors 'none'; manifest-src https://www.estcequonmetenprodaujourdhui.info; base-uri 'none'; report-uri https://www.estcequonmetenprodaujourdhui.info/csp-parser.php",
+        "referrer": "",
+        "script-sample": ".vimvixen-console-frame {\n  margin: 0;\n ...",
+        "source-file": "https://www.estcequonmetenprodaujourdhui.info/",
+        "violated-directive": "style-src https://www.estcequonmetenprodaujourdhui.info 'nonce-b18622dc4ea86707289c2f632c2cb6e8490496edebfaa34b58b271562a39b383dcf8d9e702c7f923e0b3ffc373c4e122d7a6626c9376cd19e94ba7423ab4d88e'"
+    }
+}
+```
+
+__WTF:__ `"script-sample": ".vimvixen-console-frame {\n  margin: 0;\n ...",` 
+
+__Answer:__ What is that? `vimvixen-console-frame`
+
+---------------------------------------
 # mc.yandex.ru
 
 ```
