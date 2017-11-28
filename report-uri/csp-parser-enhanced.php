@@ -810,7 +810,7 @@ $tab_filter = array(
     ),
     'const V8_STACK_' => array (
          'filter_on' => 'script_sample',
-         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#const-v8_stack_',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#const-v8_stack_',
          'comment' => ''
     ),
     ':root audio[data-' => array (
