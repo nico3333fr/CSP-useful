@@ -305,28 +305,6 @@ __WTF:__ `"script-sample": ":root audio[data-po76pdm],\n:root   img[d...",`
 __Answer:__ Any idea? 
 
 ---------------------------------------
-# const V8_STACK_
-
-```
-{
-    "csp-report": {
-        "blocked-uri": "self",
-        "document-uri": "https://www.estcequonmetenprodaujourdhui.info/",
-        "line-number": 1,
-        "original-policy": "default-src 'none'; script-src https://www.estcequonmetenprodaujourdhui.info; style-src https://www.estcequonmetenprodaujourdhui.info 'nonce-047029342697026cb2f6f7a85794cde34108f59845b90a35a7605918fb73ae04a2a268e02aff1d654593e2abf237aafec20258c588da9fd81c6fb3df4baf3266'; img-src https://www.estcequonmetenprodaujourdhui.info data:; font-src https://www.estcequonmetenprodaujourdhui.info; child-src https://www.estcequonmetenprodaujourdhui.info; frame-ancestors 'none'; manifest-src https://www.estcequonmetenprodaujourdhui.info; base-uri 'none'; report-uri https://www.estcequonmetenprodaujourdhui.info/csp-parser.php",
-        "referrer": "",
-        "script-sample": "(function (ERROR) {\n\n    const V8_STACK_...",
-        "source-file": "https://www.estcequonmetenprodaujourdhui.info/",
-        "violated-directive": "script-src https://www.estcequonmetenprodaujourdhui.info"
-    }
-}
-```
-
-__WTF:__ `"script-sample": "(function (ERROR) {\n\n    const V8_STACK_...",`
-
-__Answer:__ Any idea? 
-
----------------------------------------
 # function injected(eventName, injectedIn...
 
 ```

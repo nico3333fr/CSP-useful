@@ -1719,4 +1719,26 @@ __WTF:__ nothing like this on the website.
 __Answer:__ Based on this: https://stackoverflow.com/questions/44265331/why-chrome-browser-automatically-send-cross-origin-request-to-http-loadingpage this is a hacked MacOS Client.
 
 ---------------------------------------
+# const V8_STACK_
+
+```
+{
+    "csp-report": {
+        "blocked-uri": "self",
+        "document-uri": "https://www.estcequonmetenprodaujourdhui.info/",
+        "line-number": 1,
+        "original-policy": "default-src 'none'; script-src https://www.estcequonmetenprodaujourdhui.info; style-src https://www.estcequonmetenprodaujourdhui.info 'nonce-047029342697026cb2f6f7a85794cde34108f59845b90a35a7605918fb73ae04a2a268e02aff1d654593e2abf237aafec20258c588da9fd81c6fb3df4baf3266'; img-src https://www.estcequonmetenprodaujourdhui.info data:; font-src https://www.estcequonmetenprodaujourdhui.info; child-src https://www.estcequonmetenprodaujourdhui.info; frame-ancestors 'none'; manifest-src https://www.estcequonmetenprodaujourdhui.info; base-uri 'none'; report-uri https://www.estcequonmetenprodaujourdhui.info/csp-parser.php",
+        "referrer": "",
+        "script-sample": "(function (ERROR) {\n\n    const V8_STACK_...",
+        "source-file": "https://www.estcequonmetenprodaujourdhui.info/",
+        "violated-directive": "script-src https://www.estcequonmetenprodaujourdhui.info"
+    }
+}
+```
+
+__WTF:__ `"script-sample": "(function (ERROR) {\n\n    const V8_STACK_...",`
+
+__Answer:__ Injected by [Privacy Badger](https://www.eff.org/privacybadger) [(Source)](https://github.com/EFForg/privacybadger/blob/b654b487b3696e4a9c4f011ebceb06fe7182adb1/src/js/contentscripts/fingerprinting.js#L26)
+
+---------------------------------------
 If you have some examples to share (even if you don't know what the fuck it is coming from), feel free to share them. Anonymize the URL/policy if needed.
