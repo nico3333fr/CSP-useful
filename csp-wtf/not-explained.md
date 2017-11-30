@@ -4,6 +4,29 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 ---------------------------------------
+# spidtest.org/metric
+
+```
+{
+    "csp-report": {
+        "document-uri": "https://van11y.net/accessible-tab-panel/",
+        "referrer": "https://plainjs.com/javascript/plugins/accessible-tabs-panel-system-163/",
+        "violated-directive": "img-src",
+        "effective-directive": "img-src",
+        "original-policy": "default-src 'none' ;  script-src 'self'; style-src 'self' ; img-src 'self'; font-src 'self';  connect-src 'self' ; child-src 'self' ; frame-ancestors 'self'  ; manifest-src 'self' ; worker-src 'self' ; base-uri 'none' ;  report-uri /csp-parser.php ;",
+        "disposition": "enforce",
+        "blocked-uri": "https://spidtest.org/metric/?mid=&wid=51391&sid=&tid=4002&rid=FINISHED&custom1=van11y.net&t=1512059045445",
+        "status-code": 0,
+        "script-sample": ""
+    }
+}
+```
+
+__WTF:__ `"blocked-uri": "https://spidtest.org/metric/?mid=&wid=51391&sid=&tid=4002&rid=FINISHED&custom1=van11y.net&t=1512059045445",` 
+
+__Answer:__ What is that? `spidtest.org/metric`
+
+---------------------------------------
 # vimvixen-console-frame
 
 ```
