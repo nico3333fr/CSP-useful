@@ -22,7 +22,7 @@ You might read how the Guardian moved to HTTPS using CSP: https://www.theguardia
 
 ### Progressive enhancement and orthogonality
 
-As far as I can see, using CSP on my jQuery plugins helped me a lot to design them without inline styles/js. See for example: https://a11y.nicolas-hoffmann.net/
+As far as I can see, using CSP on my jQuery plugins helped me a lot to design them without inline styles/js. See for example: https://a11y.nicolas-hoffmann.net/ or https://van11.net 
 
 So it is a great help for progressive enhancement, orthogonality and clean front-end.
 
@@ -59,7 +59,7 @@ In [folder "report-uri"](https://github.com/nico3333fr/CSP-useful/tree/master/re
 
 ### CSP directives for third-party services
 
-In [folder "CSP for third party services"](https://github.com/nico3333fr/CSP-useful/tree/master/csp-for-third-party-services), you may find examples of directives you need to use for some services.
+In [folder "CSP for third party services"](https://github.com/nico3333fr/CSP-useful/tree/master/csp-for-third-party-services), you may find __examples of directives__ you need to use for some services.
 
 
 
