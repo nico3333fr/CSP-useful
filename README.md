@@ -22,7 +22,7 @@ You might read how the Guardian moved to HTTPS using CSP: https://www.theguardia
 
 ### Progressive enhancement and orthogonality
 
-As far as I can see, using CSP on my jQuery plugins helped me a lot to design them without inline styles/js. See for example: https://a11y.nicolas-hoffmann.net/ or https://van11.net 
+As far as I can see, using CSP on my jQuery plugins helped me a lot to design them without inline styles/js. See for example: https://a11y.nicolas-hoffmann.net/ or https://van11y.net 
 
 So it is a great help for progressive enhancement, orthogonality and clean front-end.
 
