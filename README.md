@@ -3,47 +3,6 @@
 I'm testing and using CSP (Content Security Policy), and here are some thoughts, resources, scripts and ideas on it.
 
 
-## What CSP is really good for
-
-### In development
-
-I use __CSP to clean up some bad old contents__ (with inline-styles for example).
-
-1. Just activate CSP on a site with a report-uri
-2. Ask your boss/collegues/grandma to browse the website
-3. All notifications will come without doing anything (yes, I’m lazy)
-4. Yay, you know where you have to make some cleanup
-
-Moreother, if you don't have the time to clean it, setting up CSP policy will avoid bad old styles from breaking the nice/clean new design. Or it will tell you when contributors are doing shit on the website.
-
-### To migrate a website to HTTPS
-
-You might read how the Guardian moved to HTTPS using CSP: https://www.theguardian.com/info/developer-blog/2016/nov/29/the-guardian-has-moved-to-https
-
-### Progressive enhancement and orthogonality
-
-As far as I can see, using CSP on my jQuery plugins helped me a lot to design them without inline styles/js. See for example: https://a11y.nicolas-hoffmann.net/ or https://van11y.net 
-
-So it is a great help for progressive enhancement, orthogonality and clean front-end.
-
-
-## How to see easily CSP directives on a website
-
-For Firefox: make Maj+F2 and type "security csp". It will show you directives and advices.
-
-If you have webdevelopper toolbar, go into infos - HTTP headers.
-
-
-
-## About plugins
-
-JS/jQuery plugins should provide the CSP requirements they need to work (especially inline-styles or inline-js), so:
-
-- we will know what they need instead of having to discover it
-- we would be able to choose a plugin according to its capabilities to respect orthogonality (see https://openweb.eu.org/articles/orthogonality-with-css)
-
-
-
 ## Scripts
 
 ### Report-URI folder
@@ -123,6 +82,47 @@ in PHP for example.
 ### Chrome PDF viewer blocking
 
 According to [Philippe De Ryck](https://twitter.com/PhilippeDeRyck/status/811448160975552512), setting CSP's ```object-src``` to ```'none'``` blocks Chrome's PDF viewer. As [he says](https://twitter.com/PhilippeDeRyck/status/811448782328131584), "unless you're hosting vulnerable flash files yourself, go with 'self', and ignore the warning on the CSP Evaluator".
+
+
+## What CSP is really good for
+
+### In development
+
+I use __CSP to clean up some bad old contents__ (with inline-styles for example).
+
+1. Just activate CSP on a site with a report-uri
+2. Ask your boss/collegues/grandma to browse the website
+3. All notifications will come without doing anything (yes, I’m lazy)
+4. Yay, you know where you have to make some cleanup
+
+Moreother, if you don't have the time to clean it, setting up CSP policy will avoid bad old styles from breaking the nice/clean new design. Or it will tell you when contributors are doing shit on the website.
+
+### To migrate a website to HTTPS
+
+You might read how the Guardian moved to HTTPS using CSP: https://www.theguardian.com/info/developer-blog/2016/nov/29/the-guardian-has-moved-to-https
+
+### Progressive enhancement and orthogonality
+
+As far as I can see, using CSP on my jQuery plugins helped me a lot to design them without inline styles/js. See for example: https://a11y.nicolas-hoffmann.net/ or https://van11y.net 
+
+So it is a great help for progressive enhancement, orthogonality and clean front-end.
+
+
+## How to see easily CSP directives on a website
+
+For Firefox: make Maj+F2 and type "security csp". It will show you directives and advices.
+
+If you have webdevelopper toolbar, go into infos - HTTP headers.
+
+
+
+## About plugins
+
+JS/jQuery plugins should provide the CSP requirements they need to work (especially inline-styles or inline-js), so:
+
+- we will know what they need instead of having to discover it
+- we would be able to choose a plugin according to its capabilities to respect orthogonality (see https://openweb.eu.org/articles/orthogonality-with-css)
+
 
 
 ## Bugs I've found
