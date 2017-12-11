@@ -4,6 +4,73 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 ---------------------------------------
+# contextMenu.js
+
+```
+{
+    "csp-report": {
+        "blocked-uri": "self",
+        "document-uri": "https://www.nicolas-hoffmann.net/source/",
+        "line-number": 1,
+        "original-policy": "default-src 'none'; script-src https://www.nicolas-hoffmann.net https://google-analytics.com https://stats.g.doubleclick.net https://stats.g.doubleclick.net; style-src https://www.nicolas-hoffmann.net data:; img-src https://www.nicolas-hoffmann.net https://google-analytics.com https://stats.g.doubleclick.net https://stats.g.doubleclick.net https://ssl.google-analytics.com data:; connect-src https://www.nicolas-hoffmann.net; font-src https://www.nicolas-hoffmann.net; media-src https://www.nicolas-hoffmann.net; object-src https://www.nicolas-hoffmann.net https://www.youtube.com; child-src https://www.nicolas-hoffmann.net; frame-ancestors https://www.nicolas-hoffmann.net; manifest-src https://www.nicolas-hoffmann.net; form-action https://www.nicolas-hoffmann.net; base-uri 'none'; report-uri https://www.nicolas-hoffmann.net/csp-parser.php",
+        "referrer": "",
+        "script-sample": "/*\n * contextMenu.js v 1.4.0\n * Author: ...",
+        "source-file": "https://www.nicolas-hoffmann.net/source/",
+        "violated-directive": "style-src https://www.nicolas-hoffmann.net data:"
+    }
+}
+```
+
+__WTF:__ `"script-sample": "/*\n * contextMenu.js v 1.4.0\n * Author: ...",` 
+
+__Answer:__ any idea?
+
+---------------------------------------
+# @-webkit-keyframes load4
+
+```
+{
+    "csp-report": {
+        "blocked-uri": "self",
+        "document-uri": "https://www.nicolas-hoffmann.net/source/",
+        "line-number": 1,
+        "original-policy": "default-src 'none'; script-src https://www.nicolas-hoffmann.net https://google-analytics.com https://stats.g.doubleclick.net https://stats.g.doubleclick.net; style-src https://www.nicolas-hoffmann.net data:; img-src https://www.nicolas-hoffmann.net https://google-analytics.com https://stats.g.doubleclick.net https://stats.g.doubleclick.net https://ssl.google-analytics.com data:; connect-src https://www.nicolas-hoffmann.net; font-src https://www.nicolas-hoffmann.net; media-src https://www.nicolas-hoffmann.net; object-src https://www.nicolas-hoffmann.net https://www.youtube.com; child-src https://www.nicolas-hoffmann.net; frame-ancestors https://www.nicolas-hoffmann.net; manifest-src https://www.nicolas-hoffmann.net; form-action https://www.nicolas-hoffmann.net; base-uri 'none'; report-uri https://www.nicolas-hoffmann.net/csp-parser.php",
+        "referrer": "",
+        "script-sample": "@-webkit-keyframes load4 {\n    0%,\n    1...",
+
+        "source-file": "https://www.nicolas-hoffmann.net/source/",
+        "violated-directive": "style-src https://www.nicolas-hoffmann.net data:"
+    }
+}
+```
+
+__WTF:__ `"script-sample": "@-webkit-keyframes load4 {\n    0%,\n    1...",` 
+
+__Answer:__ any idea?
+
+---------------------------------------
+# function overrideDefaultMethods
+
+```
+{
+    "csp-report": {
+        "blocked-uri": "self",
+        "document-uri": "https://www.nicolas-hoffmann.net/source/1471-astuce-CSS-input-type-submit-reset-button.html",
+        "line-number": 1,
+        "original-policy": "default-src 'none'; script-src https://www.nicolas-hoffmann.net https://google-analytics.com https://stats.g.doubleclick.net https://stats.g.doubleclick.net; style-src https://www.nicolas-hoffmann.net data:; img-src https://www.nicolas-hoffmann.net https://google-analytics.com https://stats.g.doubleclick.net https://stats.g.doubleclick.net https://ssl.google-analytics.com data:; connect-src https://www.nicolas-hoffmann.net; font-src https://www.nicolas-hoffmann.net; media-src https://www.nicolas-hoffmann.net; object-src https://www.nicolas-hoffmann.net https://www.youtube.com; child-src https://www.nicolas-hoffmann.net; frame-ancestors https://www.nicolas-hoffmann.net; manifest-src https://www.nicolas-hoffmann.net; form-action https://www.nicolas-hoffmann.net; base-uri 'none'; report-uri https://www.nicolas-hoffmann.net/csp-parser.php",
+        "referrer": "https://www.google.fr/",
+        "script-sample": "try{(function overrideDefaultMethods(r, ...",
+        "source-file": "https://www.nicolas-hoffmann.net/source/1471-astuce-CSS-input-type-submit-reset-button.html",
+        "violated-directive": "script-src https://www.nicolas-hoffmann.net https://google-analytics.com https://stats.g.doubleclick.net https://stats.g.doubleclick.net"
+    }
+}
+```
+
+__WTF:__ `"script-sample": "try{(function overrideDefaultMethods(r, ...",` 
+
+__Answer:__ any idea?
+
+---------------------------------------
 # app_store.png
 
 ```
