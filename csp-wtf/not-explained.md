@@ -4,6 +4,32 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 ---------------------------------------
+# s3.amazonaws.com/js-cache
+
+```
+{
+    "csp-report": {
+        "document-uri": "https://van11y.net/accessible-tab-panel/",
+        "referrer": "https://plainjs.com/javascript/plugins/accessible-tabs-panel-system-163/",
+        "violated-directive": "style-src",
+        "effective-directive": "style-src",
+        "original-policy": "default-src 'none' ;  script-src 'self'; style-src 'self' ; img-src 'self'; font-src 'self';  connect-src 'self' ; child-src 'self' ; frame-ancestors 'self'  ; manifest-src 'self' ; worker-src 'self' ; base-uri 'none' ;  report-uri /csp-parser.php ;",
+        "disposition": "enforce",
+        "blocked-uri": "inline",
+        "line-number": 1,
+        "column-number": 9116,
+        "source-file": "https://s3.amazonaws.com/js-cache/fa25c29ce29a202e02.js",
+        "status-code": 0,
+        "script-sample": ""
+    }
+}
+```
+
+__WTF:__ `"source-file": "https://s3.amazonaws.com/js-cache/fa25c29ce29a202e02.js",` 
+
+__Answer:__ any idea?
+
+---------------------------------------
 # .cip-genpw-icon.cip-icon-key-small
 
 ```
