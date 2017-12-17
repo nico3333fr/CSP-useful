@@ -4,6 +4,33 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 ---------------------------------------
+# cdnnetwok.xyz
+
+```
+{
+    "csp-report": {
+        "document-uri": "https://www.estcequonmetenprodaujourdhui.info/",
+        "referrer": "https://www.google.com/url?q=https%3A%2F%2Fwww.estcequonmetenprodaujourdhui.info%2F&sa=D&sntz=1&usg=AFQjCNHvJDS4K8FPbvGaIiPVKOhXufgrLw",
+        "violated-directive": "script-src",
+        "effective-directive": "script-src",
+        "original-policy": "default-src 'none';  script-src 'self' ; style-src 'self' 'nonce-0e30e24f03b6aff50857761ff277cb48ae5d4abd8916eb28eff379b310991f49049fdab74803ac28dd33e7c25afa7f25b8236e8322d0b6505e23a54c6fa91131' ; img-src 'self'  data: ;  font-src 'self'; child-src 'self' ;  frame-ancestors 'self' ; manifest-src 'self' ; base-uri 'none';  report-uri /csp-parser.php ;",
+        "disposition": "enforce",
+        "blocked-uri": "https://cdnnetwok.xyz/optout/get?jsonp=__twb_cb_932473221&key=129740f254bb8da750&t=1512727184191",
+        "line-number": 1,
+        "column-number": 5371,
+
+        "source-file": "https://s3.amazonaws.com/js-cache/129740f254bb8da750.js?sid=measuit",
+        "status-code": 0,
+        "script-sample": ""
+    }
+}
+```
+
+__WTF:__ `"blocked-uri": "https://cdnnetwok.xyz/optout/get?jsonp=__twb_cb_932473221&key=129740f254bb8da750&t=1512727184191",` 
+
+__Answer:__ any idea? (probable malware/adware, to confirm)
+
+---------------------------------------
 # s3.amazonaws.com/js-cache
 
 ```
