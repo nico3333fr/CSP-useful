@@ -780,7 +780,7 @@ $tab_filter = array(
     ),
     'window.klTabId_kis' => array (
          'filter_on' => 'script_sample',
-         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#chrometab',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#windowkltabid_kis',
          'comment' => ''
     ),
     'document.addEventListener(\'mousedown\'' => array (
