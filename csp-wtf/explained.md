@@ -4,6 +4,28 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 ---------------------------------------
+# window.klTabId_kis
+
+```
+{
+    "csp-report": {
+        "blocked-uri": "self",
+        "document-uri": "https://www.nicolas-hoffmann.net/source/1471-astuce-CSS-input-type-submit-reset-button.html",
+        "line-number": 1,
+        "original-policy": "default-src 'none'; script-src https://www.nicolas-hoffmann.net https://google-analytics.com https://stats.g.doubleclick.net https://stats.g.doubleclick.net; style-src https://www.nicolas-hoffmann.net data:; img-src https://www.nicolas-hoffmann.net https://google-analytics.com https://stats.g.doubleclick.net https://stats.g.doubleclick.net https://ssl.google-analytics.com data:; connect-src https://www.nicolas-hoffmann.net; font-src https://www.nicolas-hoffmann.net; media-src https://www.nicolas-hoffmann.net; object-src https://www.nicolas-hoffmann.net https://www.youtube.com; child-src https://www.nicolas-hoffmann.net; frame-ancestors https://www.nicolas-hoffmann.net; manifest-src https://www.nicolas-hoffmann.net; form-action https://www.nicolas-hoffmann.net; report-uri https://www.nicolas-hoffmann.net/csp-parser.php",
+        "referrer": "https://www.google.fr/",
+        "script-sample": "window.klTabId_kis = 'firefox.tab.3825bb...",
+        "source-file": "https://www.nicolas-hoffmann.net/source/1471-astuce-CSS-input-type-submit-reset-button.html",
+        "violated-directive": "script-src https://www.nicolas-hoffmann.net https://google-analytics.com https://stats.g.doubleclick.net https://stats.g.doubleclick.net"
+    }
+}
+```
+
+__WTF:__ `"script-sample": "window.klTabId_kis = 'firefox.tab.3825bb...",`
+
+__Answer:__ code being injected into the user's browser by Kaspersky Internet Security, according to https://forum.kaspersky.com/index.php?/topic/332491-kis-2016-ie11-save-as-txt-file-corrupted/ (thanks @parseword for the tip)
+
+---------------------------------------
 # eshopcomp
 
 ```
