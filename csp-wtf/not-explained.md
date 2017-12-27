@@ -4,6 +4,28 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 ---------------------------------------
+# .reclame, .advertenties, .advertentie
+
+```
+{
+    "csp-report": {
+        "blocked-uri": "self",
+        "document-uri": "https://van11y.net/",
+        "line-number": 1,
+        "original-policy": "default-src 'none'; script-src https://van11y.net; style-src https://van11y.net; img-src https://van11y.net; font-src https://van11y.net; connect-src https://van11y.net; child-src https://van11y.net; frame-ancestors https://van11y.net; manifest-src https://van11y.net; base-uri 'none'; report-uri https://van11y.net/csp-parser.php",
+        "referrer": "https://github.com/nico3333fr/CSP-useful",
+        "script-sample": ".reclame, .advertenties, .advertentie, ....",
+        "source-file": "https://van11y.net/",
+        "violated-directive": "style-src https://van11y.net"
+    }
+}
+```
+
+__WTF:__ `"script-sample": ".reclame, .advertenties, .advertentie, ....",` 
+
+__Answer:__ any idea? (probable extension to avoid ads)
+
+---------------------------------------
 # __defineGetter__
 
 ```
