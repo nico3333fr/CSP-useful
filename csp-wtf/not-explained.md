@@ -4,6 +4,26 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 ---------------------------------------
+# substantielwww.dyndns.org
+
+```
+{
+    "csp-report": {
+        "blocked-uri": "http://substantielwww.dyndns.org/configuration/webissimoonlinetrack.txt?r=https%3A%2F%2Fcse.google.fr%2Fcse%3Fsa%3DRechercher%26q%3Dtami%25C3%25A9%2Bsavoie%26position%3Dhaut%26cx%3Dpartner-pub-4856195807639056%253A7971617658%26cof%3DFORID%253A10%26ie%3DUTF-8%26ad%3Dn9%26num%3D10%26rurl%3Dhttp%253A%252F%252Fsubstantiel.fr%252Fliens%252Fresultats.php%253Fsa%253DRechercher%2526q%253Dtami%2525C3%2525A9%252Bsavoie%2526position%253Dhaut%2526cx%253Dpartner-pub-4856195807639056%25253A7971617658%2526cof%253DFORID%25253A10%2526ie%253DUTF-8%26siteurl%3Dhttp%253A%252F%252Fwww.ordissinaute.fr%252Frecherche&u=https%3A%2F%2Fwww.nicolas-hoffmann.net%2Fsource%2Fvacances_savoie_seythenex_tamie.php",
+        "document-uri": "https://www.nicolas-hoffmann.net/source/vacances_savoie_seythenex_tamie.php",
+        "original-policy": "default-src 'none'; script-src https://www.nicolas-hoffmann.net https://google-analytics.com https://stats.g.doubleclick.net https://stats.g.doubleclick.net; style-src https://www.nicolas-hoffmann.net data:; img-src https://www.nicolas-hoffmann.net https://google-analytics.com https://stats.g.doubleclick.net https://stats.g.doubleclick.net https://ssl.google-analytics.com data:; connect-src https://www.nicolas-hoffmann.net; font-src https://www.nicolas-hoffmann.net; media-src https://www.nicolas-hoffmann.net; object-src https://www.nicolas-hoffmann.net https://www.youtube.com; frame-ancestors 'none'; manifest-src https://www.nicolas-hoffmann.net; form-action https://www.nicolas-hoffmann.net; report-uri https://www.nicolas-hoffmann.net/csp-parser.php",
+        "referrer": "https://cse.google.fr/cse?sa=Rechercher&q=tami%C3%A9+savoie&position=haut&cx=partner-pub-4856195807639056%3A7971617658&cof=FORID%3A10&ie=UTF-8&ad=n9&num=10&rurl=http%3A%2F%2Fsubstantiel.fr%2Fliens%2Fresultats.php%3Fsa%3DRechercher%26q%3Dtami%25C3%25A9%2Bsavoie%26position%3Dhaut%26cx%3Dpartner-pub-4856195807639056%253A7971617658%26cof%3DFORID%253A10%26ie%3DUTF-8&siteurl=http%3A%2F%2Fwww.ordissinaute.fr%2Frecherche",
+
+        "violated-directive": "script-src https://www.nicolas-hoffmann.net https://google-analytics.com https://stats.g.doubleclick.net https://stats.g.doubleclick.net"
+    }
+}
+```
+
+__WTF:__ `"blocked-uri": "http://substantielwww.dyndns.org/configuration/webissimoonlinetrack.txt?r=https%3A%2F%2Fcse.google.fr%2Fcse%3Fsa%3DRechercher%26q%3Dtami%25C3%25A9%2Bsavoie%26position%3Dhaut%26cx%3Dpartner-pub-4856195807639056%253A7971617658%26cof%3DFORID%253A10%26ie%3DUTF-8%26ad%3Dn9%26num%3D10%26rurl%3Dhttp%253A%252F%252Fsubstantiel.fr%252Fliens%252Fresultats.php%253Fsa%253DRechercher%2526q%253Dtami%2525C3%2525A9%252Bsavoie%2526position%253Dhaut%2526cx%253Dpartner-pub-4856195807639056%25253A7971617658%2526cof%253DFORID%25253A10%2526ie%253DUTF-8%26siteurl%3Dhttp%253A%252F%252Fwww.ordissinaute.fr%252Frecherche&u=https%3A%2F%2Fwww.nicolas-hoffmann.net%2Fsource%2Fvacances_savoie_seythenex_tamie.php",` 
+
+__Answer:__ any idea?
+
+---------------------------------------
 # .reclame, .advertenties, .advertentie
 
 ```
