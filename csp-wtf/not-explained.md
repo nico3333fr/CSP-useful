@@ -189,27 +189,6 @@ __WTF:__ `"source-file": "https://s3.amazonaws.com/js-cache/fa25c29ce29a202e02.j
 __Answer:__ any idea?
 
 ---------------------------------------
-# .cip-genpw-icon.cip-icon-key-small
-
-```
-{
-    "csp-report": {
-        "blocked-uri": "self",
-        "document-uri": "https://www.nicolas-hoffmann.net/source/1687-Ma-gentille-stagiaire.html",
-        "original-policy": "default-src 'none'; script-src https://www.nicolas-hoffmann.net https://google-analytics.com https://stats.g.doubleclick.net https://stats.g.doubleclick.net; style-src https://www.nicolas-hoffmann.net data:; img-src https://www.nicolas-hoffmann.net https://google-analytics.com https://stats.g.doubleclick.net https://stats.g.doubleclick.net https://ssl.google-analytics.com data:; connect-src https://www.nicolas-hoffmann.net; font-src https://www.nicolas-hoffmann.net; media-src https://www.nicolas-hoffmann.net; object-src https://www.nicolas-hoffmann.net https://www.youtube.com; child-src https://www.nicolas-hoffmann.net; frame-ancestors https://www.nicolas-hoffmann.net; manifest-src https://www.nicolas-hoffmann.net; form-action https://www.nicolas-hoffmann.net; base-uri 'none'; report-uri https://www.nicolas-hoffmann.net/csp-parser.php",
-        "referrer": "https://t.co/D5L1D6Pz2z",
-        "script-sample": ".cip-genpw-icon.cip-icon-key-small {back...",
-        "source-file": "https://www.nicolas-hoffmann.net/source/1687-Ma-gentille-stagiaire.html",
-        "violated-directive": "style-src https://www.nicolas-hoffmann.net data:"
-    }
-}
-```
-
-__WTF:__ `"script-sample": ".cip-genpw-icon.cip-icon-key-small {back...",` 
-
-__Answer:__ any idea?
-
----------------------------------------
 # contextMenu.js
 
 ```
