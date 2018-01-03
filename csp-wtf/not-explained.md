@@ -408,6 +408,21 @@ __Answer:__ What is that? `spidtest.org/metric`
     }
 }
 ```
+or
+```
+{
+    "csp-report": {
+        "blocked-uri": "self",
+        "document-uri": "https://www.estcequonmetenprodaujourdhui.info/",
+        "line-number": 1,
+        "original-policy": "default-src 'none'; script-src https://www.estcequonmetenprodaujourdhui.info; style-src https://www.estcequonmetenprodaujourdhui.info 'nonce-64b5b6e36936c335b478c542484db29c7415bbfd9b57e204056483b0e3d3b53d33ef8035ed5ac19da21c1fb4f10477c1987ce5b7dea3e0c6c52f51335a089dbf'; img-src https://www.estcequonmetenprodaujourdhui.info data:; font-src https://www.estcequonmetenprodaujourdhui.info; child-src https://www.estcequonmetenprodaujourdhui.info; frame-ancestors https://www.estcequonmetenprodaujourdhui.info; manifest-src https://www.estcequonmetenprodaujourdhui.info; base-uri 'none'; report-uri https://www.estcequonmetenprodaujourdhui.info/csp-parser.php",
+        "referrer": "",
+        "script-sample": ".vimvixen-hint {\n  background-color: yel...",
+        "source-file": "https://www.estcequonmetenprodaujourdhui.info/",
+        "violated-directive": "style-src https://www.estcequonmetenprodaujourdhui.info 'nonce-64b5b6e36936c335b478c542484db29c7415bbfd9b57e204056483b0e3d3b53d33ef8035ed5ac19da21c1fb4f10477c1987ce5b7dea3e0c6c52f51335a089dbf'"
+    }
+}
+```
 
 __WTF:__ `"script-sample": ".vimvixen-console-frame {\n  margin: 0;\n ...",` 
 
