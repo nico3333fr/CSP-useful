@@ -187,6 +187,7 @@ These bugs are just annoying, they are not critical. They provide false-positive
 ### Why you should use CSP
 
 - https://www.aaron-gustafson.com/notebook/more-proof-we-dont-control-our-web-pages/
+- https://hackernoon.com/im-harvesting-credit-card-numbers-and-passwords-from-your-site-here-s-how-9a8cb347c5b5
 
 
 ### Interesting posts on how to deploy CSP
