@@ -485,12 +485,12 @@ $tab_filter = array(
     ),
     'rsc.cdn77.org' => array (
          'filter_on' => 'source_file',
-         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#rsccdn77org',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#rsccdn77org',
          'comment' => ''
     ),
     'rsc.cdn77.org' => array (
          'filter_on' => 'blocked_uri',
-         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#rsccdn77org',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#rsccdn77org',
          'comment' => ''
     ),
     'data1.' => array (
