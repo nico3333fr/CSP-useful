@@ -1749,6 +1749,18 @@ __Answer:__ Any idea???
     }
 }
 ```
+or 
+```
+{
+    "csp-report": {
+        "blocked-uri": "https://1480876790.rsc.cdn77.org",
+        "document-uri": "https://www.[anonymised]/fr/produits/sonorisation",
+        "original-policy": "default-src https://www.[anonymised]; script-src https://www.[anonymised] https://www.google-analytics.com http://www.google-analytics.com https://stats.g.doubleclick.net https://stats.g.doubleclick.net; style-src https://www.[anonymised] data:; img-src https://www.[anonymised] https://www.google-analytics.com http://www.google-analytics.com https://*.[anonymised] https://stats.g.doubleclick.net https://stats.g.doubleclick.net data:; child-src https://www.[anonymised]; base-uri https://www.[anonymised]; connect-src https://www.[anonymised] https://www.google-analytics.com http://www.google-analytics.com https://stats.g.doubleclick.net https://stats.g.doubleclick.net; report-uri https://www.[anonymised]/csp-parser.php",
+        "referrer": "https://www.google.com/",
+        "violated-directive": "script-src https://www.[anonymised] https://www.google-analytics.com http://www.google-analytics.com https://stats.g.doubleclick.net https://stats.g.doubleclick.net"
+    }
+}
+```
 
 __WTF:__ ???
 
