@@ -4,6 +4,37 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 ---------------------------------------
+# rsc.cdn77.org
+
+```
+{
+    "csp-report": {
+        "blocked-uri": "https://1487482361.rsc.cdn77.org",
+        "document-uri": "https://www.nicolas-hoffmann.net/source/1704-Je-hacke-le-retour-d-experience-via-un-phrase-veloute-Sud-Web.html",
+        "original-policy": "default-src 'none'; script-src https://www.nicolas-hoffmann.net https://google-analytics.com https://stats.g.doubleclick.net https://stats.g.doubleclick.net; style-src https://www.nicolas-hoffmann.net data:; img-src https://www.nicolas-hoffmann.net https://google-analytics.com https://stats.g.doubleclick.net https://stats.g.doubleclick.net https://ssl.google-analytics.com data:; connect-src https://www.nicolas-hoffmann.net; font-src https://www.nicolas-hoffmann.net; media-src https://www.nicolas-hoffmann.net; object-src https://www.nicolas-hoffmann.net https://www.youtube.com; child-src https://www.nicolas-hoffmann.net; frame-ancestors https://www.nicolas-hoffmann.net; manifest-src https://www.nicolas-hoffmann.net; form-action https://www.nicolas-hoffmann.net; report-uri https://www.nicolas-hoffmann.net/csp-parser.php",
+        "referrer": "",
+        "violated-directive": "child-src https://www.nicolas-hoffmann.net"
+    }
+}
+```
+or 
+```
+{
+    "csp-report": {
+        "blocked-uri": "https://1480876790.rsc.cdn77.org",
+        "document-uri": "https://www.[anonymised]/fr/produits/sonorisation",
+        "original-policy": "default-src https://www.[anonymised]; script-src https://www.[anonymised] https://www.google-analytics.com http://www.google-analytics.com https://stats.g.doubleclick.net https://stats.g.doubleclick.net; style-src https://www.[anonymised] data:; img-src https://www.[anonymised] https://www.google-analytics.com http://www.google-analytics.com https://*.[anonymised] https://stats.g.doubleclick.net https://stats.g.doubleclick.net data:; child-src https://www.[anonymised]; base-uri https://www.[anonymised]; connect-src https://www.[anonymised] https://www.google-analytics.com http://www.google-analytics.com https://stats.g.doubleclick.net https://stats.g.doubleclick.net; report-uri https://www.[anonymised]/csp-parser.php",
+        "referrer": "https://www.google.com/",
+        "violated-directive": "script-src https://www.[anonymised] https://www.google-analytics.com http://www.google-analytics.com https://stats.g.doubleclick.net https://stats.g.doubleclick.net"
+    }
+}
+```
+
+__WTF:__ ???
+
+__Answer:__ Appears to be a CDN with malwares inside: http://www.removemalwarevirus.com/1023003381-rsc-cdn77-org-removal-tips (these are not on the sites, but on client machine)
+
+---------------------------------------
 # window.klTabId_kis
 
 ```
