@@ -4,7 +4,7 @@ Here is a small collection of CSP directives you should use for some third-party
 
 ## Google Analytics
 
-### 1) If you make the call of GA script in the ```head``` tag
+### 1) If you make the call of GA script in the `head` tag
 
 ```
 script-src 'unsafe-inline' www.google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net
@@ -12,32 +12,36 @@ img-src www.google-analytics.com stats.g.doubleclick.net https://stats.g.doublec
 # you may specify also "http://www.google-analytics.com https://www.google-analytics.com" (I had some bugs sometimes)
 ```
 
-(or generate a hash for inline script to avoid ```unsafe-inline```)
+(or generate a hash for inline script to avoid `unsafe-inline`)
 
 Other method:
 
 You may use an internal file js script on your domain and use the call of GA script in the head tag
-Example :
+
+Example:
+
+```html
+<script type="text/javascript" src="https://ssl.google-analytics.com/analytics.js"></script>
+<script type="text/javascript" src="/js/front/analytics.js"></script>
 ```
-    <script type="text/javascript" src="https://ssl.google-analytics.com/analytics.js"></script>
-    <script type="text/javascript" src="/js/front/analytics.js"></script>
-```    
+
 Where the file named analytics.js host on your domain contains your GA id UA:
+```javascript
+ga('create', 'UA-XXXXXXX-X', 'auto');
+ga('send', 'pageview');
 ```
-    javascript
-    ga('create', 'UA-XXXXXXX-X', 'auto');
-    ga('send', 'pageview');
-```
-You can now use the script-src with ```self```
+
+You can now use the script-src with `self`
 
 ### If you make the call of GA script in an external JS file - __better imho__ -
 
 Put all the analytics code into an JS external file:
-```
-    <script type="text/javascript" src="/js/front/analytics.js"></script>
+
+```html
+<script type="text/javascript" src="/js/front/analytics.js"></script>
 ```  
 
-So no need to have ```unsafe-inline``` in CSP :
+So no need to have `unsafe-inline` in CSP :
 
 ```
 script-src 'self' www.google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net
@@ -46,7 +50,7 @@ img-src www.google-analytics.com stats.g.doubleclick.net https://stats.g.doublec
 ```
 
 
-(```self``` is here only if the call is make on the same domain name, you have to adapt if it is different for your case)
+(`self` is here only if the call is make on the same domain name, you have to adapt if it is different for your case)
 
 Note: stats.g.doubleclick.net seems to be used for demographics stats in GA. (to confirm?)
 
@@ -54,23 +58,28 @@ Note: stats.g.doubleclick.net seems to be used for demographics stats in GA. (to
 
 If you need for example to add this line on your site:
 
-```
+```html
 <iframe width="560" height="315" src="https://www.youtube.com/embed/zmtasab_9z4" frameborder="0" allowfullscreen></iframe>
 ```
+
 CSP directives needed will be:
+
 ```
 child-src www.youtube.com ;
 ```
+
 (to test further, this value seems to be ok)
 
 ## Google fonts
 
 If you need for example to add this line on your site:
 
-```
+```html
 <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet"> 
 ```
+
 CSP directives needed will be:
+
 ```
 style-src fonts.googleapis.com ;
 font-src fonts.gstatic.com ;
@@ -87,11 +96,12 @@ child-src 'self' *.vimeo.com *.vimeocdn.com ;
 
 (to test further, these values seem to be ok)
 
-
 ## Color box
+
 ```
 style-src 'unsafe-inline';
 ```
+
 (with the script src needed for the JS code, same for CSS)
 
 
@@ -99,7 +109,9 @@ style-src 'unsafe-inline';
 
 "An Embedded Tweet or Embedded Timeline may display with restricted capabilities when a Content Security Policy restricts inline loading of Twitter. Set csp=on to disable functionality which could display Content Security Policy warnings on your site."
 
-```<meta name="twitter:widgets:csp" content="on" />```
+```html
+<meta name="twitter:widgets:csp" content="on" />
+```
 
 See: https://dev.twitter.com/web/overview/widgets-webpage-properties#csp
 
@@ -137,9 +149,11 @@ script-src assets.codepen.io production-assets.codepen.io ;
 
 ## Cloudflare AMP service
 
-    style-src: https://amp.cloudflare.com 
-    script-src: https://amp.cloudflare.com 
-    connect-src: https://discovery.amp.cloudflare.com/v1/ampUrls:batchGet
+```
+style-src: https://amp.cloudflare.com 
+script-src: https://amp.cloudflare.com 
+connect-src: https://discovery.amp.cloudflare.com/v1/ampUrls:batchGet
+```
 
 ## Webmention.io
 
