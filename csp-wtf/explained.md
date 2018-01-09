@@ -495,7 +495,7 @@ __Answer:__ related to Skype, didn't find how to reproduce.
 
 __WTF:__ nothing like this on the website.
 
-__Answer:__ related to Google tag manager (extension, other ?)
+__Answer:__ Loading a dubious script from Google Tag Manager. When you load it manually, the body of this script contains a function named `checkBtc` amongst other likely malicious JS code. This is a common pattern, because if you use Google Tag Manager then scripts like this would likely slip through your CSP.
 
 ---------------------------------------
 # Google Search for Android
