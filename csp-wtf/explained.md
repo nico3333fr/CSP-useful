@@ -4,6 +4,28 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 ---------------------------------------
+# AutoCardAnywhere
+
+```
+{
+    "csp-report": {
+        "blocked-uri": "self",
+        "document-uri": "https://www.estcequonmetenprodaujourdhui.info/",
+        "line-number": 1,
+        "original-policy": "default-src 'none'; script-src https://www.estcequonmetenprodaujourdhui.info; style-src https://www.estcequonmetenprodaujourdhui.info 'nonce-bffe3095c80ffd7a3394fb9a6e36f3494d4f3c8bfe77ee569e8e168f16a7a6b2a8df06911d90605c29579528f948b473b75cab04d36c0c11cf2d7001e0db66df'; img-src https://www.estcequonmetenprodaujourdhui.info data:; font-src https://www.estcequonmetenprodaujourdhui.info; child-src https://www.estcequonmetenprodaujourdhui.info; frame-ancestors https://www.estcequonmetenprodaujourdhui.info; manifest-src https://www.estcequonmetenprodaujourdhui.info; base-uri 'none'; report-uri https://www.estcequonmetenprodaujourdhui.info/csp-parser.php",
+        "referrer": "",
+        "script-sample": ".autocardanywhere-popup {background-colo...",
+        "source-file": "https://www.estcequonmetenprodaujourdhui.info/",
+        "violated-directive": "style-src https://www.estcequonmetenprodaujourdhui.info 'nonce-bffe3095c80ffd7a3394fb9a6e36f3494d4f3c8bfe77ee569e8e168f16a7a6b2a8df06911d90605c29579528f948b473b75cab04d36c0c11cf2d7001e0db66df'"
+    }
+}
+```
+
+__WTF:__ `"script-sample": ".autocardanywhere-popup {background-colo...",`
+
+__Answer:__ code used by AutoCardAnywhere extension https://www.autocardanywhere.com/ 
+
+---------------------------------------
 # Ciuvo
 
 ```
