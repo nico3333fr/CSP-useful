@@ -4,6 +4,32 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 ---------------------------------------
+# netcheckcdn.xyz
+
+```
+{
+    "csp-report": {
+        "document-uri": "https://www.nicolas-hoffmann.net/source/1453-Pour-faire-transcription-textuelle-video-sous-titrage.html",
+        "referrer": "https://www.google.fr/",
+        "violated-directive": "script-src",
+        "effective-directive": "script-src",
+        "original-policy": "default-src 'none';  script-src 'self' google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net; style-src 'self' data:  ; img-src 'self' google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net ssl.google-analytics.com data: ;  connect-src 'self';  font-src 'self'; media-src 'self'; object-src 'self' www.youtube.com ;  child-src 'self' ;  frame-ancestors 'self' ; manifest-src 'self' ; form-action 'self' ; base-uri 'none'; report-uri /csp-parser.php ;",
+        "disposition": "enforce",
+        "blocked-uri": "https://netcheckcdn.xyz/optout/get?jsonp=__twb_cb_7740428&key=171ad33fdf3bb911a6&t=1516890924333",
+        "line-number": 1,
+        "column-number": 5375,
+        "source-file": "https://s3.amazonaws.com/js-static/171ad33fdf3bb911a6.js",
+        "status-code": 0
+    }
+}
+```
+
+__WTF:__ ???
+
+__Answer:__ Appears to be a malware, according to these lists https://github.com/StevenBlack/hosts (these are not on the sites, but on client machine)
+
+
+---------------------------------------
 # AutoCardAnywhere
 
 ```
