@@ -900,7 +900,7 @@ $tab_filter = array(
     ),
     '.cip-genpw-icon.cip-icon-key-small' => array (
          'filter_on' => 'script_sample',
-         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#cip-genpw-iconcip-icon-key-small',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#cip-genpw-icon',
          'comment' => ''
     ),
     'function detect (win)' => array (
