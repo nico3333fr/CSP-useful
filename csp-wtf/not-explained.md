@@ -411,29 +411,6 @@ __WTF:__ `"script-sample": ";(function detect (win) {\n  setTimeout(f...",`
 __Answer:__ any idea?
 
 ---------------------------------------
-# cip-genpw-icon
-
-```
-{
-    "csp-report": {
-        "blocked-uri": "self",
-        "document-uri": "https://van11y.net/fr/",
-        "line-number": 1,
-        "original-policy": "default-src 'none'; script-src https://van11y.net; style-src https://van11y.net; img-src https://van11y.net; font-src https://van11y.net; connect-src https://van11y.net; child-src https://van11y.net; frame-ancestors https://van11y.net; manifest-src https://van11y.net; worker-src https://van11y.net; base-uri 'none'; report-uri https://van11y.net/csp-parser.php",
-        "referrer": "https://www.google.fr/",
-        "script-sample": ".cip-genpw-icon.cip-icon-key-small {back...",
-
-        "source-file": "https://van11y.net/fr/",
-        "violated-directive": "style-src https://van11y.net"
-    }
-}
-```
-
-__WTF:__ `"script-sample": ".cip-genpw-icon.cip-icon-key-small {back...",` 
-
-__Answer:__ What is that?
-
----------------------------------------
 # spidtest.org/metric
 
 ```
