@@ -24,7 +24,7 @@ If you have an idea (even if the idea is WTF) for some of these, do not hesitate
 
 __WTF:__ `"script-sample": ".cip-genpw-icon.cip-icon-key-small {back...",` 
 
-__Answer:__ seems it's coming from a browser extension called [ChromeIPass](https://github.com/pfn/passifox/blob/master/chromeipass/chromeipass.css#L45) and/or its Firefox counterpart PassIFox.
+__Answer:__ seems it's coming from a browser extension called [ChromeIPass](https://github.com/pfn/passifox/blob/master/chromeipass/chromeipass.css#L45) and/or its Firefox counterpart PassIFox. (thanks @parseword for [the info](https://github.com/nico3333fr/CSP-useful/issues/40) :) )
 
 ---------------------------------------
 # netcheckcdn.xyz
