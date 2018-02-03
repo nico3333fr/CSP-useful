@@ -1079,6 +1079,20 @@ or
     }
 }
 ```
+or
+```
+{
+    "csp-report": {
+        "document-uri": "https://www.nicolas-hoffmann.net/source/1209-Clim-City-enfin-reussi.html",
+        "referrer": "https://www.google.fr/",
+        "violated-directive": "font-src https://*.zscalertwo.net 'self'",
+        "effective-directive": "font-src",
+        "original-policy": "default-src 'none'; script-src https://*.zscalertwo.net 'self' google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net; style-src https://*.zscalertwo.net 'self' data:  ; img-src https://*.zscalertwo.net 'self' google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net ssl.google-analytics.com data: ; connect-src https://*.zscalertwo.net 'self'; font-src https://*.zscalertwo.net 'self'; media-src https://*.zscalertwo.net 'self'; object-src https://*.zscalertwo.net 'self' www.youtube.com ; child-src https://*.zscalertwo.net 'self' ; frame-ancestors 'self' ; manifest-src https://*.zscalertwo.net 'self' ; form-action 'self' ; base-uri 'none'; report-uri /csp-parser.php ;",
+        "blocked-uri": "data",
+        "status-code": 0
+    }
+}
+```
 
 __WTF:__ nothing like this on the website (no zscaler.net in this website CSP policy).
 
