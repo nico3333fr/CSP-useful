@@ -405,7 +405,7 @@ $tab_filter = array(
     ),
     '.wrcx {display:none}' => array (
          'filter_on' => 'script_sample',
-         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#wrcx',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#wrcx',
          'comment' => ''
     ),
     'rw_sendSocketMessage(aData)' => array (

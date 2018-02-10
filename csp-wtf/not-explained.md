@@ -1949,30 +1949,6 @@ __Answer:__ any idea?
 
 
 ---------------------------------------
-# wrcx
-
-```
-{
-    "csp-report": {
-        "blocked-uri": "self",
-        "document-uri": "[anonymised]",
-        "line-number": 1,
-        "original-policy": "default-src [anonymised]; script-src [anonymised] https://www.google-analytics.com http://www.google-analytics.com http://stats.g.doubleclick.net https://stats.g.doubleclick.net; style-src [anonymised] data:; img-src [anonymised] https://www.google-analytics.com http://www.google-analytics.com http://*.[anonymised] http://stats.g.doubleclick.net https://stats.g.doubleclick.net data:; child-src [anonymised]; report-uri [anonymised]/csp-parser.php",
-        "referrer": "https://www.google.fr/",
-        "script-sample": ".wrcx {display:none} .r .wrcx,  .fc .wrc...",
-        "source-file": "[anonymised]",
-
-        "violated-directive": "style-src [anonymised] data:"
-    }
-}
-```
-
-__WTF:__ nothing like this on the website.
-
-__Answer:__ any idea??????????????????????
-
-
----------------------------------------
 # akamaihd.net
 
 ```

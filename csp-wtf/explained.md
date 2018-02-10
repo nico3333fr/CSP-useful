@@ -3,6 +3,30 @@
 Sometimes, CSP notifications are __really difficult to understand or very strange__. Here is a collection of some CSP WTF.
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
+
+---------------------------------------
+# wrcx
+
+```
+{
+    "csp-report": {
+        "blocked-uri": "self",
+        "document-uri": "[anonymised]",
+        "line-number": 1,
+        "original-policy": "default-src [anonymised]; script-src [anonymised] https://www.google-analytics.com http://www.google-analytics.com http://stats.g.doubleclick.net https://stats.g.doubleclick.net; style-src [anonymised] data:; img-src [anonymised] https://www.google-analytics.com http://www.google-analytics.com http://*.[anonymised] http://stats.g.doubleclick.net https://stats.g.doubleclick.net data:; child-src [anonymised]; report-uri [anonymised]/csp-parser.php",
+        "referrer": "https://www.google.fr/",
+        "script-sample": ".wrcx {display:none} .r .wrcx,  .fc .wrc...",
+        "source-file": "[anonymised]",
+
+        "violated-directive": "style-src [anonymised] data:"
+    }
+}
+```
+
+__WTF:__ nothing like this on the website.
+
+__Answer:__ [as suggested by @IanOliver](https://github.com/nico3333fr/CSP-useful/issues/42), might be caused by [extension pointers](https://github.com/vikeshkhanna/pointers).
+
 ---------------------------------------
 # cip-genpw-icon
 
