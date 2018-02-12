@@ -4,6 +4,29 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 ---------------------------------------
+# extenjo.net
+
+```
+{
+    "csp-report": {
+        "document-uri": "https://www.estcequonmetenprodaujourdhui.info/",
+        "referrer": "https://www.google.fr/",
+        "violated-directive": "img-src",
+        "effective-directive": "img-src",
+        "original-policy": "default-src 'none';  script-src 'self' ; style-src 'self' 'nonce-3e8ff80e25db946668f71ab2c2cd3d875cbb1655edb281b40e4ba83771b2a84bd37dd64f79232345952a787431357801ed08851cab40a658eecf02c695cce007' ; img-src 'self'  data: ;  font-src 'self'; child-src 'self' ;  frame-ancestors 'self' ; manifest-src 'self' ; base-uri 'none';  report-uri /csp-parser.php ;",
+        "disposition": "enforce",
+        "blocked-uri": "https://extenjo.net/metric/?mid=&wid=51824&sid=&tid=5727&rid=LOADED&custom1=www.estcequonmetenprodaujourdhui.info&t=1518450851863",
+        "status-code": 0,
+        "script-sample": ""
+    }
+}
+```
+
+__WTF:__ `"blocked-uri": "https://extenjo.net/metric/?mid=&wid=51824&sid=&tid=5727&rid=LOADED&custom1=www.estcequonmetenprodaujourdhui.info&t=1518450851863",` 
+
+__Answer:__ ????? (malware, ad, other?)
+
+---------------------------------------
 # Interaktiva rum
 
 ```
