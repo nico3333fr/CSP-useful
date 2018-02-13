@@ -144,7 +144,6 @@ These bugs are just annoying, they are not critical. They provide false-positive
 - http://content-security-policy.com/
 - https://www.smashingmagazine.com/2016/09/content-security-policy-your-future-best-friend/
 - https://openweb.eu.org/articles/content-security-policy (in french)
-- https://www.alsacreations.com/article/lire/1723-tour-horizon-https-et-en-tetes-de-securite.html (in french, a part in it is dedicated to CSP)
 - http://cspisawesome.com/
 - http://www.cspplayground.com/home
 - https://scotthelme.co.uk/csp-cheat-sheet/
@@ -190,6 +189,8 @@ These bugs are just annoying, they are not critical. They provide false-positive
 - https://hackernoon.com/im-harvesting-credit-card-numbers-and-passwords-from-your-site-here-s-how-9a8cb347c5b5
 - [CSS Exfil vulnerability](https://gbhackers.com/css-exfil-vulnerability/) 
 - [CSS used as keylogger](https://twitter.com/FedirFR/status/960833531881689088)
+- [Disqus started injecting adverts into pages that use their comment system, blocked by CSP :) ](https://twitter.com/Scott_Helme/status/961612668992966656)
+- [Protect your site from Cryptojacking with CSP + SRI](https://scotthelme.co.uk/protect-site-from-cryptojacking-csp-sri/)
 
 
 ### Interesting posts on how to deploy CSP
