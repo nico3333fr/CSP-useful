@@ -188,6 +188,7 @@ These bugs are just annoying, they are not critical. They provide false-positive
 - https://www.aaron-gustafson.com/notebook/more-proof-we-dont-control-our-web-pages/
 - https://hackernoon.com/im-harvesting-credit-card-numbers-and-passwords-from-your-site-here-s-how-9a8cb347c5b5
 - [CSS Exfil vulnerability](https://gbhackers.com/css-exfil-vulnerability/) 
+- [CSS Exfil vulnerability, POCs](https://www.mike-gualtieri.com/posts/stealing-data-with-css-attack-and-defense) 
 - [CSS used as keylogger](https://twitter.com/FedirFR/status/960833531881689088)
 - [Disqus started injecting adverts into pages that use their comment system, blocked by CSP :) ](https://twitter.com/Scott_Helme/status/961612668992966656)
 - [Protect your site from Cryptojacking with CSP + SRI](https://scotthelme.co.uk/protect-site-from-cryptojacking-csp-sri/)
