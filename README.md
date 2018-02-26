@@ -192,6 +192,7 @@ These bugs are just annoying, they are not critical. They provide false-positive
 - [CSS used as keylogger](https://twitter.com/FedirFR/status/960833531881689088)
 - [Disqus started injecting adverts into pages that use their comment system, blocked by CSP :) ](https://twitter.com/Scott_Helme/status/961612668992966656)
 - [Protect your site from Cryptojacking with CSP + SRI](https://scotthelme.co.uk/protect-site-from-cryptojacking-csp-sri/)
+- [Content Security Policy - LinkedIn as an Example!](https://amisafe.secops.in/csp-linkedin/)
 
 
 ### Interesting posts on how to deploy CSP
