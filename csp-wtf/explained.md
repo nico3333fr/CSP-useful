@@ -3,6 +3,51 @@
 Sometimes, CSP notifications are __really difficult to understand or very strange__. Here is a collection of some CSP WTF.
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
+---------------------------------------
+# hotjar.com
+
+```
+{
+    "csp-report": {
+        "document-uri": "https://www.estcequonmetenprodaujourdhui.info/",
+        "referrer": "",
+        "violated-directive": "style-src",
+        "effective-directive": "style-src",
+        "original-policy": "default-src 'none';  script-src 'self' ; style-src 'self' 'nonce-67a5a0e484940504c4b8f8b6f93b1a239055c0a5c8c1c2ed1eb194a5aa848f78f207f851d2db435c6b9db84a590d2c44ee8a903732a0c69f88a7eb4938c0e6ee' ; img-src 'self'  data: ;  font-src 'self'; child-src 'self' ;  frame-ancestors 'self' ; manifest-src 'self' ; base-uri 'none';  report-uri /csp-parser.php ;",
+        "disposition": "enforce",
+        "blocked-uri": "inline",
+        "line-number": 4,
+        "column-number": 3,
+        "source-file": "https://static.hotjar.com/c/hotjar-730716.js?sv=6",
+        "status-code": 0,
+        "script-sample": ""
+    }
+}
+```
+or
+```
+{
+    "csp-report": {
+        "document-uri": "https://www.estcequonmetenprodaujourdhui.info/",
+        "referrer": "",
+        "violated-directive": "script-src",
+        "effective-directive": "script-src",
+        "original-policy": "default-src 'none';  script-src 'self' ; style-src 'self' 'nonce-67a5a0e484940504c4b8f8b6f93b1a239055c0a5c8c1c2ed1eb194a5aa848f78f207f851d2db435c6b9db84a590d2c44ee8a903732a0c69f88a7eb4938c0e6ee' ; img-src 'self'  data: ;  font-src 'self'; child-src 'self' ;  frame-ancestors 'self' ; manifest-src 'self' ; base-uri 'none';  report-uri /csp-parser.php ;",
+        "disposition": "enforce",
+        "blocked-uri": "https://script.hotjar.com/modules-6e79f0dfd21f4aaa93751842ae0b97f6.js",
+        "line-number": 3,
+        "column-number": 199,
+
+        "source-file": "https://static.hotjar.com/c/hotjar-730716.js?sv=6",
+        "status-code": 0,
+        "script-sample": ""
+    }
+}
+```
+
+__WTF:__ `"source-file": "https://static.hotjar.com/c/hotjar-730716.js?sv=6",`
+
+__Answer:__ Appears to be a adware/malware, according to these lists https://github.com/StevenBlack/hosts (these are not on the sites, but on client machine)
 
 ---------------------------------------
 # wrcx
