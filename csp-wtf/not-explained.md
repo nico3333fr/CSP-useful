@@ -4,6 +4,31 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 ---------------------------------------
+# inter.gamefunnetwork.com
+
+```
+{
+    "csp-report": {
+        "document-uri": "https://www.nicolas-hoffmann.net/source/cv-developpeur-web-integrateur-xhtml-css.php",
+        "referrer": "https://www.google.fr/",
+        "violated-directive": "script-src",
+        "effective-directive": "script-src",
+        "original-policy": "default-src 'none';  script-src 'self' google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net; style-src 'self' data:  ; img-src 'self' google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net ssl.google-analytics.com data: ;  connect-src 'self';  font-src 'self'; media-src 'self'; object-src 'self' www.youtube.com ;  child-src 'self' ;  frame-ancestors 'self' ; manifest-src 'self' ; form-action 'self' ; base-uri 'none'; report-uri /csp-parser.php ;",
+        "disposition": "enforce",
+        "blocked-uri": "https://inter.gamefunnetwork.com/InterYield/bindevent.do?e=click&affiliate=caiydgames&subid=organic_slither&iytonly=false&disableBackButton=true&snoozeMinutes=5&adCountIntervalHours=24&maxAdCountsPerInterval=5&pop=over&doublepop=false&engover=ADV-KeywordMarketplace&attributionDisabled=false&endpoint=https%3A%2F%2Finter.gamefunnetwork.com&attributionLink=https%3A%2F%2Fgamefunnetwork.com%2Fgames%2Funinstall.php&attributionTitle=gamefunnetwork&disob=true&tabOver=true",
+        "line-number": 8,
+        "column-number": 15,
+        "status-code": 0,
+        "script-sample": ""
+    }
+}
+```
+
+__WTF:__ `"blocked-uri": "https://inter.gamefunnetwork.com/InterYield/bindevent.do?e=click&affiliate=caiydgames&subid=organic_slither&iytonly=false&disableBackButton=true&snoozeMinutes=5&adCountIntervalHours=24&maxAdCountsPerInterval=5&pop=over&doublepop=false&engover=ADV-KeywordMarketplace&attributionDisabled=false&endpoint=https%3A%2F%2Finter.gamefunnetwork.com&attributionLink=https%3A%2F%2Fgamefunnetwork.com%2Fgames%2Funinstall.php&attributionTitle=gamefunnetwork&disob=true&tabOver=true",` 
+
+__Answer:__ any idea???? (of course, this is not present on the website)
+
+---------------------------------------
 # fdz.octapi.net
 
 ```
