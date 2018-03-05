@@ -234,6 +234,10 @@ These bugs are just annoying, they are not critical. They provide false-positive
 - https://addons.mozilla.org/en-us/firefox/addon/newusercspdesign/
 - https://addons.mozilla.org/en-US/firefox/addon/laboratory-by-mozilla/
 
+### CMS Plugins
+
+- WordPress: https://fr.wordpress.org/plugins/wp-content-security-policy/
+
 Enjoy!
 
 [Nicolas Hoffmann](https://www.nicolas-hoffmann.net/) - [@Nico3333fr](https://twitter.com/Nico3333fr)
