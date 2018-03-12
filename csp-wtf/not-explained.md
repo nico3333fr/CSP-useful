@@ -4,6 +4,30 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 ---------------------------------------
+# spedcheck.space/metric
+
+```
+{
+    "csp-report": {
+        "document-uri": "https://www.nicolas-hoffmann.net/source/1471-astuce-CSS-input-type-submit-reset-button.html",
+        "referrer": "https://www.google.fr/",
+        "violated-directive": "img-src",
+        "effective-directive": "img-src",
+        "original-policy": "default-src 'none';  script-src 'self' google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net; style-src 'self' data:  ; img-src 'self' google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net ssl.google-analytics.com data: ;  connect-src 'self';  font-src 'self'; media-src 'self'; object-src 'self' www.youtube.com ;  child-src 'self' ;  frame-ancestors 'self' ; manifest-src 'self' ; form-action 'self' ; base-uri 'none'; report-uri /csp-parser.php ;",
+        "disposition": "enforce",
+        "blocked-uri": "https://spedcheck.space/metric/?mid=&wid=50529&sid=&tid=5108&rid=LAUNCHED&t=1520861130776",
+        "status-code": 0,
+        "script-sample": ""
+    }
+}
+```
+
+__WTF:__ `"blocked-uri": "https://spedcheck.space/metric/?mid=&wid=50529&sid=&tid=5108&rid=LAUNCHED&t=1520861130776",` (not present on the website of course)
+
+__Answer:__ probable malware (mentionned in https://www.hybrid-analysis.com/sample/1afd88371f2d0b1cc17d37947f3c4bfab86c2aab64831bfc18287dbc5244b9bd?environmentId=100).
+
+
+---------------------------------------
 # inter.gamefunnetwork.com
 
 ```
