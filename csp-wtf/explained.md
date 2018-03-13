@@ -4,6 +4,27 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 ---------------------------------------
+# Hangouts
+
+```
+    "csp-report": {
+        "blocked-uri": "self",
+        "document-uri": "https://www.estcequonmetenprodaujourdhui.info/",
+        "line-number": 1,
+        "original-policy": "default-src 'none'; script-src https://www.estcequonmetenprodaujourdhui.info; style-src https://www.estcequonmetenprodaujourdhui.info 'nonce-9405ae36c387ea791f7a69b7247da1a8fa9f462ba705d26a35e4d06b1610bedbf80b66486e02fe65a4d5897d164f11115c9a05e15d002b1f2e9fc49a4d652fd4'; img-src https://www.estcequonmetenprodaujourdhui.info data:; font-src https://www.estcequonmetenprodaujourdhui.info; child-src https://www.estcequonmetenprodaujourdhui.info; frame-ancestors https://www.estcequonmetenprodaujourdhui.info; manifest-src https://www.estcequonmetenprodaujourdhui.info; base-uri 'none'; report-uri https://www.estcequonmetenprodaujourdhui.info/csp-parser.php",
+        "referrer": "https://www.google.com/url?q=https://www.estcequonmetenprodaujourdhui.info/&sa=D&source=hangouts&ust=1521034206267000&usg=AFQjCNGk2slAWSMgl0w8kqOJNz43adh5_Q",
+        "script-sample": ";!function(){var t=0,e=function(t,e){ret...",
+        "source-file": "https://www.estcequonmetenprodaujourdhui.info/",
+        "violated-directive": "script-src https://www.estcequonmetenprodaujourdhui.info"
+    }
+}
+```
+
+__WTF:__ `"script-sample": ";!function(){var t=0,e=function(t,e){ret...",`
+
+__Answer:__ looking at the referrer, seems to come from Google Hangouts.
+
+---------------------------------------
 # hotjar.com
 
 ```
