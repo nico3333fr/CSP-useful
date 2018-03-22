@@ -209,10 +209,12 @@ These bugs are just annoying, they are not critical. They provide false-positive
 - https://githubengineering.com/githubs-post-csp-journey/
 - https://www.sourceclear.com/blog/Adopting-and-Reducing-Challenges-of-Content-Security-Policy-CSP-with-Sentry/
 - https://www.troyhunt.com/locking-down-your-website-scripts-with-csp-hashes-nonces-and-report-uri/
+- [Déployer CSP : une approche en 5 étapes](https://blog.dareboost.com/fr/2018/03/deployer-csp-une-approche-en-5-etapes/) (in french)
+- [Deploying CSP: a 5-step approach](https://blog.dareboost.com/en/2018/03/deploying-csp-a-5-step-approach/)
 
 ### Other
 
-- https://github.com/nico3333fr/CSP-useful (yes you are here)
+- https://github.com/nico3333fr/CSP-useful (yes you are here, and yes, it was stupid)
 - https://pokeinthe.io/2017/06/13/state-of-security-alexa-top-one-million-2017-06/
 
 ### Future of CSP
