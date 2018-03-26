@@ -182,6 +182,7 @@ These bugs are just annoying, they are not critical. They provide false-positive
 - https://oreoshake.github.io/csp/twitter/2014/07/25/twitters-csp-report-collector-design.html
 - https://blog.sqreen.io/content-security-policy/
 - https://github.com/rtanglao/rt-csp
+- [CSP implementations are broken](https://jellyhive.com/activity/posts/2018/03/26/csp-implementations-are-broken/)
 
 
 ### Why you should use CSP
