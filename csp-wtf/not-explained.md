@@ -3,6 +3,29 @@
 Sometimes, CSP notifications are __really difficult to understand or very strange__. Here is a collection of some CSP WTF.
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
+
+---------------------------------------
+# function (NAVIGATOR, OBJECT)
+
+```
+{
+    "csp-report": {
+        "blocked-uri": "self",
+        "document-uri": "https://www.estcequonmetenprodaujourdhui.info/",
+        "line-number": 1,
+        "original-policy": "default-src 'none'; script-src https://www.estcequonmetenprodaujourdhui.info; style-src https://www.estcequonmetenprodaujourdhui.info 'nonce-4518704035a96cf7a2b2254a811878c1a6e45e647700026870a435596f5aa7f0aab5685a0b8a707f03322340e4e6b9ce7acba9a6f302f016af53d4f4d0012c03'; img-src https://www.estcequonmetenprodaujourdhui.info data:; font-src https://www.estcequonmetenprodaujourdhui.info; child-src https://www.estcequonmetenprodaujourdhui.info; frame-ancestors https://www.estcequonmetenprodaujourdhui.info; manifest-src https://www.estcequonmetenprodaujourdhui.info; base-uri 'none'; report-uri https://www.estcequonmetenprodaujourdhui.info/csp-parser.php",
+        "referrer": "",
+        "script-sample": "(function (NAVIGATOR, OBJECT) {\n\n    OBJ...",
+        "source-file": "https://www.estcequonmetenprodaujourdhui.info/",
+        "violated-directive": "script-src"
+    }
+}
+```
+
+__WTF:__ `"blocked-uri": "https://spedcheck.space/metric/?mid=&wid=50529&sid=&tid=5108&rid=LAUNCHED&t=1520861130776",` (not present on the website of course)
+
+__Answer:__ probable malware (mentionned in https://www.hybrid-analysis.com/sample/1afd88371f2d0b1cc17d37947f3c4bfab86c2aab64831bfc18287dbc5244b9bd?environmentId=100).
+
 ---------------------------------------
 # spedcheck.space/metric
 
