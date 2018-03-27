@@ -22,9 +22,9 @@ If you have an idea (even if the idea is WTF) for some of these, do not hesitate
 }
 ```
 
-__WTF:__ `"blocked-uri": "https://spedcheck.space/metric/?mid=&wid=50529&sid=&tid=5108&rid=LAUNCHED&t=1520861130776",` (not present on the website of course)
+__WTF:__ `"script-sample": "(function (NAVIGATOR, OBJECT) {\n\n    OBJ...",` (not present on the website of course)
 
-__Answer:__ probable malware (mentionned in https://www.hybrid-analysis.com/sample/1afd88371f2d0b1cc17d37947f3c4bfab86c2aab64831bfc18287dbc5244b9bd?environmentId=100).
+__Answer:__ any idea?
 
 ---------------------------------------
 # spedcheck.space/metric
