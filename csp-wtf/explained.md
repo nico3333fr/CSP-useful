@@ -2042,4 +2042,26 @@ __WTF:__ `"script-sample": "(function (ERROR) {\n\n    const V8_STACK_...",`
 __Answer:__ Injected by [Privacy Badger](https://www.eff.org/privacybadger) [(Source)](https://github.com/EFForg/privacybadger/blob/b654b487b3696e4a9c4f011ebceb06fe7182adb1/src/js/contentscripts/fingerprinting.js#L26)
 
 ---------------------------------------
+# Vue devtools
+
+```
+{
+    "csp-report": {
+        "blocked-uri": "self",
+        "document-uri": "https://van11y.net/accessible-tab-panel/",
+        "line-number": 1,
+        "original-policy": "default-src 'none'; script-src https://van11y.net; style-src https://van11y.net; img-src https://van11y.net; font-src https://van11y.net; connect-src https://van11y.net; child-src https://van11y.net; frame-ancestors https://van11y.net; manifest-src https://van11y.net; worker-src https://van11y.net; base-uri 'none'; form-action 'none'; report-uri https://van11y.net/csp-parser.php",
+        "referrer": "https://van11y.net/",
+        "script-sample": ";(function(e){let t={};if(e.hasOwnProper...",
+        "source-file": "https://van11y.net/accessible-tab-panel/",
+        "violated-directive": "script-src"
+    }
+}
+```
+
+__WTF:__ `"script-sample": ";(function(e){let t={};if(e.hasOwnProper...",` (not present on the website of course)
+
+__Answer:__ Injected by the [Vue devtools](https://github.com/vuejs/vue-devtools) [(Source)](https://github.com/vuejs/vue-devtools/blob/master/src/backend/hook.js)
+
+---------------------------------------
 If you have some examples to share (even if you don't know what the fuck it is coming from), feel free to share them. Anonymize the URL/policy if needed.
