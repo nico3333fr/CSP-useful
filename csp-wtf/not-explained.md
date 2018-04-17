@@ -4,6 +4,28 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 ---------------------------------------
+# window.loop11ExtTerritory = true
+
+```
+{
+    "csp-report": {
+        "blocked-uri": "self",
+        "document-uri": "http://www.visionclinique.ch/fr/",
+        "line-number": 1,
+        "original-policy": "default-src http://www.visionclinique.ch; script-src http://www.visionclinique.ch http://www.google-analytics.com https://www.google-analytics.com http://stats.g.doubleclick.net https://stats.g.doubleclick.net 'unsafe-eval'; style-src http://www.visionclinique.ch data: 'unsafe-inline'; img-src http://www.visionclinique.ch http://www.google-analytics.com https://www.google-analytics.com http://stats.g.doubleclick.net https://stats.g.doubleclick.net data:; child-src http://www.visionclinique.ch; connect-src http://www.visionclinique.ch https://www.google-analytics.com http://www.google-analytics.com http://stats.g.doubleclick.net https://stats.g.doubleclick.net; report-uri http://www.visionclinique.ch/csp-parser.php",
+        "referrer": "https://www.google.ch/",
+        "script-sample": "window.loop11ExtTerritory = true;",
+        "source-file": "http://www.visionclinique.ch/fr/",
+        "violated-directive": "script-src"
+    }
+}
+```
+
+__WTF:__ `"script-sample": "window.loop11ExtTerritory = true;",` (not present on the website of course)
+
+__Answer:__ any idea?
+
+---------------------------------------
 # ;(function(e){let t={};if(e.hasOwnProper...
 
 ```
