@@ -4,6 +4,32 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 ---------------------------------------
+# a11y.css
+
+```
+{
+    "csp-report": {
+        "document-uri": "https://van11y.net/",
+        "referrer": "",
+        "violated-directive": "style-src",
+        "effective-directive": "style-src",
+        "original-policy": "default-src 'none' ;  script-src 'self'; style-src 'self' ; img-src 'self'; font-src 'self';  connect-src 'self' ; child-src 'self' ; frame-ancestors 'self'  ; manifest-src 'self' ; worker-src 'self' ; base-uri 'none' ; form-action 'none' ;  report-uri /csp-parser.php ;",
+        "disposition": "enforce",
+        "blocked-uri": "https://rawgit.com/ffoodd/a11y.css/master/css/a11y-en.css",
+        "line-number": 1,
+        "column-number": 184,
+        "status-code": 0,
+        "script-sample": ""
+    }
+}
+```
+
+__WTF:__ `"blocked-uri": "https://rawgit.com/ffoodd/a11y.css/master/css/a11y-en.css",`
+
+__Answer:__ this bookmarklet is using CSS to provide advices about accessibility. Believe me, it is great, you should have a look: https://ffoodd.github.io/a11y.css/
+
+
+---------------------------------------
 # Hangouts
 
 ```
