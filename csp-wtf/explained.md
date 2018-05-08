@@ -2106,4 +2106,41 @@ __WTF:__ `"script-sample": ";(function(e){let t={};if(e.hasOwnProper...",` (not 
 __Answer:__ Injected by the [Vue devtools](https://github.com/vuejs/vue-devtools) [(Source)](https://github.com/vuejs/vue-devtools/blob/master/src/backend/hook.js)
 
 ---------------------------------------
+# savingsslider-a.akamaihd.net / canvaspl-a.akamaihd.net
+
+```
+{
+    "csp-report": {
+        "document-uri": "https://www.nicolas-hoffmann.net/source/",
+        "referrer": "https://www.google.fr/",
+        "violated-directive": "script-src 'self' google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net",
+        "effective-directive": "script-src",
+        "original-policy": "default-src 'none';  script-src 'self' google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net; style-src 'self' data:  ; img-src 'self' google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net ssl.google-analytics.com data: ;  connect-src 'self';  font-src 'self'; media-src 'self'; object-src 'self' www.youtube.com ;  child-src 'self' ;  frame-ancestors 'self' ; manifest-src 'self' ; form-action 'self' ; report-uri /csp-parser.php ;",
+        "blocked-uri": "https://savingsslider-a.akamaihd.net",
+        "status-code": 0
+
+    }
+}
+```
+or
+```
+{
+    "csp-report": {
+        "document-uri": "[anonymised]",
+        "violated-directive": "img-src 'self' data: [anonymised]",
+        "effective-directive": "img-src",
+        "original-policy": "[anonymised]",
+        "blocked-uri": "https://canvaspl-a.akamaihd.net",
+        "source-file": "https://savingsslider-a.akamaihd.net",
+        "line-number": 29,
+        "column-number": 138
+    }
+}
+```
+
+__WTF:__ nothing like this on the website ```savingsslider-a.akamaihd.net```.
+
+__Answer:__ Appears to be a malware (browser extension Savings Slider): https://malwaretips.com/blogs/savings-slider-virus/ (these are not on the sites, but on client machine)
+
+---------------------------------------
 If you have some examples to share (even if you don't know what the fuck it is coming from), feel free to share them. Anonymize the URL/policy if needed.
