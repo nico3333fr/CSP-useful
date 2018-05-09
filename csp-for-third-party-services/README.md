@@ -9,6 +9,7 @@ Here is a small collection of CSP directives you should use for some third-party
 ```
 script-src 'unsafe-inline' www.google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net
 img-src www.google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net
+connect-src www.google-analytics.com
 # you may specify also "http://www.google-analytics.com https://www.google-analytics.com" (I had some bugs sometimes)
 ```
 
@@ -46,6 +47,7 @@ So no need to have `unsafe-inline` in CSP :
 ```
 script-src 'self' www.google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net
 img-src www.google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net
+connect-src www.google-analytics.com
 # you may specify also "http://www.google-analytics.com https://www.google-analytics.com" (I had some bugs sometimes)
 ```
 
