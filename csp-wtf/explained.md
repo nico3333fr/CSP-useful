@@ -2393,4 +2393,15 @@ __WTF:__ ?????
 __Answer:__ Appears to be a adware/malware, according to these lists https://github.com/StevenBlack/hosts, [also this thread](https://meta.stackexchange.com/questions/267846/dnsunlocker-intrusive-ads) (these are not on the sites, but on client machine)
 
 ---------------------------------------
+# Apple QuickLook
+
+```
+EvalError: Refused to evaluate a string as JavaScript because 'unsafe-eval' is not an allowed source of script in the following Content Security Policy directive: "default-src x-apple-ql-id: 'unsafe-inline'".
+```
+
+__WTF:__ This is an error from template Function constructor
+
+__Answer:__ This is a bug in Apple QuickLook. When you e.g. open Excel document from your page, it is opened in browser using QuickLook and QuickLook patches your CSP policy to add "x-apple-ql-id:" source. When you navigate back, CSP is not restored and could lead to violation reports.
+
+---------------------------------------
 If you have some examples to share (even if you don't know what the fuck it is coming from), feel free to share them. Anonymize the URL/policy if needed.
