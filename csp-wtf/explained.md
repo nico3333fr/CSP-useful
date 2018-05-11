@@ -191,7 +191,7 @@ __WTF:__ `"script-sample": ".autocardanywhere-popup {background-colo...",`
 __Answer:__ code used by AutoCardAnywhere extension https://www.autocardanywhere.com/ 
 
 ---------------------------------------
-# Ciuvo
+# Ciuvo / steganos-api.ciuvo.com
 
 ```
 {
@@ -498,7 +498,7 @@ __Answer:__ from some browser extensions, ex [vk downloader](https://addons.mozi
 
 __WTF:__ no code like this on this website.
 
-__Answer:__ Comes from https://easylist-downloads.adblockplus.org/easylist.txt (```.mod > ._jH + .rscontainer``` in the middle) and some ad blocking extensions like [uBlock Origin](https://github.com/gorhill/uBlock/issues/327) add the CSS in a <style> tag on the web page. Explanation kindly brought by [3ventic here](https://github.com/nico3333fr/CSP-useful/issues/29).
+__Answer:__ Comes from https://easylist-downloads.adblockplus.org/easylist.txt (```.mod > ._jH + .rscontainer``` in the middle) and some ad blocking extensions like [uBlock Origin](https://github.com/gorhill/uBlock/issues/327) add the CSS in a `<style>` tag on the web page. Explanation kindly brought by [3ventic here](https://github.com/nico3333fr/CSP-useful/issues/29).
 
 ---------------------------------------
 # Skype Assets
@@ -2141,6 +2141,256 @@ or
 __WTF:__ nothing like this on the website ```savingsslider-a.akamaihd.net```.
 
 __Answer:__ Appears to be a malware (browser extension Savings Slider): https://malwaretips.com/blogs/savings-slider-virus/ (these are not on the sites, but on client machine)
+
+---------------------------------------
+# GamePhrase
+
+```
+{
+    "csp-report": {
+        "document-uri": "[anonymised]",
+        "effective-directive": "connect-src",
+        "original-policy": "[anonymised]",
+        "blocked-uri": "https://gamephrase.com/api/pcgc",
+        "line-number": 1,
+        "column-number": 17112,
+        "source-file": "[anonymised]"
+    }
+}
+```
+
+__WTF:__ nothing like this on the website.
+
+__Answer:__ seems it's coming from a browser extension [GamePhrase](http://www.gamephrase.com/about-us/) (free browser games, they require to install their extension)
+
+---------------------------------------
+# cdnnetwok.xyz
+
+```
+{
+    "csp-report": {
+        "document-uri": "https://www.estcequonmetenprodaujourdhui.info/",
+        "referrer": "https://www.google.com/url?q=https%3A%2F%2Fwww.estcequonmetenprodaujourdhui.info%2F&sa=D&sntz=1&usg=AFQjCNHvJDS4K8FPbvGaIiPVKOhXufgrLw",
+        "violated-directive": "script-src",
+        "effective-directive": "script-src",
+        "original-policy": "default-src 'none';  script-src 'self' ; style-src 'self' 'nonce-0e30e24f03b6aff50857761ff277cb48ae5d4abd8916eb28eff379b310991f49049fdab74803ac28dd33e7c25afa7f25b8236e8322d0b6505e23a54c6fa91131' ; img-src 'self'  data: ;  font-src 'self'; child-src 'self' ;  frame-ancestors 'self' ; manifest-src 'self' ; base-uri 'none';  report-uri /csp-parser.php ;",
+        "disposition": "enforce",
+        "blocked-uri": "https://cdnnetwok.xyz/optout/get?jsonp=__twb_cb_932473221&key=129740f254bb8da750&t=1512727184191",
+        "line-number": 1,
+        "column-number": 5371,
+
+        "source-file": "https://s3.amazonaws.com/js-cache/129740f254bb8da750.js?sid=measuit",
+        "status-code": 0,
+        "script-sample": ""
+    }
+}
+```
+
+__WTF:__ `"blocked-uri": "https://cdnnetwok.xyz/optout/get?jsonp=__twb_cb_932473221&key=129740f254bb8da750&t=1512727184191",` 
+
+__Answer:__ Appears to be a malware, according to these [Kaspersky](https://forum.kaspersky.com/index.php?/topic/390680-s3amazonawscom-constant-notifications-blocked-an-advertisement-site-or-a-url-that-can-be-used-by-criminals-to-damage-your-computer-or-personal-data-s3amazonaws/)/[ESET](https://forum.eset.com/topic/14840-jsadwarerevizerb-malware-eset-fails-to-remove/) forum threads (these are not on the sites, but on client machine)
+
+---------------------------------------
+# netanalytics.xyz
+
+```
+{
+    "csp-report": {
+        "document-uri": "[anonymised]",
+        "effective-directive": "script-src",
+        "original-policy": "[anonymised]",
+        "blocked-uri": "https://netanalytics.xyz/optout/get",
+        "line-number": 1,
+        "column-number": 5377,
+        "source-file": "https://s3.amazonaws.com/js-static/1631d86052fdda5d5f.js"
+    }
+}
+```
+
+__WTF:__ `"source-file": "https://s3.amazonaws.com/js-static/1631d86052fdda5d5f.js"`, `"blocked-uri": "https://netanalytics.xyz/optout/get"`, `"blocked-uri": "https://netanalytics.xyz/metric/"`
+
+__Answer:__ Appears to be a malware browser extension (blocked-uri matching pattern `https://*/optout/get` and `https://*/metric/` from the parallel client requests) and according to these lists https://github.com/StevenBlack/hosts (these are not on the sites, but on client machine)
+
+---------------------------------------
+# networkcheck.xyz
+
+```
+{
+    "csp-report": {
+        "document-uri": "[anonymised]",
+        "effective-directive": "script-src",
+        "original-policy": "[anonymised]",
+        "blocked-uri": "https://networkcheck.xyz/optout/get",
+        "line-number": 1,
+        "column-number": 5377,
+        "source-file": "https://s3.amazonaws.com/js-static/1631d86052fdda5d5f.js"
+    }
+}
+```
+
+__WTF:__ `"source-file": "https://s3.amazonaws.com/js-static/1631d86052fdda5d5f.js"`, `"blocked-uri": "https://networkcheck.xyz/optout/get"`, `"blocked-uri": "https://networkcheck.xyz/metric/"`
+
+__Answer:__ Appears to be a malware browser extension (blocked-uri matching pattern `https://*/optout/get` and `https://*/metric/` from the parallel client requests) and according to these lists https://github.com/StevenBlack/hosts (these are not on the sites, but on client machine)
+
+---------------------------------------
+# takethatad.com
+
+```
+{
+    "csp-report": {
+        "document-uri": "https://www.nicolas-hoffmann.net/source/1556-Bug-Internet-Explorer-attributs-width-height-vides-img.html",
+        "referrer": "https://www.google.fr/",
+        "violated-directive": "script-src",
+        "effective-directive": "script-src",
+        "original-policy": "default-src 'none';  script-src 'self' google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net; style-src 'self' data:  ; img-src 'self' google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net ssl.google-analytics.com data: ;  connect-src 'self';  font-src 'self'; media-src 'self'; object-src 'self' www.youtube.com ;  child-src 'self' ;  frame-ancestors 'self' ; manifest-src 'self' ; form-action 'self' ; base-uri 'none'; report-uri /csp-parser.php ;",
+        "disposition": "enforce",
+        "blocked-uri": "https://takethatad.com/optout/get?jsonp=__twb_cb_478053953&key=b24534b96fde8c01af&t=1510064009178",
+        "line-number": 1,
+        "column-number": 5373,
+        "source-file": "https://s3.amazonaws.com/cashe-js/b24534b96fde8c01af.js",
+        "status-code": 0,
+        "script-sample": ""
+    }
+}
+```
+
+__WTF:__ `"blocked-uri": "https://takethatad.com/optout/get?jsonp=__twb_cb_478053953&key=b24534b96fde8c01af&t=1510064009178",`
+
+__Answer:__ Appears to be a malware browser extension (blocked-uri matching pattern `https://*/optout/get` and `https://*/metric/` from the parallel client requests) and according to these lists https://github.com/StevenBlack/hosts (these are not on the sites, but on client machine)
+
+---------------------------------------
+# adnotbad.com
+
+```
+{
+    "csp-report": {
+        "document-uri": "[anonymised]",
+        "referrer": "",
+        "violated-directive": "img-src",
+        "effective-directive": "img-src",
+        "original-policy": "default-src 'self';  script-src 'self' *.google-analytics.com stats.g.doubleclick.net ; style-src 'self' data: ; img-src 'self' *.google-analytics.com stats.g.doubleclick.net data: ;  child-src 'self' ; report-uri /csp-parser.php ;",
+        "disposition": "enforce",
+        "blocked-uri": "http://adnotbad.com/metric/?mid=&wid=51151&sid=&tid=4916&rid=LOADED&custom1=[anonymised]&t=1502350073365",
+        "status-code": 200,
+        "script-sample": ""
+    }
+}
+```
+
+__WTF:__ ?????
+
+__Answer:__ Appears to be a malware browser extension (blocked-uri matching pattern `https://*/optout/get` and `https://*/metric/` from the parallel client requests) and according to these lists https://github.com/StevenBlack/hosts (these are not on the sites, but on client machine)
+
+---------------------------------------
+# extenjo.net
+
+```
+{
+    "csp-report": {
+        "document-uri": "https://www.estcequonmetenprodaujourdhui.info/",
+        "referrer": "https://www.google.fr/",
+        "violated-directive": "img-src",
+        "effective-directive": "img-src",
+        "original-policy": "default-src 'none';  script-src 'self' ; style-src 'self' 'nonce-3e8ff80e25db946668f71ab2c2cd3d875cbb1655edb281b40e4ba83771b2a84bd37dd64f79232345952a787431357801ed08851cab40a658eecf02c695cce007' ; img-src 'self'  data: ;  font-src 'self'; child-src 'self' ;  frame-ancestors 'self' ; manifest-src 'self' ; base-uri 'none';  report-uri /csp-parser.php ;",
+        "disposition": "enforce",
+        "blocked-uri": "https://extenjo.net/metric/?mid=&wid=51824&sid=&tid=5727&rid=LOADED&custom1=www.estcequonmetenprodaujourdhui.info&t=1518450851863",
+        "status-code": 0,
+        "script-sample": ""
+    }
+}
+```
+
+__WTF:__ `"blocked-uri": "https://extenjo.net/metric/?mid=&wid=51824&sid=&tid=5727&rid=LOADED&custom1=www.estcequonmetenprodaujourdhui.info&t=1518450851863",` 
+
+__Answer:__ Appears to be a malware browser extension (blocked-uri matching pattern `https://*/optout/get` and `https://*/metric/` from the parallel client requests)
+
+---------------------------------------
+# spedcheck.space/metric
+
+```
+{
+    "csp-report": {
+        "document-uri": "https://www.nicolas-hoffmann.net/source/1471-astuce-CSS-input-type-submit-reset-button.html",
+        "referrer": "https://www.google.fr/",
+        "violated-directive": "img-src",
+        "effective-directive": "img-src",
+        "original-policy": "default-src 'none';  script-src 'self' google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net; style-src 'self' data:  ; img-src 'self' google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net ssl.google-analytics.com data: ;  connect-src 'self';  font-src 'self'; media-src 'self'; object-src 'self' www.youtube.com ;  child-src 'self' ;  frame-ancestors 'self' ; manifest-src 'self' ; form-action 'self' ; base-uri 'none'; report-uri /csp-parser.php ;",
+        "disposition": "enforce",
+        "blocked-uri": "https://spedcheck.space/metric/?mid=&wid=50529&sid=&tid=5108&rid=LAUNCHED&t=1520861130776",
+        "status-code": 0,
+        "script-sample": ""
+    }
+}
+```
+
+__WTF:__ `"blocked-uri": "https://spedcheck.space/metric/?mid=&wid=50529&sid=&tid=5108&rid=LAUNCHED&t=1520861130776",` (not present on the website of course)
+
+__Answer:__ Appears to be a malware browser extension (blocked-uri matching pattern `https://*/optout/get` and `https://*/metric/` from the parallel client requests) and mentionned in https://www.hybrid-analysis.com/sample/1afd88371f2d0b1cc17d37947f3c4bfab86c2aab64831bfc18287dbc5244b9bd?environmentId=100.
+
+---------------------------------------
+# spidtest.org/metric
+
+```
+{
+    "csp-report": {
+        "document-uri": "https://van11y.net/accessible-tab-panel/",
+        "referrer": "https://plainjs.com/javascript/plugins/accessible-tabs-panel-system-163/",
+        "violated-directive": "img-src",
+        "effective-directive": "img-src",
+        "original-policy": "default-src 'none' ;  script-src 'self'; style-src 'self' ; img-src 'self'; font-src 'self';  connect-src 'self' ; child-src 'self' ; frame-ancestors 'self'  ; manifest-src 'self' ; worker-src 'self' ; base-uri 'none' ;  report-uri /csp-parser.php ;",
+        "disposition": "enforce",
+        "blocked-uri": "https://spidtest.org/metric/?mid=&wid=51391&sid=&tid=4002&rid=FINISHED&custom1=van11y.net&t=1512059045445",
+        "status-code": 0,
+        "script-sample": ""
+    }
+}
+```
+
+__WTF:__ `"blocked-uri": "https://spidtest.org/metric/?mid=&wid=51391&sid=&tid=4002&rid=FINISHED&custom1=van11y.net&t=1512059045445",` 
+
+__Answer:__ Appears to be a malware browser extension (blocked-uri matching pattern `https://*/optout/get` and `https://*/metric/` from the parallel client requests) and according to these lists https://github.com/StevenBlack/hosts (these are not on the sites, but on client machine)
+
+---------------------------------------
+# adnotbad.com
+
+```
+{
+    "csp-report": {
+        "document-uri": "[anonymised]",
+        "referrer": "",
+        "violated-directive": "img-src",
+        "effective-directive": "img-src",
+        "original-policy": "default-src 'self';  script-src 'self' *.google-analytics.com stats.g.doubleclick.net ; style-src 'self' data: ; img-src 'self' *.google-analytics.com stats.g.doubleclick.net data: ;  child-src 'self' ; report-uri /csp-parser.php ;",
+        "disposition": "enforce",
+        "blocked-uri": "http://adnotbad.com/metric/?mid=&wid=51151&sid=&tid=4916&rid=LOADED&custom1=[anonymised]&t=1502350073365",
+        "status-code": 200,
+        "script-sample": ""
+    }
+}
+```
+
+__WTF:__ ?????
+
+__Answer:__ Appears to be a malware browser extension (blocked-uri matching pattern `https://*/optout/get` and `https://*/metric/` from the parallel client requests) and according to these lists https://github.com/StevenBlack/hosts (these are not on the sites, but on client machine)
+
+---------------------------------------
+# QualityCheck/ga.js
+
+```
+{
+    "csp-report": {
+        "blocked-uri": "http://m59.prod2016.com/QualityCheck/ga.js",
+        "document-uri": "[anonymised]",
+        "original-policy": "default-src [anonymised]; script-src [anonymised] https://www.google-analytics.com http://www.google-analytics.com http://stats.g.doubleclick.net https://stats.g.doubleclick.net; style-src [anonymised] data:; img-src [anonymised] https://www.google-analytics.com http://www.google-analytics.com http://*.[anonymised] http://stats.g.doubleclick.net https://stats.g.doubleclick.net data:; report-uri [anonymised]csp-parser.php",
+        "referrer": "",
+        "violated-directive": "script-src [anonymised] https://www.google-analytics.com http://www.google-analytics.com http://stats.g.doubleclick.net https://stats.g.doubleclick.net"
+    }
+}
+```
+
+__WTF:__ ????? 
+
+__Answer:__ Appears to be a adware/malware, according to these lists https://github.com/StevenBlack/hosts, [also this thread](https://meta.stackexchange.com/questions/267846/dnsunlocker-intrusive-ads) (these are not on the sites, but on client machine)
 
 ---------------------------------------
 If you have some examples to share (even if you don't know what the fuck it is coming from), feel free to share them. Anonymize the URL/policy if needed.
