@@ -2143,7 +2143,7 @@ __WTF:__ nothing like this on the website ```savingsslider-a.akamaihd.net```.
 __Answer:__ Appears to be a malware (browser extension Savings Slider): https://malwaretips.com/blogs/savings-slider-virus/ (these are not on the sites, but on client machine)
 
 ---------------------------------------
-# GamePhrase
+# GamePhrase / ElsewhereGames
 
 ```
 {
@@ -2158,10 +2158,24 @@ __Answer:__ Appears to be a malware (browser extension Savings Slider): https://
     }
 }
 ```
+or
+```
+{
+    "csp-report": {
+        "document-uri": "[anonymised]",
+        "effective-directive": "connect-src",
+        "original-policy": "[anonymised]",
+        "blocked-uri": "https://elsewheregames.com/api/pcgc",
+        "line-number": 1,
+        "column-number": 17325,
+        "source-file": "[anonymised]"
+    }
+}
+```
 
 __WTF:__ nothing like this on the website.
 
-__Answer:__ seems it's coming from a browser extension [GamePhrase](http://www.gamephrase.com/about-us/) (free browser games, they require to install their extension)
+__Answer:__ seems it's coming from a browser extension [GamePhrase](http://www.gamephrase.com/about-us/)/[ElsewhereGames](http://www.elsewheregames.com/about-us/) (free browser games, they require to install their extension)
 
 ---------------------------------------
 # cdnnetwok.xyz
