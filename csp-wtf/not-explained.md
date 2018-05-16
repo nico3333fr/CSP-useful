@@ -2583,4 +2583,86 @@ __Answer:__ No idea how this could happen. Any idea?
 
 
 ---------------------------------------
+
+# enet.enec.gov.ae
+
+```
+{
+    "csp-report": {
+        "document-uri": "[anonymised]",
+        "effective-directive": "script-src",
+        "original-policy": "[anonymised]",
+        "blocked-uri": "https://enet.enec.gov.ae"
+    }
+}
+```
+
+__WTF:__ WTF is this?
+
+__Answer:__ Domain enet.enec.gov.ae doesn't exist. But domain enec.gov.ae is resolved to this: The Emirates Nuclear Energy Corporation (ENEC) is leading the development of the United Arab Emirates (UAE) Peaceful Nuclear Energy Program and building the country’s first nuclear energy plant. Maybe some internal government network?
+
+
+---------------------------------------
+
+# d19mml8yptdetb.cloudfront.net
+
+```
+{
+    "csp-report": {
+        "document-uri": "[anonymised]",
+        "effective-directive": "media-src",
+        "original-policy": "[anonymised]",
+        "blocked-uri": "https://d19mml8yptdetb.cloudfront.net/images/thinkOver/extension/onb/video/small_drag_and_drop.mp4"
+    }
+}
+```
+
+__WTF:__ WTF is this?
+
+__Answer:__ According by this video, this is some kind of extension to help you choose products in online stores. Needed details.
+
+
+---------------------------------------
+
+# pe78ohwhk.ru
+
+```
+{
+    "csp-report": {
+        "document-uri": "[anonymised]",
+        "effective-directive": "script-src",
+        "original-policy": "[anonymised]",
+        "blocked-uri": "https://pe78ohwhk.ru/d6safundjenk6af/29136.js",
+        "line-number": 1,
+        "column-number": 1144
+    }
+}
+```
+
+__WTF:__ WTF is this?
+
+__Answer:__ Probably some malware. Any idea?
+
+
+---------------------------------------
+
+# searches3250409-a.akamaihd.net
+
+```
+{
+    "csp-report": {
+        "document-uri": "[anonymised]",
+        "effective-directive": "script-src",
+        "original-policy": "[anonymised]",
+        "blocked-uri": "https://searches3250409-a.akamaihd.net"
+    }
+}
+```
+
+__WTF:__ WTF is this?
+
+__Answer:__  Any idea?
+
+
+---------------------------------------
 If you have some examples to share (even if you don't know what the fuck it is coming from), feel free to share them. Anonymize the URL/policy if needed.
