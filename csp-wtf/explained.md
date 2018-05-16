@@ -1986,7 +1986,7 @@ __WTF:__ The image is not on the website, at any place.
 __Answer:__ Might be related to Google Translate. (to confirm how, and check how it can happen)
 
 ---------------------------------------
-# loadingpages.me/loadingpage.info/loadingpaqes.info/loadingdata.site/loadingpagesos.download/loadingpagesson.club/loadingpagesos.bid
+# loadingpages.me/loadingpage.info/loadingpaqes.info/loadingdata.site/loadingpagesos.download/loadingpagesson.club/loadingpagesos.bid/loadingpageson.science
 
 
 ```
@@ -2041,6 +2041,7 @@ or
 }
 ```
 or
+```
 {
     "csp-report": {
         "document-uri": "https://www.nicolas-hoffmann.net/source/1455-Note-de-lecture-HTML5-une-reference-pour-le-developpeur-web.html",
@@ -2100,6 +2101,20 @@ or
     }
 }
 ```
+or
+```
+{
+    "csp-report": {
+        "document-uri": "[anonymised]",
+        "effective-directive": "script-src",
+        "original-policy": "[anonymised]",
+        "blocked-uri": "http://loadingpageson.science/jo/is2",
+        "line-number": 1,
+        "column-number": 270
+    }
+}
+```
+
 __WTF:__ nothing like this on the website.
 
 __Answer:__ Based on this: https://stackoverflow.com/questions/44265331/why-chrome-browser-automatically-send-cross-origin-request-to-http-loadingpage this is a hacked MacOS Client.
