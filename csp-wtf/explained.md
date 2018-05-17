@@ -4,6 +4,32 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 ---------------------------------------
+# Pocket
+
+```
+{
+    "csp-report": {
+        "document-uri": "https://www.nicolas-hoffmann.net/source/1643-L-angoissant-sujet-de-la-veille-technologique.html",
+        "referrer": "",
+        "violated-directive": "script-src",
+        "effective-directive": "script-src",
+        "original-policy": "default-src 'none';  script-src 'self' google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net; style-src 'self' data:  ; img-src 'self' google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net ssl.google-analytics.com data: ;  connect-src 'self';  font-src 'self'; media-src 'self'; object-src 'self' www.youtube.com ;  child-src 'self' ;  frame-ancestors 'self' ; manifest-src 'self' ; form-action 'self' ; base-uri 'none'; report-uri /csp-parser.php ;",
+        "disposition": "enforce",
+        "blocked-uri": "https://getpocket.com/b/r4.js?h=sdtrojfqhbysnrtudsfxrhpiyjbdijfiragyrxhrqvohrtefdem4d55ae69ad&u=https%3A%2F%2Fwww.nicolas-hoffmann.net%2Fsource%2F1643-L-angoissant-sujet-de-la-veille-technologique.html%23comment158796&t=L%E2%80%99%C2%AB%20angoissant%20%C2%BB%20sujet%20de%20la%20veille%20technologique%20-%20Nico%27s%20Dreams%20-%20Nicolas-Hoffmann.net",
+        "line-number": 1,
+        "column-number": 1420,
+        "status-code": 0,
+        "script-sample": ""
+    }
+}
+```
+
+__WTF:__ `https://getpocket.com/b/r4.js...`
+
+__Answer:__ This is caused by Pocket, however, I don't have exact details on how it happens.
+
+
+---------------------------------------
 # a11y.css
 
 ```
