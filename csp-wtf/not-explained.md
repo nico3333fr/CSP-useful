@@ -755,10 +755,22 @@ __Answer:__ any idea?
     }
 }
 ```
+or
+```
+{
+    "csp-report": {
+        "blocked-uri": "moz-extension",
+        "document-uri": "https://van11y.net/fr/",
+        "original-policy": "default-src 'none'; script-src https://van11y.net; style-src https://van11y.net; img-src https://van11y.net; font-src https://van11y.net; connect-src https://van11y.net; child-src https://van11y.net; frame-ancestors https://van11y.net; manifest-src https://van11y.net; worker-src https://van11y.net; base-uri 'none'; form-action 'none'; report-uri https://van11y.net/csp-parser.php",
+        "referrer": "",
+        "violated-directive": "base-uri"
+    }
+}
+```
 
-__WTF:__ `"script-sample": "background-image: url(moz-extension://9c...",`
+__WTF:__ `"script-sample": "background-image: url(moz-extension://9c...",` or `"blocked-uri": "moz-extension",`
 
-__Answer:__ Mozilla extension ?
+__Answer:__ Mozilla extension.
 
 ---------------------------------------
 # :root audio[data-po76pdm]
