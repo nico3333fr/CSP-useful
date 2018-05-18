@@ -26,7 +26,7 @@ If you have an idea (even if the idea is WTF) for some of these, do not hesitate
 
 __WTF:__ `https://getpocket.com/b/r4.js...`
 
-__Answer:__ This is caused by Pocket, however, I don't have exact details on how it happens.
+__Answer:__ This is caused by Pocket, ~~however, I don't have exact details on how it happens,~~ Pocket answered in a tweet (https://twitter.com/pocketsupport/status/997215117518561282), it is caused by bookmarklet in the browser.
 
 
 ---------------------------------------
