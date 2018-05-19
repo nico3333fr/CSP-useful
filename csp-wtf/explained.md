@@ -169,7 +169,72 @@ __WTF:__ `"script-sample": ".cip-genpw-icon.cip-icon-key-small {back...",`
 __Answer:__ seems it's coming from a browser extension called [ChromeIPass](https://github.com/pfn/passifox/blob/master/chromeipass/chromeipass.css#L45) and/or its Firefox counterpart PassIFox. (thanks @parseword for [the info](https://github.com/nico3333fr/CSP-useful/issues/40) :) )
 
 ---------------------------------------
-# netcheckcdn.xyz
+# Ad-framework used in browser extensions with name like "Best YouTube Video Downloader", "1-Click YouTube Video Download", etc.
+
+### Known list of domains:
+```
+lnkr.us
+urlvalidation.com
+adrs.me
+adnotbad.com
+adserv.info
+amiok.org
+analyzecdn.xyz
+analyzenetwork.xyz
+bootstrapnet.space
+butstrap.space
+cdnanalytics.xyz
+cdncash.com
+cdncash.net
+cdncash.org
+cdnclntr.com
+cdnlvry.xyz
+cdnnetwok.xyz
+cdnstr.xyz
+cdnswf.xyz
+cdnvalid.xyz
+connectionstrenth.com
+domainanalyzing.xyz
+domaincdn.xyz
+domainvalidation.xyz
+extenjo.net
+flowanalytic.site
+ge0ip.com
+ge0ip.net
+ge0ip.org
+glganltcs.space
+glgnltks.xyz
+icontent.us
+intrnlcss.xyz
+jsfuel.com
+lancheck.net
+metrext.com
+netanalitics.space
+netanalytics.xyz
+netanalyzer.space
+netcheckcdn.xyz
+netstats.space
+netwcdn.xyz
+networkanalytics.xyz
+networkcheck.xyz
+ratexchange.net
+serverads.net
+siteheart.net
+spaceshipad.com
+spedcheck.space
+spidtest.org
+spidtest.space
+takethatad.com
+tradeadsexchange.com
+trendtext.eu
+validanalytics.xyz
+validationcdn.xyz
+validcdn.xyz
+validcndnet.xyz
+validdomain.xyz
+whatzmyip.net
+ydpi.pw
+```
 
 ```
 {
@@ -188,10 +253,218 @@ __Answer:__ seems it's coming from a browser extension called [ChromeIPass](http
     }
 }
 ```
+or
+```
+{
+    "csp-report": {
+        "document-uri": "https://van11y.net/?utm_source=forwebdev_vk&utm_medium=announcement&utm_campaign=van11y--kollektsiya-gotovyh-k-ispolzovani",
+        "referrer": "",
+        "violated-directive": "img-src",
+        "effective-directive": "img-src",
+        "original-policy": "default-src 'none' ;  script-src 'self'; style-src 'self' ; img-src 'self'; font-src 'self';  connect-src 'self'; child-src 'self' ; frame-ancestors 'none' ; manifest-src 'self' ; report-uri /csp-parser.php ;",
+        "disposition": "enforce",
+        "blocked-uri": "https://butstrap.space/metric/?mid=&wid=49377&sid=&tid=590&rid=LOADED&custom1=van11y.net&t=1502215731726",
+        "status-code": 0,
+        "script-sample": ""
+    }
+}
+```
+or
+```
+{
+    "csp-report": {
+        "document-uri": "https://www.nicolas-hoffmann.net/source/cv-developpeur-web-integrateur-xhtml-css.php",
+        "referrer": "https://www.google.com/",
+        "violated-directive": "script-src",
+        "effective-directive": "script-src",
+        "original-policy": "default-src 'none';  script-src 'self' google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net; style-src 'self' data:  ; img-src 'self' google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net ssl.google-analytics.com data: ;  connect-src 'self';  font-src 'self'; media-src 'self'; object-src 'self' www.youtube.com ;  child-src 'self' ;  frame-ancestors 'self' ; manifest-src 'self' ; form-action 'self' ; report-uri /csp-parser.php ;",
+        "disposition": "enforce",
+        "blocked-uri": "https://connectionstrenth.com/optout/get?jsonp=__twb_cb_56941106&key=da2e092ff7bc4ea89e&t=1496394531140",
+        "line-number": 1,
+        "column-number": 5387,
+        "source-file": "https://s3.amazonaws.com/cashe-js/da2e092ff7bc4ea89e.js",
+        "status-code": 0
+    }
+}
+```
+or 
+```
+{
+    "csp-report": {
+        "document-uri": "https://www.nicolas-hoffmann.net/source/cv-developpeur-web-integrateur-xhtml-css.php",
+        "referrer": "https://www.google.com/",
+        "violated-directive": "img-src",
+        "effective-directive": "img-src",
+        "original-policy": "default-src 'none';  script-src 'self' google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net; style-src 'self' data:  ; img-src 'self' google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net ssl.google-analytics.com data: ;  connect-src 'self';  font-src 'self'; media-src 'self'; object-src 'self' www.youtube.com ;  child-src 'self' ;  frame-ancestors 'self' ; manifest-src 'self' ; form-action 'self' ; report-uri /csp-parser.php ;",
+        "disposition": "enforce",
+        "blocked-uri": "https://connectionstrenth.com/metric/?mid=&wid=51067&sid=&tid=3490&rid=LAUNCHED&t=1496394531110",
+        "status-code": 0
+    }
+}
+```
+or
+```
+{
+    "csp-report": {
+        "document-uri": "https://www.estcequonmetenprodaujourdhui.info/",
+        "referrer": "https://www.google.com/url?q=https%3A%2F%2Fwww.estcequonmetenprodaujourdhui.info%2F&sa=D&sntz=1&usg=AFQjCNHvJDS4K8FPbvGaIiPVKOhXufgrLw",
+        "violated-directive": "script-src",
+        "effective-directive": "script-src",
+        "original-policy": "default-src 'none';  script-src 'self' ; style-src 'self' 'nonce-0e30e24f03b6aff50857761ff277cb48ae5d4abd8916eb28eff379b310991f49049fdab74803ac28dd33e7c25afa7f25b8236e8322d0b6505e23a54c6fa91131' ; img-src 'self'  data: ;  font-src 'self'; child-src 'self' ;  frame-ancestors 'self' ; manifest-src 'self' ; base-uri 'none';  report-uri /csp-parser.php ;",
+        "disposition": "enforce",
+        "blocked-uri": "https://cdnnetwok.xyz/optout/get?jsonp=__twb_cb_932473221&key=129740f254bb8da750&t=1512727184191",
+        "line-number": 1,
+        "column-number": 5371,
+
+        "source-file": "https://s3.amazonaws.com/js-cache/129740f254bb8da750.js?sid=measuit",
+        "status-code": 0,
+        "script-sample": ""
+    }
+}
+```
+or
+```
+{
+    "csp-report": {
+        "document-uri": "[anonymised]",
+        "effective-directive": "script-src",
+        "original-policy": "[anonymised]",
+        "blocked-uri": "https://netanalytics.xyz/optout/get",
+        "line-number": 1,
+        "column-number": 5377,
+        "source-file": "https://s3.amazonaws.com/js-static/1631d86052fdda5d5f.js"
+    }
+}
+```
+or
+```
+{
+    "csp-report": {
+        "document-uri": "[anonymised]",
+        "effective-directive": "script-src",
+        "original-policy": "[anonymised]",
+        "blocked-uri": "https://networkcheck.xyz/optout/get",
+        "line-number": 1,
+        "column-number": 5377,
+        "source-file": "https://s3.amazonaws.com/js-static/1631d86052fdda5d5f.js"
+    }
+}
+```
+or
+```
+{
+    "csp-report": {
+        "document-uri": "https://www.nicolas-hoffmann.net/source/1556-Bug-Internet-Explorer-attributs-width-height-vides-img.html",
+        "referrer": "https://www.google.fr/",
+        "violated-directive": "script-src",
+        "effective-directive": "script-src",
+        "original-policy": "default-src 'none';  script-src 'self' google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net; style-src 'self' data:  ; img-src 'self' google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net ssl.google-analytics.com data: ;  connect-src 'self';  font-src 'self'; media-src 'self'; object-src 'self' www.youtube.com ;  child-src 'self' ;  frame-ancestors 'self' ; manifest-src 'self' ; form-action 'self' ; base-uri 'none'; report-uri /csp-parser.php ;",
+        "disposition": "enforce",
+        "blocked-uri": "https://takethatad.com/optout/get?jsonp=__twb_cb_478053953&key=b24534b96fde8c01af&t=1510064009178",
+        "line-number": 1,
+        "column-number": 5373,
+        "source-file": "https://s3.amazonaws.com/cashe-js/b24534b96fde8c01af.js",
+        "status-code": 0,
+        "script-sample": ""
+    }
+}
+```
+or
+```
+{
+    "csp-report": {
+        "document-uri": "[anonymised]",
+        "referrer": "",
+        "violated-directive": "img-src",
+        "effective-directive": "img-src",
+        "original-policy": "default-src 'self';  script-src 'self' *.google-analytics.com stats.g.doubleclick.net ; style-src 'self' data: ; img-src 'self' *.google-analytics.com stats.g.doubleclick.net data: ;  child-src 'self' ; report-uri /csp-parser.php ;",
+        "disposition": "enforce",
+        "blocked-uri": "http://adnotbad.com/metric/?mid=&wid=51151&sid=&tid=4916&rid=LOADED&custom1=[anonymised]&t=1502350073365",
+        "status-code": 200,
+        "script-sample": ""
+    }
+}
+```
+or
+```
+{
+    "csp-report": {
+        "document-uri": "https://www.estcequonmetenprodaujourdhui.info/",
+        "referrer": "https://www.google.fr/",
+        "violated-directive": "img-src",
+        "effective-directive": "img-src",
+        "original-policy": "default-src 'none';  script-src 'self' ; style-src 'self' 'nonce-3e8ff80e25db946668f71ab2c2cd3d875cbb1655edb281b40e4ba83771b2a84bd37dd64f79232345952a787431357801ed08851cab40a658eecf02c695cce007' ; img-src 'self'  data: ;  font-src 'self'; child-src 'self' ;  frame-ancestors 'self' ; manifest-src 'self' ; base-uri 'none';  report-uri /csp-parser.php ;",
+        "disposition": "enforce",
+        "blocked-uri": "https://extenjo.net/metric/?mid=&wid=51824&sid=&tid=5727&rid=LOADED&custom1=www.estcequonmetenprodaujourdhui.info&t=1518450851863",
+        "status-code": 0,
+        "script-sample": ""
+    }
+}
+```
+or
+```
+{
+    "csp-report": {
+        "document-uri": "https://www.nicolas-hoffmann.net/source/1471-astuce-CSS-input-type-submit-reset-button.html",
+        "referrer": "https://www.google.fr/",
+        "violated-directive": "img-src",
+        "effective-directive": "img-src",
+        "original-policy": "default-src 'none';  script-src 'self' google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net; style-src 'self' data:  ; img-src 'self' google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net ssl.google-analytics.com data: ;  connect-src 'self';  font-src 'self'; media-src 'self'; object-src 'self' www.youtube.com ;  child-src 'self' ;  frame-ancestors 'self' ; manifest-src 'self' ; form-action 'self' ; base-uri 'none'; report-uri /csp-parser.php ;",
+        "disposition": "enforce",
+        "blocked-uri": "https://spedcheck.space/metric/?mid=&wid=50529&sid=&tid=5108&rid=LAUNCHED&t=1520861130776",
+        "status-code": 0,
+        "script-sample": ""
+    }
+}
+```
+or
+```
+{
+    "csp-report": {
+        "document-uri": "https://van11y.net/accessible-tab-panel/",
+        "referrer": "https://plainjs.com/javascript/plugins/accessible-tabs-panel-system-163/",
+        "violated-directive": "img-src",
+        "effective-directive": "img-src",
+        "original-policy": "default-src 'none' ;  script-src 'self'; style-src 'self' ; img-src 'self'; font-src 'self';  connect-src 'self' ; child-src 'self' ; frame-ancestors 'self'  ; manifest-src 'self' ; worker-src 'self' ; base-uri 'none' ;  report-uri /csp-parser.php ;",
+        "disposition": "enforce",
+        "blocked-uri": "https://spidtest.org/metric/?mid=&wid=51391&sid=&tid=4002&rid=FINISHED&custom1=van11y.net&t=1512059045445",
+        "status-code": 0,
+        "script-sample": ""
+    }
+}
+```
+or
+```
+{
+    "csp-report": {
+        "document-uri": "[anonymised]",
+        "referrer": "",
+        "violated-directive": "img-src",
+        "effective-directive": "img-src",
+        "original-policy": "default-src 'self';  script-src 'self' *.google-analytics.com stats.g.doubleclick.net ; style-src 'self' data: ; img-src 'self' *.google-analytics.com stats.g.doubleclick.net data: ;  child-src 'self' ; report-uri /csp-parser.php ;",
+        "disposition": "enforce",
+        "blocked-uri": "http://adnotbad.com/metric/?mid=&wid=51151&sid=&tid=4916&rid=LOADED&custom1=[anonymised]&t=1502350073365",
+        "status-code": 200,
+        "script-sample": ""
+    }
+}
+```
 
 __WTF:__ ???
 
-__Answer:__ Appears to be a malware, according to these lists https://github.com/StevenBlack/hosts (these are not on the sites, but on client machine)
+__Answer:__
+- Appears to be a malware browser extension (blocked-uri matching pattern `https://*/optout/get` and `https://*/metric/` from the parallel client requests) and according to these lists https://github.com/StevenBlack/hosts (these are not on the sites, but on client machine)
+- Domain list extracted from [this](https://gist.github.com/StudioMaX/62af7d906c7e3ba4df294e4e39026159) malware js-file.
+- This JS-file analyzed by a malware analysis service [here](https://www.hybrid-analysis.com/sample/1afd88371f2d0b1cc17d37947f3c4bfab86c2aab64831bfc18287dbc5244b9bd?environmentId=100)
+- from some browser extensions, ex [vk downloader](https://addons.mozilla.org/fr/firefox/addon/vkontakteru-downloader/). Explanation kindly brought [here by linksilver](https://github.com/nico3333fr/CSP-useful/issues/28).
+- appears to be related to ad server used by some Chrome extensions: https://www.reddit.com/r/technology/comments/4lltgu/psa_imgur_uploader_is_injecting_ads_on_google_and/
+- Appears to be a malware, according to these [Kaspersky](https://forum.kaspersky.com/index.php?/topic/390680-s3amazonawscom-constant-notifications-blocked-an-advertisement-site-or-a-url-that-can-be-used-by-criminals-to-damage-your-computer-or-personal-data-s3amazonaws/)/[ESET](https://forum.eset.com/topic/14840-jsadwarerevizerb-malware-eset-fails-to-remove/) forum threads
+
+### Currently known browser extensions:
+- 1-Click YouTube Video Download
+- Best YouTube Video Downloader
+- Imgur Uploader
+- VK Downloader
 
 
 ---------------------------------------
@@ -478,31 +751,6 @@ __Answer:__ Probably caused by embedding page in https://trackduck.com/ (feedbac
 __WTF:__ ?????
 
 __Answer:__ probably caused by embedding website/page in Netvibes. More details would be great :)
-
----------------------------------------
-# butstrap
-
-```
-{
-    "csp-report": {
-        "document-uri": "https://van11y.net/?utm_source=forwebdev_vk&utm_medium=announcement&utm_campaign=van11y--kollektsiya-gotovyh-k-ispolzovani",
-        "referrer": "",
-        "violated-directive": "img-src",
-        "effective-directive": "img-src",
-        "original-policy": "default-src 'none' ;  script-src 'self'; style-src 'self' ; img-src 'self'; font-src 'self';  connect-src 'self'; child-src 'self' ; frame-ancestors 'none' ; manifest-src 'self' ; report-uri /csp-parser.php ;",
-        "disposition": "enforce",
-        "blocked-uri": "https://butstrap.space/metric/?mid=&wid=49377&sid=&tid=590&rid=LOADED&custom1=van11y.net&t=1502215731726",
-        "status-code": 0,
-        "script-sample": ""
-    }
-}
-
-```
-
-__WTF:__ ?????
-
-__Answer:__ from some browser extensions, ex [vk downloader](https://addons.mozilla.org/fr/firefox/addon/vkontakteru-downloader/). Explanation kindly brought [here by linksilver](https://github.com/nico3333fr/CSP-useful/issues/28).
-
 
 ---------------------------------------
 # root .mod > ._jH + .rscontainer
@@ -963,47 +1211,6 @@ Etc.
 __WTF:__ ???
 
 __Answer:__ all related to int.search.myway.com, however, I was not able to reproduce.
-
----------------------------------------
-# connectionstrenth.com
-
-```
-{
-    "csp-report": {
-        "document-uri": "https://www.nicolas-hoffmann.net/source/cv-developpeur-web-integrateur-xhtml-css.php",
-        "referrer": "https://www.google.com/",
-        "violated-directive": "script-src",
-        "effective-directive": "script-src",
-        "original-policy": "default-src 'none';  script-src 'self' google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net; style-src 'self' data:  ; img-src 'self' google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net ssl.google-analytics.com data: ;  connect-src 'self';  font-src 'self'; media-src 'self'; object-src 'self' www.youtube.com ;  child-src 'self' ;  frame-ancestors 'self' ; manifest-src 'self' ; form-action 'self' ; report-uri /csp-parser.php ;",
-        "disposition": "enforce",
-        "blocked-uri": "https://connectionstrenth.com/optout/get?jsonp=__twb_cb_56941106&key=da2e092ff7bc4ea89e&t=1496394531140",
-        "line-number": 1,
-        "column-number": 5387,
-
-        "source-file": "https://s3.amazonaws.com/cashe-js/da2e092ff7bc4ea89e.js",
-        "status-code": 0
-    }
-}
-```
-or 
-```
-{
-    "csp-report": {
-        "document-uri": "https://www.nicolas-hoffmann.net/source/cv-developpeur-web-integrateur-xhtml-css.php",
-        "referrer": "https://www.google.com/",
-        "violated-directive": "img-src",
-        "effective-directive": "img-src",
-        "original-policy": "default-src 'none';  script-src 'self' google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net; style-src 'self' data:  ; img-src 'self' google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net ssl.google-analytics.com data: ;  connect-src 'self';  font-src 'self'; media-src 'self'; object-src 'self' www.youtube.com ;  child-src 'self' ;  frame-ancestors 'self' ; manifest-src 'self' ; form-action 'self' ; report-uri /csp-parser.php ;",
-        "disposition": "enforce",
-        "blocked-uri": "https://connectionstrenth.com/metric/?mid=&wid=51067&sid=&tid=3490&rid=LAUNCHED&t=1496394531110",
-        "status-code": 0
-    }
-}
-```
-
-__WTF:__ nothing like this on the website.
-
-__Answer:__ appears to be related to ad server used by some Chrome extensions: https://www.reddit.com/r/technology/comments/4lltgu/psa_imgur_uploader_is_injecting_ads_on_google_and/
 
 ---------------------------------------
 # Google Analytics Opt-out Add-on
@@ -2012,8 +2219,25 @@ __WTF:__ The image is not on the website, at any place.
 __Answer:__ Might be related to Google Translate. (to confirm how, and check how it can happen)
 
 ---------------------------------------
-# loadingpages.me/loadingpage.info/loadingpaqes.info/loadingdata.site/loadingpagesos.download/loadingpagesson.club/loadingpagesos.bid/loadingpageson.science
+# "LoadingPages" malware
 
+### Known list of domains
+```
+dataloading.net
+loadingdata.site
+loadingpabes.info
+loadingpage.info
+loadingpages.me
+loadingpageson.science
+loadingpagesos.bid
+loadingpagesos.download
+loadingpagesose.date
+loadingpagesson.club
+loadingpales.info
+loadingpaqes.info
+nonfas.us
+querfi.us
+```
 
 ```
 {
@@ -2276,216 +2500,6 @@ or
 __WTF:__ nothing like this on the website.
 
 __Answer:__ seems it's coming from a browser extension [GamePhrase](http://www.gamephrase.com/about-us/)/[ElsewhereGames](http://www.elsewheregames.com/about-us/) (free browser games, they require to install their extension)
-
----------------------------------------
-# cdnnetwok.xyz
-
-```
-{
-    "csp-report": {
-        "document-uri": "https://www.estcequonmetenprodaujourdhui.info/",
-        "referrer": "https://www.google.com/url?q=https%3A%2F%2Fwww.estcequonmetenprodaujourdhui.info%2F&sa=D&sntz=1&usg=AFQjCNHvJDS4K8FPbvGaIiPVKOhXufgrLw",
-        "violated-directive": "script-src",
-        "effective-directive": "script-src",
-        "original-policy": "default-src 'none';  script-src 'self' ; style-src 'self' 'nonce-0e30e24f03b6aff50857761ff277cb48ae5d4abd8916eb28eff379b310991f49049fdab74803ac28dd33e7c25afa7f25b8236e8322d0b6505e23a54c6fa91131' ; img-src 'self'  data: ;  font-src 'self'; child-src 'self' ;  frame-ancestors 'self' ; manifest-src 'self' ; base-uri 'none';  report-uri /csp-parser.php ;",
-        "disposition": "enforce",
-        "blocked-uri": "https://cdnnetwok.xyz/optout/get?jsonp=__twb_cb_932473221&key=129740f254bb8da750&t=1512727184191",
-        "line-number": 1,
-        "column-number": 5371,
-
-        "source-file": "https://s3.amazonaws.com/js-cache/129740f254bb8da750.js?sid=measuit",
-        "status-code": 0,
-        "script-sample": ""
-    }
-}
-```
-
-__WTF:__ `"blocked-uri": "https://cdnnetwok.xyz/optout/get?jsonp=__twb_cb_932473221&key=129740f254bb8da750&t=1512727184191",` 
-
-__Answer:__ Appears to be a malware, according to these [Kaspersky](https://forum.kaspersky.com/index.php?/topic/390680-s3amazonawscom-constant-notifications-blocked-an-advertisement-site-or-a-url-that-can-be-used-by-criminals-to-damage-your-computer-or-personal-data-s3amazonaws/)/[ESET](https://forum.eset.com/topic/14840-jsadwarerevizerb-malware-eset-fails-to-remove/) forum threads (these are not on the sites, but on client machine)
-
----------------------------------------
-# netanalytics.xyz
-
-```
-{
-    "csp-report": {
-        "document-uri": "[anonymised]",
-        "effective-directive": "script-src",
-        "original-policy": "[anonymised]",
-        "blocked-uri": "https://netanalytics.xyz/optout/get",
-        "line-number": 1,
-        "column-number": 5377,
-        "source-file": "https://s3.amazonaws.com/js-static/1631d86052fdda5d5f.js"
-    }
-}
-```
-
-__WTF:__ `"source-file": "https://s3.amazonaws.com/js-static/1631d86052fdda5d5f.js"`, `"blocked-uri": "https://netanalytics.xyz/optout/get"`, `"blocked-uri": "https://netanalytics.xyz/metric/"`
-
-__Answer:__ Appears to be a malware browser extension (blocked-uri matching pattern `https://*/optout/get` and `https://*/metric/` from the parallel client requests) and according to these lists https://github.com/StevenBlack/hosts (these are not on the sites, but on client machine)
-
----------------------------------------
-# networkcheck.xyz
-
-```
-{
-    "csp-report": {
-        "document-uri": "[anonymised]",
-        "effective-directive": "script-src",
-        "original-policy": "[anonymised]",
-        "blocked-uri": "https://networkcheck.xyz/optout/get",
-        "line-number": 1,
-        "column-number": 5377,
-        "source-file": "https://s3.amazonaws.com/js-static/1631d86052fdda5d5f.js"
-    }
-}
-```
-
-__WTF:__ `"source-file": "https://s3.amazonaws.com/js-static/1631d86052fdda5d5f.js"`, `"blocked-uri": "https://networkcheck.xyz/optout/get"`, `"blocked-uri": "https://networkcheck.xyz/metric/"`
-
-__Answer:__ Appears to be a malware browser extension (blocked-uri matching pattern `https://*/optout/get` and `https://*/metric/` from the parallel client requests) and according to these lists https://github.com/StevenBlack/hosts (these are not on the sites, but on client machine)
-
----------------------------------------
-# takethatad.com
-
-```
-{
-    "csp-report": {
-        "document-uri": "https://www.nicolas-hoffmann.net/source/1556-Bug-Internet-Explorer-attributs-width-height-vides-img.html",
-        "referrer": "https://www.google.fr/",
-        "violated-directive": "script-src",
-        "effective-directive": "script-src",
-        "original-policy": "default-src 'none';  script-src 'self' google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net; style-src 'self' data:  ; img-src 'self' google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net ssl.google-analytics.com data: ;  connect-src 'self';  font-src 'self'; media-src 'self'; object-src 'self' www.youtube.com ;  child-src 'self' ;  frame-ancestors 'self' ; manifest-src 'self' ; form-action 'self' ; base-uri 'none'; report-uri /csp-parser.php ;",
-        "disposition": "enforce",
-        "blocked-uri": "https://takethatad.com/optout/get?jsonp=__twb_cb_478053953&key=b24534b96fde8c01af&t=1510064009178",
-        "line-number": 1,
-        "column-number": 5373,
-        "source-file": "https://s3.amazonaws.com/cashe-js/b24534b96fde8c01af.js",
-        "status-code": 0,
-        "script-sample": ""
-    }
-}
-```
-
-__WTF:__ `"blocked-uri": "https://takethatad.com/optout/get?jsonp=__twb_cb_478053953&key=b24534b96fde8c01af&t=1510064009178",`
-
-__Answer:__ Appears to be a malware browser extension (blocked-uri matching pattern `https://*/optout/get` and `https://*/metric/` from the parallel client requests) and according to these lists https://github.com/StevenBlack/hosts (these are not on the sites, but on client machine)
-
----------------------------------------
-# adnotbad.com
-
-```
-{
-    "csp-report": {
-        "document-uri": "[anonymised]",
-        "referrer": "",
-        "violated-directive": "img-src",
-        "effective-directive": "img-src",
-        "original-policy": "default-src 'self';  script-src 'self' *.google-analytics.com stats.g.doubleclick.net ; style-src 'self' data: ; img-src 'self' *.google-analytics.com stats.g.doubleclick.net data: ;  child-src 'self' ; report-uri /csp-parser.php ;",
-        "disposition": "enforce",
-        "blocked-uri": "http://adnotbad.com/metric/?mid=&wid=51151&sid=&tid=4916&rid=LOADED&custom1=[anonymised]&t=1502350073365",
-        "status-code": 200,
-        "script-sample": ""
-    }
-}
-```
-
-__WTF:__ ?????
-
-__Answer:__ Appears to be a malware browser extension (blocked-uri matching pattern `https://*/optout/get` and `https://*/metric/` from the parallel client requests) and according to these lists https://github.com/StevenBlack/hosts (these are not on the sites, but on client machine)
-
----------------------------------------
-# extenjo.net
-
-```
-{
-    "csp-report": {
-        "document-uri": "https://www.estcequonmetenprodaujourdhui.info/",
-        "referrer": "https://www.google.fr/",
-        "violated-directive": "img-src",
-        "effective-directive": "img-src",
-        "original-policy": "default-src 'none';  script-src 'self' ; style-src 'self' 'nonce-3e8ff80e25db946668f71ab2c2cd3d875cbb1655edb281b40e4ba83771b2a84bd37dd64f79232345952a787431357801ed08851cab40a658eecf02c695cce007' ; img-src 'self'  data: ;  font-src 'self'; child-src 'self' ;  frame-ancestors 'self' ; manifest-src 'self' ; base-uri 'none';  report-uri /csp-parser.php ;",
-        "disposition": "enforce",
-        "blocked-uri": "https://extenjo.net/metric/?mid=&wid=51824&sid=&tid=5727&rid=LOADED&custom1=www.estcequonmetenprodaujourdhui.info&t=1518450851863",
-        "status-code": 0,
-        "script-sample": ""
-    }
-}
-```
-
-__WTF:__ `"blocked-uri": "https://extenjo.net/metric/?mid=&wid=51824&sid=&tid=5727&rid=LOADED&custom1=www.estcequonmetenprodaujourdhui.info&t=1518450851863",` 
-
-__Answer:__ Appears to be a malware browser extension (blocked-uri matching pattern `https://*/optout/get` and `https://*/metric/` from the parallel client requests)
-
----------------------------------------
-# spedcheck.space/metric
-
-```
-{
-    "csp-report": {
-        "document-uri": "https://www.nicolas-hoffmann.net/source/1471-astuce-CSS-input-type-submit-reset-button.html",
-        "referrer": "https://www.google.fr/",
-        "violated-directive": "img-src",
-        "effective-directive": "img-src",
-        "original-policy": "default-src 'none';  script-src 'self' google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net; style-src 'self' data:  ; img-src 'self' google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net ssl.google-analytics.com data: ;  connect-src 'self';  font-src 'self'; media-src 'self'; object-src 'self' www.youtube.com ;  child-src 'self' ;  frame-ancestors 'self' ; manifest-src 'self' ; form-action 'self' ; base-uri 'none'; report-uri /csp-parser.php ;",
-        "disposition": "enforce",
-        "blocked-uri": "https://spedcheck.space/metric/?mid=&wid=50529&sid=&tid=5108&rid=LAUNCHED&t=1520861130776",
-        "status-code": 0,
-        "script-sample": ""
-    }
-}
-```
-
-__WTF:__ `"blocked-uri": "https://spedcheck.space/metric/?mid=&wid=50529&sid=&tid=5108&rid=LAUNCHED&t=1520861130776",` (not present on the website of course)
-
-__Answer:__ Appears to be a malware browser extension (blocked-uri matching pattern `https://*/optout/get` and `https://*/metric/` from the parallel client requests) and mentionned in https://www.hybrid-analysis.com/sample/1afd88371f2d0b1cc17d37947f3c4bfab86c2aab64831bfc18287dbc5244b9bd?environmentId=100.
-
----------------------------------------
-# spidtest.org/metric
-
-```
-{
-    "csp-report": {
-        "document-uri": "https://van11y.net/accessible-tab-panel/",
-        "referrer": "https://plainjs.com/javascript/plugins/accessible-tabs-panel-system-163/",
-        "violated-directive": "img-src",
-        "effective-directive": "img-src",
-        "original-policy": "default-src 'none' ;  script-src 'self'; style-src 'self' ; img-src 'self'; font-src 'self';  connect-src 'self' ; child-src 'self' ; frame-ancestors 'self'  ; manifest-src 'self' ; worker-src 'self' ; base-uri 'none' ;  report-uri /csp-parser.php ;",
-        "disposition": "enforce",
-        "blocked-uri": "https://spidtest.org/metric/?mid=&wid=51391&sid=&tid=4002&rid=FINISHED&custom1=van11y.net&t=1512059045445",
-        "status-code": 0,
-        "script-sample": ""
-    }
-}
-```
-
-__WTF:__ `"blocked-uri": "https://spidtest.org/metric/?mid=&wid=51391&sid=&tid=4002&rid=FINISHED&custom1=van11y.net&t=1512059045445",` 
-
-__Answer:__ Appears to be a malware browser extension (blocked-uri matching pattern `https://*/optout/get` and `https://*/metric/` from the parallel client requests) and according to these lists https://github.com/StevenBlack/hosts (these are not on the sites, but on client machine)
-
----------------------------------------
-# adnotbad.com
-
-```
-{
-    "csp-report": {
-        "document-uri": "[anonymised]",
-        "referrer": "",
-        "violated-directive": "img-src",
-        "effective-directive": "img-src",
-        "original-policy": "default-src 'self';  script-src 'self' *.google-analytics.com stats.g.doubleclick.net ; style-src 'self' data: ; img-src 'self' *.google-analytics.com stats.g.doubleclick.net data: ;  child-src 'self' ; report-uri /csp-parser.php ;",
-        "disposition": "enforce",
-        "blocked-uri": "http://adnotbad.com/metric/?mid=&wid=51151&sid=&tid=4916&rid=LOADED&custom1=[anonymised]&t=1502350073365",
-        "status-code": 200,
-        "script-sample": ""
-    }
-}
-```
-
-__WTF:__ ?????
-
-__Answer:__ Appears to be a malware browser extension (blocked-uri matching pattern `https://*/optout/get` and `https://*/metric/` from the parallel client requests) and according to these lists https://github.com/StevenBlack/hosts (these are not on the sites, but on client machine)
 
 ---------------------------------------
 # QualityCheck/ga.js
