@@ -2532,4 +2532,22 @@ __WTF:__ This is an error from template Function constructor
 __Answer:__ This is a bug in Apple QuickLook. When you e.g. open Excel document from your page, it is opened in browser using QuickLook and QuickLook patches your CSP policy to add "x-apple-ql-id:" source. When you navigate back, CSP is not restored and could lead to violation reports.
 
 ---------------------------------------
+# getstencil.com
+
+```
+{
+    "csp-report": {
+        "blocked-uri": "https://getstencil.com",
+        "document-uri": "[your_site_uri]",
+        "original-policy": "[skip]... frame-src 'none'; ...[skip]",
+        "violated-directive": "frame-src"
+    }
+}
+```
+
+__WTF:__ ????? 
+
+__Answer:__ Looks like user with plugin from https://getstencil.com. This plugin use iframe to embed visited site.
+
+---------------------------------------
 If you have some examples to share (even if you don't know what the fuck it is coming from), feel free to share them. Anonymize the URL/policy if needed.
