@@ -169,7 +169,7 @@ __WTF:__ `"script-sample": ".cip-genpw-icon.cip-icon-key-small {back...",`
 __Answer:__ seems it's coming from a browser extension called [ChromeIPass](https://github.com/pfn/passifox/blob/master/chromeipass/chromeipass.css#L45) and/or its Firefox counterpart PassIFox. (thanks @parseword for [the info](https://github.com/nico3333fr/CSP-useful/issues/40) :) )
 
 ---------------------------------------
-# Ad-framework used in browser extensions with name like "Best YouTube Video Downloader", "1-Click YouTube Video Download", etc.
+# Monetizus.com ad-framework used in browser extensions
 
 ### Known list of domains:
 ```
@@ -188,6 +188,7 @@ cdncash.com
 cdncash.net
 cdncash.org
 cdnclntr.com
+cdnjs.space
 cdnlvry.xyz
 cdnnetwok.xyz
 cdnstr.xyz
@@ -197,6 +198,7 @@ connectionstrenth.com
 domainanalyzing.xyz
 domaincdn.xyz
 domainvalidation.xyz
+eluxer.net
 extenjo.net
 flowanalytic.site
 ge0ip.com
@@ -205,6 +207,7 @@ ge0ip.org
 glganltcs.space
 glgnltks.xyz
 icontent.us
+infoanalytics.tools
 intrnlcss.xyz
 jsfuel.com
 lancheck.net
@@ -224,8 +227,12 @@ spaceshipad.com
 spedcheck.space
 spidtest.org
 spidtest.space
+statcounter.biz
+statvalidation.website
 takethatad.com
+thisadsfor.us
 tradeadsexchange.com
+trafficvalidation.tools
 trendtext.eu
 validanalytics.xyz
 validationcdn.xyz
@@ -233,6 +240,13 @@ validcdn.xyz
 validcndnet.xyz
 validdomain.xyz
 whatzmyip.net
+worldnaturenet.xyz
+www1.thrgh.space
+www4.thrgh.space
+www5.thrgh.space
+www7.thrgh.space
+www8.thrgh.space
+www9.thrgh.space
 ydpi.pw
 ```
 
@@ -446,6 +460,62 @@ or
         "blocked-uri": "http://adnotbad.com/metric/?mid=&wid=51151&sid=&tid=4916&rid=LOADED&custom1=[anonymised]&t=1502350073365",
         "status-code": 200,
         "script-sample": ""
+    }
+}
+```
+or
+```
+{
+    "csp-report": {
+        "document-uri": "[anonymised]",
+        "effective-directive": "script-src",
+        "original-policy": "[anonymised]",
+        "blocked-uri": "https://infoanalytics.tools/optout/get?jsonp=__twb_cb_659869152&key=17416ac5a9194609e3&t=1527290417218",
+        "line-number": 1,
+        "column-number": 5383,
+        "source-file": "https://s3.amazonaws.com/jscache/17416ac5a9194609e3.js"
+    }
+}
+```
+or
+```
+{
+    "csp-report": {
+        "document-uri": "[anonymised]",
+        "effective-directive": "script-src",
+        "original-policy": "[anonymised]",
+        "blocked-uri": "https://statcounter.biz/optout/get?jsonp=__twb_cb_236927780&key=175abcd073ccafc00c&t=1527049545629",
+        "line-number": 1,
+        "column-number": 5375,
+        "source-file": "https://s3.amazonaws.com/jscache/175abcd073ccafc00c.js"
+    }
+}
+```
+or
+```
+{
+    "csp-report": {
+        "document-uri": "[anonymised]",
+        "effective-directive": "script-src",
+        "original-policy": "[anonymised]",
+        "blocked-uri": "https://statvalidation.website/optout/get?jsonp=__twb_cb_782112499&key=15ab0c1ea47bf53f33&t=1527416602469",
+        "line-number": 1,
+        "column-number": 5389,
+        "source-file": "https://s3.amazonaws.com/js-static/15ab0c1ea47bf53f33.js"
+    }
+}
+```
+or
+```
+{
+    "csp-report": {
+        "document-uri": "[anonymised]",
+        "effective-directive": "script-src",
+        "original-policy": "[anonymised]",
+        "blocked-uri": "https://trafficvalidation.tools/optout/get?jsonp=__twb_cb_556044363&key=19ff3cca12e47e3099&t=1527481253681",
+        "line-number": 1,
+        "column-number": 5391,
+        "source-file": "https://s3.amazonaws.com/jscache/19ff3cca12e47e3099.js"
     }
 }
 ```
