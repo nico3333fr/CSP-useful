@@ -208,6 +208,7 @@ glganltcs.space
 glgnltks.xyz
 icontent.us
 infoanalytics.tools
+infoprovider.group
 intrnlcss.xyz
 jsfuel.com
 lancheck.net
@@ -2537,7 +2538,17 @@ __WTF:__ nothing like this on the website ```savingsslider-a.akamaihd.net```.
 __Answer:__ Appears to be a malware (browser extension Savings Slider): https://malwaretips.com/blogs/savings-slider-virus/ (these are not on the sites, but on client machine)
 
 ---------------------------------------
-# GamePhrase / ElsewhereGames
+# Free games with adware browser extension
+
+### Known list of domains:
+```
+elsewheregames.com
+fungamesshop.com
+gameandslash.com
+gamephrase.com
+gamersurface.com
+pinballpal.com
+```
 
 ```
 {
@@ -2563,6 +2574,58 @@ or
         "line-number": 1,
         "column-number": 17325,
         "source-file": "[anonymised]"
+    }
+}
+```
+or
+```
+{
+    "csp-report": {
+        "document-uri": "[anonymised]",
+        "effective-directive": "connect-src",
+        "original-policy": "[anonymised]",
+        "blocked-uri": "https://fungamesshop.com/api/pcgc?iid=5d640da1-43aa-43b4-abeb-13c2f6a2a36f&iidList=5d640da1-43aa-43b4-abeb-13c2f6a2a36f&ipt=false&itt=false",
+        "line-number": 1,
+        "column-number": 416874
+    }
+}
+```
+or
+```
+{
+    "csp-report": {
+        "document-uri": "[anonymised]",
+        "effective-directive": "connect-src",
+        "original-policy": "[anonymised]",
+        "blocked-uri": "https://gamersurface.com/api/pcgc?iid=9632d345-9768-4975-95d6-f6be20a9519c&iidList=9632d345-9768-4975-95d6-f6be20a9519c&ipt=false&itt=false",
+        "line-number": 1,
+        "column-number": 17325
+    }
+}
+```
+or
+```
+{
+    "csp-report": {
+        "document-uri": "[anonymised]",
+        "effective-directive": "connect-src",
+        "original-policy": "[anonymised]",
+        "blocked-uri": "https://pinballpal.com/api/pcgc?iid=6ca7da4e-2638-4198-84fc-78d26dc73484&iidList=6ca7da4e-2638-4198-84fc-78d26dc73484&ipt=false&itt=false",
+        "line-number": 1,
+        "column-number": 17325
+    }
+}
+```
+or
+```
+{
+    "csp-report": {
+        "document-uri": "[anonymised]",
+        "effective-directive": "connect-src",
+        "original-policy": "[anonymised]",
+        "blocked-uri": "https://gameandslash.com/api/pcgc?iid=a12e8011-68ea-4b30-9578-c0db8da6db3a&iidList=a12e8011-68ea-4b30-9578-c0db8da6db3a&ipt=false&itt=true",
+        "line-number": 1,
+        "column-number": 17325
     }
 }
 ```
