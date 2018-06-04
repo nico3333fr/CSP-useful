@@ -4,6 +4,29 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 ---------------------------------------
+# ;undefined
+
+```
+{
+    "csp-report": {
+        "blocked-uri": "self",
+        "document-uri": "https://www.estcequonmetenprodaujourdhui.info/",
+        "line-number": 1,
+        "original-policy": "default-src 'none'; script-src https://www.estcequonmetenprodaujourdhui.info; style-src https://www.estcequonmetenprodaujourdhui.info 'nonce-7e4af45f25cc287c8a81085d3e7bdb71953f93d6851842bee46edbafac94d661d5820b104241f0ee9b32a83adaed85e5a381c7628de1fec58f96a088057ae5b9'; img-src https://www.estcequonmetenprodaujourdhui.info data:; font-src https://www.estcequonmetenprodaujourdhui.info; child-src https://www.estcequonmetenprodaujourdhui.info; frame-ancestors https://www.estcequonmetenprodaujourdhui.info; manifest-src https://www.estcequonmetenprodaujourdhui.info; base-uri 'none'; report-uri https://www.estcequonmetenprodaujourdhui.info/csp-parser.php",
+        "referrer": "",
+        "script-sample": ";undefined",
+        "source-file": "https://www.estcequonmetenprodaujourdhui.info/",
+        "violated-directive": "script-src https://www.estcequonmetenprodaujourdhui.info"
+    }
+}
+```
+
+__WTF:__ `"script-sample": ";undefined",` (not present on the website of course)
+
+__Answer:__ any idea? (I've seen it a lot on my websites)
+
+
+---------------------------------------
 # s3gt_translate_tooltip_mini
 
 ```
