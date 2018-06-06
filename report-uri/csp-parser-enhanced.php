@@ -320,7 +320,7 @@ $tab_filter = array(
     ),
     'dataloading.net' => array (
          'filter_on' => 'blocked_uri',
-         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#dataloadingnet',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#loadingpages-malware',
          'comment' => ''
     ),
     'e={Vue:null' => array (
@@ -375,7 +375,7 @@ $tab_filter = array(
     ),
     'loadingdata.site' => array (
          'filter_on' => 'blocked_uri',
-         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#loadingpagesmeloadingpageinfoloadingpaqesinfo',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#loadingpages-malware',
          'comment' => ''
     ),
     'ZennoPoster' => array (
@@ -425,17 +425,17 @@ $tab_filter = array(
     ),
     'loadingpages.me' => array (
          'filter_on' => 'blocked_uri',
-         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#loadingpagesmeloadingpageinfoloadingpaqesinfo',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#loadingpages-malware',
          'comment' => ''
     ),
     'loadingpages.info' => array (
          'filter_on' => 'blocked_uri',
-         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#loadingpagesmeloadingpageinfoloadingpaqesinfo',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#loadingpages-malware',
          'comment' => ''
     ),
     'loadingpage.info' => array (
          'filter_on' => 'blocked_uri',
-         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#loadingpagesmeloadingpageinfoloadingpaqesinfo',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#loadingpages-malware',
          'comment' => ''
     ),
     'ze406soi.ru' => array (
@@ -670,7 +670,7 @@ $tab_filter = array(
     ),
     'adnotbad.com' => array (
          'filter_on' => 'blocked_uri',
-         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#adnotbadcom',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#monetizuscom-ad-framework-used-in-browser-extensions',
          'comment' => ''
     ),
     '#A9AdsMiddleBoxTop' => array (
@@ -745,7 +745,7 @@ $tab_filter = array(
     ),
     'loadingpaqes.info' => array (
          'filter_on' => 'blocked_uri',
-         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#loadingpagesmeloadingpageinfoloadingpaqesinfo',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#loadingpages-malware',
          'comment' => ''
     ),
     'www.netvibes.com' => array (
@@ -840,7 +840,7 @@ $tab_filter = array(
     ),
     'takethatad.com' => array (
          'filter_on' => 'blocked_uri',
-         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#takethatadcom',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#monetizuscom-ad-framework-used-in-browser-extensions',
          'comment' => ''
     ),
     'document.currentScript.setAttribute' => array (
@@ -888,7 +888,7 @@ $tab_filter = array(
          'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#myshopmate',
          'comment' => ''
     ),
-    'spidtest.org/metric' => array (
+    'spidtest.org' => array (
          'filter_on' => 'blocked_uri',
          'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#spidtestorgmetric',
          'comment' => ''
@@ -976,6 +976,536 @@ $tab_filter = array(
     'substantielwww.dyndns.org' => array (
          'filter_on' => 'blocked_uri',
          'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#substantielwwwdyndnsorg',
+         'comment' => ''
+    ),
+    'extenjo.net' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#monetizuscom-ad-framework-used-in-browser-extensions',
+         'comment' => ''
+    ),
+    'fdz.octapi.net' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#fdzoctapinet',
+         'comment' => ''
+    ),
+    'static.hotjar.com' => array (
+         'filter_on' => 'source_file',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#hotjarcom',
+         'comment' => ''
+    ),
+    'inter.gamefunnetwork.com' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#intergamefunnetworkcom',
+         'comment' => ''
+    ),
+    'loadingpagesos.download' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#loadingpages-malware',
+         'comment' => ''
+    ),
+    'spedcheck.space' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#monetizuscom-ad-framework-used-in-browser-extensions',
+         'comment' => ''
+    ),
+    '&source=hangouts' => array (
+         'filter_on' => 'referrer',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#hangouts',
+         'comment' => ''
+    ),
+    'function (NAVIGATOR, OBJECT)' => array (
+         'filter_on' => 'script_sample',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#const-v8_stack_',
+         'comment' => ''
+    ),
+    'function(e){let t={};if(e.hasOwnProper' => array (
+         'filter_on' => 'script_sample',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#vue-devtools',
+         'comment' => ''
+    ),
+    'window.loop11ExtTerritory = true' => array (
+         'filter_on' => 'script_sample',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#windowloop11extterritory--true',
+         'comment' => ''
+    ),
+    'ffoodd/a11y.css' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#a11ycss',
+         'comment' => ''
+    ),
+    'canvaspl-a.akamaihd.net' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#savingsslider-aakamaihdnet--canvaspl-aakamaihdnet',
+         'comment' => ''
+    ),
+    'savingsslider-a.akamaihd.net' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#savingsslider-aakamaihdnet--canvaspl-aakamaihdnet',
+         'comment' => ''
+    ),
+    'www.ciuvo.com' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#ciuvo--steganos-apiciuvocom',
+         'comment' => ''
+    ),
+    's3gt_translate_tooltip_mini' => array (
+         'filter_on' => 'script_sample',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#s3gt_translate_tooltip_mini',
+         'comment' => ''
+    ),
+    'loadingpabes.info' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#loadingpages-malware',
+         'comment' => ''
+    ),
+    'loadingpageson.science' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#loadingpages-malware',
+         'comment' => ''
+    ),
+    'loadingpagesos.bid' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#loadingpages-malware',
+         'comment' => ''
+    ),
+    'loadingpagesose.date' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#loadingpages-malware',
+         'comment' => ''
+    ),
+    'loadingpagesson.club' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#loadingpages-malware',
+         'comment' => ''
+    ),
+    'loadingpales.info' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#loadingpages-malware',
+         'comment' => ''
+    ),
+    'nonfas.us' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#loadingpages-malware',
+         'comment' => ''
+    ),
+    'querfi.us' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#loadingpages-malware',
+         'comment' => ''
+    ),
+    'gamephrase.com' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#gamephrase--elsewheregames',
+         'comment' => ''
+    ),
+    'elsewheregames.com' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#gamephrase--elsewheregames',
+         'comment' => ''
+    ),
+    'getpocket.com' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#pocket',
+         'comment' => ''
+    ),
+    'moz-extension' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#moz-extension',
+         'comment' => ''
+    ),
+    'lnkr.us' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#monetizuscom-ad-framework-used-in-browser-extensions',
+         'comment' => ''
+    ),
+    'urlvalidation.com' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#monetizuscom-ad-framework-used-in-browser-extensions',
+         'comment' => ''
+    ),
+    'adrs.me' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#monetizuscom-ad-framework-used-in-browser-extensions',
+         'comment' => ''
+    ),
+    'adserv.info' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#monetizuscom-ad-framework-used-in-browser-extensions',
+         'comment' => ''
+    ),
+    'amiok.org' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#monetizuscom-ad-framework-used-in-browser-extensions',
+         'comment' => ''
+    ),
+    'analyzecdn.xyz' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#monetizuscom-ad-framework-used-in-browser-extensions',
+         'comment' => ''
+    ),
+    'analyzenetwork.xyz' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#monetizuscom-ad-framework-used-in-browser-extensions',
+         'comment' => ''
+    ),
+    'bootstrapnet.space' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#monetizuscom-ad-framework-used-in-browser-extensions',
+         'comment' => ''
+    ),
+    'butstrap.space' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#monetizuscom-ad-framework-used-in-browser-extensions',
+         'comment' => ''
+    ),
+    'cdnanalytics.xyz' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#monetizuscom-ad-framework-used-in-browser-extensions',
+         'comment' => ''
+    ),
+    'cdncash.com' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#monetizuscom-ad-framework-used-in-browser-extensions',
+         'comment' => ''
+    ),
+    'cdncash.net' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#monetizuscom-ad-framework-used-in-browser-extensions',
+         'comment' => ''
+    ),
+    'cdncash.org' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#monetizuscom-ad-framework-used-in-browser-extensions',
+         'comment' => ''
+    ),
+    'cdnclntr.com' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#monetizuscom-ad-framework-used-in-browser-extensions',
+         'comment' => ''
+    ),
+    'cdnjs.space' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#monetizuscom-ad-framework-used-in-browser-extensions',
+         'comment' => ''
+    ),
+    'cdnlvry.xyz' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#monetizuscom-ad-framework-used-in-browser-extensions',
+         'comment' => ''
+    ),
+    'cdnnetwok.xyz' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#monetizuscom-ad-framework-used-in-browser-extensions',
+         'comment' => ''
+    ),
+    'cdnstr.xyz' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#monetizuscom-ad-framework-used-in-browser-extensions',
+         'comment' => ''
+    ),
+    'cdnswf.xyz' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#monetizuscom-ad-framework-used-in-browser-extensions',
+         'comment' => ''
+    ),
+    'cdnvalid.xyz' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#monetizuscom-ad-framework-used-in-browser-extensions',
+         'comment' => ''
+    ),
+    'connectionstrenth.com' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#monetizuscom-ad-framework-used-in-browser-extensions',
+         'comment' => ''
+    ),
+    'domainanalyzing.xyz' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#monetizuscom-ad-framework-used-in-browser-extensions',
+         'comment' => ''
+    ),
+    'domaincdn.xyz' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#monetizuscom-ad-framework-used-in-browser-extensions',
+         'comment' => ''
+    ),
+    'domainvalidation.xyz' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#monetizuscom-ad-framework-used-in-browser-extensions',
+         'comment' => ''
+    ),
+    'eluxer.net' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#monetizuscom-ad-framework-used-in-browser-extensions',
+         'comment' => ''
+    ),
+    'flowanalytic.site' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#monetizuscom-ad-framework-used-in-browser-extensions',
+         'comment' => ''
+    ),
+    'ge0ip.com' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#monetizuscom-ad-framework-used-in-browser-extensions',
+         'comment' => ''
+    ),
+    'ge0ip.net' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#monetizuscom-ad-framework-used-in-browser-extensions',
+         'comment' => ''
+    ),
+    'ge0ip.org' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#monetizuscom-ad-framework-used-in-browser-extensions',
+         'comment' => ''
+    ),
+    'glganltcs.space' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#monetizuscom-ad-framework-used-in-browser-extensions',
+         'comment' => ''
+    ),
+    'glgnltks.xyz' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#monetizuscom-ad-framework-used-in-browser-extensions',
+         'comment' => ''
+    ),
+    'icontent.us' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#monetizuscom-ad-framework-used-in-browser-extensions',
+         'comment' => ''
+    ),
+    'infoanalytics.tools' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#monetizuscom-ad-framework-used-in-browser-extensions',
+         'comment' => ''
+    ),
+    'infoprovider.group' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#monetizuscom-ad-framework-used-in-browser-extensions',
+         'comment' => ''
+    ),
+    'intrnlcss.xyz' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#monetizuscom-ad-framework-used-in-browser-extensions',
+         'comment' => ''
+    ),
+    'jsfuel.com' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#monetizuscom-ad-framework-used-in-browser-extensions',
+         'comment' => ''
+    ),
+    'lancheck.net' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#monetizuscom-ad-framework-used-in-browser-extensions',
+         'comment' => ''
+    ),
+    'metrext.com' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#monetizuscom-ad-framework-used-in-browser-extensions',
+         'comment' => ''
+    ),
+    'netanalitics.space' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#monetizuscom-ad-framework-used-in-browser-extensions',
+         'comment' => ''
+    ),
+    'netanalytics.xyz' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#monetizuscom-ad-framework-used-in-browser-extensions',
+         'comment' => ''
+    ),
+    'netanalyzer.space' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#monetizuscom-ad-framework-used-in-browser-extensions',
+         'comment' => ''
+    ),
+    'netcheckcdn.xyz' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#monetizuscom-ad-framework-used-in-browser-extensions',
+         'comment' => ''
+    ),
+    'netstats.space' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#monetizuscom-ad-framework-used-in-browser-extensions',
+         'comment' => ''
+    ),
+    'netwcdn.xyz' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#monetizuscom-ad-framework-used-in-browser-extensions',
+         'comment' => ''
+    ),
+    'networkanalytics.xyz' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#monetizuscom-ad-framework-used-in-browser-extensions',
+         'comment' => ''
+    ),
+    'networkcheck.xyz' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#monetizuscom-ad-framework-used-in-browser-extensions',
+         'comment' => ''
+    ),
+    'ratexchange.net' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#monetizuscom-ad-framework-used-in-browser-extensions',
+         'comment' => ''
+    ),
+    'serverads.net' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#monetizuscom-ad-framework-used-in-browser-extensions',
+         'comment' => ''
+    ),
+    'siteheart.net' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#monetizuscom-ad-framework-used-in-browser-extensions',
+         'comment' => ''
+    ),
+    'spaceshipad.com' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#monetizuscom-ad-framework-used-in-browser-extensions',
+         'comment' => ''
+    ),
+    'spidtest.space' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#monetizuscom-ad-framework-used-in-browser-extensions',
+         'comment' => ''
+    ),
+    'statcounter.biz' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#monetizuscom-ad-framework-used-in-browser-extensions',
+         'comment' => ''
+    ),
+    'statvalidation.website' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#monetizuscom-ad-framework-used-in-browser-extensions',
+         'comment' => ''
+    ),
+    'thisadsfor.us' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#monetizuscom-ad-framework-used-in-browser-extensions',
+         'comment' => ''
+    ),
+    'tradeadsexchange.com' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#monetizuscom-ad-framework-used-in-browser-extensions',
+         'comment' => ''
+    ),
+    'trafficvalidation.tools' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#monetizuscom-ad-framework-used-in-browser-extensions',
+         'comment' => ''
+    ),
+    'trendtext.eu' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#monetizuscom-ad-framework-used-in-browser-extensions',
+         'comment' => ''
+    ),
+    'validanalytics.xyz' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#monetizuscom-ad-framework-used-in-browser-extensions',
+         'comment' => ''
+    ),
+    'validationcdn.xyz' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#monetizuscom-ad-framework-used-in-browser-extensions',
+         'comment' => ''
+    ),
+    'validcdn.xyz' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#monetizuscom-ad-framework-used-in-browser-extensions',
+         'comment' => ''
+    ),
+    'validcndnet.xyz' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#monetizuscom-ad-framework-used-in-browser-extensions',
+         'comment' => ''
+    ),
+    'validdomain.xyz' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#monetizuscom-ad-framework-used-in-browser-extensions',
+         'comment' => ''
+    ),
+    'whatzmyip.net' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#monetizuscom-ad-framework-used-in-browser-extensions',
+         'comment' => ''
+    ),
+    'worldnaturenet.xyz' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#monetizuscom-ad-framework-used-in-browser-extensions',
+         'comment' => ''
+    ),
+    'www1.thrgh.space' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#monetizuscom-ad-framework-used-in-browser-extensions',
+         'comment' => ''
+    ),
+    'www4.thrgh.space' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#monetizuscom-ad-framework-used-in-browser-extensions',
+         'comment' => ''
+    ),
+    'www5.thrgh.space' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#monetizuscom-ad-framework-used-in-browser-extensions',
+         'comment' => ''
+    ),
+    'www7.thrgh.space' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#monetizuscom-ad-framework-used-in-browser-extensions',
+         'comment' => ''
+    ),
+    'www8.thrgh.space' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#monetizuscom-ad-framework-used-in-browser-extensions',
+         'comment' => ''
+    ),
+    'www9.thrgh.space' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#monetizuscom-ad-framework-used-in-browser-extensions',
+         'comment' => ''
+    ),
+    'ydpi.pw' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#monetizuscom-ad-framework-used-in-browser-extensions',
+         'comment' => ''
+    ),
+    'getstencil.com' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#getstencilcom',
+         'comment' => ''
+    ),
+    'elsewheregames.com' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#free-games-with-adware-browser-extension',
+         'comment' => ''
+    ),
+    'fungamesshop.com' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#free-games-with-adware-browser-extension',
+         'comment' => ''
+    ),
+    'gameandslash.com' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#free-games-with-adware-browser-extension',
+         'comment' => ''
+    ),
+    'gamephrase.com' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#free-games-with-adware-browser-extension',
+         'comment' => ''
+    ),
+    'gamersurface.com' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#free-games-with-adware-browser-extension',
+         'comment' => ''
+    ),
+    'pinballpal.com' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#free-games-with-adware-browser-extension',
+         'comment' => ''
+    ),
+    ';undefined' => array (
+         'filter_on' => 'script_sample',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#undefined',
          'comment' => ''
     )/*,
     '' => array (
