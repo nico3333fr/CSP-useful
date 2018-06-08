@@ -4,6 +4,51 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 ---------------------------------------
+# admixer, twkv.ru
+
+```
+{
+    "csp-report": {
+        "blocked-uri": "self",
+        "document-uri": "https://www.estcequonmetenprodaujourdhui.info/",
+        "line-number": 1,
+        "original-policy": "default-src 'none'; script-src https://www.estcequonmetenprodaujourdhui.info; style-src https://www.estcequonmetenprodaujourdhui.info 'nonce-dfbe534ef67b334699fb118d182c4903a2d759290e3ab4cb82a54c41bd9a03dcdf7b76eccb0363b3e22be32ab8ab352d0addf446a993bf5167df15c4a77e242a'; img-src https://www.estcequonmetenprodaujourdhui.info data:; font-src https://www.estcequonmetenprodaujourdhui.info; child-src https://www.estcequonmetenprodaujourdhui.info; frame-ancestors https://www.estcequonmetenprodaujourdhui.info; manifest-src https://www.estcequonmetenprodaujourdhui.info; base-uri 'none'; report-uri https://www.estcequonmetenprodaujourdhui.info/csp-parser.php",
+        "referrer": "",
+        "script-sample": "div[id^=\"admixer_\"], a[href*=\".twkv.ru\"]...",
+        "source-file": "https://www.estcequonmetenprodaujourdhui.info/",
+        "violated-directive": "style-src https://www.estcequonmetenprodaujourdhui.info 'nonce-dfbe534ef67b334699fb118d182c4903a2d759290e3ab4cb82a54c41bd9a03dcdf7b76eccb0363b3e22be32ab8ab352d0addf446a993bf5167df15c4a77e242a'"
+    }
+}
+```
+
+__WTF:__ `"script-sample": "div[id^=\"admixer_\"], a[href*=\".twkv.ru\"]...",` (not present on the website of course)
+
+__Answer:__ any idea? 
+
+---------------------------------------
+# .ggbox, .a_p, .a_fr, .a_cn
+
+```
+{
+    "csp-report": {
+        "blocked-uri": "self",
+        "document-uri": "https://www.estcequonmetenprodaujourdhui.info/",
+        "line-number": 1,
+        "original-policy": "default-src 'none'; script-src https://www.estcequonmetenprodaujourdhui.info; style-src https://www.estcequonmetenprodaujourdhui.info 'nonce-dfbe534ef67b334699fb118d182c4903a2d759290e3ab4cb82a54c41bd9a03dcdf7b76eccb0363b3e22be32ab8ab352d0addf446a993bf5167df15c4a77e242a'; img-src https://www.estcequonmetenprodaujourdhui.info data:; font-src https://www.estcequonmetenprodaujourdhui.info; child-src https://www.estcequonmetenprodaujourdhui.info; frame-ancestors https://www.estcequonmetenprodaujourdhui.info; manifest-src https://www.estcequonmetenprodaujourdhui.info; base-uri 'none'; report-uri https://www.estcequonmetenprodaujourdhui.info/csp-parser.php",
+        "referrer": "",
+        "script-sample": ".ggbox, .a_p, .a_fr, .a_cn, a[href^=\"htt...",
+
+        "source-file": "https://www.estcequonmetenprodaujourdhui.info/",
+        "violated-directive": "style-src https://www.estcequonmetenprodaujourdhui.info 'nonce-dfbe534ef67b334699fb118d182c4903a2d759290e3ab4cb82a54c41bd9a03dcdf7b76eccb0363b3e22be32ab8ab352d0addf446a993bf5167df15c4a77e242a'"
+    }
+}
+```
+
+__WTF:__ `"script-sample": ".ggbox, .a_p, .a_fr, .a_cn, a[href^=\"htt...",` (not present on the website of course)
+
+__Answer:__ any idea? 
+
+---------------------------------------
 # ;undefined
 
 ```
