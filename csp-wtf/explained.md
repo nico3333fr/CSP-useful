@@ -2694,4 +2694,22 @@ __WTF:__ ?????
 __Answer:__ Looks like user with plugin from https://getstencil.com. This plugin use iframe to embed visited site.
 
 ---------------------------------------
+# https://mozbar.moz.com
+
+```
+{
+    "csp-report": {
+        ...
+        "violated-directive":"frame-src",
+        "blocked-uri":"https://mozbar.moz.com",
+        ...
+    }
+}
+```
+
+__WTF:__ ????? 
+
+__Answer:__ User with SEO toolbar https://moz.com/products/pro/seo-toolbar
+
+---------------------------------------
 If you have some examples to share (even if you don't know what the fuck it is coming from), feel free to share them. Anonymize the URL/policy if needed.
