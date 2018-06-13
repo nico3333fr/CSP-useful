@@ -2665,6 +2665,17 @@ __WTF:__ This is an error from template Function constructor
 __Answer:__ This is a bug in Apple QuickLook. When you e.g. open Excel document from your page, it is opened in browser using QuickLook and QuickLook patches your CSP policy to add "x-apple-ql-id:" source. When you navigate back, CSP is not restored and could lead to violation reports.
 
 ---------------------------------------
+# blackspider.com
+
+```
+original-policy: [default-src proxy-login.blackspider.com ssl-proxy-login.blackspider.com; font-src 'self' https://fonts.gstatic.com; frame-ancestors 'none'; img-src 'self' proxy-login.blackspider.com ssl-proxy-login.blackspider.com; report-uri /csp; script-src 'self' 'report-sample' proxy-login.blackspider.com ssl-proxy-login.blackspider.com; style-src 'self' 'unsafe-inline' proxy-login.blackspider.com ssl-proxy-login.blackspider.com]
+```
+
+__WTF:__ I don't have any blackspider junk in my CSP policy
+
+__Answer:__ Your user (or his company) uses security ~crapware~ software that mess with visited sites, probably using fake SSL certificates (https://blackspider.com), as they need to inject this policy changes into SSL connection. Good side is that there were no errors observed yet due to this software.
+
+---------------------------------------
 # getstencil.com
 
 ```
