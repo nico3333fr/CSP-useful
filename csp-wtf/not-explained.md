@@ -4,6 +4,28 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 ---------------------------------------
+# window.script1528893700887
+
+```
+{
+    "csp-report": {
+        "blocked-uri": "self",
+        "document-uri": "https://www.estcequonmetenprodaujourdhui.info/",
+        "line-number": 1,
+        "original-policy": "default-src 'none'; script-src https://www.estcequonmetenprodaujourdhui.info; style-src https://www.estcequonmetenprodaujourdhui.info 'nonce-a75fb51f810ed69e1120e3fff6451795d41615fbf740ab2cceaafc7427f2b0b5dcdb8ba7a3a646c9eaae5360639edf55a0bbf134032d792730be81dec91f5280'; img-src https://www.estcequonmetenprodaujourdhui.info data:; font-src https://www.estcequonmetenprodaujourdhui.info; child-src https://www.estcequonmetenprodaujourdhui.info; frame-ancestors https://www.estcequonmetenprodaujourdhui.info; manifest-src https://www.estcequonmetenprodaujourdhui.info; base-uri 'none'; report-uri https://www.estcequonmetenprodaujourdhui.info/csp-parser.php",
+        "referrer": "",
+        "script-sample": "window.script1528893700887=1;",
+        "source-file": "https://www.estcequonmetenprodaujourdhui.info/",
+        "violated-directive": "script-src"
+    }
+}
+```
+
+__WTF:__ `"script-sample": "window.script1528893700887=1;",` (not present on the website of course)
+
+__Answer:__ any idea? (I've seen it a lot on my websites)
+
+---------------------------------------
 # admixer, twkv.ru
 
 ```
