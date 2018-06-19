@@ -4,6 +4,29 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 ---------------------------------------
+# Tota11y bookmarklet
+
+```
+{
+    "csp-report": {
+        "blocked-uri": "self",
+        "document-uri": "https://van11y.net/fr/onglets-accessibles/",
+        "line-number": 1,
+        "original-policy": "default-src 'none'; script-src https://van11y.net; style-src https://van11y.net 'nonce-1f1ee1170b70e2a04cdfca6ab1d02514875878c695e8ac75e1f775e4c7b8aa61a62728c92d2c8126a5ed8ff02aef87a244d8cca3c674fdfb3c0aa755e179cfd0'; img-src https://van11y.net; font-src https://van11y.net; connect-src https://van11y.net; child-src https://van11y.net; frame-ancestors https://van11y.net; manifest-src https://van11y.net; worker-src https://van11y.net; base-uri 'none'; form-action 'none'; report-uri https://van11y.net/csp-parser.php",
+        "referrer": "https://van11y.net/accessible-tab-panel/",
+        "script-sample": ".tota11y-dark-color-scheme{background-co...",
+
+        "source-file": "https://van11y.net/fr/onglets-accessibles/",
+        "violated-directive": "style-src"
+    }
+}
+```
+
+__WTF:__ `"script-sample": ".tota11y-dark-color-scheme{background-co...",`
+
+__Answer:__ This is caused by [tota11y bookmarklet](http://khan.github.io/tota11y/) in the browser.
+
+---------------------------------------
 # Pocket
 
 ```
