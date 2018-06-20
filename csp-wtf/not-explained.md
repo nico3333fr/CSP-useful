@@ -4,6 +4,27 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 ---------------------------------------
+# onclick attribute on MENUITEM element
+
+```
+{
+    "csp-report": {
+        "blocked-uri": "self",
+        "document-uri": "https://van11y.net/accessible-hide-show/",
+        "original-policy": "default-src 'none'; script-src https://van11y.net; style-src https://van11y.net 'nonce-cce7e9e02a82c11be9d30cb58f6286e74056d34af3504502c9bb098cfffa35ec9fb7b42bb545ebd33198f4c387de1adc2c7824dd232fd3e6225a15bdd3b0c6e2'; img-src https://van11y.net; font-src https://van11y.net; connect-src https://van11y.net; child-src https://van11y.net; frame-ancestors https://van11y.net; manifest-src https://van11y.net; worker-src https://van11y.net; base-uri 'none'; form-action 'none'; report-uri https://van11y.net/csp-parser.php",
+        "referrer": "https://www.google.com/",
+        "script-sample": "onclick attribute on MENUITEM element",
+        "source-file": "https://van11y.net/accessible-hide-show/",
+        "violated-directive": "script-src"
+    }
+}
+```
+
+__WTF:__ `"script-sample": "onclick attribute on MENUITEM element",` (not present on the website of course)
+
+__Answer:__ any idea?
+
+---------------------------------------
 # window.script1528893700887
 
 ```
