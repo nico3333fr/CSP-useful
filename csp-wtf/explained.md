@@ -2734,5 +2734,23 @@ __WTF:__ ?????
 
 __Answer:__ User with SEO toolbar https://moz.com/products/pro/seo-toolbar
 
+# Spyware gj.track.uc.cn
+
+```
+{
+    "csp-report": {
+        ...
+        "violated-directive":"connect-src",
+        "blocked-uri":"http://gj.track.uc.cn/collect?uc_param_str=cpfrveladnkt&amp;appid=4e54ac8a118f&lt;=event&amp;e_c=bottom_ad&amp;e_a=index&amp;e_n=no_match&amp;conds={%22isNotPPBlackDomain%22:false}",
+        ...
+    }
+}
+```
+
+__WTF:__ ????? 
+
+__Answer:__ According to AdGuardFilters it seems to be a spyware within the Browser / Browser Extension. https://github.com/AdguardTeam/AdguardFilters/blob/master/MobileFilter/sections/spyware.txt
+
+
 ---------------------------------------
 If you have some examples to share (even if you don't know what the fuck it is coming from), feel free to share them. Anonymize the URL/policy if needed.
