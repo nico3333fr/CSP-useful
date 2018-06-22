@@ -25,7 +25,7 @@ __WTF:__ `"script-sample": "onclick attribute on MENUITEM element",` (not presen
 __Answer:__ any idea?
 
 ---------------------------------------
-# window.script1528893700887
+# window.script1528893700887, etc.
 
 ```
 {
@@ -36,6 +36,21 @@ __Answer:__ any idea?
         "original-policy": "default-src 'none'; script-src https://www.estcequonmetenprodaujourdhui.info; style-src https://www.estcequonmetenprodaujourdhui.info 'nonce-a75fb51f810ed69e1120e3fff6451795d41615fbf740ab2cceaafc7427f2b0b5dcdb8ba7a3a646c9eaae5360639edf55a0bbf134032d792730be81dec91f5280'; img-src https://www.estcequonmetenprodaujourdhui.info data:; font-src https://www.estcequonmetenprodaujourdhui.info; child-src https://www.estcequonmetenprodaujourdhui.info; frame-ancestors https://www.estcequonmetenprodaujourdhui.info; manifest-src https://www.estcequonmetenprodaujourdhui.info; base-uri 'none'; report-uri https://www.estcequonmetenprodaujourdhui.info/csp-parser.php",
         "referrer": "",
         "script-sample": "window.script1528893700887=1;",
+        "source-file": "https://www.estcequonmetenprodaujourdhui.info/",
+        "violated-directive": "script-src"
+    }
+}
+```
+or
+```
+{
+    "csp-report": {
+        "blocked-uri": "self",
+        "document-uri": "https://www.estcequonmetenprodaujourdhui.info/",
+        "line-number": 1,
+        "original-policy": "default-src 'none'; script-src https://www.estcequonmetenprodaujourdhui.info; style-src https://www.estcequonmetenprodaujourdhui.info 'nonce-20cfb2d2995666ce7a62fa2fb5a0be54d29c8efa59639388de15b1d365155e4c9d5b87eacc779cb1f5a8baadf9ae10bb12da22200e6849e7e6f71814fb619527'; img-src https://www.estcequonmetenprodaujourdhui.info data:; font-src https://www.estcequonmetenprodaujourdhui.info; child-src https://www.estcequonmetenprodaujourdhui.info; frame-ancestors https://www.estcequonmetenprodaujourdhui.info; manifest-src https://www.estcequonmetenprodaujourdhui.info; base-uri 'none'; report-uri https://www.estcequonmetenprodaujourdhui.info/csp-parser.php",
+        "referrer": "https://www.google.fr/",
+        "script-sample": "window.script1529679894872=1;",
         "source-file": "https://www.estcequonmetenprodaujourdhui.info/",
         "violated-directive": "script-src"
     }
