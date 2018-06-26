@@ -1507,6 +1507,56 @@ $tab_filter = array(
          'filter_on' => 'script_sample',
          'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#undefined',
          'comment' => ''
+    ),
+    '.ggbox' => array (
+         'filter_on' => 'script_sample',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#ggbox-a_p-a_fr-a_cn',
+         'comment' => ''
+    ),
+    'admixer_' => array (
+         'filter_on' => 'script_sample',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#admixer-twkvru',
+         'comment' => ''
+    ),
+    '.twkv.ru' => array (
+         'filter_on' => 'script_sample',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#admixer-twkvru',
+         'comment' => ''
+    ),
+    'window.script15' => array (
+         'filter_on' => 'script_sample',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#windowscript1528893700887-etc',
+         'comment' => ''
+    ),
+    '.blackspider.com' => array (
+         'filter_on' => 'original_policy',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#blackspidercom',
+         'comment' => ''
+    ),
+    'mozbar.moz.com' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#httpsmozbarmozcom',
+         'comment' => ''
+    ),
+    '.tota11y-dark-color-scheme' => array (
+         'filter_on' => 'script_sample',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#tota11y-bookmarklet',
+         'comment' => ''
+    ),
+    'onclick attribute on MENUITEM element' => array (
+         'filter_on' => 'script_sample',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#onclick-attribute-on-menuitem-element',
+         'comment' => ''
+    ),
+    'gj.track.uc.cn' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md#spyware-gjtrackuccn',
+         'comment' => ''
+    ),
+    'Date.prefs =' => array (
+         'filter_on' => 'script_sample',
+         'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#dateprefs',
+         'comment' => ''
     )/*,
     '' => array (
          'filter_on' => 'source_file',
