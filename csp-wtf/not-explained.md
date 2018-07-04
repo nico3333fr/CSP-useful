@@ -2842,6 +2842,26 @@ __WTF:__ ?????
 
 __Answer:__ ????
 
+---------------------------------------
+
+# mp3 file?
+
+```
+{
+    "csp-report": {
+        "blocked-uri": "chrome",
+        "document-uri": "https://micr0lab.org/mu0l_0030/mp3/01_-_DAUA_-_Qui_heritera.mp3",
+        "original-policy": "default-src https://micr0lab.org data: blob: https://*.vimeo.com https://*.vimeocdn.com https://*.yumpu.com https://*.youtube.com https://*.jquery.com https://*.openstreetmap.org https://fonts.gstatic.com https://duckduckgo.com; script-src https://micr0lab.org 'unsafe-inline' 'unsafe-eval' blob: https://*.micr0lab.org https://vimeo.com https://player.vimeo.com https://*.vimeocdn.com https://*.yumpu.com https://*.youtube.com https://*.jquery.com; style-src https://micr0lab.org 'unsafe-inline' https://*.vimeocdn.com https://*.googleapis.com; object-src https://micr0lab.org https://*.openstreetmap.org https://*.micr0lab.org https://*.amazonaws.com https://*.quantserve.com; connect-src https://micr0lab.org https://vimeo.com; img-src https://micr0lab.org data:; report-uri https://micr0lab.org/tech/php/csp_rep.php; base-uri https://micr0lab.org",
+        "referrer": "",
+        "violated-directive": "script-src"
+    }
+}
+```
+
+__WTF:__ How a mp3 could violate the `script-src` policy? Is it because, on some browser, a script is launched to play music files?
+
+__Answer:__ ????
+
 
 ---------------------------------------
 If you have some examples to share (even if you don't know what the fuck it is coming from), feel free to share them. Anonymize the URL/policy if needed.
