@@ -4,6 +4,25 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 ---------------------------------------
+# chrome-extension
+
+```
+{
+    "csp-report": {
+        "blocked-uri": "chrome-extension",
+        "document-uri": "https://van11y.net/fr/carrousel-accessible/",
+        "original-policy": "default-src 'none'; script-src https://van11y.net; style-src https://van11y.net 'nonce-1561469477f80bb533fb4afaae3551c3ed7d4e0abe55e661f51137c99739c303227b2d121fbf7e08e20c80729900b495a6ab30c13ed4cf8b2b13e5ca0dfd5284'; img-src https://van11y.net; font-src https://van11y.net; connect-src https://van11y.net; child-src https://van11y.net; frame-ancestors https://van11y.net; manifest-src https://van11y.net; worker-src https://van11y.net; base-uri 'none'; form-action 'none'; report-uri https://van11y.net/csp-parser.php",
+        "referrer": "https://van11y.net/fr/2018/07/06/Septi%C3%A8me-projet-Van11y-carrousel-accessible",
+        "violated-directive": "font-src"
+    }
+}
+```
+
+__WTF:__ `"blocked-uri": "chrome-extension",` 
+
+__Answer:__ any idea? (which one, how?)
+
+---------------------------------------
 # Date.prefs
 
 ```
