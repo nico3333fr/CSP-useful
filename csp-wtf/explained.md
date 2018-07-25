@@ -4,6 +4,41 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 ---------------------------------------
+# joinhoney
+
+```
+{
+    "csp-report": {
+        "document-uri": "https://van11y.net/accessible-tab-panel/",
+        "referrer": "https://www.google.co.nz/",
+        "violated-directive": "font-src",
+        "effective-directive": "font-src",
+        "original-policy": "default-src 'none' ;  script-src 'self'; style-src 'self' 'nonce-e13400e3522ec9a76f1e4e55f2444a0011d43151ea0c971069875c2840127c610251dacf458ab75504abd0e88fa553c861a1fdc6eed3eeda2ef1b987b513671d' ; img-src 'self'; font-src 'self';  connect-src 'self' ; child-src 'self' ; frame-ancestors 'self'  ; manifest-src 'self' ; worker-src 'self' ; base-uri 'none' ; form-action 'none' ;  report-uri /csp-parser.php ;",
+        "disposition": "enforce",
+        "blocked-uri": "https://cdn.joinhoney.com/fonts/icons/honey-icons.ttf?vbeftd",
+        "status-code": 0,
+        "script-sample": ""
+    }
+}
+```
+or 
+```
+{
+    "csp-report": {
+        "blocked-uri": "https://cdn.joinhoney.com",
+        "document-uri": "https://van11y.net/accessible-simple-tooltip/",
+        "original-policy": "default-src 'none'; script-src https://van11y.net; style-src https://van11y.net 'nonce-fcd56a456bfa8e9de7dc89cc5f0847afe9c45b857e26dbcad652d74f690c872542edc0c3eccd9054d609c4ae5fa6b7cdab4746d5cf9fa435a4ce5afe5cfc0e19'; img-src https://van11y.net; font-src https://van11y.net; connect-src https://van11y.net; child-src https://van11y.net; frame-ancestors https://van11y.net; manifest-src https://van11y.net; worker-src https://van11y.net; base-uri 'none'; form-action 'none'; report-uri https://van11y.net/csp-parser.php",
+        "referrer": "https://www.google.com/",
+        "violated-directive": "font-src"
+    }
+}
+```
+
+__WTF:__ `"blocked-uri": "https://cdn.joinhoney.com/fonts/icons/honey-icons.ttf?vbeftd",`  (not present on the website of course)
+
+__Answer:__ Honey is an extension for getting coupons: https://www.joinhoney.com/
+
+---------------------------------------
 # Tota11y bookmarklet
 
 ```
