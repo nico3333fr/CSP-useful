@@ -23,7 +23,7 @@ If you have an idea (even if the idea is WTF) for some of these, do not hesitate
 
 __WTF:__ `"script-sample": "window.loop11ExtTerritory = true;",` (not present on the website of course)
 
-__Answer:__ Related to "Loop11 User Testing" (http://www.loop11.com/ and https://chrome.google.com/webstore/detail/loop11-user-testing/bhopfldlicecjkdoidhjfkhbndcjfomf?hl=en-US), thanks @eternalmatt for the info ;)
+__Answer:__ Related to "Loop11 User Testing" (http://www.loop11.com/ and https://chrome.google.com/webstore/detail/loop11-user-testing/bhopfldlicecjkdoidhjfkhbndcjfomf?hl=en-US), thanks [@eternalmatt](https://github.com/nico3333fr/CSP-useful/issues/62) for the info ;)
 
 ---------------------------------------
 # joinhoney
