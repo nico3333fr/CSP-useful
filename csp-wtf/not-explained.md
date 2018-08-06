@@ -3,6 +3,30 @@
 Sometimes, CSP notifications are __really difficult to understand or very strange__. Here is a collection of some CSP WTF.
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
+
+---------------------------------------
+# function (DOCUMENT, dispatchEvent, CUST
+
+```
+{
+    "csp-report": {
+        "blocked-uri": "",
+        "document-uri": "https://www.estcequonmetenprodaujourdhui.info/",
+        "line-number": 1,
+        "original-policy": "default-src 'none'; script-src https://www.estcequonmetenprodaujourdhui.info; style-src https://www.estcequonmetenprodaujourdhui.info 'nonce-f9e3796b32e5c5c1a8ce11ff44ef39752ad6312c871db84a2d4531fe15e5fb465f8a0e526054ff4cd9782405748dc6df1d4f1d402d5689f3a9968f5c17118295'; img-src https://www.estcequonmetenprodaujourdhui.info data:; font-src https://www.estcequonmetenprodaujourdhui.info; child-src https://www.estcequonmetenprodaujourdhui.info; frame-ancestors https://www.estcequonmetenprodaujourdhui.info; manifest-src https://www.estcequonmetenprodaujourdhui.info; base-uri 'none'; report-uri https://www.estcequonmetenprodaujourdhui.info/csp-parser.php",
+        "referrer": "",
+        "script-sample": "(function (DOCUMENT, dispatchEvent, CUST...",
+        "source-file": "https://www.estcequonmetenprodaujourdhui.info/",
+        "violated-directive": "script-src"
+    }
+}
+```
+
+__WTF:__ `"script-sample": "(function (DOCUMENT, dispatchEvent, CUST...",` 
+
+__Answer:__ any idea?
+
+
 ---------------------------------------
 # chrome-extension
 
