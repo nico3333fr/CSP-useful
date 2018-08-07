@@ -179,6 +179,7 @@ connect-src ws://webmention.io:8080
 
 ```
 script-src *.cloudfront.net 'unsafe-eval' data: 'unsafe-inline' 
+# add the unsafe-line/nonce if you make a inline call to the script.
 style-src *.cloudfront.net fonts.googleapis.com 'unsafe-inline'
 img-src *.cloudfront.net data: www.bugherd.com
 ```
