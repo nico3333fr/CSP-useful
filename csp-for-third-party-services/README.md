@@ -175,4 +175,14 @@ script-src https://webmention.io
 connect-src ws://webmention.io:8080
 ```
 
+## BugHerd
+
+```
+script-src *.cloudfront.net 'unsafe-eval' data: 'unsafe-inline' 
+style-src *.cloudfront.net fonts.googleapis.com 'unsafe-inline'
+img-src *.cloudfront.net data: www.bugherd.com
+```
+To be confirmed.
+
+---
 Feel free to participate. :)
