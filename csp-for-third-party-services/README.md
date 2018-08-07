@@ -56,6 +56,17 @@ connect-src www.google-analytics.com
 
 Note: stats.g.doubleclick.net seems to be used for demographics stats in GA. (to confirm?)
 
+## Google Tag Manager
+
+```
+script-src www.googletagmanager.com; 
+# add 'unsafe-inline' or a nonce/hash if you make the call using <script> tag
+img-src www.googletagmanager.com ;
+```
+
+Plus all tags you need to autorize (Google Analytics, etc.)
+
+
 ## Youtube embedded video
 
 If you need for example to add this line on your site:
