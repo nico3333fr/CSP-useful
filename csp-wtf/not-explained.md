@@ -544,6 +544,25 @@ __Answer:__ any idea? (probable extension, to confirm)
     }
 }
 ```
+or
+```
+{
+    "csp-report": {
+        "document-uri": "https://www.nicolas-hoffmann.net/source/",
+        "referrer": "",
+        "violated-directive": "style-src",
+        "effective-directive": "style-src",
+        "original-policy": "default-src 'none';  script-src 'self' google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net; style-src 'self' data:  ; img-src 'self' google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net ssl.google-analytics.com data: ;  connect-src 'self';  font-src 'self'; media-src 'self'; object-src 'self' www.youtube.com ;  child-src 'self' ;  frame-ancestors 'self' ; manifest-src 'self' ; form-action 'self' ; base-uri 'none'; report-uri /csp-parser.php ;",
+        "disposition": "enforce",
+        "blocked-uri": "inline",
+        "line-number": 1,
+        "column-number": 310,
+        "source-file": "https://s3.amazonaws.com/cashe-js/1d71065a79cb556b40.js",
+        "status-code": 0,
+        "script-sample": ""
+    }
+}
+```
 
 __WTF:__ `"source-file": "https://s3.amazonaws.com/js-cache/fa25c29ce29a202e02.js",` 
 
