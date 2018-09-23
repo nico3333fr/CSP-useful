@@ -4,6 +4,29 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 ---------------------------------------
+# axe-core test
+
+```
+{
+    "csp-report": {
+        "blocked-uri": "",
+        "document-uri": "https://van11y.net/fr/accordeon-accessible/",
+        "line-number": 1,
+        "original-policy": "upgrade-insecure-requests; block-all-mixed-content; default-src 'none'; script-src https://van11y.net; style-src https://van11y.net 'nonce-8b4494063e0dd25825010b71e019f824e74260bd480e2bd32e5fbb4c118746d569001a1a6cfdec21247443e6173cafd96288d612c96f114511a460956958b75e'; img-src https://van11y.net; font-src https://van11y.net; connect-src https://van11y.net; child-src https://van11y.net; frame-ancestors https://van11y.net; manifest-src https://van11y.net; worker-src https://van11y.net; base-uri 'none'; form-action 'none'; report-uri https://van11y.net/csp-parser.php",
+        "referrer": "https://www.google.com/",
+        "script-sample": "\n    // This signals the axe-core test s...",
+        "source-file": "https://van11y.net/fr/accordeon-accessible/",
+        "violated-directive": "script-src"
+    }
+}
+```
+
+__WTF:__ `"script-sample": "\n    // This signals the axe-core test s...",` (not present on the website of course)
+
+__Answer:__ Related to [Axe Core tests](https://www.deque.com/axe/).
+
+
+---------------------------------------
 # window.loop11ExtTerritory = true
 
 ```
