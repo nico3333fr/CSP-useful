@@ -12,7 +12,7 @@ In [folder "report-uri"](https://github.com/nico3333fr/CSP-useful/tree/master/re
 - csp-parser-basic.php 	: the most basic one, it sends an e-mail.
 - csp-parser-enhanced.php :	avoids some bugs (listed below as CSP WTF), with a LOT of filters
 - csp-parser-with-database.php : put notifications in a database, then you can do whatever you want with all these informations! :)
-
+- csp-parser-with-database-pdo.php : also puts CSP notifications in a database but uses PDO instead of the mysqli extension.
 
 
 
