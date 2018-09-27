@@ -29,7 +29,8 @@ try {
                                                  '<');
         $pdo->setAttribute(PDO::ATTR_EMULATE_PREPARES, $emulate_preparedstmts);
     }
-} catch (PDOException $e) {
+} catch (PDOException $pdo_exc) {
+    error_log($pdo_exc->getMessage());
     exit('Database connection error.');
 }
 
@@ -67,10 +68,7 @@ $data = file_get_contents('php://input');
 // Only continue if it’s valid JSON that is not just `null`, `0`, `false` or an
 // empty string, i.e. if it could be a CSP violation report.
 if ($data = json_decode($data, true)) {
-    $full_report = json_encode(
-                   $data,
-                   JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES );
-
+    $full_report = json_encode($data, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES );
     $document_uri = '';  // NULL not allowed by orginal schema.
     if (isset($data['csp-report']['document-uri'])) {
         $document_uri = $data['csp-report']['document-uri'];
