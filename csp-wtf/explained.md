@@ -2853,4 +2853,24 @@ __WTF:__ nothing like this on the website.
 __Answer:__ This is a script injection attempt from shopping plugin from http://www.findizer.fr/
 
 ---------------------------------------
+# fptraffic
+
+```
+{
+    "csp-report":
+    {
+        ...
+        "referrer":"https://www.google.com/",
+        "violated-directive":"img-src",
+        "blocked-uri":"https://fptraffic.com/img/modal_bg.png",
+        ...
+    }
+}
+```
+
+__WTF:__ nothing like this on the website.
+
+__Answer:__ This is image injection from https://fptraffic.com/ tool for Facebook. Taking into account that it is injected on site, not related to Facebook at all, I will not trust those guys.
+
+---------------------------------------
 If you have some examples to share (even if you don't know what the fuck it is coming from), feel free to share them. Anonymize the URL/policy if needed.
