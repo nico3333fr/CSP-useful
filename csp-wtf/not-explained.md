@@ -4,6 +4,26 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 ---------------------------------------
+# Chrome-extension
+
+```
+{
+    "csp-report": {
+        "blocked-uri": "chrome-extension",
+        "document-uri": "https://van11y.net/accessible-simple-tooltip/",
+        "original-policy": "upgrade-insecure-requests; block-all-mixed-content; default-src 'none'; script-src 'self'; style-src 'self' 'nonce-8fc130f94ccb647bc991f78208643ecf1282391f70a0a70a4c65d667c147606a2ddf85a996fc6584b322dac633e00145f7176c941a2b9f5791989412aaf01005'; img-src 'self'; font-src 'self'; connect-src 'self'; child-src 'self'; frame-ancestors 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; report-uri https://van11y.net/csp-parser.php",
+        "referrer": "https://www.google.com/",
+        "violated-directive": "font-src"
+    }
+}
+```
+
+__WTF:__ `"blocked-uri": "chrome-extension",` 
+
+__Answer:__ any idea? (had it on several websites)
+
+
+---------------------------------------
 # nowexttype.com/metric
 
 ```
