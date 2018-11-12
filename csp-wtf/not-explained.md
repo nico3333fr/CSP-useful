@@ -3,6 +3,31 @@
 Sometimes, CSP notifications are __really difficult to understand or very strange__. Here is a collection of some CSP WTF.
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
+
+---------------------------------------
+# "blocked-uri": "inline"
+
+```
+{
+    "csp-report": {
+        "blocked-uri": "inline",
+        "column-number": 1,
+        "document-uri": "https://www.estcequonmetenprodaujourdhui.info/",
+        "line-number": 1,
+        "original-policy": "default-src 'none'; script-src 'self'; style-src 'self' 'nonce-9c4e6327b3e08a59727c9510d1428a2373f7a3e21e77dcf3a0a5664a6671ddf44348f8f4436fdd5234fea8d89bf51e49597fc4f62906b476939fed70b618c838'; img-src 'self' data:; font-src 'self'; child-src 'self' https://www.youtube.com; frame-src 'self' https://www.youtube.com; frame-ancestors 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; report-uri https://www.estcequonmetenprodaujourdhui.info/csp-parser.php",
+
+        "referrer": "",
+        "source-file": "https://www.estcequonmetenprodaujourdhui.info/",
+        "violated-directive": "script-src"
+    }
+}
+```
+
+__WTF:__ `"blocked-uri": "inline",` 
+
+__Answer:__ any idea? (had it a lot on several websites)
+
+
 ---------------------------------------
 # secure.myshopcouponmac.com
 
