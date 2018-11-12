@@ -4,6 +4,28 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 ---------------------------------------
+# secure.myshopcouponmac.com
+
+```
+{
+    "csp-report": {
+        "document-uri": "http://www.visionclinique.ch/fr/",
+        "referrer": "https://www.bing.com/",
+        "violated-directive": "script-src 'self' http://www.google-analytics.com https://www.google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net 'unsafe-eval' ",
+        "effective-directive": "script-src",
+        "original-policy": "default-src 'self';  script-src 'self' http://www.google-analytics.com https://www.google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net 'unsafe-eval' ; style-src 'self'  data: 'unsafe-inline' ; img-src 'self' http://www.google-analytics.com https://www.google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net data: ; child-src 'self' ; connect-src 'self' https://www.google-analytics.com http://www.google-analytics.com  stats.g.doubleclick.net https://stats.g.doubleclick.net ; report-uri /csp-parser.php ;",
+        "blocked-uri": "http://secure.myshopcouponmac.com",
+        "status-code": 200
+    }
+}
+```
+
+__WTF:__ `"blocked-uri": "http://secure.myshopcouponmac.com",` 
+
+__Answer:__ any idea?
+
+
+---------------------------------------
 # Chrome-extension
 
 ```
