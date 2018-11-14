@@ -1594,6 +1594,31 @@ $tab_filter = array(
          'filter_on' => 'blocked_uri',
          'case_description' => 'https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/not-explained.md#csszohostaticcom',
          'comment' => ''
+    ),
+    'blob' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => '',
+         'comment' => ''
+    ),
+    'inline' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => '',
+         'comment' => ''
+    ),
+    'self' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => '',
+         'comment' => ''
+    ),
+    'data' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => '',
+         'comment' => ''
+    ),
+    'eval' => array (
+         'filter_on' => 'blocked_uri',
+         'case_description' => '',
+         'comment' => ''
     )
     */
 );
