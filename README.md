@@ -83,6 +83,10 @@ in PHP for example.
 
 According to [Philippe De Ryck](https://twitter.com/PhilippeDeRyck/status/811448160975552512), setting CSP's ```object-src``` to ```'none'``` blocks Chrome's PDF viewer. As [he says](https://twitter.com/PhilippeDeRyck/status/811448782328131584), "unless you're hosting vulnerable flash files yourself, go with 'self', and ignore the warning on the CSP Evaluator".
 
+### Safari
+
+According to, Safari’s default media controls get blocked when applying a Content-Security-Policy, see https://www.ctrl.blog/entry/safari-csp-media-controls (hint, allow `img-src`).
+
 
 ## What CSP is really good for
 
@@ -182,6 +186,7 @@ JS/jQuery plugins should provide the CSP requirements they need to work (especia
 - https://blog.sqreen.io/content-security-policy/
 - https://github.com/rtanglao/rt-csp
 - [CSP implementations are broken](https://jellyhive.com/activity/posts/2018/03/26/csp-implementations-are-broken/)
+- [CSP report for Netlify](https://github.com/stefanjudis/stefan-judis-website/blob/020f1b005cb1fcf4da8afa4407d9514917aecda0/functions/report.js)
 
 
 ### Why you should use CSP
