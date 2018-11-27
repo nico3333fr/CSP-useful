@@ -2787,7 +2787,6 @@ __Answer:__ Any idea?
 
 
 ---------------------------------------
-
 # Encrypted Google???
 
 ```
@@ -2808,7 +2807,6 @@ __Answer:__ No idea how this could happen. Any idea?
 
 
 ---------------------------------------
-
 # about:blank????
 
 ```
@@ -2831,7 +2829,6 @@ __WTF:__ ```"document-uri": "about:blank",``` on my personal website www.nicolas
 __Answer:__ Might be related to browser extension blocking the request. https://stackoverflow.com/questions/32336860/why-would-i-get-a-csp-violation-for-the-blocked-uri-about
 
 ---------------------------------------
-
 # static.cmptch.com
 
 ```
@@ -2851,7 +2848,6 @@ __Answer:__ No idea how this could happen. Any idea?
 
 
 ---------------------------------------
-
 # enet.enec.gov.ae
 
 ```
@@ -2871,7 +2867,6 @@ __Answer:__ Domain enet.enec.gov.ae doesn't exist. But domain enec.gov.ae is res
 
 
 ---------------------------------------
-
 # d19mml8yptdetb.cloudfront.net
 
 ```
@@ -2891,7 +2886,6 @@ __Answer:__ According by this video, this is some kind of extension to help you 
 
 
 ---------------------------------------
-
 # pe78ohwhk.ru
 
 ```
@@ -2913,7 +2907,6 @@ __Answer:__ Probably some malware. Any idea?
 
 
 ---------------------------------------
-
 # searches3250409-a.akamaihd.net
 
 ```
@@ -2932,7 +2925,6 @@ __WTF:__ WTF is this?
 __Answer:__  Any idea?
 
 ---------------------------------------
-
 # http://uc.gre/pass
 
 ```
@@ -2951,7 +2943,6 @@ __WTF:__ ?????
 __Answer:__ ????
 
 ---------------------------------------
-
 # mp3 file?
 
 ```
@@ -2972,4 +2963,25 @@ __Answer:__ ????
 
 
 ---------------------------------------
+# www.techsolvency.com
+
+```
+{
+    "csp-report": {
+        "document-uri": "https://www.techsolvency.com/",
+        "effective-directive": "script-src",
+        "original-policy": "default-src 'none'; base-uri 'self'; connect-src 'self' https://www.google-analytics.com; font-src 'self'; form-action 'self'; frame-ancestors 'none'; frame-src 'none'; img-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://jigsaw.w3.org https://www.w3.org; manifest-src 'none'; media-src 'self'; object-src 'none'; script-src 'self' https://www.googletagmanager.com https://www.google-analytics.com 'report-sample'; style-src 'self' 'report-sample'; worker-src 'none'; block-all-mixed-content; sandbox allow-forms allow-scripts allow-same-origin; report-uri https://techsolvency.report-uri.com/r/d/csp/enforce; report-to default",
+        "blocked-uri": "eval",
+        "line-number": 1,
+        "column-number": 39833,
+        "script-sample": "var SECRET = \"±y]\\u001c\\u000eÎ><õßP*"
+    }
+}
+```
+
+__WTF:__ script-sample "var SECRET"
+__ Answer:__ ?
+
+---------------------------------------
+
 If you have some examples to share (even if you don't know what the fuck it is coming from), feel free to share them. Anonymize the URL/policy if needed.
