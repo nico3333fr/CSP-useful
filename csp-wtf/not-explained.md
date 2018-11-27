@@ -2932,7 +2932,7 @@ __Answer:__ ????
 
 __WTF:__ script-sample "var SECRET"
 
-__ Answer:__ ?
+__Answer:__ ?
 
 ---------------------------------------
 If you have some examples to share (even if you don't know what the fuck it is coming from), feel free to share them. Anonymize the URL/policy if needed.
