@@ -3,7 +3,6 @@
 Sometimes, CSP notifications are __really difficult to understand or very strange__. Here is a collection of some CSP WTF.
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
-
 ---------------------------------------
 # "blocked-uri": "inline"
 
@@ -23,10 +22,9 @@ If you have an idea (even if the idea is WTF) for some of these, do not hesitate
 }
 ```
 
-__WTF:__ `"blocked-uri": "inline",` 
+__WTF:__ `"blocked-uri": "inline",`
 
 __Answer:__ any idea? (had it a lot on several websites)
-
 
 ---------------------------------------
 # secure.myshopcouponmac.com
@@ -45,10 +43,9 @@ __Answer:__ any idea? (had it a lot on several websites)
 }
 ```
 
-__WTF:__ `"blocked-uri": "http://secure.myshopcouponmac.com",` 
+__WTF:__ `"blocked-uri": "http://secure.myshopcouponmac.com",`
 
 __Answer:__ any idea?
-
 
 ---------------------------------------
 # Chrome-extension
@@ -65,10 +62,9 @@ __Answer:__ any idea?
 }
 ```
 
-__WTF:__ `"blocked-uri": "chrome-extension",` 
+__WTF:__ `"blocked-uri": "chrome-extension",`
 
 __Answer:__ any idea? (had it on several websites)
-
 
 ---------------------------------------
 # nowexttype.com/metric
@@ -90,7 +86,7 @@ __Answer:__ any idea? (had it on several websites)
 
 ```
 
-__WTF:__ `blocked-uri": "https://nowexttype.com/metric/?mid=&wid=52096&sid=&tid=5793&rid=FINISHED&custom1=www.nicolas-hoffmann.net&t=1534858854002",` 
+__WTF:__ `blocked-uri": "https://nowexttype.com/metric/?mid=&wid=52096&sid=&tid=5793&rid=FINISHED&custom1=www.nicolas-hoffmann.net&t=1534858854002",`
 
 __Answer:__ any idea?
 
@@ -112,10 +108,9 @@ __Answer:__ any idea?
 }
 ```
 
-__WTF:__ `"script-sample": "(function (DOCUMENT, dispatchEvent, CUST...",` 
+__WTF:__ `"script-sample": "(function (DOCUMENT, dispatchEvent, CUST...",`
 
 __Answer:__ any idea?
-
 
 ---------------------------------------
 # chrome-extension
@@ -132,7 +127,7 @@ __Answer:__ any idea?
 }
 ```
 
-__WTF:__ `"blocked-uri": "chrome-extension",` 
+__WTF:__ `"blocked-uri": "chrome-extension",`
 
 __Answer:__ any idea? (which one, how?)
 
@@ -236,7 +231,7 @@ __Answer:__ any idea? (I've seen it a lot on my websites)
 
 __WTF:__ `"script-sample": "div[id^=\"admixer_\"], a[href*=\".twkv.ru\"]...",` (not present on the website of course)
 
-__Answer:__ any idea? 
+__Answer:__ any idea?
 
 ---------------------------------------
 # .ggbox, .a_p, .a_fr, .a_cn
@@ -259,7 +254,7 @@ __Answer:__ any idea?
 
 __WTF:__ `"script-sample": ".ggbox, .a_p, .a_fr, .a_cn, a[href^=\"htt...",` (not present on the website of course)
 
-__Answer:__ any idea? 
+__Answer:__ any idea?
 
 ---------------------------------------
 # ;undefined
@@ -282,7 +277,6 @@ __Answer:__ any idea?
 __WTF:__ `"script-sample": ";undefined",` (not present on the website of course)
 
 __Answer:__ any idea? (I've seen it a lot on my websites)
-
 
 ---------------------------------------
 # s3gt_translate_tooltip_mini
@@ -327,7 +321,7 @@ __Answer:__ any idea?
 }
 ```
 
-__WTF:__ `"blocked-uri": "https://inter.gamefunnetwork.com/InterYield/bindevent.do?e=click&affiliate=caiydgames&subid=organic_slither&iytonly=false&disableBackButton=true&snoozeMinutes=5&adCountIntervalHours=24&maxAdCountsPerInterval=5&pop=over&doublepop=false&engover=ADV-KeywordMarketplace&attributionDisabled=false&endpoint=https%3A%2F%2Finter.gamefunnetwork.com&attributionLink=https%3A%2F%2Fgamefunnetwork.com%2Fgames%2Funinstall.php&attributionTitle=gamefunnetwork&disob=true&tabOver=true",` 
+__WTF:__ `"blocked-uri": "https://inter.gamefunnetwork.com/InterYield/bindevent.do?e=click&affiliate=caiydgames&subid=organic_slither&iytonly=false&disableBackButton=true&snoozeMinutes=5&adCountIntervalHours=24&maxAdCountsPerInterval=5&pop=over&doublepop=false&engover=ADV-KeywordMarketplace&attributionDisabled=false&endpoint=https%3A%2F%2Finter.gamefunnetwork.com&attributionLink=https%3A%2F%2Fgamefunnetwork.com%2Fgames%2Funinstall.php&attributionTitle=gamefunnetwork&disob=true&tabOver=true",`
 
 __Answer:__ any idea???? (of course, this is not present on the website)
 
@@ -346,7 +340,7 @@ __Answer:__ any idea???? (of course, this is not present on the website)
 }
 ```
 
-__WTF:__ `"blocked-uri": "https://fdz.octapi.net",` 
+__WTF:__ `"blocked-uri": "https://fdz.octapi.net",`
 
 __Answer:__ considered as "potentially bad" on https://github.com/rtanglao/rt-csp, to confirm.
 
@@ -368,7 +362,7 @@ __Answer:__ considered as "potentially bad" on https://github.com/rtanglao/rt-cs
 }
 ```
 
-__WTF:__ `"script-sample": "/*\nCopyright (c) 2016 Interaktiva rum Sv...",` 
+__WTF:__ `"script-sample": "/*\nCopyright (c) 2016 Interaktiva rum Sv...",`
 
 __Answer:__ ?????
 
@@ -390,7 +384,7 @@ __Answer:__ ?????
 }
 ```
 
-__WTF:__ `"script-sample": ".oo-ui-windowManager-floating,\n.videoblo...",` 
+__WTF:__ `"script-sample": ".oo-ui-windowManager-floating,\n.videoblo...",`
 
 __Answer:__ ?????
 
@@ -412,7 +406,7 @@ __Answer:__ ?????
 }
 ```
 
-__WTF:__ `"script-sample": "if (typeof document.isSecretServer !== '...",` 
+__WTF:__ `"script-sample": "if (typeof document.isSecretServer !== '...",`
 
 __Answer:__ any idea for this secret server?
 
@@ -433,7 +427,7 @@ __Answer:__ any idea for this secret server?
 }
 ```
 
-__WTF:__ `"blocked-uri": "http://ht.www.sogou.com",` 
+__WTF:__ `"blocked-uri": "http://ht.www.sogou.com",`
 
 __Answer:__ any idea?
 
@@ -455,7 +449,7 @@ __Answer:__ any idea?
 }
 ```
 
-__WTF:__ `"script-sample": "\n  {\n    const open = XMLHttpRequest.pro...",` 
+__WTF:__ `"script-sample": "\n  {\n    const open = XMLHttpRequest.pro...",`
 
 __Answer:__ any idea?
 
@@ -475,7 +469,7 @@ __Answer:__ any idea?
 }
 ```
 
-__WTF:__ `"blocked-uri": "http://substantielwww.dyndns.org/configuration/webissimoonlinetrack.txt?r=https%3A%2F%2Fcse.google.fr%2Fcse%3Fsa%3DRechercher%26q%3Dtami%25C3%25A9%2Bsavoie%26position%3Dhaut%26cx%3Dpartner-pub-4856195807639056%253A7971617658%26cof%3DFORID%253A10%26ie%3DUTF-8%26ad%3Dn9%26num%3D10%26rurl%3Dhttp%253A%252F%252Fsubstantiel.fr%252Fliens%252Fresultats.php%253Fsa%253DRechercher%2526q%253Dtami%2525C3%2525A9%252Bsavoie%2526position%253Dhaut%2526cx%253Dpartner-pub-4856195807639056%25253A7971617658%2526cof%253DFORID%25253A10%2526ie%253DUTF-8%26siteurl%3Dhttp%253A%252F%252Fwww.ordissinaute.fr%252Frecherche&u=https%3A%2F%2Fwww.nicolas-hoffmann.net%2Fsource%2Fvacances_savoie_seythenex_tamie.php",` 
+__WTF:__ `"blocked-uri": "http://substantielwww.dyndns.org/configuration/webissimoonlinetrack.txt?r=https%3A%2F%2Fcse.google.fr%2Fcse%3Fsa%3DRechercher%26q%3Dtami%25C3%25A9%2Bsavoie%26position%3Dhaut%26cx%3Dpartner-pub-4856195807639056%253A7971617658%26cof%3DFORID%253A10%26ie%3DUTF-8%26ad%3Dn9%26num%3D10%26rurl%3Dhttp%253A%252F%252Fsubstantiel.fr%252Fliens%252Fresultats.php%253Fsa%253DRechercher%2526q%253Dtami%2525C3%2525A9%252Bsavoie%2526position%253Dhaut%2526cx%253Dpartner-pub-4856195807639056%25253A7971617658%2526cof%253DFORID%25253A10%2526ie%253DUTF-8%26siteurl%3Dhttp%253A%252F%252Fwww.ordissinaute.fr%252Frecherche&u=https%3A%2F%2Fwww.nicolas-hoffmann.net%2Fsource%2Fvacances_savoie_seythenex_tamie.php",`
 
 __Answer:__ any idea?
 
@@ -497,7 +491,7 @@ __Answer:__ any idea?
 }
 ```
 
-__WTF:__ `"script-sample": ".reclame, .advertenties, .advertentie, ....",` 
+__WTF:__ `"script-sample": ".reclame, .advertenties, .advertentie, ....",`
 
 __Answer:__ any idea? (probable extension to avoid ads)
 
@@ -519,9 +513,9 @@ __Answer:__ any idea? (probable extension to avoid ads)
 }
 ```
 
-__WTF:__ `"script-sample": "navigator.__defineGetter__(\"userAgent\", ...",` 
+__WTF:__ `"script-sample": "navigator.__defineGetter__(\"userAgent\", ...",`
 
-__Answer:__ any idea? 
+__Answer:__ any idea?
 
 ---------------------------------------
 # "Highlight style classes"
@@ -542,7 +536,7 @@ __Answer:__ any idea?
 }
 ```
 
-__WTF:__ `"script-sample": "/**\n * Highlight style classes\n * .a bac...",` 
+__WTF:__ `"script-sample": "/**\n * Highlight style classes\n * .a bac...",`
 
 __Answer:__ any idea? (probable extension?)
 
@@ -564,9 +558,9 @@ __Answer:__ any idea? (probable extension?)
 }
 ```
 
-__WTF:__ `"script-sample": "(function(vimiumOnClickAttributeName) {\n...",` 
+__WTF:__ `"script-sample": "(function(vimiumOnClickAttributeName) {\n...",`
 
-__Answer:__ any idea? 
+__Answer:__ any idea?
 
 ---------------------------------------
 # seo-highlighter
@@ -586,7 +580,7 @@ __Answer:__ any idea?
 }
 ```
 
-__WTF:__ `"script-sample": " .seo-highlighter { border-color: red; b...",` 
+__WTF:__ `"script-sample": " .seo-highlighter { border-color: red; b...",`
 
 __Answer:__ any idea? (probable extension, to confirm)
 
@@ -631,7 +625,7 @@ or
 }
 ```
 
-__WTF:__ `"source-file": "https://s3.amazonaws.com/js-cache/fa25c29ce29a202e02.js",` 
+__WTF:__ `"source-file": "https://s3.amazonaws.com/js-cache/fa25c29ce29a202e02.js",`
 
 __Answer:__ any idea?
 
@@ -653,7 +647,7 @@ __Answer:__ any idea?
 }
 ```
 
-__WTF:__ `"script-sample": "/*\n * contextMenu.js v 1.4.0\n * Author: ...",` 
+__WTF:__ `"script-sample": "/*\n * contextMenu.js v 1.4.0\n * Author: ...",`
 
 __Answer:__ any idea?
 
@@ -676,7 +670,7 @@ __Answer:__ any idea?
 }
 ```
 
-__WTF:__ `"script-sample": "@-webkit-keyframes load4 {\n    0%,\n    1...",` 
+__WTF:__ `"script-sample": "@-webkit-keyframes load4 {\n    0%,\n    1...",`
 
 __Answer:__ any idea?
 
@@ -698,7 +692,7 @@ __Answer:__ any idea?
 }
 ```
 
-__WTF:__ `"script-sample": "try{(function overrideDefaultMethods(r, ...",` 
+__WTF:__ `"script-sample": "try{(function overrideDefaultMethods(r, ...",`
 
 __Answer:__ any idea?
 
@@ -721,7 +715,7 @@ __Answer:__ any idea?
 }
 ```
 
-__WTF:__ `"blocked-uri": "https://www.paperkarma.com/images/app_store.png?1458949381",` 
+__WTF:__ `"blocked-uri": "https://www.paperkarma.com/images/app_store.png?1458949381",`
 
 __Answer:__ whaaaaaaaaat is that?
 
@@ -744,7 +738,7 @@ __Answer:__ whaaaaaaaaat is that?
 }
 ```
 
-__WTF:__ `"script-sample": "iframe {display: none;}",` 
+__WTF:__ `"script-sample": "iframe {display: none;}",`
 
 __Answer:__ any idea?
 
@@ -766,7 +760,7 @@ __Answer:__ any idea?
 }
 ```
 
-__WTF:__ `"script-sample": ";(function detect (win) {\n  setTimeout(f...",` 
+__WTF:__ `"script-sample": ";(function detect (win) {\n  setTimeout(f...",`
 
 __Answer:__ any idea?
 
@@ -803,7 +797,7 @@ or
 }
 ```
 
-__WTF:__ `"script-sample": ".vimvixen-console-frame {\n  margin: 0;\n ...",` 
+__WTF:__ `"script-sample": ".vimvixen-console-frame {\n  margin: 0;\n ...",`
 
 __Answer:__ What is that? `vimvixen-console-frame`
 
@@ -826,7 +820,7 @@ __Answer:__ What is that? `vimvixen-console-frame`
 }
 ```
 
-__WTF:__ `"blocked-uri": "https://mc.yandex.ru/watch/44443582",` 
+__WTF:__ `"blocked-uri": "https://mc.yandex.ru/watch/44443582",`
 
 __Answer:__ this website does not use this. Might be ISP in russia inserting Yandex watch.js ? https://aboutdfir.com/yandex-ru-and-intrusion-investigations/
 
@@ -850,7 +844,7 @@ __Answer:__ this website does not use this. Might be ISP in russia inserting Yan
 }
 ```
 
-__WTF:__ `"blocked-uri": "https://ssl.google-analytics.com",` 
+__WTF:__ `"blocked-uri": "https://ssl.google-analytics.com",`
 
 __Answer:__ This website is using Google Analytics (and there was no problem), however, since a few weeks, I get CSP violations on `connect-src` with it. And this is not the only website (confirmed by other people). Anyone to confirm that necessary properties for GA must be updated?
 
@@ -1015,7 +1009,6 @@ __WTF:__ `"script-sample": "a[rel~='nofollow']{outline:.14em dotted ...",`
 
 __Answer:__ any idea?
 
-
 ---------------------------------------
 # moz-extension://
 
@@ -1070,7 +1063,7 @@ __Answer:__ Mozilla extension.
 
 __WTF:__ `"script-sample": ":root audio[data-po76pdm],\n:root   img[d...",`
 
-__Answer:__ Any idea? 
+__Answer:__ Any idea?
 
 ---------------------------------------
 # function injected(eventName, injectedIn...
@@ -1205,7 +1198,7 @@ __Answer:__ Any idea?
 }
 ```
 
-__WTF:__ `"blocked-uri": "http://www.snazzyspace.com/cursorsfolder/mickey-hand.png",` 
+__WTF:__ `"blocked-uri": "http://www.snazzyspace.com/cursorsfolder/mickey-hand.png",`
 
 __Answer:__ Maybe some sort of extensions that manipulate the courser image but why do they load that using the browser?
 
@@ -1257,7 +1250,6 @@ __WTF:__ ????? Nothing like this on the website.
 
 __Answer:__ Any idea how to reproduce?
 
-
 ---------------------------------------
 # pllaff-up.ru
 
@@ -1281,7 +1273,6 @@ __Answer:__ Any idea how to reproduce?
 __WTF:__ ????? Nothing like this on the website.
 
 __Answer:__ Any idea?
-
 
 ---------------------------------------
 # installHook
@@ -1391,7 +1382,7 @@ __Answer:__ Any idea?
 }
 ```
 
-__WTF:__ ????? 
+__WTF:__ ?????
 
 __Answer:__ Any idea?
 
@@ -1418,7 +1409,6 @@ __WTF:__ Nothing like this on the website.
 
 __Answer:__  audio pronunciation files of English dictionary words from Google (https://www.labnol.org/internet/download-audio-pronunciation-words/21064/), however, don't have any idea on how it happened.
 
-
 ---------------------------------------
 # function s(t,n,e,r){t.initialize(
 
@@ -1437,7 +1427,7 @@ __Answer:__  audio pronunciation files of English dictionary words from Google (
 }
 ```
 
-__WTF:__ ????? 
+__WTF:__ ?????
 
 __Answer:__ Any idea?
 
@@ -1460,7 +1450,7 @@ __Answer:__ Any idea?
 }
 ```
 
-__WTF:__ ????? 
+__WTF:__ ?????
 
 __Answer:__ Any idea?
 
@@ -1482,7 +1472,7 @@ __Answer:__ Any idea?
 }
 ```
 
-__WTF:__ ????? 
+__WTF:__ ?????
 
 __Answer:__ Any idea?
 
@@ -1504,7 +1494,7 @@ __Answer:__ Any idea?
 }
 ```
 
-__WTF:__ ????? 
+__WTF:__ ?????
 
 __Answer:__ Any idea?
 
@@ -1526,7 +1516,7 @@ __Answer:__ Any idea?
 }
 ```
 
-__WTF:__ ????? 
+__WTF:__ ?????
 
 __Answer:__ related to forecastfox extension, did not find how to reproduce.
 
@@ -1552,7 +1542,7 @@ __Answer:__ related to forecastfox extension, did not find how to reproduce.
 }
 ```
 
-__WTF:__ ????? 
+__WTF:__ ?????
 
 __Answer:__ Any idea of what is simple-finder.com ? (website is empty)
 
@@ -1645,7 +1635,6 @@ __WTF:__ ?????
 
 __Answer:__ Any idea?
 
-
 ---------------------------------------
 # undroider
 
@@ -1672,7 +1661,7 @@ __WTF:__ ?????
 __Answer:__ What is that? any idea?
 
 ---------------------------------------
-# Cloudflare 
+# Cloudflare
 
 ```
 {
@@ -1754,7 +1743,6 @@ __WTF:__ well, happy to know that is not a zero-length file. And ?
 
 __Answer:__ any idea?
 
-
 ---------------------------------------
 # dl.metabar.ru
 
@@ -1799,7 +1787,7 @@ __Answer:__ any idea?
     }
 }
 ```
-or 
+or
 ```
 {
     "csp-report": {
@@ -1887,7 +1875,6 @@ __WTF:__ nothing like this on the website.
 
 __Answer:__ any idea?
 
-
 ---------------------------------------
 # var delay = null; currDisplay = null;
 
@@ -1910,10 +1897,8 @@ __WTF:__ nothing like this on the website.
 
 __Answer:__ any idea?
 
-
 ---------------------------------------
 # bindo.js
-
 
 ```
 {
@@ -1941,7 +1926,6 @@ __Answer:__ any idea?
 ---------------------------------------
 # webPageNotificationsController
 
-
 ```
 {
     "csp-report": {
@@ -1962,10 +1946,8 @@ __WTF:__ nothing like this on the website.
 
 __Answer:__ related to web push notifications, but no idea how it happened.
 
-
 ---------------------------------------
 # stackoverflow favicon
-
 
 ```
 {
@@ -1989,7 +1971,6 @@ __Answer:__ I don’t know how it happened, but it happened! #achievementUnlocke
 
 ---------------------------------------
 # secure.optibuymac.com
-
 
 ```
 {
@@ -2016,7 +1997,6 @@ __Answer:__ Any idea???
 ---------------------------------------
 # mxaddon-pkg
 
-
 ```
 {
     "csp-report": {
@@ -2039,7 +2019,6 @@ __Answer:__ What is that???
 ---------------------------------------
 # Null
 
-
 ```
 {
     "csp-report": {
@@ -2056,10 +2035,8 @@ __WTF:__ ???
 
 __Answer:__ ??? Well, null.
 
-
 ---------------------------------------
 # function inception
-
 
 ```
 {
@@ -2082,7 +2059,6 @@ __Answer:__ any idea?
 
 ---------------------------------------
 # adsstrike.pro
-
 
 ```
 {
@@ -2107,10 +2083,8 @@ __WTF:__ nothing like this on the website.
 
 __Answer:__ Probably malware, any idea?
 
-
 ---------------------------------------
 # cr-input.mxpnl.net
-
 
 ```
 {
@@ -2133,11 +2107,8 @@ __WTF:__ nothing like this on the website (not in sources, neither in scripts).
 
 __Answer:__ I don’t know where it comes from, but I see it REALLY often in CSP reports.
 
-
-
 ---------------------------------------
 # 7a2rnuey1tw9ar.ru
-
 
 ```
 {
@@ -2183,7 +2154,6 @@ __Answer:__ any idea? Malware, other?
 __WTF:__ nothing like this on the website.
 
 __Answer:__ any idea?
-
 
 ---------------------------------------
 # akamaihd.net
@@ -2250,7 +2220,6 @@ __WTF:__ nothing like this on the website.
 
 __Answer:__ any idea? (gridify?)
 
-
 ---------------------------------------
 # .topbanneradvertise
 
@@ -2273,7 +2242,6 @@ __Answer:__ any idea? (gridify?)
 __WTF:__ nothing like this on the website.
 
 __Answer:__ any idea? (malware, anti-malware ?)
-
 
 ---------------------------------------
 # allowAdblock
@@ -2298,7 +2266,6 @@ __WTF:__ nothing like this on the website.
 
 __Answer:__ any idea?
 
-
 ---------------------------------------
 # *.davebestdeals.com
 
@@ -2320,7 +2287,7 @@ __Answer:__ any idea?
     }
 }
 ```
-or 
+or
 ```
 {
     "csp-report": {
@@ -2362,7 +2329,6 @@ __WTF:__ nothing like this on the website (not in sources, neither in scripts).
 
 __Answer:__ I don’t know where it comes from (malware?), but I see it REALLY often in CSP reports.
 
-
 ---------------------------------------
 # data1.itineraire.info and its friends data1.*
 
@@ -2397,7 +2363,7 @@ or
     }
 }
 ```
-or 
+or
 ```
 {
     "csp-report": {
@@ -2433,7 +2399,6 @@ __WTF:__ nothing like this on the website.
 
 __Answer:__ any idea? (it seems to be confirmed by other RUM sources)
 
-
 ---------------------------------------
 # _PostRPC
 
@@ -2456,7 +2421,6 @@ __Answer:__ any idea? (it seems to be confirmed by other RUM sources)
 __WTF:__ nothing like this on the website ```_PostRPC```.
 
 __Answer:__ any idea?
-
 
 ---------------------------------------
 # fireads.men
@@ -2552,7 +2516,6 @@ __WTF:__ nothing like this on the website ```https://app.abtasty.com```.
 
 __Answer:__ Any idea?
 
-
 ---------------------------------------
 # twitbridge.com
 
@@ -2579,7 +2542,6 @@ __WTF:__ nothing like this on the website ```https://twitbridge.com/ads/include.
 
 __Answer:__ Any idea?
 
-
 ---------------------------------------
 # Webpack_require
 
@@ -2602,7 +2564,6 @@ __Answer:__ Any idea?
 __WTF:__ no function like this on the website ```__webpack_require_```.
 
 __Answer:__ Any idea?
-
 
 ---------------------------------------
 # if (window.google && (window.google.sn
@@ -2647,7 +2608,7 @@ __Answer:__ anybody, an idea?
 
 __WTF:__ chrome://kango-edb6a15c-5f8c-4531-92fa-98e988cf233c/content/lib/jquery-1.8.1.min.js (nothing like this on this website)
 
-__Answer:__ Based on https://github.com/nico3333fr/CSP-useful/issues/32 a firefox extension using a framework called Kango. 
+__Answer:__ Based on https://github.com/nico3333fr/CSP-useful/issues/32 a firefox extension using a framework called Kango.
 
 ---------------------------------------
 # Website frames itself ??
@@ -2671,7 +2632,6 @@ __WTF:__ ???
 
 __Answer:__ attempt of framing this website without sending a referrer? (any better idea?)
 
-
 ---------------------------------------
 # "try {\r\nwindow.AG_onLoad = function ????
 
@@ -2686,7 +2646,7 @@ __Answer:__ attempt of framing this website without sending a referrer? (any bet
         "script-sample": "try {\r\nwindow.AG_onLoad = function(func)...",
         OR
         "script-sample": "try {\r\nvar AG_onLoad=function(func){if(d...",
-        OR 
+        OR
 
         "source-file": "https://www.estcequonmetenprodaujourdhui.info/",
         "violated-directive": "script-src https://www.estcequonmetenprodaujourdhui.info https://www.google-analytics.com https://stats.g.doubleclick.net https://stats.g.doubleclick.net"
@@ -2720,7 +2680,6 @@ __WTF:__ WTF is this? (no embed on this website)
 
 __Answer:__ Any idea?
 
-
 ---------------------------------------
 # function (a,x,m,I){var c={safeWindow: ?????
 
@@ -2738,7 +2697,7 @@ __Answer:__ Any idea?
     }
 }
 ```
-or 
+or
 ```
 {
     "csp-report": {
@@ -2759,7 +2718,6 @@ __WTF:__ WTF is this? (no source like this in this website)
 
 __Answer:__ Any idea?
 
-
 ---------------------------------------
 # var FuckAdBlock/BlockAdBlock = function ?????
 
@@ -2773,7 +2731,7 @@ __Answer:__ Any idea?
         "referrer": "",
         "script-sample": "var FuckAdBlock = function () {\n        ...",
         OR
-        "script-sample": "var BlockAdBlock = function () 
+        "script-sample": "var BlockAdBlock = function ()
 
         "source-file": "https://www.estcequonmetenprodaujourdhui.info/",
         "violated-directive": "script-src https://www.estcequonmetenprodaujourdhui.info https://www.google-analytics.com https://stats.g.doubleclick.net https://stats.g.doubleclick.net"
@@ -2785,9 +2743,7 @@ __WTF:__ WTF is this? (no anti-ad-blocker on this website)
 
 __Answer:__ Any idea?
 
-
 ---------------------------------------
-
 # Encrypted Google???
 
 ```
@@ -2806,9 +2762,7 @@ __WTF:__ WTF is this?
 
 __Answer:__ No idea how this could happen. Any idea?
 
-
 ---------------------------------------
-
 # about:blank????
 
 ```
@@ -2831,7 +2785,6 @@ __WTF:__ ```"document-uri": "about:blank",``` on my personal website www.nicolas
 __Answer:__ Might be related to browser extension blocking the request. https://stackoverflow.com/questions/32336860/why-would-i-get-a-csp-violation-for-the-blocked-uri-about
 
 ---------------------------------------
-
 # static.cmptch.com
 
 ```
@@ -2849,9 +2802,7 @@ __WTF:__ WTF is this?
 
 __Answer:__ No idea how this could happen. Any idea?
 
-
 ---------------------------------------
-
 # enet.enec.gov.ae
 
 ```
@@ -2869,9 +2820,7 @@ __WTF:__ WTF is this?
 
 __Answer:__ Domain enet.enec.gov.ae doesn't exist. But domain enec.gov.ae is resolved to this: The Emirates Nuclear Energy Corporation (ENEC) is leading the development of the United Arab Emirates (UAE) Peaceful Nuclear Energy Program and building the country’s first nuclear energy plant. Maybe some internal government network?
 
-
 ---------------------------------------
-
 # d19mml8yptdetb.cloudfront.net
 
 ```
@@ -2889,9 +2838,7 @@ __WTF:__ WTF is this?
 
 __Answer:__ According by this video, this is some kind of extension to help you choose products in online stores. Needed details.
 
-
 ---------------------------------------
-
 # pe78ohwhk.ru
 
 ```
@@ -2911,9 +2858,7 @@ __WTF:__ WTF is this?
 
 __Answer:__ Probably some malware. Any idea?
 
-
 ---------------------------------------
-
 # searches3250409-a.akamaihd.net
 
 ```
@@ -2932,7 +2877,6 @@ __WTF:__ WTF is this?
 __Answer:__  Any idea?
 
 ---------------------------------------
-
 # http://uc.gre/pass
 
 ```
@@ -2946,12 +2890,11 @@ __Answer:__  Any idea?
 }
 ```
 
-__WTF:__ ????? 
+__WTF:__ ?????
 
 __Answer:__ ????
 
 ---------------------------------------
-
 # mp3 file?
 
 ```
@@ -2970,6 +2913,26 @@ __WTF:__ How a mp3 could violate the `script-src` policy? Is it because, on some
 
 __Answer:__ ????
 
+---------------------------------------
+# var SECRET
+
+```
+{
+    "csp-report": {
+        "document-uri": "https://www.techsolvency.com/",
+        "effective-directive": "script-src",
+        "original-policy": "default-src 'none'; base-uri 'self'; connect-src 'self' https://www.google-analytics.com; font-src 'self'; form-action 'self'; frame-ancestors 'none'; frame-src 'none'; img-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://jigsaw.w3.org https://www.w3.org; manifest-src 'none'; media-src 'self'; object-src 'none'; script-src 'self' https://www.googletagmanager.com https://www.google-analytics.com 'report-sample'; style-src 'self' 'report-sample'; worker-src 'none'; block-all-mixed-content; sandbox allow-forms allow-scripts allow-same-origin; report-uri https://techsolvency.report-uri.com/r/d/csp/enforce; report-to default",
+        "blocked-uri": "eval",
+        "line-number": 1,
+        "column-number": 39833,
+        "script-sample": "var SECRET = \"±y<U+0094>]\\u001c\\u000eÎ><U+009D><õßP<U+0090>*<U+0091>"
+    }
+}
+```
+
+__WTF:__ script-sample "var SECRET"
+
+__Answer:__ ?
 
 ---------------------------------------
 If you have some examples to share (even if you don't know what the fuck it is coming from), feel free to share them. Anonymize the URL/policy if needed.
