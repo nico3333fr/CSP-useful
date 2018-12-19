@@ -3,6 +3,30 @@
 Sometimes, CSP notifications are __really difficult to understand or very strange__. Here is a collection of some CSP WTF.
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
+
+---------------------------------------
+# promlinkdev.com
+
+```
+{
+    "csp-report": {
+        "document-uri": "https://van11y.net/fr/carrousel-accessible/",
+        "referrer": "https://www.google.com/",
+        "violated-directive": "img-src",
+        "effective-directive": "img-src",
+        "original-policy": "upgrade-insecure-requests;  block-all-mixed-content; default-src 'none' ;  script-src 'self'; style-src 'self' 'nonce-521bad469d4e2cf9d6bc53a042c41812693d322f02c71d4a49dd15638d9b2ea89ffc28b0aa48fe251977ca6a651b05211069937661a04a25e3c42a669b3d0f39' ; img-src 'self'; font-src 'self';  connect-src 'self' ; child-src 'self' ; frame-ancestors 'self'  ; manifest-src 'self' ; worker-src 'self' ; base-uri 'none' ; form-action 'none' ;   report-uri /csp-parser.php ;",
+        "disposition": "enforce",
+        "blocked-uri": "https://promlinkdev.com/metric/?mid=&wid=52190&sid=&tid=7537&rid=FINISHED&custom1=van11y.net&t=1545148039090",
+        "status-code": 0,
+        "script-sample": ""
+    }
+}
+```
+
+__WTF:__ `"blocked-uri": "https://promlinkdev.com/metric/?mid=&wid=52190&sid=&tid=7537&rid=FINISHED&custom1=van11y.net&t=1545148039090",`
+
+__Answer:__ might be related to a Chrome plugin/malware that collects infos? https://twitter.com/ppcelery/status/1034684436405776385 (to confirm)
+
 ---------------------------------------
 # "blocked-uri": "inline"
 
