@@ -139,6 +139,7 @@ JS/jQuery plugins should provide the CSP requirements they need to work (especia
 - <del>Edge (no URL tracker yet, same workaround than for Firefox)</del> (seems to be fixed on Edge)
 - Firefox: https://bugzilla.mozilla.org/show_bug.cgi?id=1445643 (extension triggers CSP violation using base-uri directive)
 - Chrome: https://tests.borisschapira.com/upgrade-insecure-requests/ (about `upgrade-insecure-requests; block-all-mixed-content`, bugs on Chrome [615885](https://bugs.chromium.org/p/chromium/issues/detail?id=615885), [617584](https://bugs.chromium.org/p/chromium/issues/detail?id=617584)
+- Chrome: https://github.com/nico3333fr/CSP-useful/issues/75 (CSP img error when using `video` tag, reported [here](https://github.com/nico3333fr/CSP-useful/issues/75))
 
 
 ## Resources
