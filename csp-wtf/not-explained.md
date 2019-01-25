@@ -2784,25 +2784,4 @@ __WTF:__ How a mp3 could violate the `script-src` policy? Is it because, on some
 __Answer:__ ????
 
 ---------------------------------------
-# var SECRET
-
-```
-{
-    "csp-report": {
-        "document-uri": "https://www.techsolvency.com/",
-        "effective-directive": "script-src",
-        "original-policy": "default-src 'none'; base-uri 'self'; connect-src 'self' https://www.google-analytics.com; font-src 'self'; form-action 'self'; frame-ancestors 'none'; frame-src 'none'; img-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://jigsaw.w3.org https://www.w3.org; manifest-src 'none'; media-src 'self'; object-src 'none'; script-src 'self' https://www.googletagmanager.com https://www.google-analytics.com 'report-sample'; style-src 'self' 'report-sample'; worker-src 'none'; block-all-mixed-content; sandbox allow-forms allow-scripts allow-same-origin; report-uri https://techsolvency.report-uri.com/r/d/csp/enforce; report-to default",
-        "blocked-uri": "eval",
-        "line-number": 1,
-        "column-number": 39833,
-        "script-sample": "var SECRET = \"±y<U+0094>]\\u001c\\u000eÎ><U+009D><õßP<U+0090>*<U+0091>"
-    }
-}
-```
-
-__WTF:__ script-sample "var SECRET"
-
-__Answer:__ ?
-
----------------------------------------
 If you have some examples to share (even if you don't know what the fuck it is coming from), feel free to share them. Anonymize the URL/policy if needed.
