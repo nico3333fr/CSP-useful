@@ -21,7 +21,7 @@ If you have an idea (even if the idea is WTF) for some of these, do not hesitate
 
 __WTF:__ `"blocked-uri": "chrome-extension",`
 
-__Answer:__ explained by @Zenexer (here)[https://github.com/nico3333fr/CSP-useful/issues/70]: `chrome-extension:` will appear in reports when a Chrome extension attempts to inject a script, iframe, or other content into a page that doesn't explicitly allow the `chrome-extension:` scheme. If users are complaining that their extensions aren't working on your site, this is why. Oftentimes they're injecting questionable content (e.g., ads or analytics), in which case you may want to deliberately omit this.
+__Answer:__ explained by @Zenexer [here](https://github.com/nico3333fr/CSP-useful/issues/70): `chrome-extension:` will appear in reports when a Chrome extension attempts to inject a script, iframe, or other content into a page that doesn't explicitly allow the `chrome-extension:` scheme. If users are complaining that their extensions aren't working on your site, this is why. Oftentimes they're injecting questionable content (e.g., ads or analytics), in which case you may want to deliberately omit this.
 
 ---------------------------------------
 # moz-extension://
