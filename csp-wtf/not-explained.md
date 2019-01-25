@@ -2765,24 +2765,6 @@ __WTF:__ WTF is this?
 __Answer:__  Any idea?
 
 ---------------------------------------
-# http://uc.gre/pass
-
-```
-{
-    "csp-report": {
-        ...
-        "violated-directive":"connect-src",
-        "blocked-uri":"http://uc.gre/pass/uc_gre_ad_buss/plugin.php?uc_param_str=cpfrvelakt&amp;namespace=bottom-ad-i18n&amp;[...]",
-        ...
-    }
-}
-```
-
-__WTF:__ ?????
-
-__Answer:__ ????
-
----------------------------------------
 # mp3 file?
 
 ```

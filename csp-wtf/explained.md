@@ -3,6 +3,25 @@
 Sometimes, CSP notifications are __really difficult to understand or very strange__. Here is a collection of some CSP WTF.
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
+
+---------------------------------------
+# http://uc.gre/pass
+
+```
+{
+    "csp-report": {
+        ...
+        "violated-directive":"connect-src",
+        "blocked-uri":"http://uc.gre/pass/uc_gre_ad_buss/plugin.php?uc_param_str=cpfrvelakt&amp;namespace=bottom-ad-i18n&amp;[...]",
+        ...
+    }
+}
+```
+
+__WTF:__ ?????
+
+__Answer:__ According to @Zenexer, this is most likely a result of content injected by UC Browser. It's a popular browser in China and a few other countries in the region. It seems to have a habit of siphoning data from web pages that its users visit, as well as injecting analytics and possibly ads. This particular report may actually be from an extension designed for UC Browser.
+
 ---------------------------------------
 # d19mml8yptdetb.cloudfront.net
 
