@@ -4,6 +4,82 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 ---------------------------------------
+# Chrome-extension
+
+```
+{
+    "csp-report": {
+        "blocked-uri": "chrome-extension",
+        "document-uri": "https://van11y.net/accessible-simple-tooltip/",
+        "original-policy": "upgrade-insecure-requests; block-all-mixed-content; default-src 'none'; script-src 'self'; style-src 'self' 'nonce-8fc130f94ccb647bc991f78208643ecf1282391f70a0a70a4c65d667c147606a2ddf85a996fc6584b322dac633e00145f7176c941a2b9f5791989412aaf01005'; img-src 'self'; font-src 'self'; connect-src 'self'; child-src 'self'; frame-ancestors 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; report-uri https://van11y.net/csp-parser.php",
+        "referrer": "https://www.google.com/",
+        "violated-directive": "font-src"
+    }
+}
+```
+
+
+__WTF:__ `"blocked-uri": "chrome-extension",`
+
+__Answer:__ explained by @Zenexer (here)[https://github.com/nico3333fr/CSP-useful/issues/70]: `chrome-extension:` will appear in reports when a Chrome extension attempts to inject a script, iframe, or other content into a page that doesn't explicitly allow the `chrome-extension:` scheme. If users are complaining that their extensions aren't working on your site, this is why. Oftentimes they're injecting questionable content (e.g., ads or analytics), in which case you may want to deliberately omit this.
+
+---------------------------------------
+# moz-extension://
+
+```
+{
+    "csp-report": {
+        "blocked-uri": "self",
+        "document-uri": "https://www.nicolas-hoffmann.net/source/1313-Meta-tag-imagetoolbar-indesirable-en-HTML5.html",
+        "original-policy": "default-src 'none'; script-src https://www.nicolas-hoffmann.net https://google-analytics.com https://stats.g.doubleclick.net https://stats.g.doubleclick.net; style-src https://www.nicolas-hoffmann.net data:; img-src https://www.nicolas-hoffmann.net https://google-analytics.com https://stats.g.doubleclick.net https://stats.g.doubleclick.net https://ssl.google-analytics.com data:; connect-src https://www.nicolas-hoffmann.net; font-src https://www.nicolas-hoffmann.net; media-src https://www.nicolas-hoffmann.net; object-src https://www.nicolas-hoffmann.net https://www.youtube.com; child-src https://www.nicolas-hoffmann.net; frame-ancestors https://www.nicolas-hoffmann.net; manifest-src https://www.nicolas-hoffmann.net; form-action https://www.nicolas-hoffmann.net; base-uri 'none'; report-uri https://www.nicolas-hoffmann.net/csp-parser.php",
+        "referrer": "https://www.google.fr/",
+        "script-sample": "background-image: url(moz-extension://9c...",
+
+        "source-file": "https://www.nicolas-hoffmann.net/source/1313-Meta-tag-imagetoolbar-indesirable-en-HTML5.html",
+        "violated-directive": "style-src https://www.nicolas-hoffmann.net data:"
+    }
+}
+```
+or
+```
+{
+    "csp-report": {
+        "blocked-uri": "moz-extension",
+        "document-uri": "https://van11y.net/fr/",
+        "original-policy": "default-src 'none'; script-src https://van11y.net; style-src https://van11y.net; img-src https://van11y.net; font-src https://van11y.net; connect-src https://van11y.net; child-src https://van11y.net; frame-ancestors https://van11y.net; manifest-src https://van11y.net; worker-src https://van11y.net; base-uri 'none'; form-action 'none'; report-uri https://van11y.net/csp-parser.php",
+        "referrer": "",
+        "violated-directive": "base-uri"
+    }
+}
+```
+
+__WTF:__ `"script-sample": "background-image: url(moz-extension://9c...",` or `"blocked-uri": "moz-extension",`
+
+__Answer:__ Same explanation as above, but for Firefox.
+
+---------------------------------------
+# about:blank
+
+```
+
+{
+    "csp-report": {
+        "document-uri": "about:blank",
+        "referrer": "",
+        "violated-directive": "font-src 'self'",
+        "effective-directive": "font-src",
+        "original-policy": "default-src 'none';  script-src 'self' google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net; style-src 'self' ; img-src 'self' google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net ssl.google-analytics.com  data: ;  connect-src 'self';  font-src 'self'; media-src 'self'; object-src 'self' www.youtube.com ;  child-src 'self' ;  frame-ancestors 'none' ; report-uri /csp-parser.php ;",
+        "blocked-uri": "https://github.com/google/fonts/blob/master/apache/opensans/OpenSans-Semibold.ttf?raw=true",
+        "status-code": 0
+    }
+}
+```
+
+__WTF:__ `"document-uri": "about:blank",` on my personal website www.nicolas-hoffmann.net with a font???
+
+__Answer:__ same as above: Depending on how the extension works and what browser is being used, `about:blank` or other `about:` URLs may appear instead of an extension scheme.
+
+---------------------------------------
 # Google Analytics connect-src violation
 
 ```
