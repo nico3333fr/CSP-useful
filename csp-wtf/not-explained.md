@@ -2727,24 +2727,6 @@ __WTF:__ WTF is this?
 __Answer:__ Domain enet.enec.gov.ae doesn't exist. But domain enec.gov.ae is resolved to this: The Emirates Nuclear Energy Corporation (ENEC) is leading the development of the United Arab Emirates (UAE) Peaceful Nuclear Energy Program and building the country’s first nuclear energy plant. Maybe some internal government network?
 
 ---------------------------------------
-# d19mml8yptdetb.cloudfront.net
-
-```
-{
-    "csp-report": {
-        "document-uri": "[anonymised]",
-        "effective-directive": "media-src",
-        "original-policy": "[anonymised]",
-        "blocked-uri": "https://d19mml8yptdetb.cloudfront.net/images/thinkOver/extension/onb/video/small_drag_and_drop.mp4"
-    }
-}
-```
-
-__WTF:__ WTF is this?
-
-__Answer:__ According by this video, this is some kind of extension to help you choose products in online stores. Needed details.
-
----------------------------------------
 # pe78ohwhk.ru
 
 ```

@@ -4,6 +4,24 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 ---------------------------------------
+# d19mml8yptdetb.cloudfront.net
+
+```
+{
+    "csp-report": {
+        "document-uri": "[anonymised]",
+        "effective-directive": "media-src",
+        "original-policy": "[anonymised]",
+        "blocked-uri": "https://d19mml8yptdetb.cloudfront.net/images/thinkOver/extension/onb/video/small_drag_and_drop.mp4"
+    }
+}
+```
+
+__WTF:__ WTF is this?
+
+__Answer:__ According to @Zenexer, This is adware/spyware/malware. Keep it blocked.
+
+---------------------------------------
 # Chrome-extension
 
 ```
