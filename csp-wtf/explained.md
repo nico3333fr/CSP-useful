@@ -3035,4 +3035,28 @@ __WTF:__ `script-sample "var SECRET"`
 __Answer:__ according to @Zenexer, `eval()` is considered unsafe and needs to be explicitly allowed with `script-src 'eval'`, otherwise it will be blocked. Numerous frameworks and analytics libraries make use of `eval()`.
 
 ---------------------------------------
+# Many CSS class names in this file
+
+```
+{
+    "csp-report": {
+        "blocked-uri": "self",
+        "document-uri": "https://www.estcequonmetenprodaujourdhui.info/",
+        "line-number": 1,
+        "original-policy": "default-src 'none'; script-src https://www.estcequonmetenprodaujourdhui.info; style-src https://www.estcequonmetenprodaujourdhui.info 'nonce-6d7c01d7f06a094cec57dfffe62ed5ff85e7c82486b547a8248610581e9164a30b517b18c3cceb4db0a32b263cc0d8aa3d93a3e8bf8c8cd39e3769003de111b1'; img-src https://www.estcequonmetenprodaujourdhui.info data:; font-src https://www.estcequonmetenprodaujourdhui.info; child-src https://www.estcequonmetenprodaujourdhui.info; frame-ancestors 'none'; manifest-src https://www.estcequonmetenprodaujourdhui.info; base-uri 'none'; report-uri https://www.estcequonmetenprodaujourdhui.info/csp-parser.php",
+        "referrer": "",
+        "script-sample": "/*\n * Many CSS class names in this file ...",
+
+        "source-file": "https://www.estcequonmetenprodaujourdhui.info/",
+        "violated-directive": "style-src https://www.estcequonmetenprodaujourdhui.info 'nonce-6d7c01d7f06a094cec57dfffe62ed5ff85e7c82486b547a8248610581e9164a30b517b18c3cceb4db0a32b263cc0d8aa3d93a3e8bf8c8cd39e3769003de111b1'"
+
+    }
+}
+```
+
+__WTF:__ `"script-sample": "/*\n * Many CSS class names in this file ...",` (not present on this site)
+
+__Answer:__ This is a styles injection from Chrome extension [Vimium](https://github.com/daidaiworm/vimium). [This file](https://github.com/daidaiworm/vimium/blob/master/content_scripts/vimium.css) specifically.
+
+---------------------------------------
 If you have some examples to share (even if you don't know what the fuck it is coming from), feel free to share them. Anonymize the URL/policy if needed.
