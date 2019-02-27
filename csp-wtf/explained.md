@@ -3035,4 +3035,27 @@ __WTF:__ `script-sample "var SECRET"`
 __Answer:__ according to @Zenexer, `eval()` is considered unsafe and needs to be explicitly allowed with `script-src 'eval'`, otherwise it will be blocked. Numerous frameworks and analytics libraries make use of `eval()`.
 
 ---------------------------------------
+# a[rel~='nofollow']
+
+```
+{
+    "csp-report": {
+        "blocked-uri": "self",
+        "document-uri": "https://www.estcequonmetenprodaujourdhui.info/",
+        "line-number": 1,
+        "original-policy": "default-src 'none'; script-src https://www.estcequonmetenprodaujourdhui.info; style-src https://www.estcequonmetenprodaujourdhui.info 'nonce-55771bc06394e3735ebf35c1f0d06ab1d6d8b5d7dfc19e0a9b91b098fe85e7257ed8ff5efba98364c721c7bed796522146e75a3a9d0564b56d1d862b1e0e5d82'; img-src https://www.estcequonmetenprodaujourdhui.info data:; font-src https://www.estcequonmetenprodaujourdhui.info; child-src https://www.estcequonmetenprodaujourdhui.info; frame-ancestors 'none'; manifest-src https://www.estcequonmetenprodaujourdhui.info; base-uri 'none'; report-uri https://www.estcequonmetenprodaujourdhui.info/csp-parser.php",
+        "referrer": "",
+        "script-sample": "a[rel~='nofollow']{outline:.14em dotted ...",
+        "source-file": "https://www.estcequonmetenprodaujourdhui.info/",
+        "violated-directive": "style-src https://www.estcequonmetenprodaujourdhui.info 'nonce-55771bc06394e3735ebf35c1f0d06ab1d6d8b5d7dfc19e0a9b91b098fe85e7257ed8ff5efba98364c721c7bed796522146e75a3a9d0564b56d1d862b1e0e5d82'"
+
+    }
+}
+```
+
+__WTF:__ `"script-sample": "a[rel~='nofollow']{outline:.14em dotted ...",`
+
+__Answer:__ This is style injection attempt from some SEO links spam extension (or extension with SEO malware added)
+
+---------------------------------------
 If you have some examples to share (even if you don't know what the fuck it is coming from), feel free to share them. Anonymize the URL/policy if needed.
