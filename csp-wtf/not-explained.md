@@ -5,6 +5,26 @@ If you have an idea (even if the idea is WTF) for some of these, do not hesitate
 
 
 ---------------------------------------
+# thrillingos.herokuapp.com/mozilla/best-ytb-down/content/analytics
+
+```
+{
+    "csp-report": {
+        "blocked-uri": "https://thrillingos.herokuapp.com/mozilla/best-ytb-down/content/analytics",
+        "document-uri": "https://van11y.net/fr/infobulles-tooltips-accessibles/",
+        "original-policy": "upgrade-insecure-requests; block-all-mixed-content; default-src 'none'; script-src 'self'; style-src 'self' 'nonce-9c9e7dd03d03c1dcb89bcefeba7e90f2fe079997c8279f3fa6b3c088f7210b7f565891f2b023d2bddae50afda37baf25587c02d5d6d2a38b3cb9f62e155d9d52'; img-src 'self'; font-src 'self'; connect-src 'self'; child-src 'self'; frame-ancestors 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; report-uri https://van11y.net/csp-parser.php",
+        "referrer": "",
+        "violated-directive": "script-src"
+    }
+}
+```
+
+__WTF:__ `"blocked-uri": "https://thrillingos.herokuapp.com/mozilla/best-ytb-down/content/analytics",`
+
+__Answer:__ Any idea?
+
+
+---------------------------------------
 # promlinkdev.com
 
 ```
