@@ -4,6 +4,27 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 
+
+---------------------------------------
+# xen-media
+
+```
+{
+    "csp-report": {
+        "blocked-uri": "https://xen-media.com/downloads",
+        "document-uri": "https://www.estcequonmetenprodaujourdhui.info/",
+        "original-policy": "default-src 'none'; script-src 'self'; style-src 'self' 'nonce-8d23d9c25a22f76a976a1dbfe50514b39d5a3571a5ec393e2940d283d7cfbacb576037926f475b1f1b4967516891ce217854127b4bf88b8110b0f43939e889e2'; img-src 'self' data:; font-src 'self'; child-src 'self' https://www.youtube.com; frame-src 'self' https://www.youtube.com; frame-ancestors 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; report-uri https://www.estcequonmetenprodaujourdhui.info/csp-parser.php",
+        "referrer": "https://t.co/8xebmwWi53",
+        "violated-directive": "frame-src"
+    }
+}
+```
+
+__WTF:__ `"blocked-uri": "https://xen-media.com/downloads",`
+
+__Answer:__ Any idea?
+
+
 ---------------------------------------
 # thrillingos.herokuapp.com/mozilla/best-ytb-down/content/analytics
 
