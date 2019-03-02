@@ -5,6 +5,26 @@ If you have an idea (even if the idea is WTF) for some of these, do not hesitate
 
 
 ---------------------------------------
+# Copy All Links Mozilla Firefox Addon
+
+```
+{
+    "csp-report": {
+        "blocked-uri": "https://addonfiles.com/mozilla/copy-all-links",
+        "document-uri": "https://www.nicolas-hoffmann.net/source/terragen.php",
+        "original-policy": "default-src 'none'; script-src 'self' https://google-analytics.com https://stats.g.doubleclick.net https://stats.g.doubleclick.net; style-src 'self' data:; img-src 'self' https://google-analytics.com https://stats.g.doubleclick.net https://stats.g.doubleclick.net https://ssl.google-analytics.com data:; connect-src 'self'; font-src 'self'; media-src 'self'; object-src 'self' https://www.youtube.com; child-src 'self'; frame-ancestors 'self'; manifest-src 'self'; form-action 'self'; worker-src 'self'; base-uri 'none'; report-uri https://www.nicolas-hoffmann.net/csp-parser.php",
+        "referrer": "https://www.nicolas-hoffmann.net/source/",
+        "violated-directive": "script-src"
+    }
+}
+```
+
+__WTF:__ ?????
+
+__Answer:__ Caused by [Copy All Links Mozilla Firefox Addon](https://pluginsaddonsextensions.com/mozilla-firefox/copy-all-links-mozilla-addon).
+
+
+---------------------------------------
 # http://uc.gre/pass
 
 ```
