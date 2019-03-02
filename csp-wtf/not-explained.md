@@ -4,6 +4,25 @@ Sometimes, CSP notifications are __really difficult to understand or very strang
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
 
+---------------------------------------
+# com.lge.browser ?
+
+```
+{
+    "csp-report": {
+        "document-uri": "https://www.estcequonmetenprodaujourdhui.info/",
+        "referrer": "https://www.google.fr/",
+        "violated-directive": "script-src 'self' ",
+        "original-policy": "default-src 'none';  script-src 'self' ; style-src 'self' 'nonce-59fcbe93241bcdab2b73ca30e2920bddac1c46ee36ec1991fbb2f73eed1d5180f75acf51c59ade92e1a1cb89e2e6966255123608e07ef5dfcc177e327388b7b4' ; img-src 'self'  data: ;  font-src 'self'; child-src 'self' www.youtube.com ; frame-src 'self' www.youtube.com ;  frame-ancestors 'self' ; manifest-src 'self' ; worker-src 'self' ; base-uri 'none';  report-uri /csp-parser.php ;",
+        "blocked-uri": "https://com.lge.browser",
+        "status-code": 0
+    }
+}
+```
+
+__WTF:__ `"blocked-uri": "https://com.lge.browser",`
+
+__Answer:__ Any idea?
 
 ---------------------------------------
 # xen-media
