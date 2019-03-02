@@ -2232,6 +2232,24 @@ __Answer:__ might be related to some ISPs that are inserting scripts on your web
     }
 }
 ```
+or
+```
+{
+    "csp-report": {
+        "document-uri": "https://van11y.net/",
+        "referrer": "https://www.nicolas-hoffmann.net/",
+        "violated-directive": "script-src-elem",
+        "effective-directive": "script-src-elem",
+        "original-policy": "upgrade-insecure-requests;  block-all-mixed-content; default-src 'none' ;  script-src 'self'; style-src 'self' 'nonce-a9f70564cb8b1de36d5ba525c86b24fb752c99a165b02f1d75bbfb42c6251fa0ace2ffb8a6e1b62d3f771d26fecacade2dd803d46ee5cf31c96f509766d8e0f4' ; img-src 'self'; font-src 'self';  connect-src 'self' ; child-src 'self' ; frame-ancestors 'self'  ; manifest-src 'self' ; worker-src 'self' ; base-uri 'none' ; form-action 'none' ;   report-uri /csp-parser.php ;",
+        "disposition": "enforce",
+        "blocked-uri": "https://translate.google.com/translate_a/element.js?cb=TECB_1E07F158C6FA4460B352973E9693B329&client=tee&hl=fr",
+        "line-number": 39,
+        "column-number": 48,
+        "status-code": 0,
+        "script-sample": ""
+    }
+}
+```
 
 __WTF:__ no code like this on this website.
 
