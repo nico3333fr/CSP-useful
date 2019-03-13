@@ -105,6 +105,7 @@ default-src *.vimeo.com ;
 script-src *.vimeo.com *.vimeocdn.com *.newrelic.com *.nr-data.net ;
 style-src *.vimeocdn.com ;
 child-src 'self' *.vimeo.com *.vimeocdn.com ;
+connect-src *.vimeo.com ;
 ```
 
 (to test further, these values seem to be ok)
