@@ -3121,4 +3121,36 @@ __WTF:__ `"script-sample": "a[rel~='nofollow']{outline:.14em dotted ...",`
 __Answer:__ This is style injection attempt from some SEO links spam extension (or extension with SEO malware added)
 
 ---------------------------------------
+
+# blocked-uri: https://ad.smar-t.jp/*
+
+```
+{
+    "csp-report": {
+...
+        "violated-directive":"style-src-elem",
+        "blocked-uri":"https://ad.smar-t.jp/ad/css/content-test.css",
+        "line-number":131,
+        "column-number":15,
+        "source-file":"https://ad.smar-t.jp/ad/js/content-script-chrome.js"
+    }
+}
+
+{
+    "csp-report": {
+...
+        "violated-directive":"connect-src",
+        "blocked-uri":"https://ad.smar-t.jp/reqdev",
+        "line-number":320,
+        "column-number":6,
+        "source-file":"https://ad.smar-t.jp/ad/js/content-script-chrome.js"
+    }
+}
+```
+
+__WTF:__ ???
+
+__Answer:__ User has browser extension with ads injection malware script
+
+---------------------------------------
 If you have some examples to share (even if you don't know what the fuck it is coming from), feel free to share them. Anonymize the URL/policy if needed.
