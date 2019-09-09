@@ -2797,4 +2797,28 @@ __WTF:__ How a mp3 could violate the `script-src` policy? Is it because, on some
 __Answer:__ ????
 
 ---------------------------------------
+# `;!function(){var t,e,n,o=0,u=function(t,…`
+
+```
+{
+  "csp-report": {
+    "line_number": 1,
+    "blocked_uri": "inline",
+    "script_sample": ";!function(){var t,e,n,o=0,u=function(t,…",
+    "referrer": "...",
+    "violated_directive": "script-src",
+    "document_uri": "...",
+    "original_policy": "...",
+    "source_file": "...",
+    "column_number": 1,
+    "effective_directive": "script-src"
+  }
+}
+```
+
+__WTF:__ `"script_sample": ";!function(){var t,e,n,o=0,u=function(t,…"`?
+
+__Answer:__ ????
+
+---------------------------------------
 If you have some examples to share (even if you don't know what the fuck it is coming from), feel free to share them. Anonymize the URL/policy if needed.
