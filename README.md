@@ -189,6 +189,7 @@ JS/jQuery plugins should provide the CSP requirements they need to work (especia
 - https://github.com/rtanglao/rt-csp
 - [CSP implementations are broken](https://jellyhive.com/activity/posts/2018/03/26/csp-implementations-are-broken/)
 - [CSP report for Netlify](https://github.com/stefanjudis/stefan-judis-website/blob/020f1b005cb1fcf4da8afa4407d9514917aecda0/functions/report.js)
+- [Run SQL on violation JSON, send violations to Slack](https://pipedream.com/@dylburger/process-csp-violations-p_brC8vJ/readme)
 
 
 ### Why you should use CSP
