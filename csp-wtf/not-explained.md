@@ -2821,4 +2821,27 @@ __WTF:__ `"script_sample": ";!function(){var t,e,n,o=0,u=function(t,…"`?
 __Answer:__ ????
 
 ---------------------------------------
+# Google font injected
+
+```
+{
+  "csp-report": {
+    "blocked_uri": "https://fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UNirkOUuhp.woff2",
+    "script_sample": "",
+    "status_code": 0,
+    "violated_directive": "font-src",
+    "document_uri": "***",
+    "original_policy": "default-src 'self'; script-src 'self' is.gd v.gd sentry.io; style-src 'self'; img-src 'self' data:; font-src 'self'; frame-src codesandbox.io; connect-src 'self' sentry.io",
+    "disposition": "enforce",
+    "referrer": "",
+    "effective_directive": "font-src"
+  }
+}
+```
+
+__WTF:__ I don't use Google Fonts in my site. But I have thousands of CSP violations (from different users, different browsers and different operating systems)
+
+__Answer:__ Any idea?
+
+---------------------------------------
 If you have some examples to share (even if you don't know what the fuck it is coming from), feel free to share them. Anonymize the URL/policy if needed.
