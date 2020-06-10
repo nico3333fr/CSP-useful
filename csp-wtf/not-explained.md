@@ -3,6 +3,64 @@
 Sometimes, CSP notifications are __really difficult to understand or very strange__. Here is a collection of some CSP WTF.
 If you have an idea (even if the idea is WTF) for some of these, do not hesitate to participate :)
 
+Put new ones on the top please :)
+
+---------------------------------------
+# `avast webfont`
+
+```
+{
+  "csp-report": {
+    "violated-directive": "font-src",
+    "effective-directive": "font-src",
+    "blocked-uri": "https://static3.avast.com/1000947/web/o/f/700/proximanova-bold-webfont.woff",
+    "status-code": "0",
+    "script-sample": ""
+  }
+}
+```
+
+__WTF:__ `blocked-uri": "https://static3.avast.com/1000947/web/o/f/700/proximanova-bold-webfont.woff`
+
+__Answer:__ Probably an Avast extension triggered on websites, to confirm????
+
+---------------------------------------
+# `subwayblaze.com/api/pcgc`
+
+```
+{
+  "csp-report": {
+    "violated-directive": "connect-src",
+    "effective-directive": "connect-src",
+    "blocked-uri": "https://subwayblaze.com/api/pcgc?iid=47893ace-9ee9-490f-8cb3-90d7582cf902&iidList=47893ace-9ee9-490f-8cb3-90d7582cf902&ipt=false&itt=false",
+    "status-code": "0",
+    "script-sample": ""
+  }
+}
+```
+
+__WTF:__ `"blocked-uri": "https://subwayblaze.com/api/pcgc?iid=47893ace-9ee9-490f-8cb3-90d7582cf902&iidList=47893ace-9ee9-490f-8cb3-90d7582cf902&ipt=false&itt=false",`
+
+__Answer:__ ????
+
+---------------------------------------
+# `assets.grammarly.com`
+
+```
+{
+  "csp-report": {
+    "violated-directive": "img-src 'self' data:",
+    "effective-directive": "img-src",
+    "blocked-uri": "https://assets.grammarly.com",
+    "status-code": "0",
+    "source-file": "safari-extension://9fb77544-7bd2-487c-a671-fd49c6d7b552",
+  }
+}
+```
+
+__WTF:__ `"source-file": "safari-extension://9fb77544-7bd2-487c-a671-fd49c6d7b552",`
+
+__Answer:__ Probably Grammarly Safari extension????
 
 ---------------------------------------
 # com.lge.browser ?
@@ -2817,63 +2875,6 @@ __Answer:__ ????
 ```
 
 __WTF:__ `"script_sample": ";!function(){var t,e,n,o=0,u=function(t,…"`?
-
-__Answer:__ ????
-
----------------------------------------
-# `avast webfont`
-
-```
-{
-  "csp-report": {
-    "violated-directive": "font-src",
-    "effective-directive": "font-src",
-    "blocked-uri": "https://static3.avast.com/1000947/web/o/f/700/proximanova-bold-webfont.woff",
-    "status-code": "0",
-    "script-sample": ""
-  }
-}
-```
-
-__WTF:__ `Not sure what to do about this`?
-
-__Answer:__ ????
-
----------------------------------------
-# `subwayblaze.com/api/pcgc`
-
-```
-{
-  "csp-report": {
-    "violated-directive": "connect-src",
-    "effective-directive": "connect-src",
-    "blocked-uri": "https://subwayblaze.com/api/pcgc?iid=47893ace-9ee9-490f-8cb3-90d7582cf902&iidList=47893ace-9ee9-490f-8cb3-90d7582cf902&ipt=false&itt=false",
-    "status-code": "0",
-    "script-sample": ""
-  }
-}
-```
-
-__WTF:__ `Not sure what to do about this`?
-
-__Answer:__ ????
-
----------------------------------------
-# `assets.grammarly.com`
-
-```
-{
-  "csp-report": {
-    "violated-directive": "img-src 'self' data:",
-    "effective-directive": "img-src",
-    "blocked-uri": "https://assets.grammarly.com",
-    "status-code": "0",
-    "source-file": "safari-extension://9fb77544-7bd2-487c-a671-fd49c6d7b552",
-  }
-}
-```
-
-__WTF:__ `Not sure what to do about this`?
 
 __Answer:__ ????
 
