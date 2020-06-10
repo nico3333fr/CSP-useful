@@ -6,7 +6,7 @@ If you have an idea (even if the idea is WTF) for some of these, do not hesitate
 Put new ones on the top please :)
 
 ---------------------------------------
-# `avast webfont`
+# avast webfont
 
 ```
 {
@@ -44,7 +44,7 @@ __WTF:__ `"blocked-uri": "https://subwayblaze.com/api/pcgc?iid=47893ace-9ee9-490
 __Answer:__ ????
 
 ---------------------------------------
-# `assets.grammarly.com`
+# assets.grammarly.com
 
 ```
 {
