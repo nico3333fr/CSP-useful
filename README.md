@@ -151,7 +151,6 @@ JS/jQuery plugins should provide the CSP requirements they need to work (especia
 - https://www.smashingmagazine.com/2016/09/content-security-policy-your-future-best-friend/
 - https://openweb.eu.org/articles/content-security-policy (in french)
 - http://cspisawesome.com/
-- http://www.cspplayground.com/home
 - https://scotthelme.co.uk/csp-cheat-sheet/
 - http://www.w3.org/TR/CSP/
 - http://www.html5rocks.com/en/tutorials/security/content-security-policy/
