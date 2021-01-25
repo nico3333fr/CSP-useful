@@ -189,7 +189,7 @@ JS/jQuery plugins should provide the CSP requirements they need to work (especia
 - [CSP implementations are broken](https://jellyhive.com/activity/posts/2018/03/26/csp-implementations-are-broken/)
 - [CSP report for Netlify](https://github.com/stefanjudis/stefan-judis-website/blob/020f1b005cb1fcf4da8afa4407d9514917aecda0/functions/report.js)
 - [Run SQL on violation JSON, send violations to Slack](https://pipedream.com/@dylburger/process-csp-violations-p_brC8vJ/readme)
-
+- [CSP Generator from report-uri reports](https://rapidsec.com/csp-automation)
 
 ### Why you should use CSP
 
@@ -218,6 +218,10 @@ JS/jQuery plugins should provide the CSP requirements they need to work (especia
 - https://www.troyhunt.com/locking-down-your-website-scripts-with-csp-hashes-nonces-and-report-uri/
 - [Déployer CSP : une approche en 5 étapes](https://blog.dareboost.com/fr/2018/03/deployer-csp-une-approche-en-5-etapes/) (in french)
 - [Deploying CSP: a 5-step approach](https://blog.dareboost.com/en/2018/03/deploying-csp-a-5-step-approach/)
+- [Content Security Policy Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html)
+- [Web Client-side Attacks Blocked by CSP](https://cspscanner.com/client-side-attacks)
+- [Common and advanced CSP bypasses](https://cspscanner.com/csp-bypasses)
+
 
 ### Other
 
@@ -239,10 +243,12 @@ JS/jQuery plugins should provide the CSP requirements they need to work (especia
 - https://securityheaders.io/
 - https://report-uri.io/home/tools
 - https://observatory.mozilla.org/ (with CSP Analyzer to help you understand your policy)
+- [CSP Scanner](https://cspscanner.com/)
 
 ### Add-ons Navigator
 - https://addons.mozilla.org/en-us/firefox/addon/newusercspdesign/
 - https://addons.mozilla.org/en-US/firefox/addon/laboratory-by-mozilla/
+- [CSP Scanner Chrome Extension](https://chrome.google.com/webstore/detail/csp-scanner-test-analyze/eoiiiomeoogcpnkdedcodoeaacpdfmdj)
 
 ### CMS Plugins
 
