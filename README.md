@@ -132,7 +132,7 @@ JS/jQuery plugins should provide the CSP requirements they need to work (especia
 ## Bugs I've found
 
 - <del> Firefox: https://bugzilla.mozilla.org/show_bug.cgi?id=1195302 (inspector, extensions?) </del> (fixed in Firefox 42)
-- Firefox: https://bugzilla.mozilla.org/show_bug.cgi?id=1215108 (bookmarklets)
+- <del>Firefox: https://bugzilla.mozilla.org/show_bug.cgi?id=1215108 (bookmarklets)</del> (fixed in  Firefox 69)
 - <del>Chrome/Blink : https://code.google.com/p/chromium/issues/detail?id=524356 (extensions)</del> (fixed in last versions of Chrome)
 - Chrome: https://bugs.chromium.org/p/chromium/issues/detail?id=595004 (bookmarklets too, see too https://bugs.chromium.org/p/chromium/issues/detail?id=233903)
 - Safari/Webkit : https://bugs.webkit.org/show_bug.cgi?id=149000 (extensions)
