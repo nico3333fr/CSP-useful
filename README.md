@@ -168,6 +168,7 @@ JS/jQuery plugins should provide the CSP requirements they need to work (especia
 - [Codeurs en Seine 2016 - Nicolas Hoffmann - Content Security Policy (video in french-speaking)](https://www.infoq.com/fr/presentations/codeurs-en-seine-nicolas-hoffmann-content-security-policy)
 - [Paris Web 2017 - slides of a workshop in french](https://www.nicolas-hoffmann.net/CSP-PW2017)
 - [Tour d´horizon HTTPS et en-têtes de sécurité (in french)](https://www.alsacreations.com/article/lire/1723-tour-horizon-https-et-en-tetes-de-securite.html)
+- [CSP bypass: How one Chrome XSS bug took 2.5 years and an HTML spec change to fix](https://portswigger.net/daily-swig/csp-bypass-how-one-chrome-xss-bug-took-2-5-years-and-an-html-spec-change-to-fix)
 
 
 ### CSP with Google
