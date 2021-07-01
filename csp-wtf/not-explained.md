@@ -6,6 +6,43 @@ If you have an idea (even if the idea is WTF) for some of these, do not hesitate
 Put new ones on the top please :)
 
 ---------------------------------------
+# Nonexistent *first*-party fonts
+
+``` json
+{
+	"csp-report": {
+		"blocked-uri": "https://seirdy.one/2021/03/fonts/RedHatDisplay-BlackItalic.otf",
+		"disposition": "enforce",
+		"document-uri": "https://seirdy.one/2021/03/10/search-engines-with-own-indexes.html",
+		"effective_directive": "font-src",
+		"original-policy": "default-src 'none'; img-src 'self' data:; style-src 'sha256-Amup01ZIYjs1kyVZqHYW1tGhvlStSHIoFDKATF7L7VI='; style-src-attr 'none'; script-src 'none' 'report-sample'; frame-ancestors 'none'; base-uri 'none'; form-action 'none'; manifest-src 'self'; upgrade-insecure-requests; sandbox allow-same-origin; report-uri https://collector.seirdy.one",
+		"status-code": 200,
+		"violated_directive": "font-src"
+	}
+}
+```
+
+or
+
+``` json
+{
+	"csp-report": {
+		"blocked-uri": "https://seirdy.one/2021/03/10/res/Soleil.woff2",
+		"disposition": "enforce",
+		"document-uri": "https://seirdy.one/2021/03/10/search-engines-with-own-indexes.html",
+		"effective_directive": "font-src",
+		"original-policy": "default-src 'none'; img-src 'self' data:; style-src 'sha256-Amup01ZIYjs1kyVZqHYW1tGhvlStSHIoFDKATF7L7VI='; style-src-attr 'none'; script-src 'none' 'report-sample'; frame-ancestors 'none'; base-uri 'none'; form-action 'none'; manifest-src 'self'; upgrade-insecure-requests; sandbox allow-same-origin; report-uri https://collector.seirdy.one",
+		"status-code": 200,
+		"violated_directive": "font-src"
+	}
+}
+```
+
+__WTF:__ Site does not reference any fonts; /var/www/(sitename) doesn't have any directory called "fonts" or .otf files either.
+
+__Answer:__ ????
+
+---------------------------------------
 # avast webfont
 
 ```
