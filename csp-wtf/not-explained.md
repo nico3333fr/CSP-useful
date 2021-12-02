@@ -40,7 +40,7 @@ or
 
 __WTF:__ Site does not reference any fonts; /var/www/(sitename) doesn't have any directory called "fonts" or .otf files either.
 
-__Answer:__ ????
+__Answer:__ Soleil.woff2 is requested by this extension: https://chrome.google.com/webstore/detail/evernote-web-clipper/pioclpoplcdbaefihamjohnefbikjilc
 
 ---------------------------------------
 # avast webfont
