@@ -127,7 +127,7 @@ JS/jQuery plugins should provide the CSP requirements they need to work (especia
 - we will know what they need instead of having to discover it
 - we would be able to choose a plugin according to its capabilities to respect orthogonality (see https://openweb.eu.org/articles/orthogonality-with-css)
 
-
+EDIT: an initiative has been set up by [WebReflection]https://github.com/WebReflection to [display CSP badges](https://github.com/WebReflection/csp#readme) for your plugins/libraries.
 
 ## Bugs I've found
 
