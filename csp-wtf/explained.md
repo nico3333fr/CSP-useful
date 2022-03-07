@@ -2255,6 +2255,28 @@ __WTF:__ no code like this on this website.
 
 __Answer:__ related to Google Translate <del>however, to confirm in which exact case it happens</del>, Pavel B. confirmed: happens when a user translates the page using Google Translate inside Google Chrome (at least on Android, did not happen in Chrome for desktop).
 
+---------------------------------------
+# Google audio pronunciation files
+
+```
+{
+    "csp-report": {
+        "document-uri": "https://van11y.net/",
+        "referrer": "https://van11y.net/downloads/tab-panel/demo/index.html",
+        "violated-directive": "media-src",
+        "effective-directive": "media-src",
+        "original-policy": "default-src 'none' ;  script-src 'self'; style-src 'self' ; img-src 'self'; font-src 'self';  connect-src 'self'; child-src 'self' ; frame-ancestors 'none' ; manifest-src 'self' ; report-uri /csp-parser.php ;",
+        "disposition": "enforce",
+        "blocked-uri": "https://ssl.gstatic.com/dictionary/static/sounds/oxford/feature--_us_1.mp3",
+        "status-code": 0,
+        "script-sample": ""
+    }
+}
+```
+
+__WTF:__ Nothing like this on the website.
+
+__Answer:__ Comes from a browser extension for word pronunciation that uses static audio files provided by Google. Was able to replicate the notification using the Chrome extension [Google Dictionary (by Google)](https://chrome.google.com/webstore/detail/google-dictionary-by-goog/mgijmajocgfcbeboacabfgobmjgjcoja/related?hl=en). 
 
 ---------------------------------------
 # onsubmit/onchange/onfocusin/etc. attribute on DIV element
