@@ -5,6 +5,23 @@ If you have an idea (even if the idea is WTF) for some of these, do not hesitate
 
 Put new ones on the top please :)
 
+# moz-extension
+
+```
+{
+    "blocked-uri": "data",
+    "column-number": 13,
+    "document-uri": "https://xxx/search.php?search_id=dummy",
+    "line-number": 263,
+    "original-policy": "default-src https: wss: data: 'unsafe-eval' 'unsafe-inline'; img-src *; report-uri https://xxx/csp-report.php",
+    "referrer": "https://xxx/page.php?start=1005",
+    "source-file": "moz-extension",
+    "violated-directive": "img-src"
+}
+```
+
+__WTF:__ Many such requests coming from an AWS datacenter. Some spider using a moz-entension to inject images? Should we care?
+
 ---------------------------------------
 # Nonexistent *first*-party fonts
 
