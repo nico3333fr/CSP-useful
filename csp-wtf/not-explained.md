@@ -5,6 +5,32 @@ If you have an idea (even if the idea is WTF) for some of these, do not hesitate
 
 Put new ones on the top please :)
 
+# ibosstest/ibosscloud
+
+```
+{
+    "csp-report": {
+        "document-uri": "https://van11y.net/accessible-carrousel/",
+        "referrer": "https://www.google.com/",
+        "violated-directive": "style-src-elem",
+        "effective-directive": "style-src-elem",
+        "original-policy": "upgrade-insecure-requests;  block-all-mixed-content; default-src  http://*.pingidentity.com https://*.pingidentity.com http://*.pingone.com https://*.pingone.com https://*.ibosscloud.com http://*.ibosscloud.com https://*.ibosstest.com http://*.ibosstest.com https://*.ibosscloud.com:7443 http://*.ibosscloud.com:7080 https://*.ibosstest.com:7443 http://*.ibosstest.com:7080 http://*.okta.com https://*.okta.com https://138.43.109.129  https://138.43.109.129:7443  http://138.43.109.129  http://138.43.109.129:7080  http://*.cbs.state.or.us  https://*.cbs.state.or.us 'none' ;  script-src 'self'; http://*.pingidentity.com https://*.pingidentity.com http://*.pingone.com https://*.pingone.com https://*.ibosscloud.com http://*.ibosscloud.com https://*.ibosstest.com http://*.ibosstest.com https://*.ibosscloud.com:7443 http://*.ibosscloud.com:7080 https://*.ibosstest.com:7443 http://*.ibosstest.com:7080 http://*.okta.com https://*.okta.com https://138.43.109.129  https
+ ://138.43.109.129:7443  http://138.43.109.129  http://138.43.109.129:7080  http://*.cbs.state.or.us  https://*.cbs.state.or.us  style-src  http://*.pingidentity.com https://*.pingidentity.com http://*.pingone.com https://*.pingone.com https://*.ibosscloud.com http://*.ibosscloud.com https://*.ibosstest.com http://*.ibosstest.com https://*.ibosscloud.com:7443 http://*.ibosscloud.com:7080 https://*.ibosstest.com:7443 http://*.ibosstest.com:7080 http://*.okta.com https://*.okta.com https://138.43.109.129  https://138.43.109.129:7443  http://138.43.109.129  http://138.43.109.129:7080  http://*.cbs.state.or.us  https://*.cbs.state.or.us 'self' 'nonce-dcb95066973aac37cedb91e7831d36ee10d02aabd1bf11a08a2709de5134e15514dfa08e60d0195c46ec5d9f4720422026216f94aae41c3468473a81cb54d28b' ; img-src  http://*.pingidentity.com https://*.pingidentity.com http://*.pingone.com https://*.pingone.com https://*.ibosscloud.com http://*.ibosscloud.com https://*.ibosstest.com http://*.ibosstest.com https://*.
+ ibosscloud.com:7443 http://*.ibosscloud.com:!
+ 7080 https://*.ibosstest.com:7443 http://*.ibosstest.com:7080 http://*.okta.com https://*.okta.com https://138.43.109.129  https://138.43.109.129:7443  http://138.43.109.129  http://138.43.109.129:7080  http://*.cbs.state.or.us  https://*.cbs.state.or.us 'self' data: ; font-src  http://*.pingidentity.com https://*.pingidentity.com http://*.pingone.com https://*.pingone.com https://*.ibosscloud.com http://*.ibosscloud.com https://*.ibosstest.com http://*.ibosstest.com https://*.ibosscloud.com:7443 http://*.ibosscloud.com:7080 https://*.ibosstest.com:7443 http://*.ibosstest.com:7080 http://*.okta.com https://*.okta.com https://138.43.109.129  https://138.43.109.129:7443  http://138.43.109.129  http://138.43.109.129:7080  http://*.cbs.state.or.us  https://*.cbs.state.or.us 'self';  connect-src  http://*.pingidentity.com https://*.pingidentity.com http://*.pingone.com https://*.pingone.com https://*.ibosscloud.com http://*.ibosscloud.com https://*.ibosstest.com http://*.ibosstest.com ht
+ tps://*.ibosscloud.com:7443 http://*.ibosscloud.com:7080 https://*.ibosstest.com:7443 http://*.ibosstest.com:7080 http://*.okta.com https://*.okta.com https://138.43.109.129  https://138.43.109.129:7443  http://138.43.109.129  http://138.43.109.129:7080  http://*.cbs.state.or.us  https://*.cbs.state.or.us 'self' ; child-src 'self' ; frame-ancestors 'self'  ; manifest-src 'self' ; worker-src 'self' ; base-uri 'none' ; form-action 'none' ;   report-uri /csp-parser.php ;",
+        "disposition": "enforce",
+        "blocked-uri": "https://van11y.net/layout/css/styles_mini_1536668075.css",
+        "line-number": 11,
+        "source-file": "https://van11y.net/accessible-carrousel/",
+        "status-code": 200,
+        "script-sample": ""
+    }
+}
+```
+
+__WTF:__ Changed the CSP policy of my website, no idea what it is.
+
 # moz-extension
 
 ```
