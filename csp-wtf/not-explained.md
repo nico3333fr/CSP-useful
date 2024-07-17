@@ -5,6 +5,45 @@ If you have an idea (even if the idea is WTF) for some of these, do not hesitate
 
 Put new ones on the top please :)
 
+# connect-src violation for sentry.io, even though allowed
+
+Event from `window.addEventListener("securitypolicyviolation", ...)`:
+
+```json
+{
+  "isTrusted": true,
+  "documentURI": "https://app.borderwise.com/?authtoken=xxx",
+  "referrer": "",
+  "blockedURI": "https://o827986.ingest.sentry.io/api/5818829/envelope/?sentry_key=dfc9b7af16364687a712017b52545d52&sentry_version=7",
+  "violatedDirective": "connect-src",
+  "effectiveDirective": "connect-src",
+  "originalPolicy": "default-src  'self'; frame-ancestors  'self'; style-src  'unsafe-inline'; script-src-elem  'self' https://*.googletagmanager.com https://*.hotjar.com; style-src-elem  'self' 'unsafe-inline' https://fonts.googleapis.com; font-src  'self' https://fonts.gstatic.com https://fonts.gstatic.cn; connect-src  'self' https://localhost:33443 https://localhost:43443 https://*.ingest.sentry.io https://*.hotjar.com https://*.hotjar.io wss://*.hotjar.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com  'self' https://fonts.gstatic.com https://fonts.gstatic.cn  'self' https://*.google-analytics.com https://*.googletagmanager.com  'self' 'unsafe-inline' https://fonts.googleapis.com; img-src  'self' https://*.google-analytics.com https://*.googletagmanager.com;",
+  "disposition": "report",
+  "sourceFile": "",
+  "statusCode": 200,
+  "lineNumber": 0,
+  "columnNumber": 0,
+  "sample": "",
+  "type": "securitypolicyviolation",
+  "target": "Node",
+  "currentTarget": "Window",
+  "eventPhase": 3,
+  "bubbles": true,
+  "cancelable": false,
+  "defaultPrevented": false,
+  "composed": true,
+  "timeStamp": 95780.30000000075,
+  "srcElement": "Node",
+  "returnValue": true,
+  "cancelBubble": false,
+  "NONE": 0,
+  "CAPTURING_PHASE": 1,
+  "AT_TARGET": 2,
+  "BUBBLING_PHASE": 3
+}
+```
+__WTF:__ Blocked URL: `https://o827986.ingest.sentry.io/api/5818829/envelope/?sentry_key=dfc9b7af16364687a712017b52545d52&sentry_version=7` even though my policy allows it: `...; connect-src ... https://*.ingest.sentry.io ...`; In ~6 months there were ~24k users and ~900k views, the issue was reported 47 times. Happens on Firefox v126 and v127, Chrome v125 and v126, Edge v125 and v126. One from IPv4 Cisco OpenDNS, all others coming from `2001:DB8::/32` range, which is a reserved prefix for use in documentation. Upon inspection of user emails, looks like all users from that IP range are from the same company that is our client.
+
 # ibosstest/ibosscloud
 
 ```
