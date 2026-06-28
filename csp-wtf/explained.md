@@ -3175,4 +3175,34 @@ __WTF:__ ???
 __Answer:__ User has browser extension with ads injection malware script
 
 ---------------------------------------
+
+# html, body, body :not(iframe) {\n    back\u2026
+
+```
+{
+    "csp-report": {
+...
+
+            "documentURL": "https://mysite.com",
+            "blockedURL": "inline“,
+            "effectiveDirective": "style-src-elem",
+            "originalPolicy": "default-src 'none'; img-src 'self' data:; media-src 'none'; font-src 'self' data:; script-src 'nonce-...' 'strict-dynamic'; style-src 'self' 'report-sample' 'nonce-...'; connect-src 'self' ; form-action 'none'; base-uri 'none'; object-src 'none'; child-src 'self' ; frame-ancestors 'none'; upgrade-insecure-requests; report-to endpoint_csp",
+            "sourceFile": "<anonymous code>",
+            "sample": "html, body, body :not(iframe) {\n    back\u2026",
+            "disposition": "enforce",
+            "statusCode": 200,
+            "lineNumber": 51,
+            "columnNumber": 18
+
+    }
+}
+```
+
+__WTF:__ ???
+
+__Answer:__ User has browser extension Dark Reader, https://github.com/darkreader/darkreader
+Specific CSS from https://github.com/darkreader/darkreader/blob/51e728c8aa67f2d52200e94bb91c265899de6ecc/src/inject/fallback.ts#L14 and/or https://github.com/darkreader/darkreader/blob/51e728c8aa67f2d52200e94bb91c265899de6ecc/src/inject/dynamic-theme/modify-css.ts#L253
+
+
+---------------------------------------
 If you have some examples to share (even if you don't know what the fuck it is coming from), feel free to share them. Anonymize the URL/policy if needed.
