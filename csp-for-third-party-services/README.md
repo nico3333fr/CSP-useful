@@ -102,6 +102,7 @@ font-src fonts.gstatic.com ;
 
 ```
 default-src *.vimeo.com ;
+img-src i.vimeocdn.com;
 script-src *.vimeo.com *.vimeocdn.com *.newrelic.com *.nr-data.net ;
 style-src *.vimeocdn.com ;
 child-src 'self' *.vimeo.com *.vimeocdn.com ;
