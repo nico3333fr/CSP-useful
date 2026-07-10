@@ -191,6 +191,7 @@ EDIT: an initiative has been set up by [WebReflection](https://github.com/WebRef
 - [CSP report for Netlify](https://github.com/stefanjudis/stefan-judis-website/blob/020f1b005cb1fcf4da8afa4407d9514917aecda0/functions/report.js)
 - [Run SQL on violation JSON, send violations to Slack](https://pipedream.com/@dylburger/process-csp-violations-p_brC8vJ/readme)
 - [CSP Generator from report-uri reports](https://rapidsec.com/csp-automation)
+- [reporting-api: Express middleware to collect CSP violation reports (report-uri and report-to), COOP/COEP, NEL and other Reporting API reports](https://github.com/wille/reporting-api)
 
 ### Why you should use CSP
 
